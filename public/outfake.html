@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)https://www.outfake.com/ -->
+<html lang="en" style="--pericles-word-background: rgba(9, 46, 140, 0.92); --pericles-section-background: rgba(255, 254, 219, 1.54);"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      
+      <link rel="shortcut icon" href="https://www.outfake.com/%PUBLIC_URL%/favicon.ico">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="theme-color" content="#000000">
+      <!--
+         manifest.json provides metadata used when your web app is installed on a
+         user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+         -->
+      <link rel="manifest" href="/manifest.json">
+      <link rel="icon" href="favicon.ico" type="image/x-icon">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="theme-color" content="white">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+      <link rel="stylesheet" href="./assets/bulma.min.css">
+      <link rel="icon" type="image/png" sizes="32x32" href="https://www.outfake.com/shuffle-for-bulma.png">
+      <style>
+         .custom-nav {
+          background: rgba(255,255,255,0.2);
+          box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+          backdrop-filter: blur(5px);
+          -webkit-backdrop-filter: blur(5px);
+          border: 1px solid rgba(255,255,255,0.3);
+          /*position: fixed;
+          width: 100%;*/
+         }
+
+
+:root {
+  --rate: 19.9%;
+  --function: ease-in-out;
+  --slide-distortion-delay: 0s;
+  --slide-distortion-time: 0.5s;
+  --slide-reset-delay: 0.4s;
+  --slide-reset-time: 0.5s;
+  --slider-offset: 0%;
+  --slider-time: 1s;
+}
+.wrapper {
+  padding: 0;
+}
+
+.slider {
+  overflow: hidden;
+}
+
+.slider__inner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  transform: translateX(var(--slider-offset));
+  transition-property: transform;
+  transition-duration: var(--slider-time);
+  transition-timing-function: ease;
+  will-change: transform;
+}
+
+.slider__item {
+  flex: 1 0 100%;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+
+.slider__image {
+  width: 100%;
+  height: auto;
+  transform: translateX(0);
+  animation-delay: var(--slide-distortion-delay), var(--slide-reset-delay);
+  animation-duration: var(--slide-distortion-time), var(--slide-reset-time);
+  animation-fill-mode: forwards, forwards;
+  animation-direction: normal, reverse;
+}
+
+.slider__image:not(:first-child) {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slider__image:nth-child(1) {
+  clip-path: inset(0 0 calc(var(--rate) * 4) 0);
+}
+
+.slider__image:nth-child(2) {
+  clip-path: inset(calc(var(--rate) * 1) 0 calc(var(--rate) * 3) 0);
+}
+
+.slider__image:nth-child(3) {
+  clip-path: inset(calc(var(--rate) * 2) 0 calc(var(--rate) * 2) 0);
+}
+
+.slider__image:nth-child(4) {
+  clip-path: inset(calc(var(--rate) * 3) 0 calc(var(--rate) * 1) 0);
+}
+
+.slider__image:nth-child(5) {
+  clip-path: inset(calc(var(--rate) * 4) 0 0 0);
+}
+
+// Animation
+.slider__item--animating .slider__image:nth-child(1) {
+  animation-name: animation-1, animation-1;
+}
+
+.slider__item--animating .slider__image:nth-child(2) {
+  animation-name: animation-2, animation-2;
+}
+
+.slider__item--animating .slider__image:nth-child(3) {
+  animation-name: animation-3, animation-3;
+}
+
+.slider__item--animating .slider__image:nth-child(4) {
+  animation-name: animation-4, animation-4;
+}
+
+.slider__item--animating .slider__image:nth-child(5) {
+  animation-name: animation-5, animation-5;
+}
+
+// Keyframes
+@keyframes animation-1 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    // transform: translateX(-50px);
+    transform: translateX(-5vw);
+  }
+}
+
+@keyframes animation-2 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-3vw);
+  }
+}
+
+@keyframes animation-3 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(1vw);
+  }
+}
+
+@keyframes animation-4 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(3vw);
+  }
+}
+
+@keyframes animation-5 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-1vw);
+  }
+}
+
+@keyframes slide {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.is-hidden {
+  display: none !important;
+}
+.PageBackToWork {
+  display: flex;
+  color: white;
+  font-family: 'Quicksand';
+  font-weight: 500;
+}
+.PageBackToWork-heading {
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+  line-height: 29px;
+  margin-left: -19px;
+}
+@media (min-width: 1200px) {
+  .PageBackToWork-heading {
+    font-size: 1.5rem;
+  }
+}
+.PageBackToWork-heading-rotationTextContainer {
+  position: relative;
+}
+.PageBackToWork-heading-rotationText {
+  display: inline-block;
+  position: relative;
+}
+.PageBackToWork-heading-rotationText.is-inactive {
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+}
+.PageBackToWork-heading-itText {
+  display: inline;
+  font-size: 1.5rem;
+}
+
+:root {
+                --color-text: navy;
+                --color-bg: papayawhip;
+                --color-bg-accent: #ecdcc0;
+                --size: clamp(10rem, 1rem + 40vmin, 30rem);
+                --gap: calc(var(--size) / 14);
+                --duration: 60s;
+                --scroll-start: 0;
+                --scroll-end: calc(-100% - var(--gap));
+                }
+
+                @media (prefers-color-scheme: dark) {
+                :root {
+                    --color-text: papayawhip;
+                    --color-bg: navy;
+                    --color-bg-accent: #2626a0;
+                }
+                }
+
+                * {
+                box-sizing: border-box;
+                }
+
+                .marquee {
+                display: flex;
+                overflow: hidden;
+                user-select: none;
+                gap: var(--gap);
+                mask-image: linear-gradient(
+                    var(--mask-direction, to right),
+                    hsl(0 0% 0% / 0),
+                    hsl(0 0% 0% / 1) 20%,
+                    hsl(0 0% 0% / 1) 80%,
+                    hsl(0 0% 0% / 0)
+                );
+                width: 100%;
+                margin-left: 0px;
+                }
+
+                .marquee__group {
+                flex-shrink: 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                gap: var(--gap);
+                min-width: 100%;
+                animation: scroll-x var(--duration) linear infinite;
+                }
+
+                .marquee__group > img {
+                    width: 272px;
+                    margin-left: 42px;
+                    filter: grayscale(100%);
+                    opacity: 0.4;
+                }
+
+                @media (prefers-reduced-motion: reduce) {
+                .marquee__group {
+                    animation-play-state: paused;
+                }
+                }
+
+                .marquee--vertical {
+                --mask-direction: to bottom;
+                }
+
+                .marquee--vertical,
+                .marquee--vertical .marquee__group {
+                flex-direction: column;
+                }
+
+                .marquee--vertical .marquee__group {
+                animation-name: scroll-y;
+                }
+
+                .marquee--reverse .marquee__group {
+                animation-direction: reverse;
+                animation-delay: -2s;
+                }
+
+                @keyframes scroll-x {
+                from {
+                    transform: translateX(var(--scroll-start));
+                }
+                to {
+                    transform: translateX(var(--scroll-end));
+                }
+                }
+
+                @keyframes scroll-y {
+                from {
+                    transform: translateY(var(--scroll-start));
+                }
+                to {
+                    transform: translateY(var(--scroll-end));
+                }
+                }
+
+                /* Element styles */
+                .marquee svg {
+                display: grid;
+                place-items: center;
+                width: var(--size);
+                fill: var(--color-text);
+                background: var(--color-bg-accent);
+                aspect-ratio: 16/9;
+                padding: calc(var(--size) / 10);
+                border-radius: 0.5rem;
+                }
+
+                .marquee--vertical svg {
+                aspect-ratio: 1;
+                width: calc(var(--size) / 1.5);
+                padding: calc(var(--size) / 6);
+                }
+
+                /* Parent wrapper */
+                .wrapper {
+                display: flex;
+                flex-direction: column;
+                gap: var(--gap);
+                margin: auto;
+                max-width: 100vw;
+                }
+
+                .wrapper--vertical {
+                flex-direction: row;
+                height: 100vh;
+                }
+
+                /* Toggle direction button */
+                .toggle {
+                --size: 3rem;
+                position: relative;
+                position: fixed;
+                top: 1rem;
+                left: 1rem;
+                width: var(--size);
+                height: var(--size);
+                font: inherit;
+                text-align: center;
+                cursor: pointer;
+                outline: none;
+                border: none;
+                border-radius: 50%;
+                color: inherit;
+                background-color: var(--color-bg-accent);
+                z-index: 1;
+                }
+
+                .toggle:focus-visible {
+                box-shadow: 0 0 0 2px var(--color-text);
+                }
+
+                .toggle span {
+                position: absolute;
+                display: inline-block;
+                top: 50%;
+                left: calc(100% + 0.4em);
+                width: fit-content;
+                white-space: nowrap;
+                transform: translateY(-50%);
+                animation: fade 400ms 4s ease-out forwards;
+                user-select: none;
+                }
+
+                .toggle svg {
+                --size: 1.5rem;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: var(--size);
+                height: var(--size);
+                fill: currentcolor;
+                transform: translate(-50%, -50%);
+                transition: transform 300ms cubic-bezier(0.25, 1, 0.5, 1);
+                }
+
+                .toggle--vertical svg {
+                transform: translate(-50%, -50%) rotate(-90deg);
+                }
+
+                @keyframes fade {
+                to {
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                }
+
+                
+
+.output {
+  text-align: left;
+    font-family: "Quicksand";
+    color: white;
+    margin-top: 4px;
+    font-size: 1.1rem;
+}
+
+/* Cursor Styling */
+
+.cursor::after {
+  content: "";
+  display: inline-block;
+  margin-left: 1px;
+  background-color: #fff;
+  animation-name: blink;
+  animation-duration: 0.9s;
+  animation-iteration-count: infinite;
+}
+h1.cursor::after {
+  height: 16px;
+  width: 5px;
+}
+p.cursor::after {
+  height: 1px;
+  width: 1px;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+.top-container {
+  position: absolute;
+  z-index: 1;
+  top: 130px;
+  float: left;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.title-bg {
+  margin-top: 96px;
+  font-size: 1.5rem !important;
+  padding: 3px;
+  font-family: Quicksand;
+  font-weight: 500;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.is-right-0 {
+  right: 0px;
+}
+.underline{position: relative;}
+.underline:before {
+  content: "";
+  position:relative;
+  width:100%;
+  height: 2.45em;
+  left: 0;
+  width: 100%;
+  z-index:-10;
+  background-image: url('./assets/underline.svg');
+  background-repeat: no-repeat;	
+  background-size: 100% 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.underline:after {
+  content: "";
+  position:absolute;
+  width:100%;
+  height: 2.45em;
+  left: 0;
+  width: 100%;
+  top: 4px;
+  z-index:-10;
+  background-image: url('./assets/underline.svg');
+  background-repeat: no-repeat;	
+  background-size: 100% 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+
+.underline2{position: relative;}
+.underline2:before {
+  content: "";
+  position:relative;
+  width:100%;
+  height: 2.45em;
+  left: 0;
+  width: 100%;
+  z-index:-10;
+  background-image: url('./assets/underline.svg');
+  opacity: 0.4;
+  background-repeat: no-repeat;	
+  background-size: 100% 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.underline2:after {
+  content: "";
+  position:absolute;
+  width:100%;
+  height: 2.45em;
+  left: 0;
+  width: 100%;
+  top: 4px;
+  z-index:-10;
+  background-image: url('./assets/underline.svg');
+  opacity: 0.4;
+  background-repeat: no-repeat;	
+  background-size: 100% 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.buttons .button {
+    margin-bottom: .5rem;
+    font-family: Quicksand;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+small {
+    font-size: 1.15rem;
+    font-family: Quicksand;
+}
+      </style>
+      <title>React App</title>
+   <style>._pericles_action_prev,
+._pericles_action_next,
+._pericles_action_play,
+._pericles_action_stop,
+._pericles_action_pause {
+  cursor: pointer;
+  font-size: 19px;
+}
+
+._pericles_action_prev:hover,
+._pericles_action_next:hover,
+._pericles_action_play:hover,
+._pericles_action_stop:hover,
+._pericles_action_pause:hover {
+  font-size: 20px;
+}
+
+._pericles_action_prev:active,
+._pericles_action_next:active,
+._pericles_action_play:active,
+._pericles_action_stop:active,
+._pericles_action_pause:active {
+  font-size: 19px;
+}
+
+img._pericles_action_icon {
+  display: inline-block !important;
+  width: 24px !important;
+  height: 24px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  vertical-align: top !important;
+  opacity: 0.9 !important;
+}
+
+img._pericles_action_icon:hover {
+  opacity: 1 !important;
+}
+
+ps-section,
+ps-word {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+ps-word[data-audio-index]:hover {
+  background: #ccc;
+  cursor: crosshair;
+}
+
+ps-section {
+  position: relative;
+  cursor: pointer;
+}
+
+ps-section:hover {
+  background: var(--pericles-section-background);
+}
+
+._pericles_action_container {
+  border-radius: 4px;
+  width: 50px;
+  /* width: 74px; */
+  height: 26px;
+  /* background: linear-gradient(180deg, #ccc, transparent); */
+  background: #eee;
+  line-height: 32px;
+  transition: opacity 0.55s ease-in-out;
+  -moz-transition: opacity 0.55s ease-in-out;
+  -webkit-transition: opacity 0.55s ease-in-out;
+}
+
+._pericles_inspector {
+  border: 1px solid #000;
+  background-color: rgba(102, 136, 253, 0.2) !important;
+  color: #000 !important;
+  /* opacity: 0.6; */
+}
+
+@keyframes _periclesFadeOut {
+  0% {
+    background: #ccc;
+    color: #000;
+  }
+
+  100% {
+    background: transparent;
+    color: inherit;
+  }
+}
+._pericles_word_tracker_style_fade,
+._pericles_prev_word_tracker_style_fade {
+  border-radius: 2px;
+  text-shadow: none;
+}
+
+._pericles_prev_word_tracker_style_fade {
+  background: transparent;
+  animation: _periclesFadeOut 2s ease-out;
+  color: inherit;
+}
+
+rect._pericles_section_highlight_style_background {
+  fill: var(--pericles-section-background);
+  opacity: 0.4;
+}
+
+._pericles_section_highlight_style_background {
+  background: var(--pericles-section-background);
+}
+
+._pericles_section_highlight_style_border {
+  border: 1px solid var(--pericles-section-background);
+}
+
+rect._pericles_section_highlight_style_border {
+  stroke: var(--pericles-section-background);
+}
+
+._pericles_word_tracker_style_background {
+  background: var(--pericles-word-background);
+}
+
+._pericles_word_tracker_style_underline {
+  border-top: 1px solid var(--pericles-word-background);
+  border-bottom: 1px solid var(--pericles-word-background);
+}
+
+._pericles_word_tracker_style_fade {
+  background: var(--pericles-word-background);
+  color: #fff;
+}
+</style></head>
+   <body class="fullscreen">
+      <div>
+         <nav class="navbar py-1 custom-nav">
+            <div class="container px-8-mobile">
+               <div class="navbar-brand is-align-items-center">        <a class="navbar-item" href="https://www.outfake.com/#">          <span class="navbar-item px-0 title is-size-4 has-text-dark">            <img src="./assets/ologo.png" alt="" width="auto" style="max-height: initial;width:160px;float:left;margin-left:-28px">          </span>        </a>        <a class="navbar-menu-open navbar-burger" style="position: absolute;float:right;right: 10px;" role="button" type="button" data-toggle="side-menu">          <span aria-hidden="true"></span>          <span aria-hidden="true"></span>          <span aria-hidden="true"></span>        </a>      </div>
+               <div class="navbar-menu">
+                  <div class="navbar-start ml-auto mr-0">
+                     <ul class="navbar-item pl-0">
+                        <li><a class="title is-size-6 has-text-weight-normal navbar-item" href="https://www.outfake.com/#">About</a></li>
+                        <li><a class="title is-size-6 has-text-weight-normal navbar-item" href="https://www.outfake.com/#">Company</a></li>
+                        <li><a class="title is-size-6 has-text-weight-normal navbar-item" href="https://www.outfake.com/#">Services</a></li>
+                        <li><a class="title is-size-6 has-text-weight-normal navbar-item" href="https://www.outfake.com/#">Testimonials</a></li>
+                     </ul>
+                  </div>
+                  <div class="navbar-end">
+                     <div class="navbar-item is-hidden-mobile">
+                        <div class="buttons"><a class="button is-primary" href="https://www.outfake.com/#">Contact</a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </nav>
+         <section style="margin-top: -15px;">
+          <div>
+            <div class="wrapper">
+
+              <div class="slider">
+                <div class="slider__inner">
+                  <div class="slider__item">
+                    <img class="slider__image" src="./assets/scam_investment.jpg" alt="Image 1">
+                    <img class="slider__image" src="./assets/scam_investment.jpg" alt="Image 1">
+                    <img class="slider__image" src="./assets/scam_investment.jpg" alt="Image 1">
+                    <img class="slider__image" src="./assets/scam_investment.jpg" alt="Image 1">
+                    <img class="slider__image" src="./assets/scam_investment.jpg" alt="Image 1">
+                  </div>
+                  <div class="slider__item">
+                    <img class="slider__image" src="./assets/scam_real_estate.jpg" alt="Image 2">
+                    <img class="slider__image" src="./assets/scam_real_estate.jpg" alt="Image 2">
+                    <img class="slider__image" src="./assets/scam_real_estate.jpg" alt="Image 2">
+                    <img class="slider__image" src="./assets/scam_real_estate.jpg" alt="Image 2">
+                    <img class="slider__image" src="./assets/scam_real_estate.jpg" alt="Image 2">
+                  </div>
+                  <div class="slider__item">
+                    <img class="slider__image" src="./assets/scam_courier_fraud.jpg" alt="Image 3">
+                    <img class="slider__image" src="./assets/scam_courier_fraud.jpg" alt="Image 3">
+                    <img class="slider__image" src="./assets/scam_courier_fraud.jpg" alt="Image 3">
+                    <img class="slider__image" src="./assets/scam_courier_fraud.jpg" alt="Image 3">
+                    <img class="slider__image" src="./assets/scam_courier_fraud.jpg" alt="Image 3">
+                  </div>
+                  <div class="slider__item">
+                    <img class="slider__image" src="./assets/scam_fake_news.jpg" alt="Image 4">
+                    <img class="slider__image" src="./assets/scam_fake_news.jpg" alt="Image 4">
+                    <img class="slider__image" src="./assets/scam_fake_news.jpg" alt="Image 4">
+                    <img class="slider__image" src="./assets/scam_fake_news.jpg" alt="Image 4">
+                    <img class="slider__image" src="./assets/scam_fake_news.jpg" alt="Image 4">
+                  </div>
+                </div> <!-- /slider__inner -->
+              </div> <!-- /slider -->
+          
+            </div>
+          </div>
+          <div class="section py-32" style="margin-top:-251px">
+             <div class="container top-container">
+                <div class="columns is-align-items-center">
+                   <div class="column">
+                      <small class="is-block has-text-white has-text-weight-semibold is-uppercase mb-2">             </small> 
+                      
+                      <div class="PageBackToWork title-bg">
+                        <span id="hero-it-text" class="PageBackToWork-heading-itText"></span>
+                        <h1 id="hero-rotating-text" class="PageBackToWork-heading">
+                        <span class="PageBackToWork-heading-rotationTextContainer">
+                          <span data-hero-rotating-text="" class="PageBackToWork-heading-rotationText">Prevent <b>financial fraud</b></span>
+                            <span data-hero-rotating-text="" class="PageBackToWork-heading-rotationText is-inactive is-hidden">Prevent <b>identity theft</b></span>
+                            <span data-hero-rotating-text="" class="PageBackToWork-heading-rotationText is-inactive is-hidden">Prevent <b>online scams</b></span>
+                            <span data-hero-rotating-text="" class="PageBackToWork-heading-rotationText is-inactive is-hidden">Prevent <b>fake news</b></span>
+                        </span>
+                        <br/><span  class="PageBackToWork-heading-itText underline">with one tap!</span>
+                      </div>
+                      <!--<h1 id="title-text" class="has-text-white has-mw-xl title is-size-1 title-bg" >Prevent investment fraud, with one tap!</h1>-->
+                   </div>
+                  
+                </div>
+             </div>
+          </div>
+          <div class="section py-0 has-background-blur" style="margin-top: 0px;height:100px">
+             <div class="container">
+                <div class="columns py-1">
+
+                  <div class="column">
+                    <div class="output" id="output">
+                      <h1 id="typeHeader" class="cursor"></h1>
+                      <p id="typePara"></p>
+                    </div>
+                 
+                  </div>
+                 
+             </div>
+          </div>
+       </section>
+         <div class="navbar-side is-hidden is-fixed is-top-0 is-left-0 has-background-blur" style="z-index: 50; width:100%; height: 100%;">
+            <div class="is-absolute" style="z-index: -1;"></div>
+            <div class="container is-relative">      <a class="navbar-close is-absolute is-right-0 mt-6 mr-6" href="https://www.outfake.com/#">        <img src="./assets/mobile-decline.svg" alt="">      </a>    </div>
+            <aside class="py-6 px-6 pb-8 has-background-white is-flex is-flex-direction-column is-justify-content-space-between" style="height: 100%; width: 288px; overflow-y: auto">
+               <div>
+                  <a class="navbar-item title is-size-4 has-text-dark pl-4 mb-5" href="https://www.outfake.com/#">          <img src="./assets/ologo.png" width="auto" style="width:132px;max-height: initial" alt="">        </a>        
+                  <ul class="menu-list title is-size-6">
+                     <li><a class="py-4 px-6" href="https://www.outfake.com/#">Home</a></li>
+                     <li><a class="py-4 px-6" href="https://www.outfake.com/#">About</a></li>
+                     <li><a class="py-4 px-6" href="https://www.outfake.com/#">Company</a></li>
+                     <li><a class="py-4 px-6" href="https://www.outfake.com/#">Services</a></li>
+                     <li><a class="py-4 px-6" href="https://www.outfake.com/#">Testimonials</a></li>
+                     <li><a class="py-4 px-6" href="https://www.outfake.com/#">Contact</a></li>
+                  </ul>
+               </div>
+               <div>
+                  <div class="buttons mb-8"><a class="button is-dark is-outlined is-fullwidth mb-4" href="https://www.outfake.com/#">Log In</a><a class="button is-primary is-fullwidth" href="https://www.outfake.com/#">Sign up</a></div>
+                  <small class="ml-6" style="font-size: 0.8rem;">2024 © outfake.com</small>      
+               </div>
+            </aside>
+         </div>
+      </div>
+      <section class="section py-10 has-background-white-ter" style="padding: 0px">
+         <div class="container">
+          <article class="wrapper" style="width: 95%">
+            <div class="marquee">
+                <div class="marquee__group">
+                    <img src="./assets/scam2.png">
+                    <img src="./assets/scam3.png">
+                    <img src="./assets/scam4.png">
+                    <img src="./assets/scam6.png">
+                    <img src="./assets/scam1.png">
+                    <img src="./assets/scam7.png">
+                    <img src="./assets/scam5.png">
+                    <img src="./assets/scam2.png">
+                    <img src="./assets/scam3.png">
+                    <img src="./assets/scam4.png">
+                </div>
+            </div></article>
+         </div>
+      </section>
+      <section class="section py-16" style="padding: 3rem 0rem;margin-top: -64px;">
+         <div class="container is-relative">
+            <div class="is-absolute m-8 has-background-primary p-10 has-mw-sm" style="border-radius: 6px; z-index: 1;padding-bottom:0px !important">
+               <h4 class="has-text-white title is-size-4 has-leading-3 has-text-weight-medium mb-8">"1 in every square km in your vicinity is exposed to online fraud!"</h4>
+               <div class="is-hidden-touch is-hidden-desktop-only is-flex is-align-items-start mb-8">
+                  <img class="mr-6" src="./assets/security-white-light.svg" alt="">
+                  <div>
+                     <h5 class="title is-size-5 has-text-white mb-2 has-text-weight-medium">Repeat predefined</h5>
+                     <p class="has-text-white">Take care to develop resources continually and integrity.</p>
+                  </div>
+               </div>
+               <div class="is-hidden-touch is-hidden-desktop-only is-flex is-align-items-start">
+                  <img class="mr-6" src="./assets/user-white-light.svg" alt="">
+                  <div>
+                     <h3 class="title is-size-5 has-text-white mb-2 has-text-weight-medium">Classical Latin literature</h3>
+                     <p class="has-text-white">Take care to develop resources continually and integrity.</p>
+                  </div>
+               </div>
+            </div>
+            <img class="image mx-auto is-fullwidth" src="./assets/work.jpg" alt="">
+         </div>
+      </section>
+      <section class="section py-16 is-clipped">
+         <div class="container">
+            <h2 class="title mb-12" style="font-family: Quicksand;font-size: 1.5rem;font-weight: 500;margin-bottom: 24px !important;">Cybercrime in the news:</h2>
+            <div class="columns">
+               <div class="column">
+                  <div class="has-background-white-ter pt-8 pb-6 px-10" style="border-radius: 6px;">
+                     <img src="./assets/quote-24x24.svg" alt="">
+                     <h5 class="title is-size-5 mb-4" style="display: inline;font-family: Quicksand;"><b>13 cases every hour as cybercrime plagues Gujarat</b><br><br>Fake Facebook accounts impersonating the Surat Police were discovered which were part of the scam aimed at defrauding public using official identities.</h5>
+                     <div class="is-flex is-align-items-center">
+                        <img class="mr-4" src="./assets/nie.png" alt="">
+                        <div>
+                          <br><br><br>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="section py-16" style="padding: 3rem 0rem;margin-top: -64px;">
+        <div class="container is-relative">
+           <div class="is-absolute m-8 has-background-primary p-10 has-mw-sm" style="border-radius: 6px; z-index: 1;padding-bottom:0px !important">
+              <h4 class="has-text-white title is-size-4 has-leading-3 has-text-weight-medium mb-8" style="font-size: 1.4rem !important">Say Hello to Outfake. Personal cybersafety in one tap!</h4>
+              <div class="is-hidden-touch is-hidden-desktop-only is-flex is-align-items-start mb-8">
+                 <img class="mr-6" src="./assets/security-white-light.svg" alt="">
+                 <div>
+                    <h5 class="title is-size-5 has-text-white mb-2 has-text-weight-medium">Repeat predefined</h5>
+                    <p class="has-text-white">Take care to develop resources continually and integrity.</p>
+                 </div>
+              </div>
+              <div class="is-hidden-touch is-hidden-desktop-only is-flex is-align-items-start">
+                 <img class="mr-6" src="./assets/user-white-light.svg" alt="">
+                 <div>
+                    <h3 class="title is-size-5 has-text-white mb-2 has-text-weight-medium">Classical Latin literature</h3>
+                    <p class="has-text-white">Take care to develop resources continually and integrity.</p>
+                 </div>
+              </div>
+           </div>
+           <img class="image mx-auto is-fullwidth" src="./assets/work.jpg" alt="">
+        </div>
+     </section>
+      
+      <section class="section py-4">
+         <div class="container">
+            <div class="columns is-align-items-center mb-0">
+               <div class="column is-7" style="padding-bottom:0px">
+                  <h2 class="title mb-12 underline2" style="width: 178px;font-family: Quicksand;font-size: 1.5rem;font-weight: 500;margin-bottom: 24px !important;">Check Clickbaits</h2>
+               </div>
+              
+            </div>
+            <p class="subtitle has-mw-xl mb-4" style="font-family: Quicksand;">Scan suspicious links for clickbaits with share menu &amp; stay cautioned. <br></p>
+            
+            <div class="columns is-centered">
+               <div class="column is-narrow-widescreen">
+                  <img class="image is-fullwidth mb-6" src="./assets/work-man-350x262.jpg" alt="">
+               </div>
+               <br><p class="subtitle has-mw-xl mb-1 px-4" style="font-family: Quicksand;">Works across your favorite apps:</p>
+               <img src="./assets/appslist.png" class="mb-10  px-4" style="width: 100%;filter: grayscale(0.10);">
+            </div>
+         </div>
+      </section>
+      <section class="section py-4">
+        <div class="container">
+           <div class="columns is-align-items-center mb-0">
+              <div class="column is-7" style="padding-bottom:0px">
+                 <h2 class="title mb-12 underline2" style="width: 204px;font-family: Quicksand;font-size: 1.5rem;font-weight: 500;margin-bottom: 24px !important;">Get phishing alerts</h2>
+              </div>
+             
+           </div>
+           <p class="subtitle has-mw-xl mb-2" style="font-family: Quicksand;line-height: 29px;">Scan suspicious links for clickbaits with share menu &amp; stay cautioned. <br></p>
+           <div class="columns is-centered">
+              <div class="column is-narrow-widescreen">
+                 <img class="image is-fullwidth mb-6" src="./assets/work-man-350x262.jpg" alt="">
+              </div>
+              
+           </div>
+        </div>
+     </section>
+     <section class="section py-4">
+      <div class="container">
+         <div class="columns is-align-items-center mb-0">
+            <div class="column is-7" style="padding-bottom:0px">
+               <h2 class="title mb-12 underline2" style="width: 248px;font-family: Quicksand;font-size: 1.5rem;font-weight: 500;margin-bottom: 24px !important;">Protect bank accounts</h2>
+            </div>
+           
+         </div>
+         <p class="subtitle has-mw-xl mb-1" style="font-family: Quicksand;">Scan suspicious links for clickbaits with share menu &amp; stay cautioned. <br></p>
+         <div class="columns is-centered">
+            <div class="column is-narrow-widescreen">
+               <img class="image is-fullwidth mb-6" src="./assets/work-man-350x262.jpg" alt="">
+            </div>
+            
+         </div>
+      </div>
+   </section>
+   <section data-section-id="10" data-share="" data-category="pricing" data-component-id="3ccf8f54_05_awz" class="section py-1 has-background-light" style="background-color: #fff !important;padding: 0rem .5rem !important;">
+    <div class="container">
+      
+      
+      <div class="columns p-1 has-background-white has-mw-4xl mx-auto" style="border-radius: 6px;" data-removed="true">
+        <div class="column is-4">
+          <h3 class="mb-2 title is-size-3" data-config-id="subtitle4" style="font-family:Quicksand;font-size: 1.4rem !important;font-weight: 500;">Try the Free Risk Check Now!</h3>
+        </div>
+        <div class="column is-5">
+          <ul class="mb-6 mb-0-tablet">
+            <li class="mb-2 is-flex is-align-items-center">
+              <img class="mr-3" src="./assets/check-fill-white.svg" alt="" data-config-id="auto-img-10-5">
+              <small data-config-id="item9">Check data breaches</small>
+            </li>
+            <li class="mb-2 is-flex is-align-items-center">
+              <img class="mr-3" src="./assets/check-fill-white.svg" alt="" data-config-id="auto-img-11-5">
+              <small data-config-id="item10">Check account compromises</small>
+            </li>
+            <li class="mb-2 is-flex is-align-items-center">
+              <img class="mr-3" src="./assets/check-fill-white.svg" alt="" data-config-id="auto-img-12-5">
+              <small data-config-id="item11">Know your risk profile</small>
+            </li>
+            <li class="is-flex is-align-items-center">
+              <img class="mr-3" src="./assets/check-fill-white.svg" alt="" data-config-id="auto-img-13-5">
+              <small data-config-id="item12">Instant free access</small>
+            </li>
+          </ul>
+        </div>
+        <div class="column is-3 has-text-centered p-4" style="border-radius: 4px; background: #E6FAF6;">
+         
+          <div class="buttons"><a class="button is-primary has-text-white py-7 is-fullwidth" href="https://www.outfake.com/#" data-config-id="primary-action3">Try Free Risk Check</a></div>
+        </div>
+      </div>
+      <br>
+      <hr>
+      <small style="font-size: 0.9rem;margin: 0 auto;left:0;right:0;width: 200px;position: absolute;">Copyright © 2024 Outfake.com</small><br><br>
+    </div>
+  </section>
+      
+      
+   
+   <script>
+      window.onload = () => {
+      'use strict';
+      
+      if ('serviceWorker' in navigator) {
+      navigator.serviceWorker
+               .register('./sw.js');
+      }
+      }
+      
+      // Burger menus
+      document.addEventListener('DOMContentLoaded', function() {
+      
+      const parsedUrl = new URL(window.location);
+      if (parsedUrl.searchParams.get('title') != null || parsedUrl.searchParams.get('title') != '') {
+        var contentElem = document.createElement('div');
+        contentElem.innerHTML = parsedUrl.searchParams.get('title');
+        document.body.appendChild(contentElem);
+      }
+      if (parsedUrl.searchParams.get('text') != null || parsedUrl.searchParams.get('text') != '') {
+        var contentElem = document.createElement('div');
+        contentElem.innerHTML = parsedUrl.searchParams.get('text');
+        document.body.appendChild(contentElem);
+      }
+      if (parsedUrl.searchParams.get('url') != null || parsedUrl.searchParams.get('url') != '') {
+        var contentElem = document.createElement('div');
+        contentElem.innerHTML = parsedUrl.searchParams.get('url');
+        document.body.appendChild(contentElem);
+      }
+      // searchParams.get() will properly handle decoding the values.
+      /*alert('DOMContentLoaded');
+      alert('Title shared: ' + parsedUrl.searchParams.get('title'));
+      alert('Text shared: ' + parsedUrl.searchParams.get('text'));
+      alert('URL shared: ' + parsedUrl.searchParams.get('url'));*/
+      
+      // open
+      const burger = document.querySelectorAll('.navbar-menu-open');
+      const menu = document.querySelectorAll('.navbar-side');
+      
+      if (burger.length && menu.length) {
+          for (var i = 0; i < burger.length; i++) {
+              burger[i].addEventListener('click', function() {
+                  for (var j = 0; j < menu.length; j++) {
+                      menu[j].classList.toggle('is-hidden');
+                  }
+              });
+          }
+      }
+      
+      // close
+      const close = document.querySelectorAll('.navbar-close');
+      const backdrop = document.querySelectorAll('.navbar-backdrop');
+      
+      if (close.length) {
+          for (var i = 0; i < close.length; i++) {
+              close[i].addEventListener('click', function() {
+                  for (var j = 0; j < menu.length; j++) {
+                      menu[j].classList.toggle('is-hidden');
+                  }
+              });
+          }
+      }
+      
+      if (backdrop.length) {
+          for (var i = 0; i < backdrop.length; i++) {
+              backdrop[i].addEventListener('click', function() {
+                  for (var j = 0; j < menu.length; j++) {
+                      menu[j].classList.toggle('is-hidden');
+                  }
+              });
+          }
+      }
+      });
+
+      const ANIMATING_CLASS = 'slider__item--animating';
+
+const Slider = {
+  init() {
+    this.sliderEl = document.querySelector('.slider');
+    this.slideInnerEl = document.querySelector('.slider__inner');
+    this.sliderItemsEl = document.querySelectorAll('.slider__item');
+    this.offset = 0;
+    this.direction = 'left';
+    this.maxOffset = (this.sliderItemsEl.length - 1) * 100;
+
+    this.slideInnerEl.addEventListener('transitionend', this.onSliderTransitionEnd.bind(this));
+    setInterval(this.slide.bind(this), 2000);
+  },
+  slide() {
+    if (this.isMaxLeft()) {
+      this.direction = 'right';
+    } else if (this.isMaxRight()) {
+      this.direction = 'left';
+    }
+
+    this.moveSlider();
+  },
+  isMaxLeft() {
+    return this.offset <= -this.maxOffset;
+  },
+  isMaxRight() {
+    return this.offset >= 0;
+  },
+  getCurrentPage() {
+    if (this.offset < 0) {
+      return (this.offset * -1) / 100;
+    }
+
+    return this.offset / 100;
+  },
+  getSignal() {
+    return this.direction === 'left' ? -1 : 1;
+  },
+  onSliderTransitionEnd() {
+    const signal = this.getSignal();
+    const currentPage = this.getCurrentPage();
+
+    this.sliderItemsEl.forEach(element => element.classList.remove(ANIMATING_CLASS));
+  },
+  moveSlider() {
+    const signal = this.getSignal();
+    const currentPage = this.getCurrentPage();
+
+    this.offset = this.offset + (signal * 100);
+    this.sliderItemsEl[currentPage].classList.add(ANIMATING_CLASS);
+    this.sliderItemsEl[currentPage + (-1 * signal)].classList.add(ANIMATING_CLASS);
+    this.slideInnerEl.style.setProperty('--slider-offset', `${this.offset}%`);
+  }
+};
+
+const slider = Object.create(Slider);
+slider.init();
+
+//text slider
+const containerEl = document.getElementById('hero-rotating-text');
+const itTextEl = document.getElementById('hero-it-text');
+const textEls =
+Array.from(containerEl.querySelectorAll('[data-hero-rotating-text]'));
+
+const interval = 2000;
+
+let activeElement = 0;
+
+function rotateText() {
+  setTimeout(rotateText, interval);
+
+  const oldTextEl = textEls[activeElement];
+
+  activeElement += 1;
+  if (activeElement === textEls.length) {
+    activeElement = 0;
+  }
+
+  const newTextEl = textEls[activeElement];
+
+  const oldTextBeforeBoundingRect = oldTextEl.getBoundingClientRect();
+  const itTextBeforeBoundingRect = itTextEl.getBoundingClientRect();
+  oldTextEl.classList.add('is-inactive');
+  newTextEl.classList.remove('is-inactive');
+  newTextEl.classList.remove('is-hidden');
+  const oldTextAfterBoundingRect = oldTextEl.getBoundingClientRect();
+  const itTextAfterBoundingRect = itTextEl.getBoundingClientRect();
+
+  const oldTextLeftPosition =
+  oldTextBeforeBoundingRect.left - oldTextAfterBoundingRect.left;
+  const oldTextTopPosition =
+  oldTextBeforeBoundingRect.top - oldTextAfterBoundingRect.top;
+  const itTextLeftPosition =
+  itTextBeforeBoundingRect.left - itTextAfterBoundingRect.left;
+
+  const oldTextAnimationPlayer = oldTextEl.animate([{
+    opacity: 1,
+    transform: `translateX(${oldTextLeftPosition}px)
+      translateY(${oldTextTopPosition}px)` },
+  {
+    opacity: 0,
+    transform: `translateX(${oldTextLeftPosition}px) translateY(0)` }],
+  {
+    duration: 300,
+    fill: 'forwards',
+    easing: 'ease-in-out' });
+
+  oldTextAnimationPlayer.onfinish = () => {
+    oldTextEl.classList.add('is-hidden');
+  };
+
+  newTextEl.animate([{
+    opacity: 0,
+    transform: 'translateY(100%)' },
+  {
+    opacity: 1,
+    transform: 'translateY(0)' }],
+  {
+    duration: 300,
+    fill: 'both',
+    easing: 'ease-in-out' });
+
+
+  itTextEl.animate([{
+    transform: `translateX(${itTextLeftPosition}px)` },
+  {
+    transform: 'translateX(0)' }],
+  {
+    duration: 300,
+    fill: 'both',
+    easing: 'ease-in-out' });
+
+}
+
+setTimeout(()=>{rotateText();},2000);
+
+// values to keep track of the number of letters typed, which quote to use. etc. Don't change these values.
+var i = 0,
+  a = 0,
+  isBackspacing = false,
+  isParagraph = false;
+
+// Typerwrite text content. Use a pipe to indicate the start of the second line "|".
+var textArray = [
+  "Protect yourself from 100+ cyber crime attempts & fake news, with one tap!"
+];
+
+// Speed (in milliseconds) of typing.
+var speedForward = 50, //Typing Speed
+  speedWait = 500, // Wait between typing and backspacing
+  speedBetweenLines = 1000, //Wait between first and second lines
+  speedBackspace = 25; //Backspace Speed
+
+//Run the loop
+typeWriter("output", textArray);
+
+function typeWriter(id, ar) {
+  var element = document.getElementById(id),
+    aString = ar[a],
+    eHeader = document.getElementById('typeHeader'), //Header element
+    eParagraph = document.getElementById('typePara'); //Subheader element
+    
+
+  // Determine if animation should be typing or backspacing
+  if (!isBackspacing) {
+    // If full string hasn't yet been typed out, continue typing
+    if (i < aString.length) {
+      // If character about to be typed is a pipe, switch to second line and continue.
+      if (aString.charAt(i) == "|") {
+        isParagraph = true;
+        eHeader.removeClass("cursor");
+        eParagraph.addClass("cursor");
+        i++;
+        setTimeout(function () {
+          typeWriter(id, ar);
+        }, speedBetweenLines);
+
+        // If character isn't a pipe, continue typing.
+      } else {
+        // Type header or subheader depending on whether pipe has been detected
+        if (!isParagraph) {
+          eHeader.innerHTML = eHeader.innerHTML + aString.charAt(i);
+        } else {
+          eParagraph.innerHTML = eParagraph.innerHTML + aString.charAt(i);
+        }
+        i++;
+        setTimeout(function () {
+          typeWriter(id, ar);
+        }, speedForward);
+      }
+
+      // If full string has been typed, switch to backspace mode.
+    } else if (i == aString.length) {
+      isBackspacing = true;
+      setTimeout(function () {
+        typeWriter(id, ar);
+      }, speedWait);
+    }
+
+    // If backspacing is enabled
+  }
+}
+
+      
+   </script>
+<div></div><div></div><div></div>
+<div id="root"></div>
+</body></html>

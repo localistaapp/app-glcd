@@ -1,0 +1,2033 @@
+<!DOCTYPE html>
+
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="theme-color" content="#fff">
+    <style type="text/css">.pac-container{background-color:#fff;position:absolute!important;z-index:1000;border-radius:2px;border-top:1px solid #d9d9d9;font-family:Arial,sans-serif;box-shadow:0 2px 6px rgba(0,0,0,0.3);-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden}.pac-logo:after{content:"";padding:1px 1px 1px 0;height:16px;text-align:right;display:block;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3.png);background-position:right;background-repeat:no-repeat;background-size:120px 14px}.hdpi.pac-logo:after{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3_hdpi.png)}.pac-item{cursor:default;padding:0 4px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;line-height:30px;text-align:left;border-top:1px solid #e6e6e6;font-size:11px;color:#999}.pac-item:hover{background-color:#fafafa}.pac-item-selected,.pac-item-selected:hover{background-color:#ebf2fe}.pac-matched{font-weight:700}.pac-item-query{font-size:13px;padding-right:3px;color:#000}.pac-icon{width:15px;height:20px;margin-right:7px;margin-top:6px;display:inline-block;vertical-align:top;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons.png);background-size:34px}.hdpi .pac-icon{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons_hdpi.png)}.pac-icon-search{background-position:-1px -1px}.pac-item-selected .pac-icon-search{background-position:-18px -1px}.pac-icon-marker{background-position:-1px -161px}.pac-item-selected .pac-icon-marker{background-position:-18px -161px}.pac-placeholder{color:gray}
+</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}
+
+@font-face {
+  font-family: "Sottel";
+  src: url("/assets/fonts/SottelRegular/font.woff2");
+}
+
+.largevp {
+    display: none;
+}
+@media only screen and (min-width: 600px) {
+  .largevp {
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 80px;
+    background: rgba(76, 76, 76, 0.98);
+    color: #fff;
+    font-size: 20px;
+    line-height: 35px;
+    padding-top: 152px;
+    z-index: 2;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .banner1 {
+    margin-top: -300px !important;
+  }
+}
+
+.bottom-bar {
+    background: #fff;
+    width: 100%;
+    height: 100px;
+    opacity: 1;
+    position: fixed;
+    bottom: 0px;
+}
+
+.bag {
+    position: fixed;
+    width: 60px;
+    float: right;
+    right: 22px;
+    margin-top: -57px;
+    z-index: 1;
+}
+
+.bag img {
+    width: 60px;
+}
+
+.slider-msg {
+    text-align: center;
+    margin-top: 6px;
+    color: #b0b0b0;
+}
+
+.button {
+    text-transform: uppercase;
+    position: fixed;
+    bottom: 10px;
+    width: 90%;
+    z-index: 1;
+    text-align: center;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    background: linear-gradient(0deg, #fe1712 0%, rgb(255 57 51) 35%, #ff623a 100%);
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 24px;
+    color: #fff;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-weight: normal;
+    box-shadow: 0px 0px 14px 6px rgb(156 156 156 / 30%);
+    text-decoration: none;
+}
+
+.caption {
+    font-size: 24px !important;
+    font-weight: bold !important;
+    margin-top: 16px;
+    color: #000 !important;
+}
+
+.awssld__bullets .awssld__bullets--active {
+    transform: scale(1.35) !important;
+    -webkit-transform: scale(1.35) !important;
+}
+
+.aslider {
+    height: 390px;
+    display: inline;
+}
+
+.awssld__bullets button {
+    width: 10px !important;
+    height: 10px !important;
+    opacity:0.6;
+}
+
+.awssld__content {
+    display: block !important;
+}
+.banner-overlay {
+    background: radial-gradient(circle, rgba(136, 136, 136, 0.7) 0%, rgba(0, 0, 0, 0.4) 100%);
+    min-width: 100%;
+    min-height: 414px;
+    z-index: 0;
+    top: 0px;
+    margin-left: 0px;
+    position: absolute;
+    border-radius: 4px;
+    opacity: 1;
+    border-radius: 0;
+}
+
+body {
+    opacity: 1;
+}
+
+.scrollable {
+    overflow: scroll !important;
+}
+
+.logo {
+  margin-top: 16px;
+  margin-left: -5px;
+  width: 131px;
+}
+
+.header {
+    text-align: center;
+    //font-family: 'StyleFormal', sans-serif;
+    color: #454545;
+    padding: 0px;
+    margin: 0 auto;
+    top: 100px;
+    position: absolute;
+    font-size: 27px;
+    font-weight: normal;
+    line-height: 42px;
+    padding: 0px 36px;
+    letter-spacing: 0px;
+    left: 0;
+    right: 0;
+}
+
+.banner1 {
+    margin-top: 124px;
+    height: 396px;
+    background-size: cover;
+    background-position-x: -148px;
+}
+
+.curve {
+    width: 200px;
+    margin: 0 auto;
+    top: 436px;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+.curve.small {
+    top: 262px;
+    display: none;
+}
+
+ul.wstep li {
+    background: #e4e4e4;
+    width: 68px;
+    padding: 2px;
+    margin-right: 4px;
+}
+
+ul.wstep li.active {
+    background: #26cf96;
+}
+
+.icon-arrow {
+    width: 91px;
+    margin: 0 auto;
+    left: -136px;
+    right: 0;
+    position: absolute;
+    top: 122px;
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+.a-title {
+    font-size: 17px;
+    color: #666;
+}
+
+.a-desc { color: #afafaf; margin-top: 3px; font-size: 14px; }
+
+.logo-heading{
+    opacity:0;
+    margin-top: -30px;
+    padding-left: 14px;
+    text-align: center;
+    font-size: 22px;
+    padding-right: 50px;
+    color: #424242;
+    font-family: 'Source Sans Pro', sans-serif;
+    transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+   white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cssanimation, .cssanimation span {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.cssanimation span { display: inline-block }
+
+.fadeInBottom { animation-name: fadeInBottom }
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to { opacity: 1 }
+}
+
+.icon-container {
+    margin-top: 24px;
+    text-align: center;
+}
+
+.ic {
+    margin-right: 24px;
+}
+
+.no-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.desc {
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: Quicksand;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    color: #363636;
+}
+
+.main-desc {
+    font-family: Quicksand;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 0 !important;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.ic-num {
+    width: 122px;
+    margin-top: -30px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    position: absolute;
+    bottom: -60px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    margin-bottom: 15px;
+}
+.overview {
+    margin-top: 36px;
+    padding-left: 50px;
+    text-align: center;
+    font-size: 24px;
+    padding-right: 50px;
+    color: #000;
+    padding-top: 36px;
+}
+
+.scroll-arrow{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: -6px;
+    opacity: 0.6;
+    z-index: 1;
+}
+.scroll-arrow span{
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-bottom: 5px solid #a6a4a4;
+    border-right: 5px solid #a6a4a4;
+    transform: rotate(45deg);
+    margin: -2px;
+    animation: animate 2s infinite;
+}
+.scroll-arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.scroll-arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+
+.section {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+.numeral {
+    font-size: 30px;
+    font-family: sans-serif;
+    opacity: 0.1;
+}
+
+.para {
+    font-size: 18px;
+    margin-top: 20px;
+    display: inline-table;
+}
+
+.sub-heading {
+    color: #ec493d;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.post-heading .title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 38px;
+    color: #000;
+    margin-top: 2px;
+    padding-left: 0px;
+    padding-right: 10px;
+    padding-left: 36px;
+    padding-right: 36px;
+    background: #f6f6f6;
+    padding: 5px;
+    width: 220px;
+    margin: 0 auto;
+    border-radius: 6px;
+    z-index: 0;
+    position: relative;
+    box-shadow: rgb(50 50 93 / 0%) 0px 30px 60px -12px inset, rgb(0 0 0 / 10%) 0px 18px 36px -18px inset;
+}
+
+.one,.two {
+    width: 100vw;
+    height: 320px;
+    position: relative;
+    background-color: #ffffff;
+    display: inline-block;
+    top: -16px;
+    box-shadow: rgb(100 100 111 / 20%) 0px 0px 99px 5px;
+    padding: 30px;
+    text-align: left;
+}
+.cust {
+    width: 100vw;
+    height: 420px;
+    position: relative;
+    background-color: #ffffff;
+    display: inline-block;
+    top: -16px;
+    box-shadow: rgb(100 100 111 / 20%) 0px 0px 99px 5px;
+    text-align: left;
+    padding-bottom: 20px;
+}
+.cust:after {
+    content: "";
+    border-width: 0px 12px 14px;
+    border-style: solid;
+    border-color: #ffffff transparent;
+    position: absolute;
+    top: -13px;
+    left: 47%;
+    box-shadow: rgb(50 50 93 / 0%) 0px 30px 10px -12px inset;
+}
+.one {
+    height: 320px;
+}
+.one:after {
+    content: "";
+    border-width: 0px 12px 14px;
+    border-style: solid;
+    border-color: #ffffff transparent;
+    position: absolute;
+    top: -13px;
+    left: 79px;
+    box-shadow: rgb(50 50 93 / 0%) 0px 30px 10px -12px inset;
+}
+.two:after {
+    content: "";
+    border-width: 0px 12px 14px;
+    border-style: solid;
+    border-color: #ffffff transparent;
+    position: absolute;
+    top: -13px;
+    left: 61%;
+    box-shadow: rgb(50 50 93 / 0%) 0px 30px 10px -12px inset;
+}
+.close-btn {
+    position: relative;
+    top: -52px;
+    float: right;
+    right: -14px;
+    max-width: 64px;
+}
+.close-btn img {
+    width: 18px;
+    opacity: 0.2;
+}
+label.price {
+    color: #000;
+    font-weight: 600;
+    font-family: Quicksand;
+    margin-left: 50px;
+    position: absolute;
+    display: inline-block;
+    min-width: 292px;
+    height: 40px;
+    line-height: 34px;
+    font-size: 24px;
+    margin-left: -128px;
+    background: linear-gradient(-85deg, #ffeb91, #fff3c1, #ffdc40, #ffdc40);
+    text-shadow: rgba(255, 255, 255, 0.2) 1px 1px, rgba(255, 255, 255, 0.2) 1px 1px;
+    -moz-border-radius: 0 3px 2px 0px;
+    -webkit-border-radius: 0;
+    border-radius: 0px;
+    top: 5px;
+    -webkit-box-shadow: -10px 2px 11px -3px rgba(0,0,0,0.3);
+    -moz-box-shadow: -10px 2px 11px -3px rgba(0, 0, 0, 0.3);
+    box-shadow: -10px 2px 11px -3px rgba(0,0,0,0.3);
+    z-index: 1;
+}
+label.price:after {
+    content: "";
+    position: absolute;
+    right: 100%;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    display: inline-block;
+    line-height: 0;
+    border-width: 20px;
+    border-style: solid;
+    border-color: #FFDC40 #FFDC40 #FFDC40 transparent;
+    -webkit-box-shadow: 1px 6px 7px -6px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 6px 7px -6px rgba(0,0,0,0.3);
+    box-shadow: 1px 6px 7px -6px rgba(0,0,0,0.3);
+}
+label.price:before {
+    content: '';
+    position: absolute;
+    bottom: 6px;
+    width: 100px;
+    left: -35px;
+    height: 4px;
+    -moz-box-shadow: 0 5px 14px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 5px 14px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.4);
+    z-index: -1;
+    -moz-transform: skew(-5deg) rotate(-5deg);
+    -ms-transform: skew(-5deg) rotate(-5deg);
+    -webkit-transform: skew(-5deg) rotate(-5deg);
+    transform: skew(-5deg) rotate(-5deg);
+}
+.slashed {
+    text-decoration: line-through;
+    font-size: 20px;
+}
+.orig {
+    font-size: 20px;
+}
+.rupee {
+    opacity: 0.7;
+    font-family:'Source Sans Pro', sans-serif;
+}
+
+.fb-post {
+    width: 200px;
+}
+
+.info {
+    margin-top: 24px;
+    text-align: center;
+}
+
+.line {
+    border-top: dashed 1px #c2c2c2;
+    margin-top: -2px;
+    margin-bottom: 12px;
+    display: none;
+}
+
+.line.thin {
+    display: block;
+    top: 23px;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    border-top: 1px solid #f2f2f2 !important;
+    box-shadow: 8px 8px 15px #d2d2d2, -8px -8px 15px #fcfcfc;
+}
+
+.line.thick {
+    border-top: solid 4px #ff7067;
+    padding-left: 70px;
+    padding-right: 70px;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 110px;
+    margin-top: -22px;
+}
+
+div#containerWiz {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.main {
+    margin-top: -44px;
+    background: #fff;
+}
+
+.main-icons {
+    position: absolute;
+    margin: 0 auto;
+    left: 22px;
+    right: 0;
+    width: 170px;
+    margin-top: 19px;
+}
+
+-webkit-text-size-adjust:none;
+-ms-text-size-adjust:none;
+-moz-text-size-adjust:none;
+text-size-adjust:none;
+
+</style>
+
+    <title>Slimcrust - Hot yum pizzas in less than 1 minute</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Serve hot & healthy pizzas to your guests instantly with our pop-up pizza cart. Get a quote now!">
+    <meta property="og:description" content="Serve hot & healthy pizzas to your guests instantly with our catering live counter. Get a quote now!">
+    <meta property="og:keywords" content="pizzas, pizza live counter, veg catering, birthday catering, pizza catering, italian food, live counter, veg catering services, caterers for home parties, catering for birthday party at home, food catering bangalore, birthday caterers, food catering, birthday party catering menu, pizza in bangalore, pizza home delivery, food delivery, online food delivery">
+    <meta name="keywords" content="pizzas, pizza live counter, pizza in bangalore, pizza home delivery, food delivery, online food delivery">
+    <style type="text/css">
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: #ffffff;
+    font-family: quicksand;
+}
+
+@media (max-width: 599px){
+    .container{
+        overflow: hidden;
+    }
+    .logo {
+        width: 100%;
+        height: 79px;
+        margin: 0 auto;
+        top: 0px;
+        z-index: 1;
+        left: 0px;
+        max-height: 90px;
+        background-color: #fff;
+        //border-bottom: 1px solid #eeeeee;
+    }
+    .logo img {
+        width: 40px;
+        margin-top: -3px;
+    }
+    .logo .logo-img {
+        width: 142px;
+        margin-left: 28px;
+        margin-top: 24px;
+    }
+    .headline {
+      margin: 0 auto;
+      margin-top: 92px;
+      width: 340px;
+      font-size: 30px;
+      letter-spacing: 0px;
+      text-align: center;
+    }
+    .description {
+      margin: 0 auto;
+      width: 80%;
+      margin-top: 30px;
+      font-size: 20px;
+      text-align: center;
+      line-height: 26px;
+      padding-bottom: 32px;
+    }
+}
+
+.beer-slider {
+  display: inline-block;
+  position: relative;
+  overflow: hidden; }
+  .beer-slider *, .beer-slider:before, .beer-slider:after,
+  .beer-slider *:before,
+  .beer-slider *:after {
+    box-sizing: border-box; }
+  .beer-slider img {
+    vertical-align: bottom; }
+  .beer-slider > img {
+    max-width: 100%;
+    height: auto; }
+
+.beer-reveal {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 50%;
+  overflow: hidden;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.35s; }
+  .beer-reveal > :first-child {
+    width: 200%;
+    max-width: none; }
+  .beer-reveal > img:first-child {
+    height: auto; }
+
+.beer-range {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  margin: 0;
+  left: -1px;
+  width: calc(100% + 2px);
+  cursor: pointer;
+  -webkit-appearance: slider-horizontal !important;
+  -moz-appearance: none;
+  opacity: 0;
+  -ms-touch-action: auto;
+  touch-action: auto; }
+  .beer-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 300vh; }
+  .beer-range::-moz-range-thumb {
+    -webkit-appearance: none;
+    height: 300vh; }
+  .beer-range::-ms-tooltip {
+    display: none; }
+
+.beer-handle {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  color: #000;
+  background: rgb(255 255 255);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0);
+  transition: background 0.3s, box-shadow 0.3s, opacity 0.5s 0.25s; }
+  .beer-handle:before, .beer-handle:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    border-top: solid 2px;
+    border-left: solid 2px;
+    transform-origin: 0 0; }
+  .beer-handle:before {
+    left: 10px;
+    transform: rotate(-45deg); }
+  .beer-handle:after {
+    right: 0;
+    transform: rotate(135deg); }
+
+.beer-range:focus ~ .beer-handle {
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4); }
+
+.beer-slider[data-beer-label]:after,
+.beer-reveal[data-beer-label]:after {
+  content: attr(data-beer-label);
+  position: absolute;
+  top: 1.5rem;
+  line-height: 1;
+  padding: 0.5rem;
+  border-radius: 0.125rem;
+  background: rgba(255, 255, 255, 0.75); }
+
+.beer-slider[data-beer-label]:after {
+  right: 1.5rem; }
+
+.beer-reveal[data-beer-label]:after {
+  left: 1.5rem; }
+
+.beer-slider[data-beer-label=""]:after,
+.beer-reveal[data-beer-label=""]:after {
+  content: none; }
+
+.beer-ready .beer-reveal, .beer-ready .beer-handle {
+  opacity: 1; }
+
+
+.first-section .images-wrapper {
+    position:absolute;
+}
+
+.images-wrapper img {
+    width: 80%;
+}
+.ingredient-images{
+    position: absolute;
+    width:400px;
+    left:calc(50%-400px);
+    height:530px;
+    top:420px;
+}
+
+.section_1_01{
+    position: absolute;
+    top:20px;
+    right:-150px;
+}
+.section_1_02{
+    position: absolute;
+    top:90px;
+    right:-20px;
+}
+.section_1_03{
+    position: absolute;
+    top:110px;
+    right:-150px;
+}
+.section_1_04{
+    position: absolute;
+    top:210px;
+    right:-30px;
+}
+.section_1_05{
+    position: absolute;
+    top:235px;
+    right:0px;
+}
+.section_1_06{
+    position: absolute;
+    top:180px;
+    right:60px;
+}
+.section_1_07{
+    position: absolute;
+    top:260px;
+    right:-140px;
+}
+.section_1_08{
+    position: absolute;
+    top:330px;
+    right:-40px;
+}
+.section_1_09{
+    position: absolute;
+    top:380px;
+    right:-140px;
+}
+
+.second-section{
+    width:100%;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    position:relative;
+}
+
+.second-section .images-wrapper{
+    position: absolute;
+    display:flex;
+    padding:200px 0;
+    top:20%;
+    overflow:hidden;
+}
+
+.image-container{
+    overflow:hidden;
+    height:100%;
+}
+
+.third-section{
+    width:100%;
+    height:920px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    text-align:center;
+    position:relative;
+    margin-top: -200px;
+}
+
+.third-section .images-wrapper{
+    margin-top:300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.third-section .images-wrapper img{
+    position: absolute;
+}
+
+#loader {
+	background-color: #ffffff;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    border-radius: 5px;
+}
+#loader:after {
+    content: "";
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border: 5px solid #a0a0a0;
+    border-top-color: #ff0005;
+    border-radius: 50%;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}
+@-webkit-keyframes spin {
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+@keyframes spin {
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+#box {
+	position: relative;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    top: 0px;
+    left: 192px;
+    width: 75%;
+    margin-top: 170px;
+}
+.img-con {
+	position: absolute;
+}
+.img-con img {
+	height: 1px;
+	width: 1px;
+}
+.wrapper {
+	    background-color: #ffffff;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 0.6em;
+    -webkit-box-shadow: 0 1.8em 3em rgb(1 17 39 / 15%);
+    box-shadow: 0 1.8em 3em rgb(1 17 39 / 15%);
+}
+.testimonial-container {
+	width: 85%;
+	height: 100%;
+	position: relative;
+	margin: auto;
+	padding: 1.8em 1.2em;
+}
+.testimonial-container p {
+	color: #363636;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+}
+.testimonial-container img {
+	display: block;
+	margin: 1.8em auto 1.25em auto;
+	border-radius: 50%;
+	width: 4.4em;
+}
+.testimonial-container h3 {
+	color: #2d3d67;
+	font-size: 1em;
+	text-align: center;
+}
+.testimonial-container h6 {
+	color: #bcc4da;
+	font-size: 0.9em;
+	letter-spacing: 0.03em;
+	font-weight: 400;
+	text-align: center;
+}
+.wrapper button {
+	font-size: 1.8em;
+	color: #ff0005;
+	height: 2.2em;
+	width: 2.2em;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	background-color: #ffffff;
+	border: none;
+	border-radius: 50%;
+	-webkit-box-shadow: 0 0 1em rgba(0, 0, 0, 0.25);
+	box-shadow: 0 0 1em rgba(0, 0, 0, 0.25);
+	cursor: pointer;
+}
+button#next {
+	right: -1.1em;
+}
+button#prev {
+	left: -1.1em;
+}
+a {
+	position: relative;
+	display: block;
+	background-color: #ffffff;
+	color: #0a69ed;
+	text-decoration: none;
+	font-size: 1.2em;
+	font-weight: 600;
+	text-align: center;
+	padding: 0.9em 0;
+	border-radius: 0.3em;
+	margin-top: 30px;
+}
+.fab {
+	color: #ff0000;
+}
+.announcement {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 38px;
+    z-index: 9999;
+    background: #f6364b;
+    color: #fff;
+    padding: 9px;
+    padding-left: 12px;
+}
+.reviews img {
+    width: 200px;
+}
+.events-img {
+    margin: 0px !important;
+    width: 100% !important;
+    border-radius: 12px !important;
+}
+@media screen and (max-width: 650px) {
+	.wrapper {
+		font-size: 14px;
+	}
+}
+button.banner{
+    position: absolute;
+    margin: auto;
+    outline: none;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.1);
+    background-color: transparent;
+    border: none;
+    overflow: hidden;
+
+}
+button.banner:before{
+    content: "20% OFF on your first order. Limited time offer!";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    height: 100%;
+    width: 100%;
+    color: #fcfcfc;
+    backdrop-filter: blur(15px);
+    cursor: pointer;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    font-size: 16px;
+}
+button.banner:after{
+    content: "";
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    left: -90px;
+    top: -200px;
+    z-index: -1;
+    background-image: conic-gradient(
+        #ff5c22,
+        #ff2e4e
+    );
+    animation: spin 7s linear infinite;
+}
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.accordion {
+    padding: 24px;
+}
+.accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion .accordion-item button[aria-expanded='true'] {
+  border-bottom: 1px solid #f4273b;
+}
+
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #666;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: #f4273b;
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  color: #03b5d2;
+  border: 1px solid #03b5d2;
+}
+
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+  font-family: 'Quicksand' !important;
+}
+
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+
+.accordion button[aria-expanded='true'] {
+  color: #f4273b;
+}
+.accordion button[aria-expanded='true'] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded='true'] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0.7em 0;
+  margin-bottom: 2em;
+}
+.btn-icon {
+    width: 20px;
+    top: 12px;
+    position: absolute;
+    margin-left: -24px;
+}
+.responsive-video {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 -> 9/16x100 */
+  overflow: hidden;
+  margin-top: 184px;
+}
+.responsive-video .video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.video-js {
+	width: 100%;
+	height: 100%;
+	top: -25px;
+	left: 0px;
+	vertical-align: top;
+	box-sizing: border-box;
+	color: #fff;
+	padding: 0;
+	font-size: 10px;
+	line-height: 1;
+	font-weight: normal;
+	font-style: normal;
+	font-family: "Ionicons", "Questrial" !important;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	overflow: hidden;
+}
+.Panel {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 88px;
+    border-bottom: 1px solid #a4a4a4;
+    background: white;
+    border-radius: 16px;
+    overflow: visible;
+    box-shadow: rgb(50 50 93 / 0%) 0px 30px 60px -12px inset, rgb(0 0 0 / 15%) 0px 18px 36px -18px inset;
+}
+
+/**
+ * Corner Ribbon Component
+ */
+.corner-ribbon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 3.5em;
+    width: 3.5em;
+    padding: 8px;
+}
+.corner-ribbon .cr-inner {
+  position: absolute;
+  inset: 0;
+  background: #ff0205;
+  color: white;
+  border-radius: 16px 8px 0 8px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+.corner-ribbon .cr-text {
+    display: block;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 1.3;
+    transform: rotate(-45deg) translateY(0.4em) translateX(-1.3em);
+}
+.corner-ribbon .cr-text strong {
+  display: block;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.corner-ribbon::before, .corner-ribbon::after {
+  content: "";
+  position: absolute;
+  background: #ff0205;
+  z-index: -1;
+}
+.corner-ribbon::before {
+  top: calc(100% - 8px);
+  left: 0;
+  height: 8px;
+  width: 3px;
+  border-radius: 0 0 0 50%;
+}
+.corner-ribbon::after {
+  left: calc(100% - 8px);
+  top: 0;
+  width: 8px;
+  height: 3px;
+  border-radius: 0 50% 0 0;
+}
+.ribbon-outer {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: -34px;
+    padding: 54px;
+}
+.plate {
+    margin-top: 40px !important;
+    height: 128px !important;
+    width: 128px !important;
+    border-radius: 200px !important;
+    left: 0px;
+    margin-left: 27px !important;;
+}
+.menu-container {
+    max-width: 100vw;
+    overflow-x: scroll;
+}
+.menu-container-ls {
+    width:83vw;
+    height:200px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 20px;
+    text-align: left;
+    position: relative;
+}
+.menu-container-ls img {
+    width:48px;
+}
+.menu-title {
+    margin-top: 136px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #000;
+    box-shadow: rgb(50 50 93 / 0%) 0px 30px 60px -12px inset, rgb(0 0 0 / 7%) 0px 18px 36px -18px inset;
+}
+.head {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+.detail {
+    font-size: 15px;
+    color: #9b9b9b;
+    line-height: 1.5;
+}
+.minor-head {
+    font-size: 22px;
+    margin-top: 32px;
+    max-width: 100vw;
+    overflow: scroll;
+}
+.topping {
+    width: 64px;
+    padding: 4px;
+}
+.minor-head > div {
+    display: table-cell;
+    font-size: 14px;
+    color: #9b9b9b;
+    padding-right: 40px;
+}
+.gcontainer {
+  margin: 0 auto;
+  max-width: 75rem;
+  width: 100%;
+  margin-top: 260px;
+}
+
+.main .gcontainer .glider-contain .glider .card-image {
+  margin-right: 0.5rem;
+  background: #ffffff;
+  border: none;
+  outline: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 2px;
+  height: 210px !important;
+}
+.main .gcontainer .glider-contain .glider .card-image img {
+  display: block;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .gcontainer .glider-contain .glider-prev,
+.main .gcontainer .glider-contain .glider-next {
+  font-size: 1.5rem;
+  background: #454545;
+  color: #ffffff;
+  margin-top: 1rem;
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  border-radius: 50%;
+}
+.main .gcontainer .glider-contain .glider-prev .fas,
+.main .gcontainer .glider-contain .glider-next .fas {
+  margin-left: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .main .glider-contain .glider-prev,
+.main .glider-contain .glider-next {
+    display: none;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .main .glider-contain .dots {
+    display: none;
+  }
+}
+.glider-slide {
+    height: 210px;
+}
+.glider-dot.active {
+    background: #f38b8b;
+}
+</style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"
+            integrity="sha256-CkQcTxuQyZLqzqWqntH3FDxeDKMV0m7cw0aM5eph4Do=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+
+    <!-- PushAlert -->
+    <script type="text/javascript">
+        if(window.location.href.indexOf('slimcrust.club')>=0) {window.location.href='https://www.slimcrust.club/club';};
+        /*(function(d, t) {
+                var g = d.createElement(t),
+                s = d.getElementsByTagName(t)[0];
+                g.src = "https://cdn.pushalert.co/integrate_f310e60c9b4e1f995d1150ae9e8b7098.js";
+                s.parentNode.insertBefore(g, s);
+        }(document, "script"));*/
+</script>
+    <!-- End PushAlert -->
+    <!-- Event snippet for Contact conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-616546442/fOrOCLDlj4cYEIqB_6UC',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+<!-- Begin Inspectlet Asynchronous Code -->
+<script type="text/javascript">
+(function() {
+var insp_ab_loader = true; // set to false to disable A/B optimized loader
+window.__insp = window.__insp || [];
+__insp.push(['wid', 1797862957]);
+var ldinsp = function(){
+if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=1797862957&r=' + Math.floor(new Date().getTime()/3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x);if(typeof insp_ab_loader != "undefined" && insp_ab_loader){ var adlt = function(){ var e = document.getElementById('insp_abl'); if(e){ e.parentNode.removeChild(e); __insp.push(['ab_timeout']); }}; var adlc = "body{ visibility: hidden !important; }"; var adln = typeof insp_ab_loader_t != "undefined" ? insp_ab_loader_t : 800; insp.onerror = adlt; var abti = setTimeout(adlt, adln); window.__insp_abt = abti; var abl = document.createElement('style'); abl.id = "insp_abl"; abl.type = "text/css"; if(abl.styleSheet) abl.styleSheet.cssText = adlc; else abl.appendChild(document.createTextNode(adlc)); document.head.appendChild(abl); } };
+setTimeout(ldinsp, 0);
+})();
+</script>
+<!-- End Inspectlet Asynchronous Code -->
+</head>
+<body>
+<div>
+<div id="containerWiz" class="container">
+
+</div>
+<script>
+!function(t,e){"object"==typeof exports&&"object"==typeof module?module.exports=e():"function"==typeof define&&define.amd?define([],e):"object"==typeof exports?exports.BeerSlider=e():t.BeerSlider=e()}(window,function(){return function(t){var e={};function n(r){if(e[r])return e[r].exports;var o=e[r]={i:r,l:!1,exports:{}};return t[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}return n.m=t,n.c=e,n.d=function(t,e,r){n.o(t,e)||Object.defineProperty(t,e,{enumerable:!0,get:r})},n.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},n.t=function(t,e){if(1&e&&(t=n(t)),8&e)return t;if(4&e&&"object"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:t}),2&e&&"string"!=typeof t)for(var o in t)n.d(r,o,function(e){return t[e]}.bind(null,o));return r},n.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return n.d(e,"a",e),e},n.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},n.p="",n(n.s=47)}([function(t,e){t.exports="undefined"!=typeof window&&window.Math==Math?window:"undefined"!=typeof self&&self.Math==Math?self:Function("return this")()},function(t,e,n){var r=n(11)("wks"),o=n(33),i=n(0).Symbol,c=n(54);t.exports=function(t){return r[t]||(r[t]=c&&i[t]||(c?i:o)("Symbol."+t))}},function(t,e,n){var r=n(5);t.exports=function(t){if(!r(t))throw TypeError(String(t)+" is not an object!");return t}},function(t,e,n){var r=n(8),o=n(21);t.exports=n(6)?function(t,e,n){return r.f(t,e,o(1,n))}:function(t,e,n){return t[e]=n,t}},function(t,e){var n={}.hasOwnProperty;t.exports=function(t,e){return n.call(t,e)}},function(t,e){t.exports=function(t){return"object"==typeof t?null!==t:"function"==typeof t}},function(t,e,n){t.exports=!n(12)(function(){return 7!=Object.defineProperty({},"a",{get:function(){return 7}}).a})},function(t,e){var n={}.toString;t.exports=function(t){return n.call(t).slice(8,-1)}},function(t,e,n){var r=n(6),o=n(31),i=n(2),c=n(32),u=Object.defineProperty;e.f=r?u:function(t,e,n){if(i(t),e=c(e,!0),i(n),o)try{return u(t,e,n)}catch(t){}if("get"in n||"set"in n)throw TypeError("Accessors not supported!");return"value"in n&&(t[e]=n.value),t}},function(t,e,n){var r=n(0),o=n(3),i=n(14),c=n(19),u=n(57);t.exports=function(t,e){var n,a,s,f,l=t.target;if(n=t.global?r:t.stat?r[l]||c(l,{}):(r[l]||{}).prototype)for(a in e){if(s=n[a],f=e[a],!t.forced&&void 0!==s){if(typeof f==typeof s)continue;u(f,s)}(t.sham||s&&s.sham)&&o(f,"sham",!0),i(n,a,f,t.unsafe)}}},function(t,e){t.exports={}},function(t,e,n){var r=n(0),o=n(19),i=r["__core-js_shared__"]||o("__core-js_shared__",{});(t.exports=function(t,e){return i[t]||(i[t]=void 0!==e?e:{})})("versions",[]).push({version:"3.0.0-beta.3",mode:n(13)?"pure":"global",copyright:"© 2018 Denis Pushkarev (zloirock.ru)"})},function(t,e){t.exports=function(t){try{return!!t()}catch(t){return!0}}},function(t,e){t.exports=!1},function(t,e,n){var r=n(0),o=n(3),i=n(4),c=n(19),u=n(34),a=n(15),s=a.get,f=a.enforce,l=String(u).split("toString");n(11)("inspectSource",function(t){return u.call(t)}),(t.exports=function(t,e,n,u){"function"==typeof n&&("string"!=typeof e||i(n,"name")||o(n,"name",e),f(n).source=l.join("string"==typeof e?e:"")),t===r?c(e,n):u?t[e]?t[e]=n:o(t,e,n):(delete t[e],o(t,e,n))})(Function.prototype,"toString",function(){return"function"==typeof this&&s(this).source||u.call(this)})},function(t,e,n){var r,o,i,c=n(0),u=n(34),a=n(5),s=n(3),f=n(4),l=n(22),p=n(23),v=c.WeakMap;if("function"==typeof v&&/native code/.test(u.call(v))){var d=new v,h=d.get,y=d.has,g=d.set;r=function(t,e){return g.call(d,t,e),e},o=function(t){return h.call(d,t)||{}},i=function(t){return y.call(d,t)}}else{var m=l("state");p[m]=!0,r=function(t,e){return s(t,m,e),e},o=function(t){return f(t,m)?t[m]:{}},i=function(t){return f(t,m)}}t.exports={set:r,get:o,has:i,enforce:function(t){return i(t)?o(t):r(t,{})},getterFor:function(t){return function(e){var n;if(!a(e)||(n=o(e)).type!==t)throw TypeError("Incompatible receiver, "+t+" required!");return n}}}},function(t,e,n){var r=n(60),o=n(25);t.exports=function(t){return r(o(t))}},function(t,e){t.exports=function(t){if("function"!=typeof t)throw TypeError(String(t)+" is not a function!");return t}},function(t,e,n){"use strict";var r=n(17);t.exports.f=function(t){return new function(t){var e,n;this.promise=new t(function(t,r){if(void 0!==e||void 0!==n)throw TypeError("Bad Promise constructor");e=t,n=r}),this.resolve=r(e),this.reject=r(n)}(t)}},function(t,e,n){var r=n(0),o=n(3);t.exports=function(t,e){try{o(r,t,e)}catch(n){r[t]=e}return e}},function(t,e,n){var r=n(5),o=n(0).document,i=r(o)&&r(o.createElement);t.exports=function(t){return i?o.createElement(t):{}}},function(t,e){t.exports=function(t,e){return{enumerable:!(1&t),configurable:!(2&t),writable:!(4&t),value:e}}},function(t,e,n){var r=n(11)("keys"),o=n(33);t.exports=function(t){return r[t]||(r[t]=o(t))}},function(t,e){t.exports={}},function(t,e){var n=Math.ceil,r=Math.floor;t.exports=function(t){return isNaN(t=+t)?0:(t>0?r:n)(t)}},function(t,e){t.exports=function(t){if(void 0==t)throw TypeError("Can't call method on  "+t);return t}},function(t,e){t.exports=["constructor","hasOwnProperty","isPrototypeOf","propertyIsEnumerable","toLocaleString","toString","valueOf"]},function(t,e,n){var r=n(8).f,o=n(4),i=n(1)("toStringTag");t.exports=function(t,e,n){t&&!o(t=n?t:t.prototype,i)&&r(t,i,{configurable:!0,value:e})}},function(t,e){t.exports=function(t){try{return{e:!1,v:t()}}catch(t){return{e:!0,v:t}}}},function(t,e,n){t.exports=n(0)},function(t,e,n){var r=n(7),o=n(1)("toStringTag"),i="Arguments"==r(function(){return arguments}());t.exports=function(t){var e,n,c;return void 0===t?"Undefined":null===t?"Null":"string"==typeof(n=function(t,e){try{return t[e]}catch(t){}}(e=Object(t),o))?n:i?r(e):"Object"==(c=r(e))&&"function"==typeof e.callee?"Arguments":c}},function(t,e,n){t.exports=!n(6)&&!n(12)(function(){return 7!=Object.defineProperty(n(20)("div"),"a",{get:function(){return 7}}).a})},function(t,e,n){var r=n(5);t.exports=function(t,e){if(!r(t))return t;var n,o;if(e&&"function"==typeof(n=t.toString)&&!r(o=n.call(t)))return o;if("function"==typeof(n=t.valueOf)&&!r(o=n.call(t)))return o;if(!e&&"function"==typeof(n=t.toString)&&!r(o=n.call(t)))return o;throw TypeError("Can't convert object to primitive value")}},function(t,e){var n=0,r=Math.random();t.exports=function(t){return"Symbol(".concat(void 0===t?"":t,")_",(++n+r).toString(36))}},function(t,e,n){t.exports=n(11)("native-function-to-string",Function.toString)},function(t,e,n){"use strict";var r=n(9),o=n(66),i=n(39),c=n(71),u=n(27),a=n(3),s=n(14),f=n(13),l=n(1)("iterator"),p=n(10),v=n(38),d=v.IteratorPrototype,h=v.BUGGY_SAFARI_ITERATORS,y=function(){return this};t.exports=function(t,e,n,v,g,m,x){o(n,e,v);var b,j,S,w=function(t){if(t===g&&_)return _;if(!h&&t in E)return E[t];switch(t){case"keys":case"values":case"entries":return function(){return new n(this,t)}}return function(){return new n(this)}},O=e+" Iterator",P=!1,E=t.prototype,T=E[l]||E["@@iterator"]||g&&E[g],_=!h&&T||w(g),L="Array"==e&&E.entries||T;if(L&&(b=i(L.call(new t)),d!==Object.prototype&&b.next&&(f||i(b)===d||(c?c(b,d):"function"!=typeof b[l]&&a(b,l,y)),u(b,O,!0,!0),f&&(p[O]=y))),"values"==g&&T&&"values"!==T.name&&(P=!0,_=function(){return T.call(this)}),f&&!x||E[l]===_||a(E,l,_),p[e]=_,g)if(j={values:w("values"),keys:m?_:w("keys"),entries:w("entries")},x)for(S in j)!h&&!P&&S in E||s(E,S,j[S]);else r({target:e,proto:!0,forced:h||P},j);return j}},function(t,e,n){var r=n(4),o=n(16),i=n(61)(!1),c=n(23);t.exports=function(t,e){var n,u=o(t),a=0,s=[];for(n in u)!r(c,n)&&r(u,n)&&s.push(n);for(;e.length>a;)r(u,n=e[a++])&&(~i(s,n)||s.push(n));return s}},function(t,e,n){var r=n(24),o=Math.min;t.exports=function(t){return t>0?o(r(t),9007199254740991):0}},function(t,e,n){"use strict";var r,o,i,c=n(39),u=n(3),a=n(4),s=n(13),f=n(1)("iterator"),l=!1;[].keys&&("next"in(i=[].keys())?(o=c(c(i)))!==Object.prototype&&(r=o):l=!0),void 0==r&&(r={}),s||a(r,f)||u(r,f,function(){return this}),t.exports={IteratorPrototype:r,BUGGY_SAFARI_ITERATORS:l}},function(t,e,n){var r=n(4),o=n(67),i=n(22)("IE_PROTO"),c=n(68),u=Object.prototype;t.exports=c?Object.getPrototypeOf:function(t){return t=o(t),r(t,i)?t[i]:"function"==typeof t.constructor&&t instanceof t.constructor?t.constructor.prototype:t instanceof Object?u:null}},function(t,e,n){var r=n(2),o=n(69),i=n(26),c=n(41),u=n(20),a=n(22)("IE_PROTO"),s=function(){},f=function(){var t,e=u("iframe"),n=i.length;for(e.style.display="none",c.appendChild(e),e.src="javascript:",(t=e.contentWindow.document).open(),t.write("<script>document.F=Object<\/script>"),t.close(),f=t.F;n--;)delete f.prototype[i[n]];return f()};t.exports=Object.create||function(t,e){var n;return null!==t?(s.prototype=r(t),n=new s,s.prototype=null,n[a]=t):n=f(),void 0===e?n:o(n,e)},n(23)[a]=!0},function(t,e,n){var r=n(0).document;t.exports=r&&r.documentElement},function(t,e,n){var r=n(2),o=n(79),i=n(37),c=n(43),u=n(80),a=n(81),s={};(t.exports=function(t,e,n,f,l){var p,v,d,h,y,g=c(e,n,f?2:1);if(l)p=t;else{if("function"!=typeof(v=u(t)))throw TypeError("Target is not iterable!");if(o(v)){for(d=0,h=i(t.length);h>d;d++)if((f?g(r(y=t[d])[0],y[1]):g(t[d]))===s)return;return}p=v.call(t)}for(;!(y=p.next()).done;)if(a(p,g,y.value,f)===s)return}).BREAK=s},function(t,e,n){var r=n(17);t.exports=function(t,e,n){if(r(t),void 0===e)return t;switch(n){case 0:return function(){return t.call(e)};case 1:return function(n){return t.call(e,n)};case 2:return function(n,r){return t.call(e,n,r)};case 3:return function(n,r,o){return t.call(e,n,r,o)}}return function(){return t.apply(e,arguments)}}},function(t,e,n){var r=n(2),o=n(17),i=n(1)("species");t.exports=function(t,e){var n,c=r(t).constructor;return void 0===c||void 0==(n=r(c)[i])?e:o(n)}},function(t,e,n){var r,o,i,c=n(0),u=n(7),a=n(43),s=n(41),f=n(20),l=c.setImmediate,p=c.clearImmediate,v=c.process,d=c.MessageChannel,h=c.Dispatch,y=0,g={},m=function(){var t=+this;if(g.hasOwnProperty(t)){var e=g[t];delete g[t],e()}},x=function(t){m.call(t.data)};l&&p||(l=function(t){for(var e=[],n=1;arguments.length>n;)e.push(arguments[n++]);return g[++y]=function(){("function"==typeof t?t:Function(t)).apply(void 0,e)},r(y),y},p=function(t){delete g[t]},"process"==u(v)?r=function(t){v.nextTick(a(m,t,1))}:h&&h.now?r=function(t){h.now(a(m,t,1))}:d?(i=(o=new d).port2,o.port1.onmessage=x,r=a(i.postMessage,i,1)):c.addEventListener&&"function"==typeof postMessage&&!c.importScripts?(r=function(t){c.postMessage(t+"","*")},c.addEventListener("message",x,!1)):r="onreadystatechange"in f("script")?function(t){s.appendChild(f("script")).onreadystatechange=function(){s.removeChild(this),m.call(t)}}:function(t){setTimeout(a(m,t,1),0)}),t.exports={set:l,clear:p}},function(t,e,n){var r=n(2),o=n(5),i=n(18);t.exports=function(t,e){if(r(t),o(e)&&e.constructor===t)return e;var n=i.f(t);return(0,n.resolve)(e),n.promise}},function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0}),n(48);!function(t){t&&t.__esModule}(n(50));var r=n(91);e.default=r.BeerSlider},function(t,e,n){},,function(t,e,n){t.exports=n(51),n(89),n(90)},function(t,e,n){n(52),n(55),n(73),n(77),n(88),t.exports=n(29).Promise},function(t,e,n){var r=n(53);r!=={}.toString&&n(14)(Object.prototype,"toString",r,!0)},function(t,e,n){"use strict";var r=n(30),o={};o[n(1)("toStringTag")]="z",t.exports="[object z]"!==String(o)?function(){return"[object "+r(this)+"]"}:o.toString},function(t,e,n){t.exports=!n(12)(function(){String(Symbol())})},function(t,e,n){"use strict";var r=n(56)(!0),o=n(15),i=n(35),c=o.set,u=o.getterFor("String Iterator");i(String,"String",function(t){c(this,{type:"String Iterator",string:String(t),index:0})},function(){var t,e=u(this),n=e.string,o=e.index;return o>=n.length?{value:void 0,done:!0}:(t=r(n,o),e.index+=t.length,{value:t,done:!1})})},function(t,e,n){var r=n(24),o=n(25);t.exports=function(t){return function(e,n){var i,c,u=String(o(e)),a=r(n),s=u.length;return a<0||a>=s?t?"":void 0:(i=u.charCodeAt(a))<55296||i>56319||a+1===s||(c=u.charCodeAt(a+1))<56320||c>57343?t?u.charAt(a):i:t?u.slice(a,a+2):c-56320+(i-55296<<10)+65536}}},function(t,e,n){var r=n(4),o=n(58),i=n(64),c=n(8);t.exports=function(t,e){for(var n=o(e),u=c.f,a=i.f,s=0;s<n.length;s++){var f=n[s];r(t,f)||u(t,f,a(e,f))}}},function(t,e,n){var r=n(59),o=n(63),i=n(2),c=n(0).Reflect;t.exports=c&&c.ownKeys||function(t){var e=r.f(i(t)),n=o.f;return n?e.concat(n(t)):e}},function(t,e,n){var r=n(36),o=n(26).concat("length","prototype");e.f=Object.getOwnPropertyNames||function(t){return r(t,o)}},function(t,e,n){var r=n(7),o="".split;t.exports=Object("z").propertyIsEnumerable(0)?Object:function(t){return"String"==r(t)?o.call(t,""):Object(t)}},function(t,e,n){var r=n(16),o=n(37),i=n(62);t.exports=function(t){return function(e,n,c){var u,a=r(e),s=o(a.length),f=i(c,s);if(t&&n!=n){for(;s>f;)if((u=a[f++])!=u)return!0}else for(;s>f;f++)if((t||f in a)&&a[f]===n)return t||f||0;return!t&&-1}}},function(t,e,n){var r=n(24),o=Math.max,i=Math.min;t.exports=function(t,e){var n=r(t);return n<0?o(n+e,0):i(n,e)}},function(t,e){e.f=Object.getOwnPropertySymbols},function(t,e,n){var r=n(6),o=n(65),i=n(21),c=n(16),u=n(32),a=n(4),s=n(31),f=Object.getOwnPropertyDescriptor;e.f=r?f:function(t,e){if(t=c(t),e=u(e,!0),s)try{return f(t,e)}catch(t){}if(a(t,e))return i(!o.f.call(t,e),t[e])}},function(t,e,n){"use strict";var r={}.propertyIsEnumerable,o=Object.getOwnPropertyDescriptor,i=o&&!r.call({1:2},1);e.f=i?function(t){var e=o(this,t);return!!e&&e.enumerable}:r},function(t,e,n){"use strict";var r=n(38).IteratorPrototype,o=n(40),i=n(21),c=n(27),u=n(10),a=function(){return this};t.exports=function(t,e,n){var s=e+" Iterator";return t.prototype=o(r,{next:i(1,n)}),c(t,s,!1,!0),u[s]=a,t}},function(t,e,n){var r=n(25);t.exports=function(t){return Object(r(t))}},function(t,e,n){t.exports=!n(12)(function(){function t(){}return t.prototype.constructor=null,Object.getPrototypeOf(new t)!==t.prototype})},function(t,e,n){var r=n(6),o=n(8),i=n(2),c=n(70);t.exports=r?Object.defineProperties:function(t,e){i(t);for(var n,r=c(e),u=r.length,a=0;u>a;)o.f(t,n=r[a++],e[n]);return t}},function(t,e,n){var r=n(36),o=n(26);t.exports=Object.keys||function(t){return r(t,o)}},function(t,e,n){var r=n(72);t.exports=Object.setPrototypeOf||("__proto__"in{}?function(){var t,e={},n=!0;try{(t=Object.getOwnPropertyDescriptor(Object.prototype,"__proto__").set).call(e,[]),n=e instanceof Array}catch(t){n=!1}return function(e,o){return r(e,o),n?t.call(e,o):e.__proto__=o,e}}():void 0)},function(t,e,n){var r=n(5),o=n(2);t.exports=function(t,e){if(o(t),!r(e)&&null!==e)throw TypeError(String(e)+": can't set as a prototype!")}},function(t,e,n){var r=n(74),o=n(75),i=n(0),c=n(3),u=n(1),a=u("iterator"),s=u("toStringTag"),f=o.values;for(var l in r){var p=i[l],v=p&&p.prototype;if(v){if(v[a]!==f)try{c(v,a,f)}catch(t){v[a]=f}if(v[s]||c(v,s,l),r[l])for(var d in o)if(v[d]!==o[d])try{c(v,d,o[d])}catch(t){v[d]=o[d]}}}},function(t,e){t.exports={CSSRuleList:0,CSSStyleDeclaration:0,CSSValueList:0,ClientRectList:0,DOMRectList:0,DOMStringList:0,DOMTokenList:1,DataTransferItemList:0,FileList:0,HTMLAllCollection:0,HTMLCollection:0,HTMLFormElement:0,HTMLSelectElement:0,MediaList:0,MimeTypeArray:0,NamedNodeMap:0,NodeList:1,PaintRequestList:0,Plugin:0,PluginArray:0,SVGLengthList:0,SVGNumberList:0,SVGPathSegList:0,SVGPointList:0,SVGStringList:0,SVGTransformList:0,SourceBufferList:0,StyleSheetList:0,TextTrackCueList:0,TextTrackList:0,TouchList:0}},function(t,e,n){"use strict";var r=n(16),o=n(76),i=n(10),c=n(15),u=n(35),a=c.set,s=c.getterFor("Array Iterator");t.exports=u(Array,"Array",function(t,e){a(this,{type:"Array Iterator",target:r(t),index:0,kind:e})},function(){var t=s(this),e=t.target,n=t.kind,r=t.index++;return!e||r>=e.length?(t.target=void 0,{value:void 0,done:!0}):"keys"==n?{value:r,done:!1}:"values"==n?{value:e[r],done:!1}:{value:[r,e[r]],done:!1}},"values"),i.Arguments=i.Array,o("keys"),o("values"),o("entries")},function(t,e,n){var r=n(1)("unscopables"),o=n(40),i=n(3),c=Array.prototype;void 0==c[r]&&i(c,r,o(null)),t.exports=function(t){c[r][t]=!0}},function(t,e,n){"use strict";var r,o,i,c="Promise",u=n(13),a=n(0),s=n(9),f=n(5),l=n(17),p=n(78),v=n(7),d=n(42),h=n(82),y=n(44),g=n(45).set,m=n(83)(),x=n(46),b=n(84),j=n(18),S=n(28),w=n(85),O=n(1)("species"),P=n(15),E=P.get,T=P.set,_=P.getterFor(c),L=a.Promise,M=a.TypeError,I=a.document,A=a.process,k=A&&A.versions,C=k&&k.v8||"",R=j.f,F=R,B="process"==v(A),D=!!(I&&I.createEvent&&a.dispatchEvent),G=!!function(){try{var t=L.resolve(1),e=function(){},n=(t.constructor={})[O]=function(t){t(e,e)};return(B||"function"==typeof PromiseRejectionEvent)&&(!u||t.finally)&&t.then(e)instanceof n&&0!==C.indexOf("6.6")&&-1===w.indexOf("Chrome/66")}catch(t){}}(),N=function(t){var e;return!(!f(t)||"function"!=typeof(e=t.then))&&e},V=function(t,e,n){if(!e.notified){e.notified=!0;var r=e.reactions;m(function(){for(var o=e.value,i=1==e.state,c=0,u=function(n){var r,c,u,a=i?n.ok:n.fail,s=n.resolve,f=n.reject,l=n.domain;try{a?(i||(2===e.rejection&&U(t,e),e.rejection=1),!0===a?r=o:(l&&l.enter(),r=a(o),l&&(l.exit(),u=!0)),r===n.promise?f(M("Promise-chain cycle")):(c=N(r))?c.call(r,s,f):s(r)):f(o)}catch(t){l&&!u&&l.exit(),f(t)}};r.length>c;)u(r[c++]);e.reactions=[],e.notified=!1,n&&!e.rejection&&z(t,e)})}},W=function(t,e,n){var r,o;D?((r=I.createEvent("Event")).promise=e,r.reason=n,r.initEvent(t,!1,!0),a.dispatchEvent(r)):r={promise:e,reason:n},(o=a["on"+t])?o(r):"unhandledrejection"===t&&b("Unhandled promise rejection",n)},z=function(t,e){g.call(a,function(){var n,r=e.value,o=H(e);if(o&&(n=S(function(){B?A.emit("unhandledRejection",r,t):W("unhandledrejection",t,r)}),e.rejection=B||H(e)?2:1),o&&n.e)throw n.v})},H=function(t){return 1!==t.rejection&&!t.parent},U=function(t,e){g.call(a,function(){B?A.emit("rejectionHandled",t):W("rejectionhandled",t,e.value)})},K=function(t,e,n,r){return function(o){t(e,n,o,r)}},q=function(t,e,n,r){e.done||(e.done=!0,r&&(e=r),e.value=n,e.state=2,V(t,e,!0))},Y=function(t,e,n,r){if(!e.done){e.done=!0,r&&(e=r);try{if(t===n)throw M("Promise can't be resolved itself!");var o=N(n);o?m(function(){var r={done:!1};try{o.call(n,K(Y,t,r,e),K(q,t,r,e))}catch(n){q(t,r,n,e)}}):(e.value=n,e.state=1,V(t,e,!1))}catch(n){q(t,{done:!1},n,e)}}};G||(L=function(t){p(this,L,c),l(t),r.call(this);var e=E(this);try{t(K(Y,this,e),K(q,this,e))}catch(t){q(this,e,t)}},(r=function(t){T(this,{type:c,done:!1,notified:!1,parent:!1,reactions:[],rejection:!1,state:0,value:void 0})}).prototype=n(86)(L.prototype,{then:function(t,e){var n=_(this),r=R(y(this,L));return r.ok="function"!=typeof t||t,r.fail="function"==typeof e&&e,r.domain=B?A.domain:void 0,n.parent=!0,n.reactions.push(r),0!=n.state&&V(this,n,!1),r.promise},catch:function(t){return this.then(void 0,t)}}),o=function(){var t=new r,e=E(t);this.promise=t,this.resolve=K(Y,t,e),this.reject=K(q,t,e)},j.f=R=function(t){return t===L||t===i?new o(t):F(t)}),s({global:!0,wrap:!0,forced:!G},{Promise:L}),n(27)(L,c,!1,!0),n(87)(c),i=n(29).Promise,s({target:c,stat:!0,forced:!G},{reject:function(t){var e=R(this);return e.reject.call(void 0,t),e.promise}}),s({target:c,stat:!0,forced:u||!G},{resolve:function(t){return x(u&&this===i?L:this,t)}}),s({target:c,stat:!0,forced:!(G&&h(function(t){L.all(t).catch(function(){})}))},{all:function(t){var e=this,n=R(e),r=n.resolve,o=n.reject,i=S(function(){var n=[],i=0,c=1;d(t,function(t){var u=i++,a=!1;n.push(void 0),c++,e.resolve(t).then(function(t){a||(a=!0,n[u]=t,--c||r(n))},o)}),--c||r(n)});return i.e&&o(i.v),n.promise},race:function(t){var e=this,n=R(e),r=n.reject,o=S(function(){d(t,function(t){e.resolve(t).then(n.resolve,r)})});return o.e&&r(o.v),n.promise}})},function(t,e){t.exports=function(t,e,n){if(!(t instanceof e))throw TypeError((n?n+": i":"I")+"ncorrect invocation!");return t}},function(t,e,n){var r=n(10),o=n(1)("iterator"),i=Array.prototype;t.exports=function(t){return void 0!==t&&(r.Array===t||i[o]===t)}},function(t,e,n){var r=n(30),o=n(1)("iterator"),i=n(10);t.exports=function(t){if(void 0!=t)return t[o]||t["@@iterator"]||i[r(t)]}},function(t,e,n){var r=n(2);t.exports=function(t,e,n,o){try{return o?e(r(n)[0],n[1]):e(n)}catch(e){var i=t.return;throw void 0!==i&&r(i.call(t)),e}}},function(t,e,n){var r=n(1)("iterator"),o=!1;try{var i=0,c={next:function(){return{done:!!i++}},return:function(){o=!0}};c[r]=function(){return this},Array.from(c,function(){throw 2})}catch(t){}t.exports=function(t,e){if(!e&&!o)return!1;var n=!1;try{var i={};i[r]=function(){return{next:function(){return{done:n=!0}}}},t(i)}catch(t){}return n}},function(t,e,n){var r=n(0),o=n(7),i=n(45).set,c=r.MutationObserver||r.WebKitMutationObserver,u=r.process,a=r.Promise,s="process"==o(u);t.exports=function(){var t,e,n,o=function(){var r,o;for(s&&(r=u.domain)&&r.exit();t;){o=t.fn,t=t.next;try{o()}catch(r){throw t?n():e=void 0,r}}e=void 0,r&&r.enter()};if(s)n=function(){u.nextTick(o)};else if(!c||r.navigator&&r.navigator.standalone)if(a&&a.resolve){var f=a.resolve(void 0);n=function(){f.then(o)}}else n=function(){i.call(r,o)};else{var l=!0,p=document.createTextNode("");new c(o).observe(p,{characterData:!0}),n=function(){p.data=l=!l}}return function(r){var o={fn:r,next:void 0};e&&(e.next=o),t||(t=o,n()),e=o}}},function(t,e,n){var r=n(0);t.exports=function(t,e){var n=r.console;n&&n.error&&(1===arguments.length?n.error(t):n.error(t,e))}},function(t,e,n){var r=n(0).navigator;t.exports=r&&r.userAgent||""},function(t,e,n){var r=n(14);t.exports=function(t,e,n){for(var o in e)r(t,o,e[o],n);return t}},function(t,e,n){"use strict";var r=n(0),o=n(8),i=n(6),c=n(1)("species");t.exports=function(t){var e=r[t];i&&e&&!e[c]&&o.f(e,c,{configurable:!0,get:function(){return this}})}},function(t,e,n){"use strict";var r=n(29),o=n(0),i=n(44),c=n(46);n(9)({target:"Promise",proto:!0,real:!0},{finally:function(t){var e=i(this,"function"==typeof r.Promise?r.Promise:o.Promise),n="function"==typeof t;return this.then(n?function(n){return c(e,t()).then(function(){return n})}:t,n?function(n){return c(e,t()).then(function(){throw n})}:t)}})},function(t,e,n){"use strict";var r=n(18),o=n(28),i=n(42);n(9)({target:"Promise",stat:!0},{allSettled:function(t){var e=this,n=r.f(e),c=n.resolve,u=n.reject,a=o(function(){var n=[],r=0,o=1;i(t,function(t){var i=r++,u=!1;n.push(void 0),o++,e.resolve(t).then(function(t){u||(u=!0,n[i]={value:t,status:"fulfilled"},--o||c(n))},function(t){u||(u=!0,n[i]={reason:t,status:"rejected"},--o||c(n))})}),--o||c(n)});return a.e&&u(a.v),n.promise}})},function(t,e,n){"use strict";var r=n(18),o=n(28);n(9)({target:"Promise",stat:!0},{try:function(t){var e=r.f(this),n=o(t);return(n.e?e.reject:e.resolve)(n.v),e.promise}})},function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var r=function(){function t(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,r.key,r)}}return function(e,n,r){return n&&t(e.prototype,n),r&&t(e,r),e}}();e.BeerSlider=function(){function t(e){var n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},r=n.start,o=void 0===r?"50":r,i=n.prefix,c=void 0===i?"beer":i;!function(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}(this,t),this.start=parseInt(o)?Math.min(100,Math.max(0,parseInt(o))):50,this.prefix=c,e&&2===e.children.length&&(this.element=e,this.revealContainer=this.element.children[1],this.revealContainer.children.length<1||(this.revealElement=this.revealContainer.children[0],this.range=this.addElement("input",{type:"range",class:this.prefix+"-range","aria-label":"Percent of revealed content","aria-valuemin":"0","aria-valuemax":"100","aria-valuenow":this.start,value:this.start,min:"0",max:"100"}),this.handle=this.addElement("span",{class:this.prefix+"-handle"}),this.onImagesLoad()))}return r(t,[{key:"init",value:function(){this.element.classList.add(this.prefix+"-ready"),this.setImgWidth(),this.move(),this.addListeners()}},{key:"loadingImg",value:function(t){return new Promise(function(e,n){t||e();var r=new Image;r.onload=function(){return e()},r.onerror=function(){return n()},r.src=t})}},{key:"loadedBoth",value:function(){var t=this.element.children[0].src||this.element.children[0].getAttribute("data-"+this.prefix+"-src"),e=this.revealElement.src||this.revealElement.getAttribute("data-"+this.prefix+"-src");return Promise.all([this.loadingImg(t),this.loadingImg(e)])}},{key:"onImagesLoad",value:function(){var t=this;this.revealElement&&this.loadedBoth().then(function(){t.init()},function(){console.error("Some errors occurred and images are not loaded.")})}},{key:"addElement",value:function(t,e){var n=document.createElement(t);return Object.keys(e).forEach(function(t){n.setAttribute(t,e[t])}),this.element.appendChild(n),n}},{key:"setImgWidth",value:function(){this.revealElement.style.width=getComputedStyle(this.element).width}},{key:"addListeners",value:function(){var t=this;["input","change"].forEach(function(e){t.range.addEventListener(e,function(){t.move()})}),window.addEventListener("resize",function(){t.setImgWidth()})}},{key:"move",value:function(){this.revealContainer.style.width=this.range.value+"%",this.handle.style.left=this.range.value+"%",this.range.setAttribute("aria-valuenow",this.range.value)}}]),t}()}]).default});
+var slider = new BeerSlider( document.getElementById( "beer-slider" ) );
+if(!(localStorage.getItem('discountCode') != null && localStorage.getItem('discountCode') == 'slice15')) {
+     localStorage.setItem('discountCode', '');
+}
+if(location.href.indexOf('amrit15') != -1
+   || location.href.indexOf('pratu15') != -1
+   || location.href.indexOf('slice15') != -1
+   || location.href.indexOf('ragen15') != -1) {
+    var referralCode = location.href.substring(location.href.indexOf('?r=')+3, location.href.length);
+    localStorage.setItem('discountCode', referralCode);
+}
+</script>
+
+<div>
+
+<div class="results">
+<div>
+<div class="logo" id="logoWrapper">
+    <img id="logo" class="logo-img" src="../img/images/logo_scr.jpg" />
+    <div id="logoHeading" class="logo-heading"></div>
+</div>
+<div class="bag"></div>
+<div><i class="loading"></i></div>
+
+   
+    <div class="main">
+        <div class="section no-padding" style="margin-top: 0px">
+        <div class="post-heading" style="height: 264px;">
+            <div class="info" style="position: relative">
+                <hr class="line thin"/>
+                <div id="boxEvents">
+                    <main class="main">
+                        <div class="gcontainer">
+                            <div style="margin-top: -34px;
+    position: absolute;
+    font-size: 18px;
+    left: 20px;"><span>Recently served near you</span>
+<div class="pricing"><label class="price"><span class="orig" id="priceNew0">Recently served near you</span></label></div>
+</div>
+                            <div class="glider-contain">
+                                <div class="glider">
+                                    <div class="card-image" style="height:210px;">
+                                        <img src="../img/images/e01.jpg" alt="Slider Image">
+                                    </div>
+                                    <div class="card-image" style="height:210px;">
+                                        <img src="../img/images/e6.jpg" alt="Slider Image">
+                                    </div>
+                                    <div class="card-image" style="height:210px;">
+                                        <img src="../img/images/e7.jpg" alt="Slider Image">
+                                    </div>
+                                    <div class="card-image">
+                                        <img src="../img/images/e02.jpg" alt="Slider Image">
+                                    </div>
+                                    <div class="card-image">
+                                        <img src="../img/images/e03.jpg" alt="Slider Image">
+                                    </div>
+                                    <div class="card-image">
+                                        <img src="../img/images/e04.jpg" alt="Slider Image">
+                                    </div>
+                                    <div class="card-image">
+                                        <img src="../img/images/e05.jpg" alt="Slider Image">
+                                    </div>
+                                    <div class="card-image">
+                                        <img src="../img/images/e06.jpg" alt="Slider Image">
+                                    </div>
+                                    <div class="card-image">
+                                        <img src="../img/images/e07.jpg" alt="Slider Image">
+                                    </div>
+                                    <div class="card-image">
+                                        <img src="../img/images/e08.jpg" alt="Slider Image">
+                                    </div>
+                                    <div class="card-image">
+                                        <img src="../img/images/e09.jpg" alt="Slider Image">
+                                    </div>
+                                </div>
+                                <span role="button" aria-label="Previous" class="glider-prev"><i class="fas fa-chevron-left"></i></span>
+                                <span role="button" aria-label="Next" class="glider-next"><i class="fas fa-chevron-right"></i></span>
+                                <span role="tablist" class="dots"></span>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+
+        <h1 class="header">Live pizza catering for <span id="rotated" style="letter-spacing: 0px;font-family: inherit;text-decoration: underline;font-weight: bold;">20 to 100</span> guests!<br/></h1>
+        <div class="scroll-arrow">
+            <span></span>
+        </div>
+    </div>
+    <div class="overview"></div>
+
+
+    <br/>
+    <hr class="line"/>
+    <div class="section">
+        <div class="post-heading">
+            <div class="info" style="margin-top: -19px">
+            <div class="para" style="margin-top: -120px">
+                <div class="main-desc">
+                    <p style="background: #f9f4ef;border-radius: 6px;padding: 9px;visibility:hidden"><b style="text-decoration:underline">Special price</b> starting
+                        <b style="text-decoration:underline">₹199</b> per large pizza!</p><br><br>
+                </div>
+                <div class="Panel" style="margin-top: -220px;margin-bottom:60px;">
+                    <div class="corner-ribbon">
+                        <span class="cr-inner">
+                          <span class="cr-text"><strong>Offer</strong></span>
+                        </span>
+                    </div><div class="ribbon-outer">Special price starting <strong>₹199</strong> per large pizza!</div>
+                </div>
+        </div>
+
+        <hr class="line"/>
+    </div>
+</div>
+</div>
+<div class="section no-padding">
+    <div class="post-heading">
+        <div class="info" style="margin-top: -20px; position: relative">
+        <img class="curve small" src="../img/images/curve.png"/>
+        <hr class="line thin"/>
+        <div class="para" style="margin-top: 0px">
+        <div class="title" style="background: #fff;">Veg catering menu</div>
+            <div class="menu-container" id="mcon">
+                <div class="title plate" onclick="showMenuTab1('menuTab1');">
+                    <img src="../img/images/panim.gif" style="width: 107px;top: 15px;position: absolute;left: 16px;" />
+                    <div class="menu-title">11" Large Pizza</div>
+                </div>
+                <div class="title plate" style="margin-left: 178px !important;margin-top: -127px !important;" onclick="document.getElementById('mcon').scrollLeft = 0;showMenuTab1('menuTab2');">
+                    <img src="../img/images/wraps.png" style="width: 179px;top: 13px;position: absolute;left: -25px;" />
+                    <div class="menu-title">Veg wraps</div>
+                </div>
+                <div class="title plate" style="margin-left: 327px !important;margin-top: -127px !important;">
+                    <img src="../img/images/garlic.png" style="width: 98px;top: 13px;position: absolute;left: 11px;" onclick="document.getElementById('mcon').scrollLeft = 160;showMenuTab1('menuTab3');" />
+                    <div class="menu-title">Garlic bread</div>
+                </div>
+                <div class="title plate" style="margin-left: 476px !important;margin-top: -127px !important;margin-right:27px" onclick="document.getElementById('mcon').scrollLeft = 360;showMenuTab1('menuTab4');">
+                    <img src="../img/images/mojito.png" style="width: 66px;top: -12px;position: absolute;left: 22px;" />
+                    <div class="menu-title">Virgin mojito</div>
+                </div>
+                <br/><br/><br/><br/>
+
+            </div>
+            <div id="menuTab1" class="tab-container" style="display:none" onclick="hideMe('menuTab1')">
+                <div class="one">
+                    <div class="head">11" Large Pizza</div>
+                    <div class="close-btn" onclick="hideMe('menuTab1')">
+                        <img src="../img/images/ic_close.png" />
+                    </div>
+
+                    <div class="detail">Our signature 11" Large pizza can be cut into 4 large or 6 small slices</div>
+                    <div class="minor-head">Topping options</div>
+                    <div class="minor-head" style="margin-top:16px">
+                        <div>
+                            <img class="topping" src="../img/images/topolives.png" />
+                            <div>Olives</div>
+                        </div>
+                        <div>
+                            <img class="topping" src="../img/images/topcapsicum.png" />
+                            <div>Capsicum</div>
+                        </div>
+                        <div>
+                            <img class="topping" src="../img/images/toponion.png" />
+                            <div>Onion</div>
+                        </div>
+                        <div>
+                            <img class="topping" src="../img/images/topsweetcorn.png" />
+                            <div>Sweetcorn</div>
+                        </div>
+                        <div>
+                            <img class="topping" src="../img/images/toptomato.png" />
+                            <div>Tomatoes</div>
+                        </div>
+                        <div>
+                            <img class="topping" src="../img/images/toppaneer.png" />
+                            <div>Paneer</div>
+                        </div>
+                        <div>
+                            <img class="topping" src="../img/images/topmushroom.png" />
+                            <div>Mushroom</div>
+                        </div>
+                        <br/>
+                    </div>
+                </div>
+            </div>
+            <div id="menuTab2" class="tab-container" style="display:none" onclick="hideMe('menuTab2')">
+                <div class="two">
+                    <div class="head">Veg Wraps</div>
+                    <div class="close-btn" onclick="hideMe('menuTab2')">
+                        <img src="../img/images/ic_close.png" />
+                    </div>
+
+                    <div class="detail">Veg wraps provide you a bite of crunchy veggies mixed with cheese and seasoning complementing for a great meal</div>
+
+                    <div class="minor-head" style="margin-top:16px">
+                        <div style="margin-top:20px">
+                            <img src="../img/images/wraps.png" style="width:275px" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="menuTab3" class="tab-container" style="display:none" onclick="hideMe('menuTab3')">
+                <div class="two">
+                    <div class="head">Garlic Bread</div>
+                    <div class="close-btn" onclick="hideMe('menuTab2')">
+                        <img src="../img/images/ic_close.png" />
+                    </div>
+
+                    <div class="detail">This mild, yet memorable delicacy offers delectable taste of garlic and a soft baked bread</div>
+
+                    <div class="minor-head" style="margin-top:16px">
+                        <div style="margin-top:20px">
+                            <img src="../img/images/garlic.png" style="width: 135px;margin: 0 auto;left: 0;right: 0;position: absolute;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="menuTab4" class="tab-container" style="display:none" onclick="hideMe('menuTab4')">
+                <div class="two">
+                    <div class="head">Virgin mojito</div>
+                    <div class="close-btn" onclick="hideMe('menuTab2')">
+                        <img src="../img/images/ic_close.png" />
+                    </div>
+
+                    <div class="detail">Sip into this flavourful drink and add unforgettable charm to your party!</div>
+
+                    <div class="minor-head" style="margin-top:16px">
+                        <div style="margin-top:20px">
+                            <img src="../img/images/mojito.png" style="width: 76px;margin: 0 auto;left: 0;right: 0;position: absolute;margin-top: 14px;left: -19px;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/><br/>
+
+    </div>
+
+</div>
+</div>
+</div>
+
+
+        <div class="section no-padding">
+            <div class="post-heading">
+                <div class="info" style="margin-top: -20px; position: relative">
+                    <img class="curve small" src="../img/images/curve.png"/>
+                    <hr class="line thin"/>
+                    <div class="para" style="margin-top: 0px">
+                        <div class="title" style="background: #fff;">Customer Feedback</div>
+                        <div class="menu-container" style="margin-top: -14px">
+                            <div class="title plate" style="margin: 0 auto !important;left: 0;right: 0;top: 18px;background: none;box-shadow: none;">
+                                <img src="../img/images/rated.png" style="width: 107px;top: 10px;position: absolute;left: 11px;">
+                                <div class="menu-title" style="width: 192px;margin-left: -40px;">Rated 5 Stars on Google</div>
+                            </div>
+                            <br/><br/><br/><br/>
+
+                        </div>
+                        <div class="tab-container">
+                            <div class="cust">
+                                <script src="https://widget.trustmary.com/9Cr1zb7-Z"></script>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section no-padding">
+            <div class="post-heading" style="margin-top: -90px">
+                <div class="info" style="margin-top: 20px; position: relative">
+                    <hr class="line thin">
+                    <div class="para" style="margin-top: 0px">
+                        <div class="title" style="background: #fff;width: 226px;">Corporate Clients</div>
+                        <br>
+                            <img src="../img/images/accenture.jpg" style="width: 164px;padding: 14px;" />
+                            <img src="../img/images/ea.jpg" style="width: 198px;padding: 13px;" />
+                            <br><br><br><br><br>
+
+                        <br>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section no-padding">
+            <div class="post-heading" style="margin-top: -90px">
+                <div class="info" style="margin-top: 20px; position: relative">
+                    <hr class="line thin"/>
+                    <div class="para" style="margin-top: 0px">
+                        <div class="title" style="background: #fff;width: 196px">Why Us</div>
+                        <br/>
+                        <div class="menu-container-ls">
+                            <img src="../img/images/ihot.png" />
+                            <span class="head" style="position:absolute;top:34px;left:78px;font-size:20px">Served hot & fast!</span>
+                            <div class="detail" style="position:absolute;top: 64px;left: 0px;font-size:20px;padding: 20px;font-size:16px;">
+                                We serve hot & fresh pizzas super fast at your live counter. Each pizza is served to your guests in around a minute.
+                            </div>
+                            <br/><br/><br/><br/>
+
+                        </div>
+                        <br/>
+                        <div class="menu-container-ls">
+                            <img src="../img/images/ikiosk.png" />
+                            <span class="head" style="position:absolute;top:34px;left:78px;font-size:20px">Portable & quick setup</span>
+                            <div class="detail" style="position:absolute;top: 64px;left: 0px;font-size:20px;padding: 20px;font-size:16px;">
+                                Our portable setup ensures we can easily setup a live counter even in a small 4ft x 3ft space. Indoor or outdoor!
+                            </div>
+                            <br/><br/><br/><br/>
+
+                        </div>
+                        <br/>
+                        <div class="menu-container-ls">
+                            <img src="../img/images/ishield.png" />
+                            <span class="head" style="position:absolute;top:34px;left:78px;font-size:20px">Fire Safe</span>
+                            <div class="detail" style="position:absolute;top: 64px;left: 0px;font-size:20px;padding: 20px;font-size:16px;">
+                                With our fully electric equipment, you can be rest assured of smoke-free & fire-free environment at your live counter.
+                            </div>
+                            <br/><br/><br/><br/>
+
+                        </div>
+                        <br/>
+                        <div class="menu-container-ls">
+                            <img src="../img/images/ibank.png" />
+                            <span class="head" style="position:absolute;top:34px;left:78px;font-size:20px">Trusted & affordable</span>
+                            <div class="detail" style="position:absolute;top: 64px;left: 0px;font-size:20px;padding: 20px;font-size:16px;">
+                                Our packages are reasonably priced to cater to the wider community. Our service is trusted & rated the best for fast and timely service.
+                            </div>
+                            <br/><br/><br/><br/>
+
+                        </div>
+                        <br/>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    
+<img src="../img/images/e1.jpg" style="visibility:hidden" width="1px" style="width:1px" />
+<img src="../img/images/e2.jpg" style="visibility:hidden" width="1px" style="width:1px" />
+<img src="../img/images/e3.jpg" style="visibility:hidden" width="1px" style="width:1px" />
+<img src="../img/images/e4.jpg" style="visibility:hidden" width="1px" style="width:1px" />
+<img src="../img/images/e5.jpg" style="visibility:hidden" width="1px" style="width:1px" />
+<img src="../img/images/e6.jpg" style="visibility:hidden" width="1px" style="width:1px" />
+<img src="../img/images/e7.jpg" style="visibility:hidden" width="1px" style="width:1px" />
+
+<hr class="line"/>
+
+    <br/>
+        <div class="post-heading accordion" style="position: relative">
+            <hr class="line thin" style="left: 0px;top: 50px;"/>
+            <div class="title" style="background: #fff;width: 320px;">Frequently Asked Questions</div>
+            <div class="accordion-item" style="margin-top:36px;">
+                <button id="accordion-button-1" aria-expanded="false">
+                    <span class="accordion-title">My venue is in higher floor. Can the cart be setup there?</span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        Yes, Totally! Our cart if fully portable and will be setup quickly at the time of your event.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button id="accordion-button-2" aria-expanded="false">
+                    <span class="accordion-title">What's the size of your pizza? How many does it serve?</span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        Our pizzas are 11 inch Large. It serves 1 person and even 2 kids if you're considering it for a meal.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button id="accordion-button-3" aria-expanded="false">
+                    <span class="accordion-title">What else do you serve apart from pizza at the live counter?</span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        We serve pizzas, veg wraps, garlic bread and few non-alcoholic drinks at the live counter.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button id="accordion-button-4" aria-expanded="false">
+                    <span class="accordion-title">How do I place an order?</span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        You can browse the packages clicking on the 'Browse packages' button below to place an enquiry/order.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button id="accordion-button-5" aria-expanded="false">
+                    <span class="accordion-title">What's the price?</span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        As a special offer, your order will be charged at discounted price of 199/- per large pizza. Only for paneer toppings, we charge 25/- per pizza as additional charges.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button id="accordion-button-5" aria-expanded="false">
+                    <span class="accordion-title">What's the minimum order?</span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        To order the live counter, minimum order is of 25 large pizzas.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    <div class="bottom-bar" ></div>
+<a class="button" href="/order/" style="font-weight:bold;bottom:84px;letter-spacing: 1px;">Browse Packages</a>
+<a class="button" href="https://wa.me/7619514999" onclick="gtag_report_conversion()"  style="font-weight:bold;color: #000;font-weight:bold;background: none;border: 2px solid #fd3e37;bottom: 25px;background: #fff;"><img src="../img/images/whatsapp.png" class="btn-icon" >Chat with us</a>
+<br/>
+<div class="desc" style="text-align: center;font-size: 14px;padding-left: 12px;padding-right: 12px;"><p>Copyright © 2022 Slimcrust   |   <a href="/terms" style="display:inline;font-size:13px;color:#666;text-decoration:underline">Terms & Conditions</a></p></div><br/>
+<br/><br/><br/>
+<br/><br/><br/><br/><br/><br/>
+</div>
+</div>
+</div>
+</div>
+    <div class="largevp">Please use your smartphone in portrait mode to order from Slimcrust. Currently, we're only supported on smartphone platforms. </div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    <script>
+
+$.fn.BeerSlider = function ( options ) {
+    options = options || {};
+    return this.each(function() {
+      new BeerSlider(this, options);
+    });
+  };
+  $('.beer-slider').BeerSlider({start: 53});
+  localStorage.setItem('discountCode','slice15');
+
+
+
+const testimonials = [
+    {
+		name: "Rajesh Kumar",
+		job: "Whitefield, Bangalore",
+		image: "../img/images/rj.jpeg",
+		testimonial:
+			"<br/><br/>Very yum and delicious pizzas with soft and evenly baked crust. One of the best I've tasted in Bangalore.<br/><br/>"
+	},
+    {
+		name: "Pritesh Patel",
+		job: "Electronic city, Bangalore",
+		image: "../img/images/cust_pritesh.jpg",
+		testimonial:
+			"Good quality pizza 🍕, people liked it a lot, very professional and punctual on the timing. I recommend it to others."
+	},
+	{
+		name: "Vinayak",
+		job: "JP Nagar, Bangalore",
+		image: "../img/images/vs.jpeg",
+		testimonial:
+			"I ordered pizzas for a house party and was really happy with the service. Chefs arrived on time and served hot pizzas right out of oven! Must try experience in Bangalore!"
+	}
+];
+const testimonialEvents = [
+    {image: "../img/images/e1.jpg"},
+	{image: "../img/images/e2.jpg"},
+	{image: "../img/images/e3.jpg"},
+	{image: "../img/images/e4.jpg"},
+	{image: "../img/images/e5.jpg"},
+	{image: "../img/images/e6.jpg"},
+	{image: "../img/images/e7.jpg"}
+];
+let i = 0; // current slide
+let j = testimonials.length; // total slides
+let k = 0; // current slide
+let l = testimonialEvents.length; // total slides
+let testimonialContainer = document.getElementById("testimonial-container");
+
+
+let testimonialContainerEvents = document.getElementById("testimonial-container-events");
+
+const items = document.querySelectorAll('.accordion button');
+
+function toggleAccordion() {
+  const itemToggle = this.getAttribute('aria-expanded');
+
+  for (i = 0; i < items.length; i++) {
+    items[i].setAttribute('aria-expanded', 'false');
+  }
+
+  if (itemToggle == 'false') {
+    this.setAttribute('aria-expanded', 'true');
+  }
+}
+
+items.forEach((item) => item.addEventListener('click', toggleAccordion));
+
+function showMenuTab1(menuElemId) {
+    document.getElementById('menuTab1').style.display = 'none';
+    document.getElementById('menuTab2').style.display = 'none';
+    document.getElementById('menuTab3').style.display = 'none';
+    document.getElementById('menuTab4').style.display = 'none';
+    document.getElementById(menuElemId).style.display = 'block';
+}
+function hideMe(menuElemId) {
+    document.getElementById(menuElemId).style.display = 'none';
+}
+// Glider Configuration
+new Glider(document.querySelector(".glider"), {
+  slidesToShow: 1.5,
+  slidesToScroll: 1,
+  draggable: true,
+  dots: ".dots",
+  responsive: [
+    {
+      // If Screen Size More than 768px
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1.5,
+        slidesToScroll: 1,
+        duration: 0.5,
+        arrows: {
+          prev: ".glider-prev",
+          next: ".glider-next"
+        }
+      }
+    },
+    {
+      // If Screen Size More than 1024px
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2.5,
+        slidesToScroll: 1,
+        duration: 0.5,
+        arrows: {
+          prev: ".glider-prev",
+          next: ".glider-next"
+        }
+      }
+    }
+  ]
+});
+
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J00T03NH7J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J00T03NH7J');
+</script>
+    <script>
+    /*(pushalertbyiw = window.pushalertbyiw || []).push(['onReady', onPAReady]);
+
+    function onPAReady() {
+        console.log('--onPAReady--');
+        console.log(PushAlertCo.getSubsInfo()); //You can call this method to get the subscription status of the subscriber
+    }*/
+</script>
+
+
+</body></html>
+

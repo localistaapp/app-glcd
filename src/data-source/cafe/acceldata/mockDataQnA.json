@@ -1,0 +1,152 @@
+{
+    "shortlistCount": 12,
+    "shortlistText": "Interior designers shortlisted for you",
+    "resultType": "interior designers",
+    "logoWidth": "160px",
+    "results": [
+      {
+        "img": "../../../img/images/desi.png",
+        "title": "Desi Tadka",
+        "type": "pizza",
+        "shortTitle": "Asense Interior",
+        "subTitle": "129, Siddapura",
+        "address": "129, Siddapura, Whitefield, Bengaluru, Karnataka, India, Varthur Main Road, Bengaluru",
+        "qna": [
+          {
+            "defaultPrice": 140,
+            "responses": [
+              {
+                "topic": "Large",
+                "pricing": {"Slim":  140, "Thick":  140}
+              },
+              {
+                "topic": "Medium",
+                "pricing": {"Slim":  110, "Thick":  110}
+              }
+            ],
+            "crust": [
+              {
+                "topic": "Slim",
+                "pricing": {"Large":  140, "Medium":  110, "Small":  110}
+              }
+            ]
+          }
+        ],
+        "usp": [
+          "Fresh Chana curry with 3 phulka rotis, salad and garnishing"
+        ],
+        "images": {
+          "primary": "https://lh5.googleusercontent.com/p/AF1QipMfveOLCLmjGRfpfzooSICq5nskYbHGIdJVKtud=s870-k-no",
+          "secondary": []
+        }
+      },
+      {
+        "img": "../../../img/images/mexicanbowl.png",
+        "title": "Mexican Rice Bowl",
+        "type": "pizza",
+        "shortTitle": "Asense Interior",
+        "subTitle": "129, Siddapura",
+        "address": "129, Siddapura, Whitefield, Bengaluru, Karnataka, India, Varthur Main Road, Bengaluru",
+        "qna": [
+            {
+                "defaultPrice": 150,
+                "responses": [
+                  {
+                    "topic": "Large",
+                    "pricing": {"Slim":  150, "Thick":  150}
+                  },
+                  {
+                    "topic": "Medium",
+                    "pricing": {"Slim":  120, "Thick":  120}
+                  }
+                ],
+                "crust": [
+                  {
+                    "topic": "Slim",
+                    "pricing": {"Large":  150, "Medium":  120, "Small":  120}
+                  }
+                ]
+              }
+        ],
+        "usp": [
+          "Barbequeue Paneer, Grilled Bell Peppers & mor. Make it your own"
+        ],
+        "images": {
+          "primary": "https://lh5.googleusercontent.com/p/AF1QipMfveOLCLmjGRfpfzooSICq5nskYbHGIdJVKtud=s870-k-no",
+          "secondary": []
+        }
+      },
+      {
+        "img": "../../../img/images/spagettibowl.png",
+        "title": "Spaghetti Feast",
+        "type": "pizza",
+        "shortTitle": "Asense Interior",
+        "subTitle": "129, Siddapura",
+        "address": "129, Siddapura, Whitefield, Bengaluru, Karnataka, India, Varthur Main Road, Bengaluru",
+        "qna": [
+            {
+                "defaultPrice": 140,
+                "responses": [
+                  {
+                    "topic": "Large",
+                    "pricing": {"Slim":  140, "Thick":  140}
+                  },
+                  {
+                    "topic": "Medium",
+                    "pricing": {"Slim":  110, "Thick":  110}
+                  }
+                ],
+                "crust": [
+                  {
+                    "topic": "Slim",
+                    "pricing": {"Large":  140, "Medium":  110, "Small":  110}
+                  }
+                ]
+              }
+        ],
+        "usp": [
+          "Peri Peri mushroom toppings, bell peppers & more"
+        ],
+        "images": {
+          "primary": "https://lh5.googleusercontent.com/p/AF1QipMfveOLCLmjGRfpfzooSICq5nskYbHGIdJVKtud=s870-k-no",
+          "secondary": []
+        }
+      },
+      {
+        "img": "../../../img/images/pastabowl.png",
+        "title": "Penne Pasta",
+        "type": "pizza",
+        "shortTitle": "Asense Interior",
+        "subTitle": "129, Siddapura",
+        "address": "129, Siddapura, Whitefield, Bengaluru, Karnataka, India, Varthur Main Road, Bengaluru",
+        "qna": [
+            {
+                "defaultPrice": 140,
+                "responses": [
+                  {
+                    "topic": "Large",
+                    "pricing": {"Slim":  140, "Thick":  140}
+                  },
+                  {
+                    "topic": "Medium",
+                    "pricing": {"Slim":  110, "Thick":  110}
+                  }
+                ],
+                "crust": [
+                  {
+                    "topic": "Slim",
+                    "pricing": {"Large":  140, "Medium":  110, "Small":  110}
+                  }
+                ]
+              }
+        ],
+        "usp": [
+          "High on creamy sauce, bell peppers and seasoning"
+        ],
+        "images": {
+          "primary": "https://lh5.googleusercontent.com/p/AF1QipMfveOLCLmjGRfpfzooSICq5nskYbHGIdJVKtud=s870-k-no",
+          "secondary": []
+        }
+      }
+    ]
+  }

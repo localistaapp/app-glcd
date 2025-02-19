@@ -1,0 +1,5986 @@
+[
+    {
+      "locality": "Jayanagar",
+      "rating": 9
+    },
+    {
+      "locality": "Indira Nagar",
+      "rating": 8.8
+    },
+    {
+      "locality": "Ashok Nagar",
+      "rating": 8.8
+    },
+    {
+      "locality": "Koramangala",
+      "rating": 8.6
+    },
+    {
+      "locality": "Whitefield",
+      "rating": 8.5
+    },
+    {
+      "locality": "Marathahalli",
+      "rating": 8.3
+    },
+    {
+      "locality": "BTM Layout",
+      "rating": 8
+    },
+    {
+      "locality": "Vijaya Nagar",
+      "rating": 7.9
+    },
+    {
+      "locality": "JP Nagar",
+      "rating": 7.7
+    },
+    {
+      "locality": "HSR Layout",
+      "rating": 7.3
+    },
+    {
+      "locality": "Malleshwaram",
+      "rating": 7.2
+    },
+    {
+      "locality": "Bannerghatta Road",
+      "rating": 7
+    },
+    {
+      "locality": "Kaggadasapura",
+      "rating": 7
+    },
+    {
+      "locality": "Basavanagudi",
+      "rating": 6.9
+    },
+    {
+      "locality": "Banashankari",
+      "rating": 6.9
+    },
+    {
+      "locality": "Bellandur",
+      "rating": 6.9
+    },
+    {
+      "locality": "T Dasarahalli",
+      "rating": 6.8
+    },
+    {
+      "locality": "Brookefield",
+      "rating": 6.8
+    },
+    {
+      "locality": "Yelahanka",
+      "rating": 6.8
+    },
+    {
+      "locality": "Sarjapur Road",
+      "rating": 6.7
+    },
+    {
+      "locality": "Sadashiva Nagar",
+      "rating": 6.7
+    },
+    {
+      "locality": "Kalyan Nagar",
+      "rating": 6.6
+    },
+    {
+      "locality": "KR Puram",
+      "rating": 6.6
+    },
+    {
+      "locality": "Hebbal",
+      "rating": 6.5
+    },
+    {
+      "locality": "Bilekahalli",
+      "rating": 6.2
+    },
+    {
+      "locality": "Vidyaranyapura",
+      "rating": 6.2
+    },
+    {
+      "locality": "Hosur Road",
+      "rating": 6.1
+    },
+    {
+      "locality": "Ramamurthy Nagar",
+      "rating": 6.1
+    },
+    {
+      "locality": "Domlur",
+      "rating": 6
+    },
+    {
+      "locality": "Shivaji Nagar",
+      "rating": 6
+    },
+    {
+      "locality": "Arekere",
+      "rating": 5.9
+    },
+    {
+      "locality": "Sanjay Nagar",
+      "rating": 5.9
+    },
+    {
+      "locality": "Bagalakunte",
+      "rating": 5.8
+    },
+    {
+      "locality": "New Thippasandra",
+      "rating": 5.8
+    },
+    {
+      "locality": "Banaswadi",
+      "rating": 5.7
+    },
+    {
+      "locality": "Vasanth Nagar",
+      "rating": 5.6
+    },
+    {
+      "locality": "CV Raman Nagar",
+      "rating": 5.6
+    },
+    {
+      "locality": "Frazer Town",
+      "rating": 5.6
+    },
+    {
+      "locality": "Bommenahalli",
+      "rating": 5.4
+    },
+    {
+      "locality": "Sahakara Nagar",
+      "rating": 5.4
+    },
+    {
+      "locality": "Kumaraswamy Layout",
+      "rating": 5.4
+    },
+    {
+      "locality": "Ulsoor",
+      "rating": 5.4
+    },
+    {
+      "locality": "Yelahanka New Town",
+      "rating": 5.4
+    },
+    {
+      "locality": "Seshadripuram",
+      "rating": 5.4
+    },
+    {
+      "locality": "Sadduguntepalya",
+      "rating": 5.3
+    },
+    {
+      "locality": "Padmanabha Nagar",
+      "rating": 5.3
+    },
+    {
+      "locality": "Yeshwanthpur",
+      "rating": 5.3
+    },
+    {
+      "locality": "Wilson Garden",
+      "rating": 5.3
+    },
+    {
+      "locality": "Kengeri Satellite Town",
+      "rating": 5.3
+    },
+    {
+      "locality": "Mathikere",
+      "rating": 5.3
+    },
+    {
+      "locality": "Attiguppe",
+      "rating": 5.3
+    },
+    {
+      "locality": "Hongasandra",
+      "rating": 5.2
+    },
+    {
+      "locality": "Mahadevapura",
+      "rating": 5.2
+    },
+    {
+      "locality": "Doddanekkundi",
+      "rating": 5.2
+    },
+    {
+      "locality": "Murugesh Palya",
+      "rating": 5.2
+    },
+    {
+      "locality": "Ejipura",
+      "rating": 5.2
+    },
+    {
+      "locality": "Kammanahalli",
+      "rating": 5.1
+    },
+    {
+      "locality": "Nagarabhavi",
+      "rating": 5.1
+    },
+    {
+      "locality": "Raja Rajeshwari Nagar",
+      "rating": 5.1
+    },
+    {
+      "locality": "Hulimavu",
+      "rating": 5.1
+    },
+    {
+      "locality": "Gandhi Nagar",
+      "rating": 5.1
+    },
+    {
+      "locality": "Adugodi",
+      "rating": 5.1
+    },
+    {
+      "locality": "Kodihalli",
+      "rating": 5.1
+    },
+    {
+      "locality": "Bennigana Halli",
+      "rating": 5.1
+    },
+    {
+      "locality": "Gottigere",
+      "rating": 5
+    },
+    {
+      "locality": "Chamarajpet",
+      "rating": 5
+    },
+    {
+      "locality": "Jalahalli West",
+      "rating": 5
+    },
+    {
+      "locality": "Uttarahalli",
+      "rating": 5
+    },
+    {
+      "locality": "Nagavara",
+      "rating": 5
+    },
+    {
+      "locality": "Panduranga Nagar",
+      "rating": 5
+    },
+    {
+      "locality": "Sudhama Nagar",
+      "rating": 5
+    },
+    {
+      "locality": "Bidrahalli",
+      "rating": 5
+    },
+    {
+      "locality": "Sampangi Rama Nagar",
+      "rating": 5
+    },
+    {
+      "locality": "Jalahalli East",
+      "rating": 5
+    },
+    {
+      "locality": "Chickpet",
+      "rating": 5
+    },
+    {
+      "locality": "Ganga Nagar",
+      "rating": 4.9
+    },
+    {
+      "locality": "Hoodi",
+      "rating": 4.9
+    },
+    {
+      "locality": "RT Nagar",
+      "rating": 4.9
+    },
+    {
+      "locality": "HBR Layout",
+      "rating": 4.9
+    },
+    {
+      "locality": "Harlur",
+      "rating": 4.9
+    },
+    {
+      "locality": "Sunkadakatte",
+      "rating": 4.8
+    },
+    {
+      "locality": "Kadubeesanahalli",
+      "rating": 4.8
+    },
+    {
+      "locality": "Konanakunte",
+      "rating": 4.8
+    },
+    {
+      "locality": "Jayamahal",
+      "rating": 4.8
+    },
+    {
+      "locality": "Begur",
+      "rating": 4.8
+    },
+    {
+      "locality": "Jeevanbheema Nagar",
+      "rating": 4.8
+    },
+    {
+      "locality": "Nandini Layout",
+      "rating": 4.7
+    },
+    {
+      "locality": "RMV 2nd Stage",
+      "rating": 4.7
+    },
+    {
+      "locality": "Shanthi Nagar",
+      "rating": 4.7
+    },
+    {
+      "locality": "Maruthi Sevanagar",
+      "rating": 4.7
+    },
+    {
+      "locality": "Ragavendra Nagar-Sunkadakatte",
+      "rating": 4.7
+    },
+    {
+      "locality": "Kempegowda Nagar",
+      "rating": 4.7
+    },
+    {
+      "locality": "Kanakapura Road",
+      "rating": 4.7
+    },
+    {
+      "locality": "Bannerghatta",
+      "rating": 4.7
+    },
+    {
+      "locality": "Kamala Nagar",
+      "rating": 4.7
+    },
+    {
+      "locality": "Richmond Town",
+      "rating": 4.7
+    },
+    {
+      "locality": "Chikkalasandra",
+      "rating": 4.7
+    },
+    {
+      "locality": "Kalena Agrahara",
+      "rating": 4.7
+    },
+    {
+      "locality": "Bidadi",
+      "rating": 4.6
+    },
+    {
+      "locality": "Kasavanahalli",
+      "rating": 4.6
+    },
+    {
+      "locality": "Kadugodi",
+      "rating": 4.6
+    },
+    {
+      "locality": "Varthur",
+      "rating": 4.6
+    },
+    {
+      "locality": "Hombegowda Nagar",
+      "rating": 4.6
+    },
+    {
+      "locality": "Dommasandra",
+      "rating": 4.6
+    },
+    {
+      "locality": "Jakkur",
+      "rating": 4.6
+    },
+    {
+      "locality": "Battarahalli",
+      "rating": 4.6
+    },
+    {
+      "locality": "Cox Town",
+      "rating": 4.5
+    },
+    {
+      "locality": "Hesaraghatta",
+      "rating": 4.5
+    },
+    {
+      "locality": "Annapurneshwari Nagar",
+      "rating": 4.5
+    },
+    {
+      "locality": "Basapura",
+      "rating": 4.5
+    },
+    {
+      "locality": "Singasandra",
+      "rating": 4.5
+    },
+    {
+      "locality": "Kalkere",
+      "rating": 4.5
+    },
+    {
+      "locality": "Hegde Nagar",
+      "rating": 4.5
+    },
+    {
+      "locality": "Abbigere",
+      "rating": 4.5
+    },
+    {
+      "locality": "kaikondrahalli",
+      "rating": 4.5
+    },
+    {
+      "locality": "Chikbanavara",
+      "rating": 4.5
+    },
+    {
+      "locality": "Neelasandra",
+      "rating": 4.5
+    },
+    {
+      "locality": "Hosakerehalli",
+      "rating": 4.5
+    },
+    {
+      "locality": "Jnana Ganga Nagar",
+      "rating": 4.5
+    },
+    {
+      "locality": "Jaya Chamarajendra Nagar",
+      "rating": 4.5
+    },
+    {
+      "locality": "Kadugondanahalli",
+      "rating": 4.4
+    },
+    {
+      "locality": "Viveka Nagar",
+      "rating": 4.4
+    },
+    {
+      "locality": "Guttahalli",
+      "rating": 4.4
+    },
+    {
+      "locality": "Chansandra",
+      "rating": 4.4
+    },
+    {
+      "locality": "Victoria Layout",
+      "rating": 4.4
+    },
+    {
+      "locality": "Kaval Byrasandra",
+      "rating": 4.4
+    },
+    {
+      "locality": "Maruthi Nagar",
+      "rating": 4.4
+    },
+    {
+      "locality": "Cooke Town",
+      "rating": 4.4
+    },
+    {
+      "locality": "Devarachikkanahalli",
+      "rating": 4.4
+    },
+    {
+      "locality": "Azad Nagar",
+      "rating": 4.4
+    },
+    {
+      "locality": "Subramanyapura",
+      "rating": 4.4
+    },
+    {
+      "locality": "Benson Town",
+      "rating": 4.4
+    },
+    {
+      "locality": "Doddabommasandra",
+      "rating": 4.4
+    },
+    {
+      "locality": "Kengeri",
+      "rating": 4.4
+    },
+    {
+      "locality": "Basaveshwara Nagar",
+      "rating": 4.4
+    },
+    {
+      "locality": "Lingaraja Puram",
+      "rating": 4.3
+    },
+    {
+      "locality": "Richards Town",
+      "rating": 4.3
+    },
+    {
+      "locality": "Kothanur",
+      "rating": 4.3
+    },
+    {
+      "locality": "Kodigehalli",
+      "rating": 4.3
+    },
+    {
+      "locality": "Soundarya Layout",
+      "rating": 4.3
+    },
+    {
+      "locality": "Nagasandra",
+      "rating": 4.3
+    },
+    {
+      "locality": "Thanisandra",
+      "rating": 4.3
+    },
+    {
+      "locality": "Devinagar",
+      "rating": 4.3
+    },
+    {
+      "locality": "Bapuji Nagar",
+      "rating": 4.3
+    },
+    {
+      "locality": "Anjanapura",
+      "rating": 4.3
+    },
+    {
+      "locality": "Andrahalli",
+      "rating": 4.3
+    },
+    {
+      "locality": "Kattigenahalli",
+      "rating": 4.3
+    },
+    {
+      "locality": "Laggere",
+      "rating": 4.3
+    },
+    {
+      "locality": "SMV Layout",
+      "rating": 4.3
+    },
+    {
+      "locality": "Sarjapur",
+      "rating": 4.3
+    },
+    {
+      "locality": "Rayasandra",
+      "rating": 4.3
+    },
+    {
+      "locality": "Chandapura",
+      "rating": 4.3
+    },
+    {
+      "locality": "Dasarahalli Hebbal",
+      "rating": 4.3
+    },
+    {
+      "locality": "Akshayanagar",
+      "rating": 4.2
+    },
+    {
+      "locality": "Hennur Road",
+      "rating": 4.2
+    },
+    {
+      "locality": "Nelamangala",
+      "rating": 4.2
+    },
+    {
+      "locality": "Choodasandra",
+      "rating": 4.2
+    },
+    {
+      "locality": "Horamavu",
+      "rating": 4.1
+    },
+    {
+      "locality": "Hennur",
+      "rating": 4
+    },
+    {
+      "locality": "Bommasandra",
+      "rating": 4
+    },
+    {
+      "locality": "Hoskote",
+      "rating": 4
+    },
+    {
+      "locality": "Marathahalli ORR",
+      "rating": ""
+    },
+    {
+      "locality": "Navodaya Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Nayanda Halli",
+      "rating": ""
+    },
+    {
+      "locality": "Neeladri Investment Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Narasipalya",
+      "rating": ""
+    },
+    {
+      "locality": "Naidu Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Nagvarpalya Main Road",
+      "rating": ""
+    },
+    {
+      "locality": "Nallurhalli",
+      "rating": ""
+    },
+    {
+      "locality": "Nanda Kumar Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Nandi Hills",
+      "rating": ""
+    },
+    {
+      "locality": "Nandi Durg Road",
+      "rating": ""
+    },
+    {
+      "locality": "Nagondanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Nagenahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Nagashetty Halli",
+      "rating": ""
+    },
+    {
+      "locality": "Nagarur",
+      "rating": ""
+    },
+    {
+      "locality": "Nagavarapalya",
+      "rating": ""
+    },
+    {
+      "locality": "Nagdevanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Nagegowdanapalya",
+      "rating": ""
+    },
+    {
+      "locality": "Nanjamba Agrahara",
+      "rating": ""
+    },
+    {
+      "locality": "Nanjappa Garden",
+      "rating": ""
+    },
+    {
+      "locality": "Narayana Nagar 2nd Block",
+      "rating": ""
+    },
+    {
+      "locality": "Narayana Nagar 1st Block",
+      "rating": ""
+    },
+    {
+      "locality": "Narayana Nagar 3rd Block",
+      "rating": ""
+    },
+    {
+      "locality": "Narayanaghatta",
+      "rating": ""
+    },
+    {
+      "locality": "National Highway 207",
+      "rating": ""
+    },
+    {
+      "locality": "Narayanapura",
+      "rating": ""
+    },
+    {
+      "locality": "Narasipura Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Narasimhaswamy Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Nanjapura",
+      "rating": ""
+    },
+    {
+      "locality": "Nanjappa Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Naraganahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Narasapura",
+      "rating": ""
+    },
+    {
+      "locality": "Narasapura Industrial Road",
+      "rating": ""
+    },
+    {
+      "locality": "Navarathna Agrahara",
+      "rating": ""
+    },
+    {
+      "locality": "NGR Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Parimala Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Parappana Agrahara",
+      "rating": ""
+    },
+    {
+      "locality": "Paradise Colony",
+      "rating": ""
+    },
+    {
+      "locality": "Patel Muniyappa Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Patel Narayanswamy Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Pattegarhpalya",
+      "rating": ""
+    },
+    {
+      "locality": "Pattandur Agrahara",
+      "rating": ""
+    },
+    {
+      "locality": "Pattanagere",
+      "rating": ""
+    },
+    {
+      "locality": "Papareddipalya",
+      "rating": ""
+    },
+    {
+      "locality": "Papanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Pai Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Padmeshwari Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Padarayana Pura",
+      "rating": ""
+    },
+    {
+      "locality": "Palace Road",
+      "rating": ""
+    },
+    {
+      "locality": "Palanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Panathur",
+      "rating": ""
+    },
+    {
+      "locality": "Pampamahakavi Road",
+      "rating": ""
+    },
+    {
+      "locality": "Palya",
+      "rating": ""
+    },
+    {
+      "locality": "Pavamanapura",
+      "rating": ""
+    },
+    {
+      "locality": "Peddanapalya",
+      "rating": ""
+    },
+    {
+      "locality": "Popular Colony",
+      "rating": ""
+    },
+    {
+      "locality": "Poornapragna Housing Society Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Poorna Pragna Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Pothalappa Garden",
+      "rating": ""
+    },
+    {
+      "locality": "Pottery Town",
+      "rating": ""
+    },
+    {
+      "locality": "Prakash Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Prakash Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Pragathi Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Poojena Agrahara",
+      "rating": ""
+    },
+    {
+      "locality": "PNB Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Peenya 2nd Stage",
+      "rating": ""
+    },
+    {
+      "locality": "Peenya 1st Stage",
+      "rating": ""
+    },
+    {
+      "locality": "Peenya",
+      "rating": ""
+    },
+    {
+      "locality": "Peenya 3rd Stage",
+      "rating": ""
+    },
+    {
+      "locality": "Peresandra",
+      "rating": ""
+    },
+    {
+      "locality": "Pillanna Garden",
+      "rating": ""
+    },
+    {
+      "locality": "Pillahalli",
+      "rating": ""
+    },
+    {
+      "locality": "P&T Layout-Thanisandra",
+      "rating": ""
+    },
+    {
+      "locality": "P and T Layout-Ramamurthy Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "New Timberyard Layout",
+      "rating": ""
+    },
+    {
+      "locality": "New Thippasan",
+      "rating": ""
+    },
+    {
+      "locality": "New Gurappana Palya",
+      "rating": ""
+    },
+    {
+      "locality": "NGEF Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Nagareshwara-Nagenahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Nirman Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Nimbekaipura",
+      "rating": ""
+    },
+    {
+      "locality": "NICE Road",
+      "rating": ""
+    },
+    {
+      "locality": "New BEL Road",
+      "rating": ""
+    },
+    {
+      "locality": "New Bank Colony",
+      "rating": ""
+    },
+    {
+      "locality": "Nelakadiranahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Nelaguli",
+      "rating": ""
+    },
+    {
+      "locality": "Nehru Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Nelamangala - Chikkaballapura Road",
+      "rating": ""
+    },
+    {
+      "locality": "Nellukunte",
+      "rating": ""
+    },
+    {
+      "locality": "Nethaji Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Neraluru",
+      "rating": ""
+    },
+    {
+      "locality": "Neraganahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Nisarga layout",
+      "rating": ""
+    },
+    {
+      "locality": "Nisarga Nandana Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Old Byappanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Old Airport Road",
+      "rating": ""
+    },
+    {
+      "locality": "Okalipuram",
+      "rating": ""
+    },
+    {
+      "locality": "Old Madras Road",
+      "rating": ""
+    },
+    {
+      "locality": "Om Shakti Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Outer Ring Road-Banaswadi",
+      "rating": ""
+    },
+    {
+      "locality": "Outer Ring Road",
+      "rating": ""
+    },
+    {
+      "locality": "OMBR Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Off Sarjapur road",
+      "rating": ""
+    },
+    {
+      "locality": "Off Hennur Road",
+      "rating": ""
+    },
+    {
+      "locality": "NR Layout",
+      "rating": ""
+    },
+    {
+      "locality": "NR Colony",
+      "rating": ""
+    },
+    {
+      "locality": "Nobo Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "NRI Layout",
+      "rating": ""
+    },
+    {
+      "locality": "NS Palya",
+      "rating": ""
+    },
+    {
+      "locality": "Off Bannerghatta Road",
+      "rating": ""
+    },
+    {
+      "locality": "Nyanappana Halli",
+      "rating": ""
+    },
+    {
+      "locality": "Neeladri Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Mosque Road",
+      "rating": ""
+    },
+    {
+      "locality": "M Hosahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Lottegollahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Lingapura",
+      "rating": ""
+    },
+    {
+      "locality": "Lingadheeranahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Machohalli",
+      "rating": ""
+    },
+    {
+      "locality": "Madanayakahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Madeshwara Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Madavara",
+      "rating": ""
+    },
+    {
+      "locality": "Madappanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Lingadeeranhalli-Kempe Gowda Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "LB Shastri Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Lalbagh Road",
+      "rating": ""
+    },
+    {
+      "locality": "Lal Bahadur Shastri Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "lal bagh",
+      "rating": ""
+    },
+    {
+      "locality": "Lakshmipuram",
+      "rating": ""
+    },
+    {
+      "locality": "Laljinagar",
+      "rating": ""
+    },
+    {
+      "locality": "Langford Gardens",
+      "rating": ""
+    },
+    {
+      "locality": "Lavelle Road",
+      "rating": ""
+    },
+    {
+      "locality": "Langford Town",
+      "rating": ""
+    },
+    {
+      "locality": "Langford Road",
+      "rating": ""
+    },
+    {
+      "locality": "Madhava Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Madhavan Park",
+      "rating": ""
+    },
+    {
+      "locality": "Mallasandra",
+      "rating": ""
+    },
+    {
+      "locality": "Maligondanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Malagala",
+      "rating": ""
+    },
+    {
+      "locality": "Makali",
+      "rating": ""
+    },
+    {
+      "locality": "Mallathahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Malle Nalsandra",
+      "rating": ""
+    },
+    {
+      "locality": "Malur-Hosur Road",
+      "rating": ""
+    },
+    {
+      "locality": "Malleswaram West",
+      "rating": ""
+    },
+    {
+      "locality": "Malleshpalya",
+      "rating": ""
+    },
+    {
+      "locality": "Majestic",
+      "rating": ""
+    },
+    {
+      "locality": "Mailasandra",
+      "rating": ""
+    },
+    {
+      "locality": "Magadi Road",
+      "rating": ""
+    },
+    {
+      "locality": "Madiwala",
+      "rating": ""
+    },
+    {
+      "locality": "Madhura Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Magrath Road",
+      "rating": ""
+    },
+    {
+      "locality": "Mahadeva Kodigehalli",
+      "rating": ""
+    },
+    {
+      "locality": "Mahalakshmipuram",
+      "rating": ""
+    },
+    {
+      "locality": "Mahalakshmi Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Mahaganapathi Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Lakshmipura",
+      "rating": ""
+    },
+    {
+      "locality": "Lakshminarayanapuram",
+      "rating": ""
+    },
+    {
+      "locality": "Kumara Park East",
+      "rating": ""
+    },
+    {
+      "locality": "Kukkanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Kuduregere-Soladevanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Kuduragere-Bettahalasur",
+      "rating": ""
+    },
+    {
+      "locality": "Kumara Park West",
+      "rating": ""
+    },
+    {
+      "locality": "Kumbalgodu",
+      "rating": ""
+    },
+    {
+      "locality": "Kumbena Agrahara",
+      "rating": ""
+    },
+    {
+      "locality": "Kumbarpet",
+      "rating": ""
+    },
+    {
+      "locality": "Kumbalgodu Industrial Area",
+      "rating": ""
+    },
+    {
+      "locality": "Kudlu Gate",
+      "rating": ""
+    },
+    {
+      "locality": "Kudlu",
+      "rating": ""
+    },
+    {
+      "locality": "Koti Hosahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Kothanoor",
+      "rating": ""
+    },
+    {
+      "locality": "Koramangala 8th Block",
+      "rating": ""
+    },
+    {
+      "locality": "Koramangala 7th Block",
+      "rating": ""
+    },
+    {
+      "locality": "Kottigepalya",
+      "rating": ""
+    },
+    {
+      "locality": "KR Road",
+      "rating": ""
+    },
+    {
+      "locality": "Koramangala 5th Block",
+      "rating": ""
+    },
+    {
+      "locality": "Krishnasagara",
+      "rating": ""
+    },
+    {
+      "locality": "Krishnappa Garden",
+      "rating": ""
+    },
+    {
+      "locality": "Kumbharhalli",
+      "rating": ""
+    },
+    {
+      "locality": "Kumbiganahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Lakkasandra Extension",
+      "rating": ""
+    },
+    {
+      "locality": "Lakkasandra",
+      "rating": ""
+    },
+    {
+      "locality": "Lake City",
+      "rating": ""
+    },
+    {
+      "locality": "Laggere Road",
+      "rating": ""
+    },
+    {
+      "locality": "Lakkenahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Lakkondally",
+      "rating": ""
+    },
+    {
+      "locality": "Lakshminarayana Pura",
+      "rating": ""
+    },
+    {
+      "locality": "Lakshmidevipura",
+      "rating": ""
+    },
+    {
+      "locality": "Lakshmamma Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Laggere Bridge",
+      "rating": ""
+    },
+    {
+      "locality": "Kyalasanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Kurubara Gollahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Kunigal Road",
+      "rating": ""
+    },
+    {
+      "locality": "Kundalahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Kurubarahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Kurudusonnenahalli",
+      "rating": ""
+    },
+    {
+      "locality": "KV Muniyappa Garden Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Kuthaganahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Kushal Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Manchenahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Mandur",
+      "rating": ""
+    },
+    {
+      "locality": "Muddinapalya",
+      "rating": ""
+    },
+    {
+      "locality": "Muddenahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Muddamma Garden Extension",
+      "rating": ""
+    },
+    {
+      "locality": "Mudalapalya",
+      "rating": ""
+    },
+    {
+      "locality": "Mukthi Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Mullur",
+      "rating": ""
+    },
+    {
+      "locality": "Muneshwara Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Muneshwara Block",
+      "rating": ""
+    },
+    {
+      "locality": "Mundur",
+      "rating": ""
+    },
+    {
+      "locality": "MTS Layout",
+      "rating": ""
+    },
+    {
+      "locality": "MS Palya",
+      "rating": ""
+    },
+    {
+      "locality": "Mission Road",
+      "rating": ""
+    },
+    {
+      "locality": "Koramangala 3rd Block",
+      "rating": ""
+    },
+    {
+      "locality": "Minhaj Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Minerva Circle",
+      "rating": ""
+    },
+    {
+      "locality": "Mittaganahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Pramod Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Koramangala 6th Block",
+      "rating": ""
+    },
+    {
+      "locality": "Mookambika Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "MLA Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Muneswara Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Munireddy Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Nagappa Reddy Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Naganathapura",
+      "rating": ""
+    },
+    {
+      "locality": "Nagamuneshwara Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Nagamangala",
+      "rating": ""
+    },
+    {
+      "locality": "Nagapura",
+      "rating": ""
+    },
+    {
+      "locality": "Nagarabhavi 1st stage",
+      "rating": ""
+    },
+    {
+      "locality": "Nagarathpete",
+      "rating": ""
+    },
+    {
+      "locality": "Nagarabhavi Main Road",
+      "rating": ""
+    },
+    {
+      "locality": "Nagarabhavi 2nd Stage",
+      "rating": ""
+    },
+    {
+      "locality": "Mysore Road",
+      "rating": ""
+    },
+    {
+      "locality": "Mylasandra",
+      "rating": ""
+    },
+    {
+      "locality": "Museum Road",
+      "rating": ""
+    },
+    {
+      "locality": "Munnekollal",
+      "rating": ""
+    },
+    {
+      "locality": "Munireddypalya",
+      "rating": ""
+    },
+    {
+      "locality": "Muthanallur",
+      "rating": ""
+    },
+    {
+      "locality": "Muthkur",
+      "rating": ""
+    },
+    {
+      "locality": "Mylanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Muthyala Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Muthusandra",
+      "rating": ""
+    },
+    {
+      "locality": "Millers Road",
+      "rating": ""
+    },
+    {
+      "locality": "Milk Colony",
+      "rating": ""
+    },
+    {
+      "locality": "Mariyannapalya",
+      "rating": ""
+    },
+    {
+      "locality": "Margondanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Marenahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Marathahalli-Sarjapur Outer Ring Road",
+      "rating": ""
+    },
+    {
+      "locality": "Mariyappana Palya",
+      "rating": ""
+    },
+    {
+      "locality": "Marsandra-Anagalapura",
+      "rating": ""
+    },
+    {
+      "locality": "Maruthi Nagar Yelahanka",
+      "rating": ""
+    },
+    {
+      "locality": "Maruthi Extension",
+      "rating": ""
+    },
+    {
+      "locality": "Marsur",
+      "rating": ""
+    },
+    {
+      "locality": "Koramangala 4th Block",
+      "rating": ""
+    },
+    {
+      "locality": "Marasandra",
+      "rating": ""
+    },
+    {
+      "locality": "Manjunath Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Manganahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Mangammanapalya",
+      "rating": ""
+    },
+    {
+      "locality": "Manjunatha Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Manorayana Palya",
+      "rating": ""
+    },
+    {
+      "locality": "Maralakunte",
+      "rating": ""
+    },
+    {
+      "locality": "Maragondanahalli-Electronic City",
+      "rating": ""
+    },
+    {
+      "locality": "Maragondanahalli Main Road",
+      "rating": ""
+    },
+    {
+      "locality": "Maruti Nagar-BTM Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Masti - Malur Road",
+      "rating": ""
+    },
+    {
+      "locality": "Meenakunte",
+      "rating": ""
+    },
+    {
+      "locality": "Meenakshi Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Medimallasandra",
+      "rating": ""
+    },
+    {
+      "locality": "Medihalli",
+      "rating": ""
+    },
+    {
+      "locality": "Meesaganahalli",
+      "rating": ""
+    },
+    {
+      "locality": "MEI Colony",
+      "rating": ""
+    },
+    {
+      "locality": "Mico Layout",
+      "rating": ""
+    },
+    {
+      "locality": "MG Road",
+      "rating": ""
+    },
+    {
+      "locality": "MEI Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Medi Agrahara",
+      "rating": ""
+    },
+    {
+      "locality": "Medaralli",
+      "rating": ""
+    },
+    {
+      "locality": "Mavalli",
+      "rating": ""
+    },
+    {
+      "locality": "Mathrushree Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Matadahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Mavallipura",
+      "rating": ""
+    },
+    {
+      "locality": "Mayaghanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Medahalli",
+      "rating": ""
+    },
+    {
+      "locality": "MCECHS Layout",
+      "rating": ""
+    },
+    {
+      "locality": "MC Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Nagarbhavi Circle",
+      "rating": ""
+    },
+    {
+      "locality": "Rampura",
+      "rating": ""
+    },
+    {
+      "locality": "Thattekuppe",
+      "rating": ""
+    },
+    {
+      "locality": "Thathaguni",
+      "rating": ""
+    },
+    {
+      "locality": "Tharalu",
+      "rating": ""
+    },
+    {
+      "locality": "Tharahunise",
+      "rating": ""
+    },
+    {
+      "locality": "Thavarekere-Hoskote",
+      "rating": ""
+    },
+    {
+      "locality": "Thavarekere-Magadi Road",
+      "rating": ""
+    },
+    {
+      "locality": "Thimappa Reddy Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Thimaiah Garden",
+      "rating": ""
+    },
+    {
+      "locality": "Thigala Chowdadenahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Thidlu",
+      "rating": ""
+    },
+    {
+      "locality": "Tharabanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Tharaballi",
+      "rating": ""
+    },
+    {
+      "locality": "Thambuchetty Palya",
+      "rating": ""
+    },
+    {
+      "locality": "Thalaghattapura",
+      "rating": ""
+    },
+    {
+      "locality": "Telecom Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Tejaswini Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Thammanayakanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Thammasettihalli",
+      "rating": ""
+    },
+    {
+      "locality": "Thanisandra Road",
+      "rating": ""
+    },
+    {
+      "locality": "Thanisandra Main Road",
+      "rating": ""
+    },
+    {
+      "locality": "Thammenahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Thimmapura",
+      "rating": ""
+    },
+    {
+      "locality": "Thindlu",
+      "rating": ""
+    },
+    {
+      "locality": "Tilak Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Tigalarpalya",
+      "rating": ""
+    },
+    {
+      "locality": "Thyamagondlu",
+      "rating": ""
+    },
+    {
+      "locality": "Thyagaraja Nagar 2nd Block",
+      "rating": ""
+    },
+    {
+      "locality": "Tippenahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Totagere",
+      "rating": ""
+    },
+    {
+      "locality": "Udaya Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Tunganagara",
+      "rating": ""
+    },
+    {
+      "locality": "Tumkur Road",
+      "rating": ""
+    },
+    {
+      "locality": "Thyagaraja Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Thurahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Thirumalashettyhally",
+      "rating": ""
+    },
+    {
+      "locality": "Thirumalapura",
+      "rating": ""
+    },
+    {
+      "locality": "Thirumagondanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Thippasandra",
+      "rating": ""
+    },
+    {
+      "locality": "Thirumenahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Thomas Town",
+      "rating": ""
+    },
+    {
+      "locality": "Thubarahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Thotada Guddadhalli",
+      "rating": ""
+    },
+    {
+      "locality": "Thondebavi",
+      "rating": ""
+    },
+    {
+      "locality": "Teacher's Colony",
+      "rating": ""
+    },
+    {
+      "locality": "TC Palya Road",
+      "rating": ""
+    },
+    {
+      "locality": "Suddaguntapalya-CV Raman Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Subramanyapura Main Road",
+      "rating": ""
+    },
+    {
+      "locality": "Subramanyanagar",
+      "rating": ""
+    },
+    {
+      "locality": "Subbannayapalya",
+      "rating": ""
+    },
+    {
+      "locality": "Suddagunte Palya",
+      "rating": ""
+    },
+    {
+      "locality": "Suggatta",
+      "rating": ""
+    },
+    {
+      "locality": "Sultanpalya",
+      "rating": ""
+    },
+    {
+      "locality": "Sulivara",
+      "rating": ""
+    },
+    {
+      "locality": "locality",
+      "rating": "rating"
+    },
+    {
+      "locality": "Sulikere",
+      "rating": ""
+    },
+    {
+      "locality": "Subbannaiah Palya",
+      "rating": ""
+    },
+    {
+      "locality": "Subbaiyapalya",
+      "rating": ""
+    },
+    {
+      "locality": "Srinivaspura",
+      "rating": ""
+    },
+    {
+      "locality": "Srinivaspur",
+      "rating": ""
+    },
+    {
+      "locality": "Srinivasnagar",
+      "rating": ""
+    },
+    {
+      "locality": "Srinivasa Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Srirampura",
+      "rating": ""
+    },
+    {
+      "locality": "St Marks Road",
+      "rating": ""
+    },
+    {
+      "locality": "State Bank of India Colony",
+      "rating": ""
+    },
+    {
+      "locality": "St. Johns Road",
+      "rating": ""
+    },
+    {
+      "locality": "St Thomas Town",
+      "rating": ""
+    },
+    {
+      "locality": "Sultanpete",
+      "rating": ""
+    },
+    {
+      "locality": "Sulthangunta",
+      "rating": ""
+    },
+    {
+      "locality": "Tataguni",
+      "rating": ""
+    },
+    {
+      "locality": "Tasker Town",
+      "rating": ""
+    },
+    {
+      "locality": "Taralu",
+      "rating": ""
+    },
+    {
+      "locality": "Tapsihalli",
+      "rating": ""
+    },
+    {
+      "locality": "Tatanagar",
+      "rating": ""
+    },
+    {
+      "locality": "Tavarekere Main Road",
+      "rating": ""
+    },
+    {
+      "locality": "TC Palya",
+      "rating": ""
+    },
+    {
+      "locality": "Tavarekere-BTM Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Tavarekere-BTM",
+      "rating": ""
+    },
+    {
+      "locality": "Tannery Road",
+      "rating": ""
+    },
+    {
+      "locality": "Tank Bund Road",
+      "rating": ""
+    },
+    {
+      "locality": "Suryanagar",
+      "rating": ""
+    },
+    {
+      "locality": "Sunny Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Sunkalpalya",
+      "rating": ""
+    },
+    {
+      "locality": "Sundara Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Syndicate Bank Colony-Arekere",
+      "rating": ""
+    },
+    {
+      "locality": "Syndicate Bank Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Talaghattapura",
+      "rating": ""
+    },
+    {
+      "locality": "Talacauvery Layout",
+      "rating": ""
+    },
+    {
+      "locality": "T.Begur",
+      "rating": ""
+    },
+    {
+      "locality": "Udaypura",
+      "rating": ""
+    },
+    {
+      "locality": "Ullal",
+      "rating": ""
+    },
+    {
+      "locality": "Vishweshwaraiah Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Vishwapriya Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Vishwanathpura",
+      "rating": ""
+    },
+    {
+      "locality": "Virupakshapura",
+      "rating": ""
+    },
+    {
+      "locality": "Vishweshwarapura",
+      "rating": ""
+    },
+    {
+      "locality": "Visthar",
+      "rating": ""
+    },
+    {
+      "locality": "Vittal Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Vittal Mallya Road",
+      "rating": ""
+    },
+    {
+      "locality": "Viswaneedam",
+      "rating": ""
+    },
+    {
+      "locality": "Virgonagar",
+      "rating": ""
+    },
+    {
+      "locality": "Viratnagar",
+      "rating": ""
+    },
+    {
+      "locality": "Vijayashri Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Vijayapura",
+      "rating": ""
+    },
+    {
+      "locality": "Vijaya Bank Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Vijaya Bank Colony",
+      "rating": ""
+    },
+    {
+      "locality": "Vijinapura",
+      "rating": ""
+    },
+    {
+      "locality": "Vimanapura",
+      "rating": ""
+    },
+    {
+      "locality": "Vinayakanagar-Hebbal",
+      "rating": ""
+    },
+    {
+      "locality": "Vinayaka Nagar-Vimanapura",
+      "rating": ""
+    },
+    {
+      "locality": "Vinayaka Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Vittasandra",
+      "rating": ""
+    },
+    {
+      "locality": "Vivekananda Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Yelahanka Airforce Road",
+      "rating": ""
+    },
+    {
+      "locality": "Yelachenahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Yekadantha Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Yediyur",
+      "rating": ""
+    },
+    {
+      "locality": "Yelanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Yemalur",
+      "rating": ""
+    },
+    {
+      "locality": "Yettakodi",
+      "rating": ""
+    },
+    {
+      "locality": "Yerthiganahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Yerappanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Yarandahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Yarab Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Wheeler Road",
+      "rating": ""
+    },
+    {
+      "locality": "West Of Chord Road",
+      "rating": ""
+    },
+    {
+      "locality": "Weavers Colony",
+      "rating": ""
+    },
+    {
+      "locality": "Vyalikaval",
+      "rating": ""
+    },
+    {
+      "locality": "Whitefield Road",
+      "rating": ""
+    },
+    {
+      "locality": "Williams Town",
+      "rating": ""
+    },
+    {
+      "locality": "Yadavanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Yadava Upanagara",
+      "rating": ""
+    },
+    {
+      "locality": "Wind Tunnel Road",
+      "rating": ""
+    },
+    {
+      "locality": "Vignana Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Vignana Kendra",
+      "rating": ""
+    },
+    {
+      "locality": "Vagata",
+      "rating": ""
+    },
+    {
+      "locality": "Vaderamanchana Halli",
+      "rating": ""
+    },
+    {
+      "locality": "Vaderahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Vaddarapalya",
+      "rating": ""
+    },
+    {
+      "locality": "Vagdevi Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Vaishnavi Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Vanivilas Road",
+      "rating": ""
+    },
+    {
+      "locality": "Valepura",
+      "rating": ""
+    },
+    {
+      "locality": "Vajarahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Vadarpalya",
+      "rating": ""
+    },
+    {
+      "locality": "Vabasandra",
+      "rating": ""
+    },
+    {
+      "locality": "Upkar Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Umar Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Ullalu Upanagara",
+      "rating": ""
+    },
+    {
+      "locality": "Ullal Main Road",
+      "rating": ""
+    },
+    {
+      "locality": "Uttarahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Uttarahalli Main Road",
+      "rating": ""
+    },
+    {
+      "locality": "V S Reddy Colony",
+      "rating": ""
+    },
+    {
+      "locality": "V Nagenahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Uttari",
+      "rating": ""
+    },
+    {
+      "locality": "Varanasi",
+      "rating": ""
+    },
+    {
+      "locality": "Varanasi Main Road",
+      "rating": ""
+    },
+    {
+      "locality": "VHBCS Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Venkateshwara Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Venkateshpuram",
+      "rating": ""
+    },
+    {
+      "locality": "Venkatapura",
+      "rating": ""
+    },
+    {
+      "locality": "Vibhutipura",
+      "rating": ""
+    },
+    {
+      "locality": "Vidhana Soudha",
+      "rating": ""
+    },
+    {
+      "locality": "Vidyapeeta Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Vidyanagar",
+      "rating": ""
+    },
+    {
+      "locality": "Vidyamanya Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Venkatala",
+      "rating": ""
+    },
+    {
+      "locality": "Venkatagiri Kote",
+      "rating": ""
+    },
+    {
+      "locality": "Vasanthapura",
+      "rating": ""
+    },
+    {
+      "locality": "Vasantha Vallabha Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Varthur Road",
+      "rating": ""
+    },
+    {
+      "locality": "Varthur Kodi",
+      "rating": ""
+    },
+    {
+      "locality": "Vasanthapura Main Road",
+      "rating": ""
+    },
+    {
+      "locality": "Veerannapalya",
+      "rating": ""
+    },
+    {
+      "locality": "Venkatadri Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Vehloli",
+      "rating": ""
+    },
+    {
+      "locality": "Veersandra",
+      "rating": ""
+    },
+    {
+      "locality": "Srinivagilu",
+      "rating": ""
+    },
+    {
+      "locality": "Srinidhi Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Roopena Agrahara",
+      "rating": ""
+    },
+    {
+      "locality": "RMV Extension",
+      "rating": ""
+    },
+    {
+      "locality": "RMV",
+      "rating": ""
+    },
+    {
+      "locality": "RKM Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Rotary Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Royal County",
+      "rating": ""
+    },
+    {
+      "locality": "Rukmini Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Rukmani Colony",
+      "rating": ""
+    },
+    {
+      "locality": "RPC Layout",
+      "rating": ""
+    },
+    {
+      "locality": "RK Township",
+      "rating": ""
+    },
+    {
+      "locality": "Richmond Road",
+      "rating": ""
+    },
+    {
+      "locality": "Reshme Nagara",
+      "rating": ""
+    },
+    {
+      "locality": "Remco Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Reddypalya",
+      "rating": ""
+    },
+    {
+      "locality": "RBI East Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Residency Road",
+      "rating": ""
+    },
+    {
+      "locality": "Rest House Road",
+      "rating": ""
+    },
+    {
+      "locality": "Riches Garden Main Road",
+      "rating": ""
+    },
+    {
+      "locality": "Richard's Park",
+      "rating": ""
+    },
+    {
+      "locality": "RHB Colony",
+      "rating": ""
+    },
+    {
+      "locality": "Rustam Bagh Layout",
+      "rating": ""
+    },
+    {
+      "locality": "S K Garden",
+      "rating": ""
+    },
+    {
+      "locality": "Sanchar Nagar MCECHS Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Samruddi Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Sampigehalli",
+      "rating": ""
+    },
+    {
+      "locality": "Sampige Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Sanjay Gandhi Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Sanjeevini Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Saptagiri Layout-RR Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Santhosh Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Sankey Road",
+      "rating": ""
+    },
+    {
+      "locality": "Samethanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Sakalavara",
+      "rating": ""
+    },
+    {
+      "locality": "Sadahalli",
+      "rating": ""
+    },
+    {
+      "locality": "S.T. Bed",
+      "rating": ""
+    },
+    {
+      "locality": "S.Medihalli",
+      "rating": ""
+    },
+    {
+      "locality": "S.Bingipura",
+      "rating": ""
+    },
+    {
+      "locality": "Sadanandanagar",
+      "rating": ""
+    },
+    {
+      "locality": "Sadaramangala",
+      "rating": ""
+    },
+    {
+      "locality": "Sai Colony",
+      "rating": ""
+    },
+    {
+      "locality": "Sadguru Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Sadenahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Razack Palya",
+      "rating": ""
+    },
+    {
+      "locality": "Ravuthanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Raghuvanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Raghavendra Nagar-Kalkere",
+      "rating": ""
+    },
+    {
+      "locality": "Raghavendra Colony",
+      "rating": ""
+    },
+    {
+      "locality": "Rachenahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Ragihalli",
+      "rating": ""
+    },
+    {
+      "locality": "Rahat Bagh",
+      "rating": ""
+    },
+    {
+      "locality": "Raj Bhavan Road",
+      "rating": ""
+    },
+    {
+      "locality": "Rahuthnahalli Main Road",
+      "rating": ""
+    },
+    {
+      "locality": "Rahmath Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Race Course Road",
+      "rating": ""
+    },
+    {
+      "locality": "R.K. Hegde Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Pulikeshi Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Pukhraj Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Priyadarshini Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Prashant Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Punappa Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Pura",
+      "rating": ""
+    },
+    {
+      "locality": "R V Niketan",
+      "rating": ""
+    },
+    {
+      "locality": "Queens Road",
+      "rating": ""
+    },
+    {
+      "locality": "Puttenahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Raja Ram Mohanroy Extension",
+      "rating": ""
+    },
+    {
+      "locality": "Rajaji Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Ramohalli",
+      "rating": ""
+    },
+    {
+      "locality": "Rameshnagar",
+      "rating": ""
+    },
+    {
+      "locality": "Ramchandrapuram",
+      "rating": ""
+    },
+    {
+      "locality": "Ramaswamipalya",
+      "rating": ""
+    },
+    {
+      "locality": "Koramangala 2nd Block",
+      "rating": ""
+    },
+    {
+      "locality": "Ramsandra",
+      "rating": ""
+    },
+    {
+      "locality": "Rashtriya Vidyalaya Road",
+      "rating": ""
+    },
+    {
+      "locality": "Ranka Colony",
+      "rating": ""
+    },
+    {
+      "locality": "Rangadasapp Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Ramanna Garden",
+      "rating": ""
+    },
+    {
+      "locality": "Ramanjaneyanagar",
+      "rating": ""
+    },
+    {
+      "locality": "Rajeshwari Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Rajanukunte",
+      "rating": ""
+    },
+    {
+      "locality": "Rajajinagar 2nd Stage",
+      "rating": ""
+    },
+    {
+      "locality": "Rajaji Nagar 1st Stage",
+      "rating": ""
+    },
+    {
+      "locality": "Rajiv Gandhi Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Rajvi Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Ramagondanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Ramachandrapuram",
+      "rating": ""
+    },
+    {
+      "locality": "Ram Krishna Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Sapthagiri Layout-Kadubeesanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Saraipalya",
+      "rating": ""
+    },
+    {
+      "locality": "Sir M Vishweshwaraiah Layout 5th Block",
+      "rating": ""
+    },
+    {
+      "locality": "Sir M Vishweshwaraiah Layout 2nd Block",
+      "rating": ""
+    },
+    {
+      "locality": "Sir M Vishveswaraya Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Sir M V Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Sivan Chetty Gardens",
+      "rating": ""
+    },
+    {
+      "locality": "Soladevanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Somapura",
+      "rating": ""
+    },
+    {
+      "locality": "Somanhalli",
+      "rating": ""
+    },
+    {
+      "locality": "Solur",
+      "rating": ""
+    },
+    {
+      "locality": "Singapura Village",
+      "rating": ""
+    },
+    {
+      "locality": "Singapura Paradise",
+      "rating": ""
+    },
+    {
+      "locality": "Sidlaghatta",
+      "rating": ""
+    },
+    {
+      "locality": "Sidihosakote",
+      "rating": ""
+    },
+    {
+      "locality": "Sidedahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Siddhartha Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Silvepura",
+      "rating": ""
+    },
+    {
+      "locality": "Silver Springs Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Singapura",
+      "rating": ""
+    },
+    {
+      "locality": "Singanayakanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Singanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Somashetti Halli",
+      "rating": ""
+    },
+    {
+      "locality": "Somasundarapalya",
+      "rating": ""
+    },
+    {
+      "locality": "Sri Jayachamarajendra Road",
+      "rating": ""
+    },
+    {
+      "locality": "Sri Chowdeshwari",
+      "rating": ""
+    },
+    {
+      "locality": "Sreeramanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Southegowdanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Sri Ram Puram",
+      "rating": ""
+    },
+    {
+      "locality": "Srigandadakaval",
+      "rating": ""
+    },
+    {
+      "locality": "Srinagar",
+      "rating": ""
+    },
+    {
+      "locality": "Srigandha Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Srigandha Kaval",
+      "rating": ""
+    },
+    {
+      "locality": "South Avenue Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Soukya Road",
+      "rating": ""
+    },
+    {
+      "locality": "Sompura Gate",
+      "rating": ""
+    },
+    {
+      "locality": "Sompura",
+      "rating": ""
+    },
+    {
+      "locality": "Someshwara Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Someshwara Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Sonam Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Sonappa Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Soppahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Sonnenahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Sondekoppa",
+      "rating": ""
+    },
+    {
+      "locality": "Siddapura Road",
+      "rating": ""
+    },
+    {
+      "locality": "Siddapura",
+      "rating": ""
+    },
+    {
+      "locality": "Seetharampalya",
+      "rating": ""
+    },
+    {
+      "locality": "Seenappa Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Seegehalli Main Road",
+      "rating": ""
+    },
+    {
+      "locality": "Seegehalli",
+      "rating": ""
+    },
+    {
+      "locality": "Serenity Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Seshadri Road",
+      "rating": ""
+    },
+    {
+      "locality": "Sevashrama",
+      "rating": ""
+    },
+    {
+      "locality": "Seva Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Seshadripuram Main Road",
+      "rating": ""
+    },
+    {
+      "locality": "SBM Colony",
+      "rating": ""
+    },
+    {
+      "locality": "Sathanur",
+      "rating": ""
+    },
+    {
+      "locality": "Saraswathi Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Sarakki Main Road",
+      "rating": ""
+    },
+    {
+      "locality": "Sarakki Gate",
+      "rating": ""
+    },
+    {
+      "locality": "Sarakariguttahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Sarjapur Attibele Road",
+      "rating": ""
+    },
+    {
+      "locality": "Sarjapur Bagalur Road",
+      "rating": ""
+    },
+    {
+      "locality": "Sasiveghatta",
+      "rating": ""
+    },
+    {
+      "locality": "Sarvagnanagar",
+      "rating": ""
+    },
+    {
+      "locality": "Sarjapur Outer Ring Road",
+      "rating": ""
+    },
+    {
+      "locality": "Shamana Garden",
+      "rating": ""
+    },
+    {
+      "locality": "Shamanna Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Shivanagar",
+      "rating": ""
+    },
+    {
+      "locality": "Shivakote",
+      "rating": ""
+    },
+    {
+      "locality": "Shiridi Sai Baba Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Shikaripalya",
+      "rating": ""
+    },
+    {
+      "locality": "Shivanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Shivananda Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Shrirampuram",
+      "rating": ""
+    },
+    {
+      "locality": "Shree Ananth Nagar Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Shivanapura",
+      "rating": ""
+    },
+    {
+      "locality": "Shigehalli",
+      "rating": ""
+    },
+    {
+      "locality": "Shettihalli",
+      "rating": ""
+    },
+    {
+      "locality": "Shanthi Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Shanthala Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Shankarapura",
+      "rating": ""
+    },
+    {
+      "locality": "Shampura",
+      "rating": ""
+    },
+    {
+      "locality": "Shanthi Pura",
+      "rating": ""
+    },
+    {
+      "locality": "Shanubhoganahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Shettigere",
+      "rating": ""
+    },
+    {
+      "locality": "Shastri Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Sharada Colony",
+      "rating": ""
+    },
+    {
+      "locality": "Prasanth Extension",
+      "rating": ""
+    },
+    {
+      "locality": "Kempapura",
+      "rating": ""
+    },
+    {
+      "locality": "Chelekare",
+      "rating": ""
+    },
+    {
+      "locality": "Cheemasandra",
+      "rating": ""
+    },
+    {
+      "locality": "Channenahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Channarayapatna",
+      "rating": ""
+    },
+    {
+      "locality": "Chennammana Kere",
+      "rating": ""
+    },
+    {
+      "locality": "Chennappa Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Chikka Tirupathi",
+      "rating": ""
+    },
+    {
+      "locality": "Chikka Banaswadi",
+      "rating": ""
+    },
+    {
+      "locality": "Chikka Adugodi",
+      "rating": ""
+    },
+    {
+      "locality": "Chandra Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Chandapura-Sarjapura Road",
+      "rating": ""
+    },
+    {
+      "locality": "Chakravarthy Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Chadalapura",
+      "rating": ""
+    },
+    {
+      "locality": "Central Silk Board",
+      "rating": ""
+    },
+    {
+      "locality": "Celebrity Paradise Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Challaghatta",
+      "rating": ""
+    },
+    {
+      "locality": "Challegatta",
+      "rating": ""
+    },
+    {
+      "locality": "Chandapura Dommasandra Road",
+      "rating": ""
+    },
+    {
+      "locality": "Chandapura Anekal Road",
+      "rating": ""
+    },
+    {
+      "locality": "Chamundi Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Chikka Tirupathi Road",
+      "rating": ""
+    },
+    {
+      "locality": "Chikkaballapur",
+      "rating": ""
+    },
+    {
+      "locality": "Chikkasagarahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Chikkanekkundi",
+      "rating": ""
+    },
+    {
+      "locality": "Chikkanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Chikkanagamangala",
+      "rating": ""
+    },
+    {
+      "locality": "Chikkathoguru",
+      "rating": ""
+    },
+    {
+      "locality": "Chikkavadagere",
+      "rating": ""
+    },
+    {
+      "locality": "Chinana Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Chikkellur Ramapura",
+      "rating": ""
+    },
+    {
+      "locality": "Chikkavaderapura",
+      "rating": ""
+    },
+    {
+      "locality": "Chikkakannalli",
+      "rating": ""
+    },
+    {
+      "locality": "Chikkakalenahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Chikkabellandur",
+      "rating": ""
+    },
+    {
+      "locality": "Chikkabasavanapura",
+      "rating": ""
+    },
+    {
+      "locality": "Chikkabanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Chikkaballapur Gauribidanur Road",
+      "rating": ""
+    },
+    {
+      "locality": "Chikkabettahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Chikkabidarakallu",
+      "rating": ""
+    },
+    {
+      "locality": "Chikkajala",
+      "rating": ""
+    },
+    {
+      "locality": "Chikkahullur",
+      "rating": ""
+    },
+    {
+      "locality": "Chikkagubbi Village",
+      "rating": ""
+    },
+    {
+      "locality": "CBI Road",
+      "rating": ""
+    },
+    {
+      "locality": "Carmelaram Road",
+      "rating": ""
+    },
+    {
+      "locality": "BP Wadia Road",
+      "rating": ""
+    },
+    {
+      "locality": "Boyalahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Bovipalya",
+      "rating": ""
+    },
+    {
+      "locality": "Bommasandra Jigani Link Road",
+      "rating": ""
+    },
+    {
+      "locality": "Brigade Road",
+      "rating": ""
+    },
+    {
+      "locality": "BTM Layout 1st Stage",
+      "rating": ""
+    },
+    {
+      "locality": "Buddha Jyothi Layout",
+      "rating": ""
+    },
+    {
+      "locality": "BTS Layout",
+      "rating": ""
+    },
+    {
+      "locality": "BTM Layout 2nd Stage",
+      "rating": ""
+    },
+    {
+      "locality": "Bommasandra Industrial Estate",
+      "rating": ""
+    },
+    {
+      "locality": "Bommanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Binny Mill Road",
+      "rating": ""
+    },
+    {
+      "locality": "Binnipete",
+      "rating": ""
+    },
+    {
+      "locality": "Binnamangala",
+      "rating": ""
+    },
+    {
+      "locality": "Bilwaradahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Bismillah Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Bisuvanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Bolare",
+      "rating": ""
+    },
+    {
+      "locality": "Bohra Layout",
+      "rating": ""
+    },
+    {
+      "locality": "BK Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Buddha Vihara Road",
+      "rating": ""
+    },
+    {
+      "locality": "Budigere",
+      "rating": ""
+    },
+    {
+      "locality": "Byrathi",
+      "rating": ""
+    },
+    {
+      "locality": "Byrappa Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Byranaikanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Bylkonehalli",
+      "rating": ""
+    },
+    {
+      "locality": "Byraveshwara Industrial Estate",
+      "rating": ""
+    },
+    {
+      "locality": "Byreshwara Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Carmelaram",
+      "rating": ""
+    },
+    {
+      "locality": "Canara Bank Colony",
+      "rating": ""
+    },
+    {
+      "locality": "Cambridge Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Byatha",
+      "rating": ""
+    },
+    {
+      "locality": "Byatarayanapura New Extn",
+      "rating": ""
+    },
+    {
+      "locality": "Bukkasagara",
+      "rating": ""
+    },
+    {
+      "locality": "Budihal",
+      "rating": ""
+    },
+    {
+      "locality": "Budigere Road",
+      "rating": ""
+    },
+    {
+      "locality": "Budigere Cross",
+      "rating": ""
+    },
+    {
+      "locality": "Bull Temple Road",
+      "rating": ""
+    },
+    {
+      "locality": "Byadarahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Byatarayanapura",
+      "rating": ""
+    },
+    {
+      "locality": "Byatarayana Doddi",
+      "rating": ""
+    },
+    {
+      "locality": "Byalalu",
+      "rating": ""
+    },
+    {
+      "locality": "Chinnakurchi",
+      "rating": ""
+    },
+    {
+      "locality": "Chinnapa Garden",
+      "rating": ""
+    },
+    {
+      "locality": "Dodda Aalada Mara",
+      "rating": ""
+    },
+    {
+      "locality": "Dobbaspet",
+      "rating": ""
+    },
+    {
+      "locality": "Divanarapalya",
+      "rating": ""
+    },
+    {
+      "locality": "Dinnur Main Road",
+      "rating": ""
+    },
+    {
+      "locality": "Dodda Aalada Mara Road",
+      "rating": ""
+    },
+    {
+      "locality": "Dodda Banasvadi",
+      "rating": ""
+    },
+    {
+      "locality": "Doddaballapur",
+      "rating": ""
+    },
+    {
+      "locality": "Dodda Byalakere",
+      "rating": ""
+    },
+    {
+      "locality": "Dodda Banaswadi Main Road",
+      "rating": ""
+    },
+    {
+      "locality": "Dinnur",
+      "rating": ""
+    },
+    {
+      "locality": "Dickenson Road",
+      "rating": ""
+    },
+    {
+      "locality": "Devasandra",
+      "rating": ""
+    },
+    {
+      "locality": "Devarachikkanahalli Main Road",
+      "rating": ""
+    },
+    {
+      "locality": "Devarabisanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Devara Jeevanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Devasandra Main Road",
+      "rating": ""
+    },
+    {
+      "locality": "Devasthanagalu",
+      "rating": ""
+    },
+    {
+      "locality": "Dibbur",
+      "rating": ""
+    },
+    {
+      "locality": "Diamond District",
+      "rating": ""
+    },
+    {
+      "locality": "Dhanalakshmi Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Doddaballapur Road",
+      "rating": ""
+    },
+    {
+      "locality": "Doddabanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Doddanagamangala",
+      "rating": ""
+    },
+    {
+      "locality": "Doddamma Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Doddamavalli",
+      "rating": ""
+    },
+    {
+      "locality": "Doddamaranahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Doddathoguru",
+      "rating": ""
+    },
+    {
+      "locality": "Doddenahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Dollars Colony",
+      "rating": ""
+    },
+    {
+      "locality": "Dodsworth Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Dodderi",
+      "rating": ""
+    },
+    {
+      "locality": "Doddakannelli-Bellandur",
+      "rating": ""
+    },
+    {
+      "locality": "Doddakannalli",
+      "rating": ""
+    },
+    {
+      "locality": "Doddabidarakallu",
+      "rating": ""
+    },
+    {
+      "locality": "Doddabettahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Doddabele",
+      "rating": ""
+    },
+    {
+      "locality": "Doddabelavagi",
+      "rating": ""
+    },
+    {
+      "locality": "Doddadunnasandra",
+      "rating": ""
+    },
+    {
+      "locality": "Doddagubbi",
+      "rating": ""
+    },
+    {
+      "locality": "Doddakammanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Doddakallasandra",
+      "rating": ""
+    },
+    {
+      "locality": "Doddajala",
+      "rating": ""
+    },
+    {
+      "locality": "Devanahalli Road",
+      "rating": ""
+    },
+    {
+      "locality": "Devanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "CIL Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Church Street",
+      "rating": ""
+    },
+    {
+      "locality": "Chunchunkuppe",
+      "rating": ""
+    },
+    {
+      "locality": "Chunchgatta",
+      "rating": ""
+    },
+    {
+      "locality": "CK Nagar-Parappana Agrahara",
+      "rating": ""
+    },
+    {
+      "locality": "CK Palya",
+      "rating": ""
+    },
+    {
+      "locality": "CMH Road",
+      "rating": ""
+    },
+    {
+      "locality": "Classic Paradise Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Ckikkakammana Halli",
+      "rating": ""
+    },
+    {
+      "locality": "Chunchgatta",
+      "rating": ""
+    },
+    {
+      "locality": "Chudenapura",
+      "rating": ""
+    },
+    {
+      "locality": "Chocolate Factory Road",
+      "rating": ""
+    },
+    {
+      "locality": "Chiranjeevi Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Chintamani",
+      "rating": ""
+    },
+    {
+      "locality": "Chinnapanna Halli",
+      "rating": ""
+    },
+    {
+      "locality": "Chokkanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Chokkasandra",
+      "rating": ""
+    },
+    {
+      "locality": "Cholourpalya",
+      "rating": ""
+    },
+    {
+      "locality": "Cholanayakanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Chola Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Coffee Board Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Commercial Street",
+      "rating": ""
+    },
+    {
+      "locality": "Dattatreya Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Dasarahalli Main Road",
+      "rating": ""
+    },
+    {
+      "locality": "Dasarahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Dasanayakanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Dayananda Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Deepanjalinagar",
+      "rating": ""
+    },
+    {
+      "locality": "Devanagonthi",
+      "rating": ""
+    },
+    {
+      "locality": "Defence Colony-Indiranagar",
+      "rating": ""
+    },
+    {
+      "locality": "Defence Colony - Bagalagunte",
+      "rating": ""
+    },
+    {
+      "locality": "Dasanapura",
+      "rating": ""
+    },
+    {
+      "locality": "Dairy Circle",
+      "rating": ""
+    },
+    {
+      "locality": "Craig Park Layout",
+      "rating": ""
+    },
+    {
+      "locality": "CQAL Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Cottonpete",
+      "rating": ""
+    },
+    {
+      "locality": "Crescent Road",
+      "rating": ""
+    },
+    {
+      "locality": "Cubbon Road",
+      "rating": ""
+    },
+    {
+      "locality": "D Group Layout",
+      "rating": ""
+    },
+    {
+      "locality": "D Group Employees Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Cunningham Road",
+      "rating": ""
+    },
+    {
+      "locality": "Billamaranahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Bileshivale",
+      "rating": ""
+    },
+    {
+      "locality": "Annaiah Reddy Layout-JP Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Anjanapura Township",
+      "rating": ""
+    },
+    {
+      "locality": "Anjanapura 7th Block",
+      "rating": ""
+    },
+    {
+      "locality": "Anjanapura 2nd block",
+      "rating": ""
+    },
+    {
+      "locality": "Annapurneswari Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Annasandrapalya Extension",
+      "rating": ""
+    },
+    {
+      "locality": "Arasanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Arabic College",
+      "rating": ""
+    },
+    {
+      "locality": "Anugraha Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Anjanapura 11th Block",
+      "rating": ""
+    },
+    {
+      "locality": "Anjana Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Anchepalya",
+      "rating": ""
+    },
+    {
+      "locality": "Ananth Nagar Phase 2",
+      "rating": ""
+    },
+    {
+      "locality": "Ananth Nagar Phase 1",
+      "rating": ""
+    },
+    {
+      "locality": "Anantapuram",
+      "rating": ""
+    },
+    {
+      "locality": "Andrahalli Main Road",
+      "rating": ""
+    },
+    {
+      "locality": "Anekal",
+      "rating": ""
+    },
+    {
+      "locality": "Anepalya",
+      "rating": ""
+    },
+    {
+      "locality": "Anekal Thally Road",
+      "rating": ""
+    },
+    {
+      "locality": "Anekal - Hosur Road",
+      "rating": ""
+    },
+    {
+      "locality": "Arasanakunte",
+      "rating": ""
+    },
+    {
+      "locality": "Arehalli",
+      "rating": ""
+    },
+    {
+      "locality": "Avalahalli-Huskuru",
+      "rating": ""
+    },
+    {
+      "locality": "locality",
+      "rating": "rating"
+    },
+    {
+      "locality": "Austin Town",
+      "rating": ""
+    },
+    {
+      "locality": "Attur Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Attukal Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Avenue Road",
+      "rating": ""
+    },
+    {
+      "locality": "Averahalli",
+      "rating": ""
+    },
+    {
+      "locality": "B Narayanapura",
+      "rating": ""
+    },
+    {
+      "locality": "Ayyappa Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Ayappa Garden-Adugodi",
+      "rating": ""
+    },
+    {
+      "locality": "Attibele Industrial Area",
+      "rating": ""
+    },
+    {
+      "locality": "Attibele - Anekal Road",
+      "rating": ""
+    },
+    {
+      "locality": "Ashraya Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Ashirvad Colony",
+      "rating": ""
+    },
+    {
+      "locality": "Armane Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Arkavathy Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Ashta Laxmi Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Ashwath Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Attibele",
+      "rating": ""
+    },
+    {
+      "locality": "Atmananda Colony",
+      "rating": ""
+    },
+    {
+      "locality": "Ashwini Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Anandapura",
+      "rating": ""
+    },
+    {
+      "locality": "Anand Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "AECS Layout - A Block",
+      "rating": ""
+    },
+    {
+      "locality": "AECS Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Aduru-Anekal",
+      "rating": ""
+    },
+    {
+      "locality": "Aduru-Aavalahalli",
+      "rating": ""
+    },
+    {
+      "locality": "AECS Layout - B Block",
+      "rating": ""
+    },
+    {
+      "locality": "AECS Layout - C Block",
+      "rating": ""
+    },
+    {
+      "locality": "Agrahara Badavane",
+      "rating": ""
+    },
+    {
+      "locality": "Agara-HSR Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Aga Abbas Ali Road",
+      "rating": ""
+    },
+    {
+      "locality": "Adityanagar-Vidyaranyapura",
+      "rating": ""
+    },
+    {
+      "locality": "Addiganahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Abbaiah Reddy Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Aavalahalli",
+      "rating": ""
+    },
+    {
+      "locality": "A Narayanapura",
+      "rating": ""
+    },
+    {
+      "locality": "A Dasarahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Achit Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "ACL Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Adde Vishwanathapura",
+      "rating": ""
+    },
+    {
+      "locality": "Adarsh Nagar-Nelamangala",
+      "rating": ""
+    },
+    {
+      "locality": "Adakamaranahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Agrahara-Yelahanka",
+      "rating": ""
+    },
+    {
+      "locality": "Agram-Domlur",
+      "rating": ""
+    },
+    {
+      "locality": "AMCO Colony",
+      "rating": ""
+    },
+    {
+      "locality": "Ambedkar Veedhi",
+      "rating": ""
+    },
+    {
+      "locality": "Ambedkar Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Ambalipura Sarjapur Road",
+      "rating": ""
+    },
+    {
+      "locality": "Amrita Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Amrutahalli-Byatarayanapura",
+      "rating": ""
+    },
+    {
+      "locality": "Anagalapura",
+      "rating": ""
+    },
+    {
+      "locality": "AMS Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Amruthnagar",
+      "rating": ""
+    },
+    {
+      "locality": "Amarjyothi Layout-RMV Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Amarjyothi Layout-Domlur",
+      "rating": ""
+    },
+    {
+      "locality": "Akkipete",
+      "rating": ""
+    },
+    {
+      "locality": "Ajjagondahalli",
+      "rating": ""
+    },
+    {
+      "locality": "AGS Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Akshaya Nagar-Ramamurthy Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Alfa Gardens",
+      "rating": ""
+    },
+    {
+      "locality": "Amaravathi Layout-Peenya",
+      "rating": ""
+    },
+    {
+      "locality": "Alur",
+      "rating": ""
+    },
+    {
+      "locality": "Allalasandra",
+      "rating": ""
+    },
+    {
+      "locality": "Babusa Palya",
+      "rating": ""
+    },
+    {
+      "locality": "Bachappa Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Bellandur Outer Ring Road",
+      "rating": ""
+    },
+    {
+      "locality": "Bellahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Belatur",
+      "rating": ""
+    },
+    {
+      "locality": "Belathur Main Road",
+      "rating": ""
+    },
+    {
+      "locality": "Bellary Road",
+      "rating": ""
+    },
+    {
+      "locality": "BEML Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Bendre Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Bendiganahalli",
+      "rating": ""
+    },
+    {
+      "locality": "BEML Layout Raja Rajeshwari Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Belathur",
+      "rating": ""
+    },
+    {
+      "locality": "BEL Layout 2nd Block",
+      "rating": ""
+    },
+    {
+      "locality": "BDA Layout-HSR",
+      "rating": ""
+    },
+    {
+      "locality": "BDA Layout-BTM",
+      "rating": ""
+    },
+    {
+      "locality": "BCMC Layout",
+      "rating": ""
+    },
+    {
+      "locality": "BCC Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Bedarahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Begihalli",
+      "rating": ""
+    },
+    {
+      "locality": "BEL Layout 1st Block",
+      "rating": ""
+    },
+    {
+      "locality": "BEL Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Begur Road",
+      "rating": ""
+    },
+    {
+      "locality": "Besthamanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Bethel Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Bhuvaneshwari Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Bhovi Palya",
+      "rating": ""
+    },
+    {
+      "locality": "Bhoothanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Bhoopasandra",
+      "rating": ""
+    },
+    {
+      "locality": "Bhyraveshwara Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Bidaraguppe",
+      "rating": ""
+    },
+    {
+      "locality": "Bikkanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Bikasipura",
+      "rating": ""
+    },
+    {
+      "locality": "Bidare Agraha",
+      "rating": ""
+    },
+    {
+      "locality": "Bhoganhalli",
+      "rating": ""
+    },
+    {
+      "locality": "Bheemanakuppe",
+      "rating": ""
+    },
+    {
+      "locality": "Bettehalli",
+      "rating": ""
+    },
+    {
+      "locality": "Bettahalasur",
+      "rating": ""
+    },
+    {
+      "locality": "Bettadasanapura",
+      "rating": ""
+    },
+    {
+      "locality": "Betta Kotte",
+      "rating": ""
+    },
+    {
+      "locality": "Bhadrappa Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Bhaktharahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Bhattarahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Bharathi Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Bharat Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Bayyanapalya",
+      "rating": ""
+    },
+    {
+      "locality": "Bashyam Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Balaji Nagar-BTM Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Balaji Layout-Kanakapura Road",
+      "rating": ""
+    },
+    {
+      "locality": "Balaji Layout-Kaggadasapura",
+      "rating": ""
+    },
+    {
+      "locality": "Balagere",
+      "rating": ""
+    },
+    {
+      "locality": "Balepete",
+      "rating": ""
+    },
+    {
+      "locality": "Ballur",
+      "rating": ""
+    },
+    {
+      "locality": "Banashankari 1st Stage",
+      "rating": ""
+    },
+    {
+      "locality": "Banashankari",
+      "rating": ""
+    },
+    {
+      "locality": "Bammanahalli-Devanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Balagaranahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Baiyyappanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Bagalur Sarjapur Road",
+      "rating": ""
+    },
+    {
+      "locality": "Bagalur Road",
+      "rating": ""
+    },
+    {
+      "locality": "Bagalur Main Road",
+      "rating": ""
+    },
+    {
+      "locality": "Badamanavarathekaval",
+      "rating": ""
+    },
+    {
+      "locality": "Bagaluru",
+      "rating": ""
+    },
+    {
+      "locality": "Bagegowda Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Baiyappanahalli-Kithiganur",
+      "rating": ""
+    },
+    {
+      "locality": "Bahubali Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Bagepalli",
+      "rating": ""
+    },
+    {
+      "locality": "Banashankari 2nd Stage",
+      "rating": ""
+    },
+    {
+      "locality": "Banashankari 3rd Stage",
+      "rating": ""
+    },
+    {
+      "locality": "Bannikuppe",
+      "rating": ""
+    },
+    {
+      "locality": "Bannerghatta Jigani Road",
+      "rating": ""
+    },
+    {
+      "locality": "Bank Avenue Colony",
+      "rating": ""
+    },
+    {
+      "locality": "Banjara Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Bapagrama",
+      "rating": ""
+    },
+    {
+      "locality": "Basavanagar",
+      "rating": ""
+    },
+    {
+      "locality": "Bashettihalli",
+      "rating": ""
+    },
+    {
+      "locality": "Basavanna Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Basavanapura",
+      "rating": ""
+    },
+    {
+      "locality": "Bangalore- Hyderabad Highway Road",
+      "rating": ""
+    },
+    {
+      "locality": "Bandepalya",
+      "rating": ""
+    },
+    {
+      "locality": "Banashankari 6th Stage",
+      "rating": ""
+    },
+    {
+      "locality": "Banashankari 5th Stage",
+      "rating": ""
+    },
+    {
+      "locality": "Banashankari 4th Stage",
+      "rating": ""
+    },
+    {
+      "locality": "Bandappa Garden",
+      "rating": ""
+    },
+    {
+      "locality": "Bandapura",
+      "rating": ""
+    },
+    {
+      "locality": "Bande Nalla Sandra",
+      "rating": ""
+    },
+    {
+      "locality": "Bande Kodigehalli",
+      "rating": ""
+    },
+    {
+      "locality": "Bande Bommasandra",
+      "rating": ""
+    },
+    {
+      "locality": "Domlur 2nd Stage",
+      "rating": ""
+    },
+    {
+      "locality": "Donnenahalli",
+      "rating": ""
+    },
+    {
+      "locality": "JP Nagar Phase 6",
+      "rating": ""
+    },
+    {
+      "locality": "JP Nagar Phase 5",
+      "rating": ""
+    },
+    {
+      "locality": "JP Nagar Phase 4",
+      "rating": ""
+    },
+    {
+      "locality": "JP Nagar Phase 3",
+      "rating": ""
+    },
+    {
+      "locality": "JP Nagar Phase 8",
+      "rating": ""
+    },
+    {
+      "locality": "JP Nagar Phase 9",
+      "rating": ""
+    },
+    {
+      "locality": "Junnasandra",
+      "rating": ""
+    },
+    {
+      "locality": "Judicial Layout 2nd Phase",
+      "rating": ""
+    },
+    {
+      "locality": "Judicial Layout",
+      "rating": ""
+    },
+    {
+      "locality": "JP Nagar Phase 2",
+      "rating": ""
+    },
+    {
+      "locality": "JP Nagar Phase 1",
+      "rating": ""
+    },
+    {
+      "locality": "Jigani Road",
+      "rating": ""
+    },
+    {
+      "locality": "Jigani Anekal Road",
+      "rating": ""
+    },
+    {
+      "locality": "Jigani",
+      "rating": ""
+    },
+    {
+      "locality": "JC Road",
+      "rating": ""
+    },
+    {
+      "locality": "Jinkethimmanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Jnana Jyothi Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "JP Nagar 7th Phase",
+      "rating": ""
+    },
+    {
+      "locality": "Jogapalya",
+      "rating": ""
+    },
+    {
+      "locality": "Jnanabharathi Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Jyothi Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Jyotipuram",
+      "rating": ""
+    },
+    {
+      "locality": "Kakolu",
+      "rating": ""
+    },
+    {
+      "locality": "Kaggalipura",
+      "rating": ""
+    },
+    {
+      "locality": "Kaggalahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Kadusonnappanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Kalappa Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Kalasipalayam",
+      "rating": ""
+    },
+    {
+      "locality": "Kallahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Kalkunte",
+      "rating": ""
+    },
+    {
+      "locality": "Kalkere Main Road",
+      "rating": ""
+    },
+    {
+      "locality": "Kadiranapalya",
+      "rating": ""
+    },
+    {
+      "locality": "Kadenahalli Dinne",
+      "rating": ""
+    },
+    {
+      "locality": "Kacharakanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Kachanayakanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "K Narayanapura",
+      "rating": ""
+    },
+    {
+      "locality": "K Channasandra",
+      "rating": ""
+    },
+    {
+      "locality": "Kachohalli",
+      "rating": ""
+    },
+    {
+      "locality": "Kada Agrahara",
+      "rating": ""
+    },
+    {
+      "locality": "Kadathippur",
+      "rating": ""
+    },
+    {
+      "locality": "Kadarenahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Kadabagere",
+      "rating": ""
+    },
+    {
+      "locality": "JC Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Jaylakshmi Puram",
+      "rating": ""
+    },
+    {
+      "locality": "Jai Maruthi Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Jagajeevanram Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Jagadish Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "IVC Road",
+      "rating": ""
+    },
+    {
+      "locality": "Jaibharath Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Jairam Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Jakkuru Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Jakkur Main Road",
+      "rating": ""
+    },
+    {
+      "locality": "Jakkasandra",
+      "rating": ""
+    },
+    {
+      "locality": "Ittangur",
+      "rating": ""
+    },
+    {
+      "locality": "Ittamadu",
+      "rating": ""
+    },
+    {
+      "locality": "ISRO Layout",
+      "rating": ""
+    },
+    {
+      "locality": "International Airport Road",
+      "rating": ""
+    },
+    {
+      "locality": "Infantry Road",
+      "rating": ""
+    },
+    {
+      "locality": "Indlawadi",
+      "rating": ""
+    },
+    {
+      "locality": "Itchangur",
+      "rating": ""
+    },
+    {
+      "locality": "ITI Employees Layout",
+      "rating": ""
+    },
+    {
+      "locality": "ITPL Road",
+      "rating": ""
+    },
+    {
+      "locality": "ITPL",
+      "rating": ""
+    },
+    {
+      "locality": "ITI Layout-HSR Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Jal Vayu Vihar",
+      "rating": ""
+    },
+    {
+      "locality": "Jalahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Jayanagar 7th Block",
+      "rating": ""
+    },
+    {
+      "locality": "Jayanagar 6th Block",
+      "rating": ""
+    },
+    {
+      "locality": "Jayanagar 5th Block",
+      "rating": ""
+    },
+    {
+      "locality": "Jayanagar 4th T Block",
+      "rating": ""
+    },
+    {
+      "locality": "Jayanagar 8th Block",
+      "rating": ""
+    },
+    {
+      "locality": "Jayanagar East",
+      "rating": ""
+    },
+    {
+      "locality": "Jayanti Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Jayanagara 9th Block",
+      "rating": ""
+    },
+    {
+      "locality": "Jayanagar Housing Society Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Jayanagar 4th Block",
+      "rating": ""
+    },
+    {
+      "locality": "Jayanagar 3rd Block East",
+      "rating": ""
+    },
+    {
+      "locality": "Jangamakote Cross",
+      "rating": ""
+    },
+    {
+      "locality": "Jangamakote",
+      "rating": ""
+    },
+    {
+      "locality": "Jalahalli Cross",
+      "rating": ""
+    },
+    {
+      "locality": "Jarganahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Jayamahal Extension",
+      "rating": ""
+    },
+    {
+      "locality": "Jayanagar 2nd Block",
+      "rating": ""
+    },
+    {
+      "locality": "Jayanagar 1st Block",
+      "rating": ""
+    },
+    {
+      "locality": "Jayamahal Road",
+      "rating": ""
+    },
+    {
+      "locality": "Kallugopahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Kallumantapa",
+      "rating": ""
+    },
+    {
+      "locality": "KHB Colony-Basaweshwara Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "KHB Colony Main Road",
+      "rating": ""
+    },
+    {
+      "locality": "KHB 3rd Phase",
+      "rating": ""
+    },
+    {
+      "locality": "Khajisonnanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Kilari Road",
+      "rating": ""
+    },
+    {
+      "locality": "Kirloskar Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Kithiganahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Kithaganur Village",
+      "rating": ""
+    },
+    {
+      "locality": "Kithaganur Colony",
+      "rating": ""
+    },
+    {
+      "locality": "KH Road",
+      "rating": ""
+    },
+    {
+      "locality": "KG Srikantapura",
+      "rating": ""
+    },
+    {
+      "locality": "Kenchanapura",
+      "rating": ""
+    },
+    {
+      "locality": "Kenchanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Kempegowda Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Kempe Gowda Road",
+      "rating": ""
+    },
+    {
+      "locality": "Kenchenahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Kenganahalli",
+      "rating": ""
+    },
+    {
+      "locality": "KG Road",
+      "rating": ""
+    },
+    {
+      "locality": "Kereguddadahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Kengunte",
+      "rating": ""
+    },
+    {
+      "locality": "Kithiganur",
+      "rating": ""
+    },
+    {
+      "locality": "Kittanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Konaghatta",
+      "rating": ""
+    },
+    {
+      "locality": "Konadasapura",
+      "rating": ""
+    },
+    {
+      "locality": "Kommaghatta",
+      "rating": ""
+    },
+    {
+      "locality": "Kolar-Chikkaballapur Road",
+      "rating": ""
+    },
+    {
+      "locality": "Konena Agrahara",
+      "rating": ""
+    },
+    {
+      "locality": "Koppa",
+      "rating": ""
+    },
+    {
+      "locality": "Koralur",
+      "rating": ""
+    },
+    {
+      "locality": "Koppa Gate",
+      "rating": ""
+    },
+    {
+      "locality": "Koppa Begur Road",
+      "rating": ""
+    },
+    {
+      "locality": "Kolar Road",
+      "rating": ""
+    },
+    {
+      "locality": "Kogilu Road",
+      "rating": ""
+    },
+    {
+      "locality": "Kodichikkanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Kodathi Gate",
+      "rating": ""
+    },
+    {
+      "locality": "Kodathi",
+      "rating": ""
+    },
+    {
+      "locality": "Kodagi Thirumalapura",
+      "rating": ""
+    },
+    {
+      "locality": "Kodigehalli - KR Puram",
+      "rating": ""
+    },
+    {
+      "locality": "Kodigehalli Main Road",
+      "rating": ""
+    },
+    {
+      "locality": "Kogilu",
+      "rating": ""
+    },
+    {
+      "locality": "Kodipur",
+      "rating": ""
+    },
+    {
+      "locality": "Kodipalya",
+      "rating": ""
+    },
+    {
+      "locality": "Kempapura Agrahara",
+      "rating": ""
+    },
+    {
+      "locality": "100 Feet Road-Koramangala",
+      "rating": ""
+    },
+    {
+      "locality": "Kanekallu",
+      "rating": ""
+    },
+    {
+      "locality": "Kanakapura",
+      "rating": ""
+    },
+    {
+      "locality": "Kanaka Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Kamraj Road",
+      "rating": ""
+    },
+    {
+      "locality": "Kannahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Kannamangala",
+      "rating": ""
+    },
+    {
+      "locality": "Kanshiram Nagara",
+      "rating": ""
+    },
+    {
+      "locality": "Kannuru",
+      "rating": ""
+    },
+    {
+      "locality": "Kannurahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Kammasandra Agrahara",
+      "rating": ""
+    },
+    {
+      "locality": "Kammasandra",
+      "rating": ""
+    },
+    {
+      "locality": "Kamanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Kamakya Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Kamaksipalya",
+      "rating": ""
+    },
+    {
+      "locality": "Kamadhenu Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Kamath Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Kambalipura",
+      "rating": ""
+    },
+    {
+      "locality": "Kammanahalli Main Road",
+      "rating": ""
+    },
+    {
+      "locality": "Kammagondanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Kambipura",
+      "rating": ""
+    },
+    {
+      "locality": "Kanteeravanagar",
+      "rating": ""
+    },
+    {
+      "locality": "Karekallu Kamakshipalya",
+      "rating": ""
+    },
+    {
+      "locality": "Kaverappa Layout-Vasanth Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Kaverappa Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Kattanallur",
+      "rating": ""
+    },
+    {
+      "locality": "Kathriguppe Main Road",
+      "rating": ""
+    },
+    {
+      "locality": "Kaveri Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "KC Krishna Reddy Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Kempanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Kelamangalam Road",
+      "rating": ""
+    },
+    {
+      "locality": "KD Road",
+      "rating": ""
+    },
+    {
+      "locality": "Kathriguppe",
+      "rating": ""
+    },
+    {
+      "locality": "Katamnallur",
+      "rating": ""
+    },
+    {
+      "locality": "Kariyappanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Kariyana Palya",
+      "rating": ""
+    },
+    {
+      "locality": "Karihobanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Karnataka Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Kartik Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Kasturi Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Kasthuriba Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Karuna Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Indiranagar 2nd Stage",
+      "rating": ""
+    },
+    {
+      "locality": "Indiranagar 100 Feet Road",
+      "rating": ""
+    },
+    {
+      "locality": "Govindaraja Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Govindapura",
+      "rating": ""
+    },
+    {
+      "locality": "Goraguntepalya",
+      "rating": ""
+    },
+    {
+      "locality": "Gopasandra",
+      "rating": ""
+    },
+    {
+      "locality": "Govt Press Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Gowdanapalya",
+      "rating": ""
+    },
+    {
+      "locality": "Green Glen Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Green Garden Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Gowthamapuram",
+      "rating": ""
+    },
+    {
+      "locality": "Gollarapalya",
+      "rating": ""
+    },
+    {
+      "locality": "Gollarahatti",
+      "rating": ""
+    },
+    {
+      "locality": "Giri Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Gidadapalya",
+      "rating": ""
+    },
+    {
+      "locality": "Gejjagadahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Geddalahalli",
+      "rating": ""
+    },
+    {
+      "locality": "GKW Layout",
+      "rating": ""
+    },
+    {
+      "locality": "GM Palya",
+      "rating": ""
+    },
+    {
+      "locality": "Gollahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Gokula Extension",
+      "rating": ""
+    },
+    {
+      "locality": "Gnana Bharathi",
+      "rating": ""
+    },
+    {
+      "locality": "Gruha Lakshmi Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Gruhalakshmi Housing Colony",
+      "rating": ""
+    },
+    {
+      "locality": "Gupta Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Gunjur Palya",
+      "rating": ""
+    },
+    {
+      "locality": "Gunjur Mugalur Road",
+      "rating": ""
+    },
+    {
+      "locality": "Gunjur",
+      "rating": ""
+    },
+    {
+      "locality": "Gururaja Layout-Banashankari",
+      "rating": ""
+    },
+    {
+      "locality": "H Cross",
+      "rating": ""
+    },
+    {
+      "locality": "HAL 2nd Stage",
+      "rating": ""
+    },
+    {
+      "locality": "Hagadur Main Road",
+      "rating": ""
+    },
+    {
+      "locality": "Hadosiddapura",
+      "rating": ""
+    },
+    {
+      "locality": "Guni Agrahara",
+      "rating": ""
+    },
+    {
+      "locality": "Gunduru",
+      "rating": ""
+    },
+    {
+      "locality": "Gudimavu",
+      "rating": ""
+    },
+    {
+      "locality": "Guddahatti",
+      "rating": ""
+    },
+    {
+      "locality": "Guddadahalli-Mysore Road",
+      "rating": ""
+    },
+    {
+      "locality": "Gubbalala",
+      "rating": ""
+    },
+    {
+      "locality": "Guguttahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Gulakamale",
+      "rating": ""
+    },
+    {
+      "locality": "Gundappa Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Gummanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Gulimangala",
+      "rating": ""
+    },
+    {
+      "locality": "GD Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Gayatrinagar-Rajajinagar",
+      "rating": ""
+    },
+    {
+      "locality": "Electronic City Phase I",
+      "rating": ""
+    },
+    {
+      "locality": "Electronic City",
+      "rating": ""
+    },
+    {
+      "locality": "Ekarajapura",
+      "rating": ""
+    },
+    {
+      "locality": "Ejipura Main Road",
+      "rating": ""
+    },
+    {
+      "locality": "Electronic City Phase II",
+      "rating": ""
+    },
+    {
+      "locality": "Essel Gardens",
+      "rating": ""
+    },
+    {
+      "locality": "Gadenahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Freedom Fighter Colony",
+      "rating": ""
+    },
+    {
+      "locality": "Forest Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Dyavasandra",
+      "rating": ""
+    },
+    {
+      "locality": "Dwaraka Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Dr. Ambedkar Veedhi",
+      "rating": ""
+    },
+    {
+      "locality": "Doresanipalya",
+      "rating": ""
+    },
+    {
+      "locality": "Dooravani Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Doopanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Dr. Rajkumar Road-Rajajinagar",
+      "rating": ""
+    },
+    {
+      "locality": "Dr. Shivaram Karanth Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Duo City Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Duddanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Dubasi Palya",
+      "rating": ""
+    },
+    {
+      "locality": "Ganapathi Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Ganapathihalli",
+      "rating": ""
+    },
+    {
+      "locality": "Gaurav Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Gattigere",
+      "rating": ""
+    },
+    {
+      "locality": "Gattahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Garvebhavi Palya",
+      "rating": ""
+    },
+    {
+      "locality": "Gauribidanur",
+      "rating": ""
+    },
+    {
+      "locality": "Gauribidanur Road",
+      "rating": ""
+    },
+    {
+      "locality": "Gayathrinagar",
+      "rating": ""
+    },
+    {
+      "locality": "Gayathri Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Gavipuram Extension",
+      "rating": ""
+    },
+    {
+      "locality": "Garudachar Palya",
+      "rating": ""
+    },
+    {
+      "locality": "Garden Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Gangasandra",
+      "rating": ""
+    },
+    {
+      "locality": "Gangamma Circle",
+      "rating": ""
+    },
+    {
+      "locality": "Gandhipuram",
+      "rating": ""
+    },
+    {
+      "locality": "Gangavara",
+      "rating": ""
+    },
+    {
+      "locality": "Gangondanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Gantiganahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Ganigarapalya",
+      "rating": ""
+    },
+    {
+      "locality": "Ganigarahalli",
+      "rating": ""
+    },
+    {
+      "locality": "HAL 3rd Stage",
+      "rating": ""
+    },
+    {
+      "locality": "HAL 3rd Stage Extension",
+      "rating": ""
+    },
+    {
+      "locality": "HRBR Layout 1st Block",
+      "rating": ""
+    },
+    {
+      "locality": "HRBR Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Hoysala Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Hoskote Malur Road",
+      "rating": ""
+    },
+    {
+      "locality": "HRBR Layout 2nd Block",
+      "rating": ""
+    },
+    {
+      "locality": "HSR Layout Sector 1",
+      "rating": ""
+    },
+    {
+      "locality": "HSR Layout Sector 4",
+      "rating": ""
+    },
+    {
+      "locality": "HSR Layout Sector 3",
+      "rating": ""
+    },
+    {
+      "locality": "HSR Layout Sector 2",
+      "rating": ""
+    },
+    {
+      "locality": "Hoskote Chintamani Road",
+      "rating": ""
+    },
+    {
+      "locality": "Hosapalaya",
+      "rating": ""
+    },
+    {
+      "locality": "Hope Farm Junction",
+      "rating": ""
+    },
+    {
+      "locality": "Honniganahatti",
+      "rating": ""
+    },
+    {
+      "locality": "Honnenahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Hommadevanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Horamavu Agara",
+      "rating": ""
+    },
+    {
+      "locality": "Horamavu Agara Road",
+      "rating": ""
+    },
+    {
+      "locality": "Hosahalli Gollarapalya",
+      "rating": ""
+    },
+    {
+      "locality": "Hosa Road",
+      "rating": ""
+    },
+    {
+      "locality": "Horamavu Main Road",
+      "rating": ""
+    },
+    {
+      "locality": "HSR Layout Sector 5",
+      "rating": ""
+    },
+    {
+      "locality": "HSR Layout Sector 6",
+      "rating": ""
+    },
+    {
+      "locality": "Huvinane",
+      "rating": ""
+    },
+    {
+      "locality": "Huttanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Hutchins Road",
+      "rating": ""
+    },
+    {
+      "locality": "Huskur Kodi",
+      "rating": ""
+    },
+    {
+      "locality": "Iblur Village",
+      "rating": ""
+    },
+    {
+      "locality": "Ilyas Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Indira Nagar 1st Stage",
+      "rating": ""
+    },
+    {
+      "locality": "Immadihalli Road",
+      "rating": ""
+    },
+    {
+      "locality": "Immadihalli",
+      "rating": ""
+    },
+    {
+      "locality": "Huskur",
+      "rating": ""
+    },
+    {
+      "locality": "Hurulichikanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Hullahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Hulimangala",
+      "rating": ""
+    },
+    {
+      "locality": "Hulikunte",
+      "rating": ""
+    },
+    {
+      "locality": "HSR Layout Sector 7",
+      "rating": ""
+    },
+    {
+      "locality": "Hullegowdana Halli",
+      "rating": ""
+    },
+    {
+      "locality": "Huluvenahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Huralihalli",
+      "rating": ""
+    },
+    {
+      "locality": "Hunsur Road",
+      "rating": ""
+    },
+    {
+      "locality": "Hunasamaranahalli",
+      "rating": ""
+    },
+    {
+      "locality": "HMT Layout",
+      "rating": ""
+    },
+    {
+      "locality": "HMS Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Harohalli",
+      "rating": ""
+    },
+    {
+      "locality": "Harlur Main Road",
+      "rating": ""
+    },
+    {
+      "locality": "Harinagar Shrinidhi Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Harapanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Harohalli-Kanakapura Road",
+      "rating": ""
+    },
+    {
+      "locality": "Haudin Road",
+      "rating": ""
+    },
+    {
+      "locality": "HBR Layout 3rd Block",
+      "rating": ""
+    },
+    {
+      "locality": "HBR Layout 2nd Block",
+      "rating": ""
+    },
+    {
+      "locality": "HBR Layout 1st Block",
+      "rating": ""
+    },
+    {
+      "locality": "Haralur Road",
+      "rating": ""
+    },
+    {
+      "locality": "Haragadde",
+      "rating": ""
+    },
+    {
+      "locality": "Halasahalli Thippasandra",
+      "rating": ""
+    },
+    {
+      "locality": "Halanayakanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "HAL Layout2",
+      "rating": ""
+    },
+    {
+      "locality": "HAL Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Hallehalli",
+      "rating": ""
+    },
+    {
+      "locality": "Hampa Pura",
+      "rating": ""
+    },
+    {
+      "locality": "Hanumantha Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "Hancharahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Hampi Nagar",
+      "rating": ""
+    },
+    {
+      "locality": "HBR Layout 4th Block",
+      "rating": ""
+    },
+    {
+      "locality": "HBR Layout 5th Block",
+      "rating": ""
+    },
+    {
+      "locality": "Hesarghatta Main Road",
+      "rating": ""
+    },
+    {
+      "locality": "Herohalli",
+      "rating": ""
+    },
+    {
+      "locality": "Hennur Main Road",
+      "rating": ""
+    },
+    {
+      "locality": "Hennur Gardens",
+      "rating": ""
+    },
+    {
+      "locality": "Hessarghatta Road",
+      "rating": ""
+    },
+    {
+      "locality": "High Grounds",
+      "rating": ""
+    },
+    {
+      "locality": "HKP Road",
+      "rating": ""
+    },
+    {
+      "locality": "Hiremath Layout",
+      "rating": ""
+    },
+    {
+      "locality": "Hirandahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Hennur Bande",
+      "rating": ""
+    },
+    {
+      "locality": "Hennur Bagalur Road",
+      "rating": ""
+    },
+    {
+      "locality": "Heelalige",
+      "rating": ""
+    },
+    {
+      "locality": "Hebbal Kempapura",
+      "rating": ""
+    },
+    {
+      "locality": "Hebbagodi",
+      "rating": ""
+    },
+    {
+      "locality": "Hegganahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Hegondanahalli",
+      "rating": ""
+    },
+    {
+      "locality": "Hennagara",
+      "rating": ""
+    },
+    {
+      "locality": "Hemmigepura",
+      "rating": ""
+    },
+    {
+      "locality": "Hejjala",
+      "rating": ""
+    },
+    {
+      "locality": "Koramangala 1st Block",
+      "rating": ""
+    }
+  ]
