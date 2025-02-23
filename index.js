@@ -948,6 +948,10 @@ app.get("/checker/", function(request, response) {
   response.sendFile(path.resolve(__dirname, 'public', 'shortlists.html'));
 });
 
+app.get("/assess/", function(request, response) {
+  response.sendFile(path.resolve(__dirname, 'public', 'assess.html'));
+});
+
 app.get("/home/", function(request, response) {
   response.sendFile(path.resolve(__dirname, 'public', 'shortlists.html'));
 });
