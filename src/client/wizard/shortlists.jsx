@@ -174,129 +174,51 @@ class Shortlists extends Component {
     render() {
       return (
         <section id="risk-checker" data-section-id="5" data-share="" data-category="navigations" data-component-id="886f4350_01_awz" className="py-6 bg-white" x-data="{ mobileNavOpen: false }">
-              <div className="container mx-auto px-4">
-                 <div className="flex items-center justify-between px-6 py-3.5 bg-gray-100 border border-gray-100 rounded-full bg-blank" style={{paddingBottom: '2rem'}}>
-                    <div className="w-auto">
-                       <div className="flex flex-wrap items-center">
-                          <div className="w-auto">
-                             <a href="/#">
-                             <img src="../psassets/logo.png" alt="" data-config-id="img-fe4768-1" className="logo"/>
-                             </a>
-                          </div>
-                       </div>
-                    </div>
-                    <div className="w-auto">
-                       <div className="flex flex-wrap items-center">
-                          <div className="w-auto hidden lg:block">
-                             <ul className="flex items-center justify-center">
-                                <li className="mr-9"><a className="inline-block text-sm font-bold text-gray-900 hover:text-gray-700" href="/#recentIncidents" data-config-id="txt-fe4768-1">Recent Incidents</a></li>
-                                <li className="mr-9"><a className="inline-block text-sm font-bold text-gray-900 hover:text-gray-700" href="/#cyberRisks" data-config-id="txt-fe4768-2">Cyber Risks</a></li>
-                                <li className="mr-9"><a className="inline-block text-sm font-bold text-gray-900 hover:text-gray-700" href="/#faqs" data-config-id="txt-fe4768-3">FAQs</a></li>
-                                <li><a className="inline-block text-sm font-bold text-gray-900 hover:text-gray-700" href="/#" data-config-id="txt-fe4768-4">Risk Checker</a></li>
-                             </ul>
-                          </div>
-                       </div>
-                    </div>
-                    <div className="w-auto">
-                       <div className="flex flex-wrap items-center">
-                          <div className="w-auto hidden lg:block">
-                             <div className="flex flex-wrap -m-2">
-                                <div className="w-full md:w-auto p-2"><a className="block w-full px-4 py-2.5 text-sm text-center text-gray-900 font-bold bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:ring-gray-200 rounded-full" href="/#" data-config-id="txt-fe4768-5">Log In</a></div>
-                                <div className="w-full md:w-auto p-2"><a className="block w-full px-4 py-2.5 text-sm text-center text-white font-bold bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-blue-200 rounded-full bg-bl" href="/#" data-config-id="txt-fe4768-6">Check your risk</a></div>
-                             </div>
-                          </div>
-                       </div>
-                    </div>
-                 </div>
-                 
-              </div>
+              
               {sessionStorage.getItem('user') == null && <GoogleOneTapLogin onError={(error) => console.log(error)} onSuccess={(response) => {console.log(response);}} googleAccountConfigs={{ client_id: '128159303865-64ustcdp4pj9f6isg39p7hekhjdj2ln5.apps.googleusercontent.com',auto_select: false,cancel_on_tap_outside: false }} />}
-              {this.state.currStep == 1 && <div id="checker-main" class="container mx-auto px-4 py-6" style={{background: '#f3f4f6'}}>
-                 <div class="px-8 pt-16 bg-white border border-gray-100 rounded-t-3xl pad-0" >
-                    <div class="max-w-7xl mx-auto">
-                       <div class="flex flex-wrap items-center justify-between -m-4 pb-12 pb-6">
-                          <div class="w-full md:w-1/2 p-4 p-0 p-0">
-                             <h2 class="font-heading md:text-5xl text-gray-900 font-black tracking-tight text-3xl" data-config-id="text11">Cyber risk check</h2>
-                          </div>
-                          
-                       </div>
-                    </div>
-                 </div>
-                 <div class="relative px-8">
-                    <div class="max-w-7xl mx-auto">
-                       <div class="absolute left-0 w-full h-1/2 bg-white border-l border-r border-b border-gray-100 rounded-b-3xl top-0"></div>
-                       <div class="relative z-10 flex flex-nowrap -m-4 transition-transform duration-500 ease-in-out" >
-                          <div x-ref="slide1" class="flex-shrink-0 max-w-sm w-full p-0">
-                             <div class="flex flex-col justify-between p-8 h-full bg-gray-100 border border-gray-100 rounded-3xl shadow-md p-4 fheight m-4" contenteditable="false">
-                                <div class="flex-initial mb-0 mb-0" style={{display: 'flex', flexDirection: 'column'}}>
-                                {!this.state.loading ? <span id="iconSpan"><svg xmlns="http://www.w3.org/2000/svg" style={{display: 'table-cell', marginTop: '4px'}} height="24" viewBox="0 0 24 24" width="24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/><path d="M1 1h22v22H1z" fill="none"/></svg>
-                                </span> : <div className="spinner"></div>}
-                                <p id="messageSpan" style={{paddingLeft: '16px',display: 'table-cell',verticalAlign: 'top',marginTop: '-26px',marginLeft: '32px'}} class="text-lg text-gray-700">{this.state.messageTxt}</p>
-                                <div style={{marginTop: '12px',width: '100%',borderRadius: '12px',fontSize: '1.5rem'}} ><input style={{borderRadius: '8px',fontSize: '1.2rem',width: '100%',padding: '17px'}} type="email" id="mailId"/></div>
-                                </div>
-                                <div class="flex flex-wrap -m-2">
-                             <div class="w-full md:w-auto p-2 float-bottom" id="risk-checker-cta"><a class="block w-full px-8 py-3.5 text-lg text-center text-white font-bold bg-gray-900 hover:bg-gray-800 focus:ring-4 focus:ring-gray-600 rounded-full" onClick={()=>{this.login()}} data-config-id="text3">Next (1/3)</a></div>
-                          </div>
-                             </div>
-                          </div>
-                          </div>
-                       </div>
-                    </div>
-                 </div>}
+              {this.state.currStep == 1 && 
+               <section class="relative pt-4 overflow-hidden">
+               <div class="container px-4 mx-auto">
+               <div class="text-center mb-14">
+                  <h1 class="font-heading font-semibold text-6xl sm:text-8xl lg:text-10xl mb-6">        <span>Assess your</span>        <span class="text-blue-500">skills</span>      </h1>
+               </div>
+               <form action="" style={{paddingLeft: '16px', paddingRight: '16px'}}>
+                  <div class="max-w-md xl:max-w-1xl mx-auto">
+                     <div class="flex flex-wrap -mx-2 mb-8">
+                        <div>Select your current job role:</div>
+                        <br/>          
+                        <div style={{width: '100%',marginTop: '12px', paddingRight: '10px', paddingLeft: '10px'}} class="relative group px-8 pt-5 pb-4 mb-4 bg-gray-50 rounded-lg">
+                           <select class="w-full bg-transparent text-base placeholder-blueGray-900 font-semibold outline-none rounded-lg" name="field-name">
+                              <option>Junior Engineer (SDE-I / 1-3 years of experience)</option>
+                              <option>Mid-Level Engineer (SDE-II / 4-8 years of experience)</option>
+                              <option>Senior Engineer (SDE-III / 9-15 years of experience)</option>
+                              <option>Staff Engineer (15+ - 20 years of experience)</option>
+                              <option>Senior Staff/Principal (20+ years of experience)</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="text-center">
+                        <a class="group relative inline-block h-16 mb-8 w-full md:w-44 bg-blueGray-900 rounded" href="#">
+                           <div class="absolute top-0 left-0 transform -translate-y-1 -translate-x-1 w-full h-full group-hover:translate-y-0 group-hover:translate-x-0 transition duration-300">
+                              <div class="flex h-full w-full items-center justify-center bg-blue-500 border-2 border-blueGray-900 rounded">                <span class="text-base font-semibold uppercase" onClick={()=>{this.setState({currStep: 2});}}>Next &gt;</span>              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+               </form>
+               </div>
+               <div class="relative mt-16 pt-16 pb-18">
+               <div class="container px-4 mx-auto">
+                  <img class="absolute top-0 left-0 h-full w-full object-cover lg:object-fill" src="./images/line-circles-bottom-light.svg" alt=""/>      
+                  <div class="animate-moving relative flex items-center justify-between">        <span class="relative flex-shrink-0 inline-block mr-8 md:mr-20 lg:mr-40 uppercase text-sm font-medium">          <span>Loose coupling </span>        </span>        <span class="relative flex-shrink-0 inline-block mr-8 md:mr-20 lg:mr-40 uppercase text-sm font-medium">          <span>Code Quality</span>        </span>        <span class="relative flex-shrink-0 inline-block mr-8 md:mr-20 lg:mr-40 uppercase text-sm font-medium">          <span>COLLABORATION</span>        </span>        <span class="relative flex-shrink-0 inline-block mr-8 md:mr-20 lg:mr-40 uppercase text-sm font-medium">          <span>Abstraction</span>        </span>        <span class="relative flex-shrink-0 inline-block mr-8 md:mr-20 lg:mr-40 uppercase text-sm font-medium">          <span>Memory Profiling</span>        </span>        <span class="relative flex-shrink-0 inline-block uppercase text-sm font-medium">          <span>REFACTORING</span>        </span>      </div>
+               </div>
+               </div>
+                 </section>
+                 
+                 
+                 }
                  {this.state.currStep == 2 && <div id="checker-step2" class="container mx-auto px-4 py-6" style={{background: '#f3f4f6'}}>
-                 <div class="px-8 pt-16 bg-white border border-gray-100 rounded-t-3xl pad-0" style={{background: 'none'}}>
-                    {!this.state.displayRiskLevel && <div class="max-w-7xl mx-auto">
-                       <div class="flex flex-wrap items-center justify-between -m-4 pb-12 pb-6">
-                          <div class="w-full md:w-1/2 p-0 p-0" style={{paddingBottom: '0.6rem',paddingLeft: '1rem',display: 'flex'}}>
-                             <img src="../psassets/warning.png" style={{width: '48px'}}/>
-                             <h2 class="font-heading md:text-5xl text-gray-900 font-black tracking-tight text-3xl" data-config-id="text11" style={{color: '#000',fontSize: '1.5rem',marginTop: '8px'}}>{this.state.leaksCount} <span style={{color: 'red'}}>cyber leaks</span> found!</h2>
-                          </div>
-                          
-                       </div>
-                    </div>}
-                    {this.state.displayRiskLevel && <div class="max-w-7xl mx-auto">
-                       <div class="flex flex-wrap items-center justify-between -m-4 pb-12 pb-6">
-                          <div class="w-full md:w-1/2 p-0 p-0" style={{paddingBottom: '0.6rem',paddingLeft: '1rem',display: 'flex'}}>
-                           <h2 class="font-heading md:text-4xl text-gray-900 font-black tracking-tight text-2xl" >Your</h2>
-                             <h2 class="font-heading md:text-5xl text-gray-900 font-black tracking-tight text-2xl" data-config-id="text11" style={{color: '#000',fontSize: '1.5rem',marginLeft: '7px',fontWeight: 'bold'}}> Risk Level:</h2>
-                              <img class="custom-icon" src={`../psassets/riskLevel${this.state.riskLevel}.png`} alt="" className='risk-level'></img><span class="font-heading md:text-4xl text-gray-900 font-black tracking-tight text-1xl" style={{position: 'relative', left: '8px', top: '4px', fontSize: '0.9rem'}}>{this.state.riskLevel == 'Moderate' ? 'Medium' : 'High'}</span>
-                          </div>
-                          
-                       </div>
-                    </div>}
-                 </div>
-                 <div class="relative px-8">
-                    <div class="max-w-7xl mx-auto">
-                       <div class="absolute left-0 w-full h-1/2 bg-white border-l border-r border-b border-gray-100 rounded-b-3xl top-0" style={{zIndex: '-1'}}></div>
-                       <div class="relative z-10 flex flex-nowrap -m-4 transition-transform duration-500 ease-in-out" >
-                          <div x-ref="slide1" class="flex-shrink-0 max-w-sm w-full p-0">
-                             <div class="flex flex-col justify-between p-8 h-full bg-gray-100 border border-gray-100 rounded-3xl shadow-md p-4 fheight m-4" style={{height: '143px',background:'#fff'}} contenteditable="false">
-                                <div class="flex-initial mb-0 mb-0" style={{display: 'inline-table'}}>
-                                <img className='custom-icon' src={this.state.displayRiskLevel ? `../psassets/shield1.png` : `../psassets/binary2.png`} alt="" />
-                                <p id="messageSpan" style={{paddingLeft: '16px',display: 'table-cell',verticalAlign: 'top'}} class="text-lg text-gray-700 custom-msg" dangerouslySetInnerHTML={{__html:this.state.messageTxt}}></p>
-                                </div>
-                                <div class="flex flex-wrap -m-2">
-                             {this.state.displayRiskLevel == false && <div class="w-full md:w-auto p-2 float-bottom" id="risk-checker-cta"><a class="block w-full px-8 py-3.5 text-lg text-center text-white font-bold bg-gray-900 hover:bg-gray-800 focus:ring-4 focus:ring-gray-600 rounded-full" onClick={()=>{this.showRiskLevel()}} data-config-id="text3">Next (2/3)</a></div>}
-                             <div class="w-full md:w-auto p-2 float-bottom" id="activateBtn" style={{display: 'none'}}><a class="block w-full px-8 py-3.5 text-lg text-center text-white font-bold bg-gray-900 hover:bg-gray-800 focus:ring-4 focus:ring-gray-600 rounded-full" href="#popup2" onClick={()=>{document.querySelector('#addToHome').play();window.scrollTo({  top: 0, behavior: 'smooth' });}} data-config-id="text3">Activate Free Plan</a></div>
-                          </div>
-                             </div>
-                          </div>
-                          </div>
-                       </div>
-                       <div class="max-w-3xl mx-auto" style={{background: 'white',padding: '0px',position: 'absolute',zIndex: 1,top: '200px',left:'0px', width: '100%'}} dangerouslySetInnerHTML={{__html: this.state.displayRiskLevel ? this.state.ensureSafetyHTML : this.state.exposures}}>
-  
-                       </div>
-                       <div id="popup2" className="popup-container popup-style-2">
-                        <div className="popup-content">
-                           <a href="#" className="close">&times;</a>
-                           <h3 style={{color: '#1d4dd6', fontWeight: 'bold', fontSize: '1.1rem'}}>Install Proveshare</h3>
-                           <p>Choose "Add to Homescreen" on your browser to activate your free plan.</p>
-                           <br/>
-                              <img src="../psassets/psadd.gif" />
-                        </div>
-                        </div>
-                       
-                    </div>
+                       Step 2
                  </div>}
            </section>
       );
