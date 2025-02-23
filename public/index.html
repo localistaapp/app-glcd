@@ -1,468 +1,639 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Codeglad | Future-proof your career</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="css/tailwind/tailwind.min.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="shuffle-for-tailwind.png">
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js" defer></script>
-    <style type="text/css">
-      .img-bg {
+   <head>
+      <title>Codeglad | Future-proof your career</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/tailwind/tailwind.min.css">
+      <link rel="icon" type="image/png" sizes="32x32" href="shuffle-for-tailwind.png">
+      <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js" defer></script>
+      <style type="text/css">
+         .img-bg {
          background: url(./images/young_dev_man.jpg);
          background-size: cover;
-      }
-      .main-banner {
+         }
+         .main-banner {
          background: url(./images/xbg.png);
          background-position-y: -170px;
          background-position-x: 230px;
          animation: scrollBackground 90s linear infinite;
-      }
-      @keyframes scrollBackground {
+         }
+         @keyframes scrollBackground {
          from {
-            background-position-y: -170px;
+         background-position-y: -170px;
          }
          to {
-            background-position-y: 100%;
+         background-position-y: 100%;
          }
-      }
-      @media screen and (min-width:751px) {
+         }
+         @media screen and (min-width:751px) {
          .cp-bg {
-            margin-top: -150px;
+         margin-top: -150px;
          }
-      }
-      @media screen and (max-width:750px) {
+         }
+         @media screen and (max-width:750px) {
          .cp-bg {
          margin-top: -36px;
-      }
+         }
          .img-bg {
-            
-            background-position-x: -99%;
-            background-size: cover;
-            background-size: 152vh;
-            background-position-y: 0vh;
-            max-height: 568px;
+         background-position-x: -99%;
+         background-size: cover;
+         background-size: 152vh;
+         background-position-y: 0vh;
+         max-height: 568px;
          }
          .banner-h {
-            max-height: 600px;
+         max-height: 600px;
          }
-      }
-    </style>
-</head>
-<body class="antialiased bg-body text-body font-body">
-    <div class="">
-                
-      <section class="banner-h relative bg-yellowGray-50 overflow-hidden" x-data="{ slideWidth: 0, activeSlide: 0, slideCount: 3, mobileNavOpen: false }">  <nav class="relative z-10 bg-white">    <div class="flex py-6 px-4 md:px-14 items-center">      <button x-on:click="mobileNavOpen = !mobileNavOpen" class="flex w-14 h-14 mr-12 items-center justify-center border border-gray-50 hover:border-gray-500 transform hover:rotate-45 rounded-full transition duration-300">        <svg width="32" height="12" viewbox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32" height="2" fill="black"></rect><rect y="10" width="19" height="2" fill="black"></rect></svg>      </button>      <a class="inline-block text-2xl font-bold" href="#">        <img style="width:160px" src="images/Screenshot-2025-02-16-at-9-06-23-PM.png" alt="">      </a>      <div class="hidden lg:flex items-center ml-auto">        <div class="mr-12">          <ul class="hidden xl:flex items-center">            <li class="relative group mr-16">              <button class="inline-block text-left text-base font-medium text-black">                <div class="flex items-center">                  <span class="mr-3" contenteditable="false">Resources</span>                  <svg width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">                    <path d="M11.332 0.999974L10.3887 0.0566406L6.66536 3.77997L5.9987 4.5L5.33203 3.77997L1.6087 0.0566402L0.665365 0.999974L5.9987 6.33331L11.332 0.999974Z" fill="currentColor"></path>                  </svg>                </div>              </button>              <div class="hidden group-hover:block absolute z-20 bottom-0 left-0 w-52 pt-4 transform translate-y-full">                <div class="py-4 px-6 bg-white rounded-lg border-2 border-blueGray-900">      <a class="block mb-2 text-xs" href="#">AI Impact</a><a class="block mb-2 text-xs" href="#">Skills Assessment</a><a class="block text-xs" href="#">AI career shift</a>      </div>              </div>            </li>            <li class="mr-16"><a class="inline-block text-base font-medium text-black" href="#">FAQs</a></li>            <li class="mr-16"><a class="inline-block text-base font-medium text-black" href="#" contenteditable="false">Skill Gap Assessment</a></li>            <li><a class="inline-block text-base font-medium text-black" href="#">Contact</a></li>          </ul>        </div>        <div class="w-px h-12 mx-6 bg-gray-200"></div>        <a class="inline-flex mr-12 items-center" href="#">          <div class="relative w-10 h-10 rounded-full mr-4">                                  </div>                  </a>        <a class="relative group inline-flex h-12 w-24 items-center justify-center font-semibold rounded-lg bg-blue-500 overflow-hidden" href="#">          <span class="relative z-10 text-black group-hover:text-white transition duration-500" contenteditable="false">Sign Up</span>          <div class="absolute top-0 left-0 h-full w-28 transform -translate-x-full -ml-1 group-hover:-translate-x-0 bg-black transition duration-500 ease-linear"></div>        </a>      </div>    </div>  </nav>  <div class="relative pt-24 main-banner">    <div class="container px-4 mx-auto">      <div class="flex items-center justify-center xl:justify-between -mx-4 mb-24">        <div class="hidden md:block w-autopx-4">                 </div>        <div class="overflow-hidden">          <div :style="'transform: translateX(-' + slideWidth + 'px)'" class="flex transition-transform duration-500 ease-in-out -m-5" style="transform: translateX(-0px)">            <div x-ref="slide1" class="flex-shrink-0 w-full p-5">              <div class="w-auto px-4">                <div class="max-w-2xl xl:max-w-3xl mx-auto text-center">                  <h1 class="text-6xl sm:text-8xl md:text-10xl font-heading mb-10" contenteditable="false">AI replacing coding jobs?</h1>                  <p class="max-w-md mx-auto text-lg mb-10" contenteditable="false">Learn advanced software engineering skills that complement AI. Become a 10x engineer.</p>                  <a class="group relative inline-block h-16 w-full sm:w-52 bg-blueGray-900 rounded" href="#">                    <div class="absolute top-0 left-0 transform -translate-y-1 -translate-x-1 w-full h-full group-hover:translate-y-0 group-hover:translate-x-0 transition duration-300">                      <div class="flex h-full w-full items-center justify-center bg-white border-2 border-blueGray-900 rounded" onclick="location.href='/assess';">                        <span class="text-base font-semibold uppercase" contenteditable="false" >assess my skills</span>                      </div>                    </div>                  </a>                </div>                             </div>            </div>            <div x-ref="slide2" class="flex-shrink-0 w-full p-5">              <div class="w-auto px-4">                <div class="max-w-2xl xl:max-w-3xl mx-auto text-center">                  <h1 class="text-6xl sm:text-8xl md:text-10xl font-heading mb-10">Your Voice, Amplified.</h1>                  <p class="max-w-md mx-auto text-lg mb-10">Let us take your podcast to new heights across Spotify, Apple, and Google Podcasts.</p>                  <a class="group relative inline-block h-16 w-full sm:w-52 bg-blueGray-900 rounded" href="#">                    <div class="absolute top-0 left-0 transform -translate-y-1 -translate-x-1 w-full h-full group-hover:translate-y-0 group-hover:translate-x-0 transition duration-300">                      <div class="flex h-full w-full items-center justify-center bg-white border-2 border-blueGray-900 rounded">                        <span class="text-base font-semibold uppercase">ASSESS MY RISK</span>                      </div>                    </div>                  </a>                </div>                <div class="md:hidden mt-12 text-center">                  <button x-on:click="activeSlide = activeSlide &gt; 1 ? activeSlide - 1 : slideCount" class="inline-block p-1">                    <svg width="10" height="16" viewbox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">                      <path d="M7.99906 16L9.41406 14.585L3.82906 9L2.74902 8L3.82906 7L9.41406 1.415L7.99906 8.29971e-07L-0.000937445 8L7.99906 16Z" fill="#04082F"></path>                    </svg>                  </button>                  <button x-on:click="activeSlide = activeSlide &lt; slideCount ? activeSlide + 1 : 1" class="inline-block p-1">                    <svg width="10" height="16" viewbox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">                      <path d="M2.00094 0L0.585938 1.415L6.17094 7L7.25098 8L6.17094 9L0.585938 14.585L2.00094 16L10.0009 8L2.00094 0Z" fill="#04082F"></path>                    </svg>                  </button>                </div>              </div>            </div>            <div x-ref="slide3" class="flex-shrink-0 w-full p-5">              <div class="w-auto px-4">                <div class="max-w-2xl xl:max-w-3xl mx-auto text-center">                  <h1 class="text-6xl sm:text-8xl md:text-10xl font-heading mb-10">Podcast Powerhouse.</h1>                  <p class="max-w-md mx-auto text-lg mb-10">Learn advanced software engineering skills that complement AI. Become a 10x engineer.</p>                  <a class="group relative inline-block h-16 w-full sm:w-52 bg-blueGray-900 rounded" href="#">                    <div class="absolute top-0 left-0 transform -translate-y-1 -translate-x-1 w-full h-full group-hover:translate-y-0 group-hover:translate-x-0 transition duration-300">                      <div class="flex h-full w-full items-center justify-center bg-white border-2 border-blueGray-900 rounded">                        <span class="text-base font-semibold uppercase">Get started</span>                      </div>                    </div>                  </a>                </div>                <div class="md:hidden mt-12 text-center">                  <button x-on:click.prevent="activeSlide &gt; 0 ? (activeSlide -= 1, slideWidth -= $refs['slide' + (activeSlide + 1)].offsetWidth) : null" class="inline-block p-1">                    <svg width="10" height="16" viewbox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">                      <path d="M7.99906 16L9.41406 14.585L3.82906 9L2.74902 8L3.82906 7L9.41406 1.415L7.99906 8.29971e-07L-0.000937445 8L7.99906 16Z" fill="#04082F"></path>                    </svg>                  </button>                  <button x-on:click.prevent="activeSlide &lt; slideCount - 1 ? (activeSlide += 1, slideWidth += $refs['slide' + activeSlide].offsetWidth) : activeSlide = slideCount - 1" class="inline-block p-1">                    <svg width="10" height="16" viewbox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">                      <path d="M2.00094 0L0.585938 1.415L6.17094 7L7.25098 8L6.17094 9L0.585938 14.585L2.00094 16L10.0009 8L2.00094 0Z" fill="#04082F"></path>                    </svg>                  </button>                </div>              </div>            </div>          </div>        </div>        <div class="hidden md:block w-auto px-4 text-right">                  </div>      </div>          </div>  </div>  <div :class="{'block': mobileNavOpen, 'hidden': !mobileNavOpen}" class="hidden fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50">    <div x-on:click="mobileNavOpen = !mobileNavOpen" class="fixed inset-0 backdrop-blur-xl backdrop-filter bg-gray-900 bg-opacity-80"></div>    <nav class="relative pt-8 pb-8 bg-white h-full overflow-y-auto">      <div class="flex flex-col px-6 h-full">        <a class="inline-block text-2xl font-bold ml-8 mb-16" href="#">          <img src="suncealand-assets/logos/suncealand-dark.svg" alt="">        </a>        <ul class="w-full mb-auto pb-16">          <li class="group mb-6">            <button class="inline-block text-left text-base font-medium text-black">              <div class="flex items-center">                <span class="mr-3">Resources</span>                <svg width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">                  <path d="M11.332 0.999974L10.3887 0.0566406L6.66536 3.77997L5.9987 4.5L5.33203 3.77997L1.6087 0.0566402L0.665365 0.999974L5.9987 6.33331L11.332 0.999974Z" fill="currentColor"></path>                </svg>              </div>            </button>            <div class="hidden group-hover:block pt-4">              <div class="pl-6">      <a class="block mb-2 text-black" href="#">AI Impact</a><a class="block mb-2 text-black" href="#">Skills Assessment</a><a class="block text-black" href="#">AI Career Shift</a>      </div>            </div>          </li>          <li class="mb-6"><a class="inline-block text-base font-medium text-black" href="#">FAQs</a></li>          <li class="mb-6"><a class="inline-block text-base font-medium text-black" href="#">Skill Gap Assessment</a></li>          <li><a class="inline-block text-base font-medium text-black" href="#">Contact</a></li>        </ul>        <div class="w-full">                    <a class="relative inline-flex h-12 w-full mb-4 items-center justify-center font-semibold rounded-lg bg-blue-500" href="#">            <span class="text-black">Sign up</span>          </a>          <p class="pl-2 text-sm">2025 © Codeglad</p>        </div>      </div>    </nav>  </div></section>
-                
-      <section class="pt-20 md:pt-0 pb-20 md:pb-32">
-        <div class="container px-4 mx-auto">
-          <div class="mb-24 text-center">
-            <div class="inline-flex items-center px-5 py-2 bg-white rounded-full mb-8">
-              <span class="block w-2 h-2 mr-2 rounded-full bg-indigo-500"></span>
-              <span class="uppercase text-sm font-medium tracking-tight">LEARN ADVANCED SOFTWARE SKILLS</span>
-            </div>
-            <h1 class="text-6xl sm:text-7xl font-heading">Future-proof your career</h1>
-          </div>
-          <div class="flex flex-wrap items-center justify-between -mx-4">
-            <div class="w-full lg:w-1/2 xl:w-auto px-4 mb-16 lg:mb-0">
-              <div class="max-w-md lg:max-w-none mx-auto">
-                <img class="block" src="./images/frame-video-message-gray.png" alt="">
-              </div>
-            </div>
-            <div class="w-full lg:w-1/2 xl:w-auto px-4">
-              <div class="max-w-md mx-auto xl:mx-0">
-                <p class="max-w-sm text-2xl mb-12">Codeglad teaches you step-up skills such as Design Thinking &amp;  Critical Problem Solving which are sought after in the AI-first world.</p>
-                <div class="mb-16">
-                  <div class="flex items-start md:items-center pb-4 mb-4 border-b border-gray-50">
-                    <div class="flex-shrink-0 flex w-11 h-11 mr-5 items-center justify-center text-sm font-medium bg-blue-500 rounded-full">1</div>
-                    <p>Take a short "Skill Gap" assessment</p>
-                  </div>
-                  <div class="flex items-start md:items-center pb-4 mb-4 border-b border-gray-50">
-                    <div class="flex-shrink-0 flex w-11 h-11 mr-5 items-center justify-center text-sm font-medium bg-blue-500 rounded-full">2</div>
-                    <p>Codeglad prepares your personalized curriculum</p>
-                  </div>
-                  <div class="flex items-start md:items-center">
-                    <div class="flex-shrink-0 flex w-11 h-11 mr-5 items-center justify-center text-sm font-medium bg-blue-500 rounded-full">3</div>
-                    <p>Learn, practice &amp; progress towards an AI-first software engineering career</p>
-                  </div>
-                </div>
-                <a class="group inline-flex items-center font-base font-semibold text-indigo-500" href="#">
-                  <span class="mr-2">Learn more</span>
-                  <div class="relative transition duration-500 animate-pulse">
-                    <svg width="7" height="12" viewbox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.00193 0.666626L0.0585938 1.60996L3.78193 5.33329L4.50195 5.99996L3.78193 6.66663L0.0585938 10.39L1.00193 11.3333L6.33526 5.99996L1.00193 0.666626Z" fill="currentColor"></path>
-                    </svg>
-                    <div class="absolute top-0 right-0 -mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <svg width="7" height="12" viewbox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.00193 0.666626L0.0585938 1.60996L3.78193 5.33329L4.50195 5.99996L3.78193 6.66663L0.0585938 10.39L1.00193 11.3333L6.33526 5.99996L1.00193 0.666626Z" fill="currentColor"></path>
-                      </svg>
-                    </div>
-                    <div class="absolute top-0 right-0 -mr-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <svg width="7" height="12" viewbox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.00193 0.666626L0.0585938 1.60996L3.78193 5.33329L4.50195 5.99996L3.78193 6.66663L0.0585938 10.39L1.00193 11.3333L6.33526 5.99996L1.00193 0.666626Z" fill="currentColor"></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-                
-      <section class="py-10 md:py-10">
-        <div class="container px-4 mx-auto">
-          <div class="max-w-2xl mx-auto mb-24 text-center">
-            <div class="inline-flex items-center px-5 py-2 bg-white rounded-full mb-8">
-              <span class="block w-2 h-2 mr-2 rounded-full bg-indigo-500"></span>
-              <span class="uppercase text-sm font-medium tracking-tight">WHY IT WORKS</span>
-            </div>
-            <h1 class="text-6xl sm:text-7xl font-heading font-semibold mb-14">Learn Intent-driven Development. Not coding!</h1>
-            <p class="text-2xl mb-18">Unlock the power of intent-driven development (patent pending) by simulated real-life software challenges.  </p>
-          </div>
-          <div class="max-w-xs mx-auto md:max-w-none">
-            <div class="flex flex-wrap justify-between items-center -mx-4">
-              <div class="w-full lg:w-1/3 px-4 mb-10 lg:mb-0">
-                <div class="max-w-xs mx-auto mb-10">
-                  <span class="block mb-6 text-5xl font-heading text-yellowGray-700">01</span>
-                  <h4 class="text-3xl font-heading font-semibold">Understand the "right problem to solve" at the "right time" given a context</h4>
-                </div>
-                <div class="max-w-xs mx-auto">
-                  <span class="block mb-6 text-5xl font-heading text-yellowGray-700">02</span>
-                  <h4 class="text-3xl font-heading font-semibold">Code with intent to amplify AI generated code</h4>
-                </div>
-              </div>
-              <div class="w-full lg:w-1/3 px-4 mb-10 lg:mb-0">
-                <img class="mx-auto" src="./images/avatar-girl-circle.png" alt="">
-              </div>
-              <div class="w-full lg:w-1/3 px-4">
-                <div class="max-w-xs mx-auto mb-10">
-                  <span class="block mb-6 text-5xl font-heading text-yellowGray-700">03</span>
-                  <h4 class="text-3xl font-heading font-semibold">Focus on Non-functionals such as availability, resiliency, abstraction &amp; boundary conditions</h4>
-                </div>
-                <div class="max-w-xs mx-auto">
-                  <span class="block mb-6 text-5xl font-heading text-yellowGray-700">04</span>
-                  <h4 class="text-3xl font-heading font-semibold">Know what problems to solve by understanding higher-order business &amp; user needs</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-                
-      <section class="py-20 md:py-36">
-        <div class="container px-4 mx-auto">
-          <div class="flex flex-wrap items-end -mx-4 mb-16 lg:mb-32">
-            <div class="w-full xl:w-1/2 px-4 mb-20 xl:mb-0">
-              <div>
-                <div class="inline-flex items-center px-5 py-2 bg-gray-50 rounded-full mb-10">
-                  <span class="block w-2 h-2 mr-2 rounded-full bg-blue-500"></span>
-                  <span class="uppercase text-sm font-medium tracking-tight">PRICING</span>
-                </div>
-                <h1 class="text-7xl xl:text-8xl font-heading font-semibold">Choose the plan</h1>
-              </div>
-            </div>
-            <div class="w-full xl:w-1/2 px-4 text-center xl:text-right">
-              <div class="inline-flex items-center">
-                
-                <div class="flex p-2 mx-2 sm:mx-6 items-center bg-gray-50 rounded-full" x-data="{ toggle: false }">
-                  <button x-on:click="toggle = !toggle" class="inline-block w-6 sm:w-8 h-6 sm:h-8 rounded-full bg-white shadow" :class="{ 'bg-white shadow': !toggle, 'bg-transparent': toggle }"></button>
-                  <button x-on:click="toggle = !toggle" class="inline-block w-6 sm:w-8 h-6 sm:h-8 rounded-full" :class="{ 'bg-white shadow': toggle, 'bg-transparent': !toggle }"></button>
-                </div>
-                <div class="flex items-start">
-                  <span class="text-lg">3 months</span>
-                  <span class="inline-block ml-2 -mt-1 py-1 px-2 text-2xs font-medium text-black bg-yellow-500 rounded-full">-10%</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="max-w-md mx-auto lg:max-w-none relative pt-10 pb-12 pl-10 pr-14 mb-2 bg-gray-50 rounded-4xl">
-            <div class="hidden lg:block absolute top-1/2 right-0 mr-96 xl:mr-112 transform -translate-y-1/2 h-28 w-px bg-gray-100"></div>
-            <div class="flex flex-wrap justify-between -mx-4">
-              <div class="w-full lg:w-2/6 xl:w-auto px-4 mb-8 lg:mb-0">
-                <div>
-                  <h3 class="font-heading text-4xl font-semibold mb-2">Enthusiast</h3>
-                  <span class="block text-lg">Free 20 days trial</span>
-                </div>
-              </div>
-              <div class="w-full lg:w-2/6 xl:w-2/5 px-4 mb-8 lg:mb-0">
-                <div>
-                  <span class="block text-sm font-medium mb-4">FEATURES</span>
-                  <div class="flex flex-wrap -mx-2 -mb-2">
-                    <div class="w-full xl:w-1/2 px-2 mb-2">
-                      <div class="flex items-center">
-                        <svg width="28" height="28" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="27" height="27" rx="13.5" fill="white"></rect><rect x="20.375" y="9" width="2" height="14.67" rx="1" transform="rotate(45 20.375 9)" fill="#04082F"></rect><rect x="5.62891" y="15.0432" width="2" height="7.57417" rx="1" transform="rotate(-45 5.62891 15.0432)" fill="#04082F"></rect><rect x="0.5" y="0.5" width="27" height="27" rx="13.5" stroke="#D0D0D3"></rect></svg>
-                        <span class="ml-5 text-sm">Personal assessment</span>
-                      </div>
-                    </div>
-                    <div class="w-full xl:w-1/2 px-2 mb-2">
-                      <div class="flex items-center">
-                        <svg width="28" height="28" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="27" height="27" rx="13.5" fill="white"></rect><rect x="20.375" y="9" width="2" height="14.67" rx="1" transform="rotate(45 20.375 9)" fill="#04082F"></rect><rect x="5.62891" y="15.0432" width="2" height="7.57417" rx="1" transform="rotate(-45 5.62891 15.0432)" fill="#04082F"></rect><rect x="0.5" y="0.5" width="27" height="27" rx="13.5" stroke="#D0D0D3"></rect></svg>
-                        <span class="ml-5 text-sm">Zoom out/in of Lessons</span>
-                      </div>
-                    </div>
-                    <div class="w-full xl:w-1/2 px-2 mb-2">
-                      <div class="flex items-center">
-                        <svg width="28" height="28" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="27" height="27" rx="13.5" fill="white"></rect><rect x="20.375" y="9" width="2" height="14.67" rx="1" transform="rotate(45 20.375 9)" fill="#04082F"></rect><rect x="5.62891" y="15.0432" width="2" height="7.57417" rx="1" transform="rotate(-45 5.62891 15.0432)" fill="#04082F"></rect><rect x="0.5" y="0.5" width="27" height="27" rx="13.5" stroke="#D0D0D3"></rect></svg>
-                        <span class="ml-5 text-sm">Learning roadmap</span>
-                      </div>
-                    </div>
-                    <div class="w-full xl:w-1/2 px-2 mb-2">
-                      <div class="flex items-center">
-                        <svg width="28" height="28" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="27" height="27" rx="13.5" fill="white"></rect><rect x="20.375" y="9" width="2" height="14.67" rx="1" transform="rotate(45 20.375 9)" fill="#04082F"></rect><rect x="5.62891" y="15.0432" width="2" height="7.57417" rx="1" transform="rotate(-45 5.62891 15.0432)" fill="#04082F"></rect><rect x="0.5" y="0.5" width="27" height="27" rx="13.5" stroke="#D0D0D3"></rect></svg>
-                        <span class="ml-5 text-sm">Skills Certificate</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="w-full lg:w-2/6 xl:w-auto px-4 self-center">
-                <div class="flex flex-wrap lg:pl-12 xl:pl-24 items-center justify-end">
-                  <div class="w-full xl:w-auto mb-8 xl:mb-0 xl:mr-14">
-                    <div class="flex justify-center xl:justify-end items-center">
-                      <span class="mr-1 font-heading text-4xl">₹</span>
-                      <span class="font-heading text-8xl">799</span>
-                    </div>
-                  </div>
-                  <div class="w-full xl:w-auto">
-                    <a class="group relative inline-block h-16 w-full xl:w-40 bg-blueGray-900 rounded" href="#">
-                      <div class="absolute top-0 left-0 transform -translate-y-1 -translate-x-1 w-full h-full group-hover:translate-y-0 group-hover:translate-x-0 transition duration-300">
-                        <div class="flex h-full w-full items-center justify-center bg-white border-2 border-blueGray-900 rounded">
-                          <span class="text-base font-semibold uppercase">Try it</span>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="max-w-md mx-auto lg:max-w-none relative pt-10 pb-12 pl-10 pr-14 mb-2 bg-blue-500 rounded-4xl">
-            <div class="hidden lg:block absolute top-1/2 right-0 mr-96 xl:mr-112 transform -translate-y-1/2 h-28 w-px bg-gray-100"></div>
-            <div class="flex flex-wrap justify-between -mx-4">
-              <div class="w-full lg:w-2/6 xl:w-auto px-4 mb-8 lg:mb-0">
-                <div>
-                  <h3 class="font-heading text-4xl font-semibold mb-2">Job-seeker</h3>
-                  <span class="block text-lg">Free 20 days trial</span>
-                </div>
-              </div>
-              <div class="w-full lg:w-2/6 xl:w-2/5 px-4 mb-8 lg:mb-0">
-                <div>
-                  <span class="block text-sm font-medium mb-4">FEATURES</span>
-                  <div class="flex flex-wrap -mx-2 -mb-2">
-                    <div class="w-full xl:w-1/2 px-2 mb-2">
-                      <div class="flex items-center">
-                        <svg width="28" height="28" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="27" height="27" rx="13.5" fill="white"></rect><rect x="20.375" y="9" width="2" height="14.67" rx="1" transform="rotate(45 20.375 9)" fill="#04082F"></rect><rect x="5.62891" y="15.0432" width="2" height="7.57417" rx="1" transform="rotate(-45 5.62891 15.0432)" fill="#04082F"></rect><rect x="0.5" y="0.5" width="27" height="27" rx="13.5" stroke="#D0D0D3"></rect></svg>
-                        <span class="ml-5 text-sm">Unlimited assessments</span>
-                      </div>
-                    </div>
-                    <div class="w-full xl:w-1/2 px-2 mb-2">
-                      <div class="flex items-center">
-                        <svg width="28" height="28" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="27" height="27" rx="13.5" fill="white"></rect><rect x="20.375" y="9" width="2" height="14.67" rx="1" transform="rotate(45 20.375 9)" fill="#04082F"></rect><rect x="5.62891" y="15.0432" width="2" height="7.57417" rx="1" transform="rotate(-45 5.62891 15.0432)" fill="#04082F"></rect><rect x="0.5" y="0.5" width="27" height="27" rx="13.5" stroke="#D0D0D3"></rect></svg>
-                        <span class="ml-5 text-sm">Zoom out/in of Lessons</span>
-                      </div>
-                    </div>
-                    <div class="w-full xl:w-1/2 px-2 mb-2">
-                      <div class="flex items-center">
-                        <svg width="28" height="28" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="27" height="27" rx="13.5" fill="white"></rect><rect x="20.375" y="9" width="2" height="14.67" rx="1" transform="rotate(45 20.375 9)" fill="#04082F"></rect><rect x="5.62891" y="15.0432" width="2" height="7.57417" rx="1" transform="rotate(-45 5.62891 15.0432)" fill="#04082F"></rect><rect x="0.5" y="0.5" width="27" height="27" rx="13.5" stroke="#D0D0D3"></rect></svg>
-                        <span class="ml-5 text-sm">AI Career Coach</span>
-                      </div>
-                    </div>
-                    <div class="w-full xl:w-1/2 px-2 mb-2">
-                      <div class="flex items-center">
-                        <svg width="28" height="28" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="27" height="27" rx="13.5" fill="white"></rect><rect x="20.375" y="9" width="2" height="14.67" rx="1" transform="rotate(45 20.375 9)" fill="#04082F"></rect><rect x="5.62891" y="15.0432" width="2" height="7.57417" rx="1" transform="rotate(-45 5.62891 15.0432)" fill="#04082F"></rect><rect x="0.5" y="0.5" width="27" height="27" rx="13.5" stroke="#D0D0D3"></rect></svg>
-                        <span class="ml-5 text-sm">Skills Certificate</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="w-full lg:w-2/6 xl:w-auto px-4 self-center">
-                <div class="flex flex-wrap lg:pl-12 xl:pl-24 items-center justify-end">
-                  <div class="w-full xl:w-auto mb-8 xl:mb-0 xl:mr-14">
-                    <div class="flex justify-center xl:justify-end items-center">
-                      <span class="mr-1 font-heading text-4xl">₹</span>
-                      <span class="font-heading text-6xl">1699</span>
-                    </div>
-                  </div>
-                  <div class="w-full xl:w-auto">
-                    <a class="group relative inline-block h-16 w-full xl:w-40 bg-blueGray-900 rounded" href="#">
-                      <div class="absolute top-0 left-0 transform -translate-y-1 -translate-x-1 w-full h-full group-hover:translate-y-0 group-hover:translate-x-0 transition duration-300">
-                        <div class="flex h-full w-full items-center justify-center bg-white border-2 border-blueGray-900 rounded">
-                          <span class="text-base font-semibold uppercase">Try it</span>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </section>
-                
-      <section class="py-10 md:py-10 bg-yellowGray-50 overflow-hidden" x-data="{ slideWidth: 0, activeSlide: 0, slideCount: 3 }" style="padding-top: 40px;padding-bottom:40px">
-        <div class="container px-4 mx-auto">
-          <div class="flex flex-wrap -mx-4">
-            <div class="w-full lg:w-1/3 px-4 mb-16 lg:mb-0">
-              <div class="max-w-sm mx-auto">
-                <div class="inline-flex items-center px-5 py-2 bg-white rounded-full mb-16">
-                  <span class="block w-2 h-2 mr-2 rounded-full bg-blue-500"></span>
-                  <span class="uppercase text-sm font-medium tracking-tight">CUSTOMER REVIEWS</span>
-                </div>
-                <h1 class="font-heading text-6xl font-semibold mb-10">What developers say?</h1>
-                <p class="text-2xl mb-16">Take a skill gap assessment to get started.</p>
-                <a class="group relative inline-block h-16 mb-8 w-full md:w-36 bg-blueGray-900 rounded" href="#">
-                  <div class="absolute top-0 left-0 transform -translate-y-1 -translate-x-1 w-full h-full group-hover:translate-y-0 group-hover:translate-x-0 transition duration-300">
-                    <div class="flex h-full w-full items-center justify-center bg-blue-500 border-2 border-blueGray-900 rounded">
-                      <span class="text-base font-semibold uppercase">GET STARTED</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="w-full lg:w-2/3 px-4">
-              <div class="xl:max-w-4xl xl:ml-auto mb-12 md:mb-6 relative">
-                <button x-on:click.prevent="activeSlide &gt; 0 ? (activeSlide -= 1, slideWidth -= $refs['slide' + (activeSlide + 1)].offsetWidth) : null" class="hidden md:inline-block absolute top-1/2 left-0 p-1">
-                  <svg width="10" height="16" viewbox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.99906 16L9.41406 14.585L3.82906 9L2.74902 8L3.82906 7L9.41406 1.415L7.99906 8.29971e-07L-0.000937716 8L7.99906 16Z" fill="#04082F"></path>
-                  </svg>
-                </button>
-                <button x-on:click.prevent="activeSlide &lt; slideCount - 1 ? (activeSlide += 1, slideWidth += $refs['slide' + activeSlide].offsetWidth) : activeSlide = slideCount - 1" class="hidden md:inline-block absolute top-1/2 right-0 p-1">
-                  <svg width="10" height="16" viewbox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2.00094 0L0.585938 1.415L6.17094 7L7.25098 8L6.17094 9L0.585938 14.585L2.00094 16L10.0009 8L2.00094 0Z" fill="#04082F"></path>
-                  </svg>
-                </button>
-                <div class="max-w-xl xl:max-w-2xl mx-auto bg-white rounded-3xl">
-                  <div class="py-7 px-6 sm:px-18 border-b border-yellowGray-50">
-                      <div class="overflow-hidden">
-                          <div :style="'transform: translateX(-' + slideWidth + 'px)'" class="flex transition-transform duration-500 ease-in-out -m-5">
-                              <div x-ref="slide1" class="flex-shrink-0 w-full p-5">
-                                  <div class="flex flex-wrap -mb-2 items-center">
-                                    <img class="w-16 h-16 mb-2 mr-6" src="./images/avatar-review-man.png" alt="">
-                                    <div class="mb-2">
-                                      <h4 class="text-2xl font-medium">Glen Harres</h4>
-                                      <span class="text-xs">Spotify, Junior Designer</span>
-                                    </div>
-                                  </div>
-                                  <div class="pt-10 pb-12">
-                                    <div class="relative pr-12 mb-16 md:mb-24">
-                                      <span class="absolute top-0 right-0">
-                                        <svg width="29" height="41" viewbox="0 0 29 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M22.536 9.016C23.64 9.016 24.576 9.256 25.344 9.736C26.16 10.168 26.832 10.744 27.36 11.464C27.888 12.232 28.248 13.12 28.44 14.128C28.68 15.136 28.8 16.12 28.8 17.08C28.8 19.432 28.176 21.616 26.928 23.632C25.728 25.648 23.856 27.256 21.312 28.456L20.664 27.16C22.056 26.536 23.256 25.624 24.264 24.424C25.32 23.176 25.92 21.88 26.064 20.536C26.256 19.672 26.256 18.856 26.064 18.088C25.104 19.048 23.856 19.528 22.32 19.528C20.832 19.528 19.584 19.072 18.576 18.16C17.568 17.248 17.064 15.952 17.064 14.272C17.064 12.736 17.568 11.488 18.576 10.528C19.632 9.52 20.952 9.016 22.536 9.016ZM8.568 9.016C9.672 9.016 10.608 9.256 11.376 9.736C12.192 10.168 12.864 10.744 13.392 11.464C13.92 12.232 14.28 13.12 14.472 14.128C14.712 15.136 14.832 16.12 14.832 17.08C14.832 19.432 14.208 21.616 12.96 23.632C11.76 25.648 9.888 27.256 7.344 28.456L6.696 27.16C8.088 26.536 9.288 25.624 10.296 24.424C11.352 23.176 11.952 21.88 12.096 20.536C12.288 19.672 12.288 18.856 12.096 18.088C11.136 19.048 9.888 19.528 8.352 19.528C6.864 19.528 5.616 19.072 4.608 18.16C3.6 17.248 3.096 15.952 3.096 14.272C3.096 12.736 3.6 11.488 4.608 10.528C5.664 9.52 6.984 9.016 8.568 9.016Z" fill="#9CD0FF"></path>
-                                        </svg>
-                                      </span>
-                                      <p class="text-2xl md:text-3xl leading-9">Tried a lot, find the best Tried a lot. Choose this one. A real nice tools and app. It comes with a few free plug-ins that will be more than enough for beginners.</p>
-                                    </div>
-                                  </div>
-                              </div>
-                              <div x-ref="slide2" class="flex-shrink-0 w-full p-5">
-                                  <div class="flex flex-wrap -mb-2 items-center">
-                                    <img class="w-16 h-16 mb-2 mr-6" src="suncealand-assets/images/avatar-review-man.png" alt="">
-                                    <div class="mb-2">
-                                      <h4 class="text-2xl font-medium">Sarah Chen</h4>
-                                      <span class="text-xs">TechGuru, Senior Analyst</span>
-                                    </div>
-                                  </div>
-                                  <div class="pt-10 pb-12">
-                                    <div class="relative pr-12 mb-16 md:mb-24">
-                                      <span class="absolute top-0 right-0">
-                                        <svg width="29" height="41" viewbox="0 0 29 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M22.536 9.016C23.64 9.016 24.576 9.256 25.344 9.736C26.16 10.168 26.832 10.744 27.36 11.464C27.888 12.232 28.248 13.12 28.44 14.128C28.68 15.136 28.8 16.12 28.8 17.08C28.8 19.432 28.176 21.616 26.928 23.632C25.728 25.648 23.856 27.256 21.312 28.456L20.664 27.16C22.056 26.536 23.256 25.624 24.264 24.424C25.32 23.176 25.92 21.88 26.064 20.536C26.256 19.672 26.256 18.856 26.064 18.088C25.104 19.048 23.856 19.528 22.32 19.528C20.832 19.528 19.584 19.072 18.576 18.16C17.568 17.248 17.064 15.952 17.064 14.272C17.064 12.736 17.568 11.488 18.576 10.528C19.632 9.52 20.952 9.016 22.536 9.016ZM8.568 9.016C9.672 9.016 10.608 9.256 11.376 9.736C12.192 10.168 12.864 10.744 13.392 11.464C13.92 12.232 14.28 13.12 14.472 14.128C14.712 15.136 14.832 16.12 14.832 17.08C14.832 19.432 14.208 21.616 12.96 23.632C11.76 25.648 9.888 27.256 7.344 28.456L6.696 27.16C8.088 26.536 9.288 25.624 10.296 24.424C11.352 23.176 11.952 21.88 12.096 20.536C12.288 19.672 12.288 18.856 12.096 18.088C11.136 19.048 9.888 19.528 8.352 19.528C6.864 19.528 5.616 19.072 4.608 18.16C3.6 17.248 3.096 15.952 3.096 14.272C3.096 12.736 3.6 11.488 4.608 10.528C5.664 9.52 6.984 9.016 8.568 9.016Z" fill="#9CD0FF"></path>
-                                        </svg>
-                                      </span>
-                                      <p class="text-2xl md:text-3xl leading-9">This software is the pinnacle of efficiency and performance. With its intuitive interface and seamless integration, it's perfect for users of all levels.</p>
-                                    </div>
-                                  </div>
-                              </div>
-                              <div x-ref="slide3" class="flex-shrink-0 w-full p-5">
-                                  <div class="flex flex-wrap -mb-2 items-center">
-                                    <img class="w-16 h-16 mb-2 mr-6" src="suncealand-assets/images/avatar-review-man.png" alt="">
-                                    <div class="mb-2">
-                                      <h4 class="text-2xl font-medium">Max Reynolds</h4>
-                                      <span class="text-xs">Digital Trends, Tech Editor</span>
-                                    </div>
-                                  </div>
-                                  <div class="pt-10 pb-12">
-                                    <div class="relative pr-12 mb-16 md:mb-24">
-                                      <span class="absolute top-0 right-0">
-                                        <svg width="29" height="41" viewbox="0 0 29 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M22.536 9.016C23.64 9.016 24.576 9.256 25.344 9.736C26.16 10.168 26.832 10.744 27.36 11.464C27.888 12.232 28.248 13.12 28.44 14.128C28.68 15.136 28.8 16.12 28.8 17.08C28.8 19.432 28.176 21.616 26.928 23.632C25.728 25.648 23.856 27.256 21.312 28.456L20.664 27.16C22.056 26.536 23.256 25.624 24.264 24.424C25.32 23.176 25.92 21.88 26.064 20.536C26.256 19.672 26.256 18.856 26.064 18.088C25.104 19.048 23.856 19.528 22.32 19.528C20.832 19.528 19.584 19.072 18.576 18.16C17.568 17.248 17.064 15.952 17.064 14.272C17.064 12.736 17.568 11.488 18.576 10.528C19.632 9.52 20.952 9.016 22.536 9.016ZM8.568 9.016C9.672 9.016 10.608 9.256 11.376 9.736C12.192 10.168 12.864 10.744 13.392 11.464C13.92 12.232 14.28 13.12 14.472 14.128C14.712 15.136 14.832 16.12 14.832 17.08C14.832 19.432 14.208 21.616 12.96 23.632C11.76 25.648 9.888 27.256 7.344 28.456L6.696 27.16C8.088 26.536 9.288 25.624 10.296 24.424C11.352 23.176 11.952 21.88 12.096 20.536C12.288 19.672 12.288 18.856 12.096 18.088C11.136 19.048 9.888 19.528 8.352 19.528C6.864 19.528 5.616 19.072 4.608 18.16C3.6 17.248 3.096 15.952 3.096 14.272C3.096 12.736 3.6 11.488 4.608 10.528C5.664 9.52 6.984 9.016 8.568 9.016Z" fill="#9CD0FF"></path>
-                                        </svg>
-                                      </span>
-                                      <p class="text-2xl md:text-3xl leading-9">Look no further for the ultimate toolkit. This software surpasses the competition with its comprehensive features and user-friendly design.</p>
-                                    </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                </div>
-                <div class="md:hidden w-full px-4 mt-12 text-center">
-                  <button x-on:click.prevent="activeSlide &gt; 0 ? (activeSlide -= 1, slideWidth -= $refs['slide' + (activeSlide + 1)].offsetWidth) : null" class="inline-block p-1 mr-2">
-                    <svg width="10" height="16" viewbox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M7.99906 16L9.41406 14.585L3.82906 9L2.74902 8L3.82906 7L9.41406 1.415L7.99906 8.29971e-07L-0.000937716 8L7.99906 16Z" fill="#04082F"></path>
-                    </svg>
+         }
+      </style>
+   </head>
+   <body class="antialiased bg-body text-body font-body">
+      <div class="">
+         <section class="banner-h relative bg-yellowGray-50 overflow-hidden" x-data="{ slideWidth: 0, activeSlide: 0, slideCount: 3, mobileNavOpen: false }">
+            <nav class="relative z-10 bg-white">
+               <div class="flex py-6 px-4 md:px-14 items-center">
+                  <button x-on:click="mobileNavOpen = !mobileNavOpen" class="flex w-14 h-14 mr-12 items-center justify-center border border-gray-50 hover:border-gray-500 transform hover:rotate-45 rounded-full transition duration-300">
+                     <svg width="32" height="12" viewbox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="32" height="2" fill="black"></rect>
+                        <rect y="10" width="19" height="2" fill="black"></rect>
+                     </svg>
                   </button>
-                  <button x-on:click.prevent="activeSlide &lt; slideCount - 1 ? (activeSlide += 1, slideWidth += $refs['slide' + activeSlide].offsetWidth) : activeSlide = slideCount - 1" class="inline-block p-1">
-                    <svg width="10" height="16" viewbox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M2.00094 0L0.585938 1.415L6.17094 7L7.25098 8L6.17094 9L0.585938 14.585L2.00094 16L10.0009 8L2.00094 0Z" fill="#04082F"></path>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div class="max-w-xl xl:max-w-2xl mx-auto">
-                <div class="flex flex-wrap -mx-3">
-                  <div class="w-full sm:w-1/2 px-3 mb-6 md:mb-0">
-                    
+                  <a class="inline-block text-2xl font-bold" href="#">        <img style="width:160px" src="images/Screenshot-2025-02-16-at-9-06-23-PM.png" alt="">      </a>      
+                  <div class="hidden lg:flex items-center ml-auto">
+                     <div class="mr-12">
+                        <ul class="hidden xl:flex items-center">
+                           <li class="relative group mr-16">
+                              <button class="inline-block text-left text-base font-medium text-black">
+                                 <div class="flex items-center">
+                                    <span class="mr-3" contenteditable="false">Resources</span>                  
+                                    <svg width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M11.332 0.999974L10.3887 0.0566406L6.66536 3.77997L5.9987 4.5L5.33203 3.77997L1.6087 0.0566402L0.665365 0.999974L5.9987 6.33331L11.332 0.999974Z" fill="currentColor"></path>
+                                    </svg>
+                                 </div>
+                              </button>
+                              <div class="hidden group-hover:block absolute z-20 bottom-0 left-0 w-52 pt-4 transform translate-y-full">
+                                 <div class="py-4 px-6 bg-white rounded-lg border-2 border-blueGray-900">      <a class="block mb-2 text-xs" href="#">AI Impact</a><a class="block mb-2 text-xs" href="#">Skills Assessment</a><a class="block text-xs" href="#">AI career shift</a>      </div>
+                              </div>
+                           </li>
+                           <li class="mr-16"><a class="inline-block text-base font-medium text-black" href="#">FAQs</a></li>
+                           <li class="mr-16"><a class="inline-block text-base font-medium text-black" href="#" contenteditable="false">Skill Gap Assessment</a></li>
+                           <li><a class="inline-block text-base font-medium text-black" href="#">Contact</a></li>
+                        </ul>
+                     </div>
+                     <div class="w-px h-12 mx-6 bg-gray-200"></div>
+                     <a class="inline-flex mr-12 items-center" href="#">
+                        <div class="relative w-10 h-10 rounded-full mr-4">                                  </div>
+                     </a>
+                     <a class="relative group inline-flex h-12 w-24 items-center justify-center font-semibold rounded-lg bg-blue-500 overflow-hidden" href="#">
+                        <span class="relative z-10 text-black group-hover:text-white transition duration-500" contenteditable="false">Sign Up</span>          
+                        <div class="absolute top-0 left-0 h-full w-28 transform -translate-x-full -ml-1 group-hover:-translate-x-0 bg-black transition duration-500 ease-linear"></div>
+                     </a>
                   </div>
-                  <div class="w-full sm:w-1/2 px-3">
-                    
+               </div>
+            </nav>
+            <div class="relative pt-24 main-banner">
+               <div class="container px-4 mx-auto">
+                  <div class="flex items-center justify-center xl:justify-between -mx-4 mb-24">
+                     <div class="hidden md:block w-autopx-4">                 </div>
+                     <div class="overflow-hidden">
+                        <div :style="'transform: translateX(-' + slideWidth + 'px)'" class="flex transition-transform duration-500 ease-in-out -m-5" style="transform: translateX(-0px)">
+                           <div x-ref="slide1" class="flex-shrink-0 w-full p-5">
+                              <div class="w-auto px-4">
+                                 <div class="max-w-2xl xl:max-w-3xl mx-auto text-center">
+                                    <h1 class="text-6xl sm:text-8xl md:text-10xl font-heading mb-10" contenteditable="false">AI replacing coding jobs?</h1>
+                                    <p class="max-w-md mx-auto text-lg mb-10" contenteditable="false">Learn advanced software engineering skills that complement AI. Become a 10x engineer.</p>
+                                    <a class="group relative inline-block h-16 w-full sm:w-52 bg-blueGray-900 rounded" href="#">
+                                       <div class="absolute top-0 left-0 transform -translate-y-1 -translate-x-1 w-full h-full group-hover:translate-y-0 group-hover:translate-x-0 transition duration-300">
+                                          <div class="flex h-full w-full items-center justify-center bg-white border-2 border-blueGray-900 rounded" onclick="location.href='/assess';">                        <span class="text-base font-semibold uppercase" contenteditable="false" >assess my skills</span>                      </div>
+                                       </div>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div x-ref="slide2" class="flex-shrink-0 w-full p-5">
+                              <div class="w-auto px-4">
+                                 <div class="max-w-2xl xl:max-w-3xl mx-auto text-center">
+                                    <h1 class="text-6xl sm:text-8xl md:text-10xl font-heading mb-10">Your Voice, Amplified.</h1>
+                                    <p class="max-w-md mx-auto text-lg mb-10">Let us take your podcast to new heights across Spotify, Apple, and Google Podcasts.</p>
+                                    <a class="group relative inline-block h-16 w-full sm:w-52 bg-blueGray-900 rounded" href="#">
+                                       <div class="absolute top-0 left-0 transform -translate-y-1 -translate-x-1 w-full h-full group-hover:translate-y-0 group-hover:translate-x-0 transition duration-300">
+                                          <div class="flex h-full w-full items-center justify-center bg-white border-2 border-blueGray-900 rounded">                        <span class="text-base font-semibold uppercase">ASSESS MY RISK</span>                      </div>
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="md:hidden mt-12 text-center">
+                                    <button x-on:click="activeSlide = activeSlide &gt; 1 ? activeSlide - 1 : slideCount" class="inline-block p-1">
+                                       <svg width="10" height="16" viewbox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M7.99906 16L9.41406 14.585L3.82906 9L2.74902 8L3.82906 7L9.41406 1.415L7.99906 8.29971e-07L-0.000937445 8L7.99906 16Z" fill="#04082F"></path>
+                                       </svg>
+                                    </button>
+                                    <button x-on:click="activeSlide = activeSlide &lt; slideCount ? activeSlide + 1 : 1" class="inline-block p-1">
+                                       <svg width="10" height="16" viewbox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M2.00094 0L0.585938 1.415L6.17094 7L7.25098 8L6.17094 9L0.585938 14.585L2.00094 16L10.0009 8L2.00094 0Z" fill="#04082F"></path>
+                                       </svg>
+                                    </button>
+                                 </div>
+                              </div>
+                           </div>
+                           <div x-ref="slide3" class="flex-shrink-0 w-full p-5">
+                              <div class="w-auto px-4">
+                                 <div class="max-w-2xl xl:max-w-3xl mx-auto text-center">
+                                    <h1 class="text-6xl sm:text-8xl md:text-10xl font-heading mb-10">Podcast Powerhouse.</h1>
+                                    <p class="max-w-md mx-auto text-lg mb-10">Learn advanced software engineering skills that complement AI. Become a 10x engineer.</p>
+                                    <a class="group relative inline-block h-16 w-full sm:w-52 bg-blueGray-900 rounded" href="#">
+                                       <div class="absolute top-0 left-0 transform -translate-y-1 -translate-x-1 w-full h-full group-hover:translate-y-0 group-hover:translate-x-0 transition duration-300">
+                                          <div class="flex h-full w-full items-center justify-center bg-white border-2 border-blueGray-900 rounded">                        <span class="text-base font-semibold uppercase">Get started</span>                      </div>
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="md:hidden mt-12 text-center">
+                                    <button x-on:click.prevent="activeSlide &gt; 0 ? (activeSlide -= 1, slideWidth -= $refs['slide' + (activeSlide + 1)].offsetWidth) : null" class="inline-block p-1">
+                                       <svg width="10" height="16" viewbox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M7.99906 16L9.41406 14.585L3.82906 9L2.74902 8L3.82906 7L9.41406 1.415L7.99906 8.29971e-07L-0.000937445 8L7.99906 16Z" fill="#04082F"></path>
+                                       </svg>
+                                    </button>
+                                    <button x-on:click.prevent="activeSlide &lt; slideCount - 1 ? (activeSlide += 1, slideWidth += $refs['slide' + activeSlide].offsetWidth) : activeSlide = slideCount - 1" class="inline-block p-1">
+                                       <svg width="10" height="16" viewbox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M2.00094 0L0.585938 1.415L6.17094 7L7.25098 8L6.17094 9L0.585938 14.585L2.00094 16L10.0009 8L2.00094 0Z" fill="#04082F"></path>
+                                       </svg>
+                                    </button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="hidden md:block w-auto px-4 text-right">                  </div>
                   </div>
-                </div>
-              </div>
+               </div>
             </div>
-            <div class="max-w-4xl mx-auto"></div>
-          </div>
-        </div>
-      </section>
-                
-      <section class="relative py-34 overflow-hidden img-bg">
-        <div class="relative container px-4 mx-auto" style="margin-top: -28px;">
-          <div class="max-w-xs md:max-w-md lg:max-w-lg">
-            <h2 class="text-5xl md:text-7xl lg:text-8xl font-heading font-semibold mb-10">Grow your software engineering career.</h2>
-            <p class="text-2xl mb-14">Become a 10x engineer.</p>
-            <a class="group relative inline-block h-16 w-full sm:w-48 bg-blueGray-900 rounded" href="#">
-              <div class="absolute top-0 left-0 transform -translate-y-1 -translate-x-1 w-full h-full group-hover:translate-y-0 group-hover:translate-x-0 transition duration-300">
-                <div class="flex h-full w-full items-center justify-center bg-white border-2 border-blueGray-900 rounded">
-                  <span class="text-base font-semibold uppercase">GET STARTED</span>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-                
-      <section class="relative py-0 overflow-hidden" style="margin-top: -60px;">
-        <div class="relative px-4 md:px-14 mx-auto">
-          
-          <div class="max-w-6xl mt-24 md:mt-52">
-            
-            <div class="cp-bg mt-3 pt-4 border-t border-gray-50">
-              <p class="text-xs text-gray-900">Copyright © 2025 Codeglad. All rights reserved.</p>
-              <br/><br/><br/>
+            <div :class="{'block': mobileNavOpen, 'hidden': !mobileNavOpen}" class="hidden fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50">
+               <div x-on:click="mobileNavOpen = !mobileNavOpen" class="fixed inset-0 backdrop-blur-xl backdrop-filter bg-gray-900 bg-opacity-80"></div>
+               <nav class="relative pt-8 pb-8 bg-white h-full overflow-y-auto">
+                  <div class="flex flex-col px-6 h-full">
+                     <a class="inline-block text-2xl font-bold ml-8 mb-16" href="#">          <img src="suncealand-assets/logos/suncealand-dark.svg" alt="">        </a>        
+                     <ul class="w-full mb-auto pb-16">
+                        <li class="group mb-6">
+                           <button class="inline-block text-left text-base font-medium text-black">
+                              <div class="flex items-center">
+                                 <span class="mr-3">Resources</span>                
+                                 <svg width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.332 0.999974L10.3887 0.0566406L6.66536 3.77997L5.9987 4.5L5.33203 3.77997L1.6087 0.0566402L0.665365 0.999974L5.9987 6.33331L11.332 0.999974Z" fill="currentColor"></path>
+                                 </svg>
+                              </div>
+                           </button>
+                           <div class="hidden group-hover:block pt-4">
+                              <div class="pl-6">      <a class="block mb-2 text-black" href="#">AI Impact</a><a class="block mb-2 text-black" href="#">Skills Assessment</a><a class="block text-black" href="#">AI Career Shift</a>      </div>
+                           </div>
+                        </li>
+                        <li class="mb-6"><a class="inline-block text-base font-medium text-black" href="#">FAQs</a></li>
+                        <li class="mb-6"><a class="inline-block text-base font-medium text-black" href="#">Skill Gap Assessment</a></li>
+                        <li><a class="inline-block text-base font-medium text-black" href="#">Contact</a></li>
+                     </ul>
+                     <div class="w-full">
+                        <a class="relative inline-flex h-12 w-full mb-4 items-center justify-center font-semibold rounded-lg bg-blue-500" href="#">            <span class="text-black">Sign up</span>          </a>          
+                        <p class="pl-2 text-sm">2025 © Codeglad</p>
+                     </div>
+                  </div>
+               </nav>
             </div>
-          </div>
-          <div class="absolute top-0 right-0 mr-4">
-            
-          </div>
-        </div>
-      </section>
-    </div>
-</body>
+         </section>
+         <section class="pt-20 md:pt-0 pb-20 md:pb-32">
+            <div class="container px-4 mx-auto">
+               <div class="mb-24 text-center">
+                  <div class="inline-flex items-center px-5 py-2 bg-white rounded-full mb-8">
+                     <span class="block w-2 h-2 mr-2 rounded-full bg-indigo-500"></span>
+                     <span class="uppercase text-sm font-medium tracking-tight">LEARN ADVANCED SOFTWARE SKILLS</span>
+                  </div>
+                  <h1 class="text-6xl sm:text-7xl font-heading">Future-proof your career</h1>
+               </div>
+               <div class="flex flex-wrap items-center justify-between -mx-4">
+                  <div class="w-full lg:w-1/2 xl:w-auto px-4 mb-16 lg:mb-0">
+                     <div class="max-w-md lg:max-w-none mx-auto">
+                        <img class="block" src="./images/frame-video-message-gray.png" alt="">
+                     </div>
+                  </div>
+                  <div class="w-full lg:w-1/2 xl:w-auto px-4">
+                     <div class="max-w-md mx-auto xl:mx-0">
+                        <p class="max-w-sm text-2xl mb-12">Codeglad teaches you step-up skills such as Design Thinking &amp;  Critical Problem Solving which are sought after in the AI-first world.</p>
+                        <div class="mb-16">
+                           <div class="flex items-start md:items-center pb-4 mb-4 border-b border-gray-50">
+                              <div class="flex-shrink-0 flex w-11 h-11 mr-5 items-center justify-center text-sm font-medium bg-blue-500 rounded-full">1</div>
+                              <p>Take a short "Skill Gap" assessment</p>
+                           </div>
+                           <div class="flex items-start md:items-center pb-4 mb-4 border-b border-gray-50">
+                              <div class="flex-shrink-0 flex w-11 h-11 mr-5 items-center justify-center text-sm font-medium bg-blue-500 rounded-full">2</div>
+                              <p>Codeglad prepares your personalized curriculum</p>
+                           </div>
+                           <div class="flex items-start md:items-center">
+                              <div class="flex-shrink-0 flex w-11 h-11 mr-5 items-center justify-center text-sm font-medium bg-blue-500 rounded-full">3</div>
+                              <p>Learn, practice &amp; progress towards an AI-first software engineering career</p>
+                           </div>
+                        </div>
+                        <a class="group inline-flex items-center font-base font-semibold text-indigo-500" href="#">
+                           <span class="mr-2">Learn more</span>
+                           <div class="relative transition duration-500 animate-pulse">
+                              <svg width="7" height="12" viewbox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M1.00193 0.666626L0.0585938 1.60996L3.78193 5.33329L4.50195 5.99996L3.78193 6.66663L0.0585938 10.39L1.00193 11.3333L6.33526 5.99996L1.00193 0.666626Z" fill="currentColor"></path>
+                              </svg>
+                              <div class="absolute top-0 right-0 -mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                 <svg width="7" height="12" viewbox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.00193 0.666626L0.0585938 1.60996L3.78193 5.33329L4.50195 5.99996L3.78193 6.66663L0.0585938 10.39L1.00193 11.3333L6.33526 5.99996L1.00193 0.666626Z" fill="currentColor"></path>
+                                 </svg>
+                              </div>
+                              <div class="absolute top-0 right-0 -mr-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                 <svg width="7" height="12" viewbox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.00193 0.666626L0.0585938 1.60996L3.78193 5.33329L4.50195 5.99996L3.78193 6.66663L0.0585938 10.39L1.00193 11.3333L6.33526 5.99996L1.00193 0.666626Z" fill="currentColor"></path>
+                                 </svg>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="py-10 md:py-10">
+            <div class="container px-4 mx-auto">
+               <div class="max-w-2xl mx-auto mb-24 text-center">
+                  <div class="inline-flex items-center px-5 py-2 bg-white rounded-full mb-8">
+                     <span class="block w-2 h-2 mr-2 rounded-full bg-indigo-500"></span>
+                     <span class="uppercase text-sm font-medium tracking-tight">WHY IT WORKS</span>
+                  </div>
+                  <h1 class="text-6xl sm:text-7xl font-heading font-semibold mb-14">Learn Intent-driven Development. Not coding!</h1>
+                  <p class="text-2xl mb-18">Unlock the power of intent-driven development (patent pending) by simulated real-life software challenges.  </p>
+               </div>
+               <div class="max-w-xs mx-auto md:max-w-none">
+                  <div class="flex flex-wrap justify-between items-center -mx-4">
+                     <div class="w-full lg:w-1/3 px-4 mb-10 lg:mb-0">
+                        <div class="max-w-xs mx-auto mb-10">
+                           <span class="block mb-6 text-5xl font-heading text-yellowGray-700">01</span>
+                           <h4 class="text-3xl font-heading font-semibold">Understand the "right problem to solve" at the "right time" given a context</h4>
+                        </div>
+                        <div class="max-w-xs mx-auto">
+                           <span class="block mb-6 text-5xl font-heading text-yellowGray-700">02</span>
+                           <h4 class="text-3xl font-heading font-semibold">Code with intent to amplify AI generated code</h4>
+                        </div>
+                     </div>
+                     <div class="w-full lg:w-1/3 px-4 mb-10 lg:mb-0">
+                        <img class="mx-auto" src="./images/avatar-girl-circle.png" alt="">
+                     </div>
+                     <div class="w-full lg:w-1/3 px-4">
+                        <div class="max-w-xs mx-auto mb-10">
+                           <span class="block mb-6 text-5xl font-heading text-yellowGray-700">03</span>
+                           <h4 class="text-3xl font-heading font-semibold">Focus on Non-functionals such as availability, resiliency, abstraction &amp; boundary conditions</h4>
+                        </div>
+                        <div class="max-w-xs mx-auto">
+                           <span class="block mb-6 text-5xl font-heading text-yellowGray-700">04</span>
+                           <h4 class="text-3xl font-heading font-semibold">Know what problems to solve by understanding higher-order business &amp; user needs</h4>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="py-20 md:py-36">
+            <div class="container px-4 mx-auto">
+               <div class="flex flex-wrap items-end -mx-4 mb-16 lg:mb-32">
+                  <div class="w-full xl:w-1/2 px-4 mb-20 xl:mb-0">
+                     <div>
+                        <div class="inline-flex items-center px-5 py-2 bg-gray-50 rounded-full mb-10">
+                           <span class="block w-2 h-2 mr-2 rounded-full bg-blue-500"></span>
+                           <span class="uppercase text-sm font-medium tracking-tight">PRICING</span>
+                        </div>
+                        <h1 class="text-7xl xl:text-8xl font-heading font-semibold">Choose the plan</h1>
+                     </div>
+                  </div>
+                  <div class="w-full xl:w-1/2 px-4 text-center xl:text-right">
+                     <div class="inline-flex items-center">
+                        <div class="flex p-2 mx-2 sm:mx-6 items-center bg-gray-50 rounded-full" x-data="{ toggle: false }">
+                           <button x-on:click="toggle = !toggle" class="inline-block w-6 sm:w-8 h-6 sm:h-8 rounded-full bg-white shadow" :class="{ 'bg-white shadow': !toggle, 'bg-transparent': toggle }"></button>
+                           <button x-on:click="toggle = !toggle" class="inline-block w-6 sm:w-8 h-6 sm:h-8 rounded-full" :class="{ 'bg-white shadow': toggle, 'bg-transparent': !toggle }"></button>
+                        </div>
+                        <div class="flex items-start">
+                           <span class="text-lg">3 months</span>
+                           <span class="inline-block ml-2 -mt-1 py-1 px-2 text-2xs font-medium text-black bg-yellow-500 rounded-full">-10%</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="max-w-md mx-auto lg:max-w-none relative pt-10 pb-12 pl-10 pr-14 mb-2 bg-gray-50 rounded-4xl">
+                  <div class="hidden lg:block absolute top-1/2 right-0 mr-96 xl:mr-112 transform -translate-y-1/2 h-28 w-px bg-gray-100"></div>
+                  <div class="flex flex-wrap justify-between -mx-4">
+                     <div class="w-full lg:w-2/6 xl:w-auto px-4 mb-8 lg:mb-0">
+                        <div>
+                           <h3 class="font-heading text-4xl font-semibold mb-2">Enthusiast</h3>
+                           <span class="block text-lg">Free 20 days trial</span>
+                        </div>
+                     </div>
+                     <div class="w-full lg:w-2/6 xl:w-2/5 px-4 mb-8 lg:mb-0">
+                        <div>
+                           <span class="block text-sm font-medium mb-4">FEATURES</span>
+                           <div class="flex flex-wrap -mx-2 -mb-2">
+                              <div class="w-full xl:w-1/2 px-2 mb-2">
+                                 <div class="flex items-center">
+                                    <svg width="28" height="28" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <rect x="0.5" y="0.5" width="27" height="27" rx="13.5" fill="white"></rect>
+                                       <rect x="20.375" y="9" width="2" height="14.67" rx="1" transform="rotate(45 20.375 9)" fill="#04082F"></rect>
+                                       <rect x="5.62891" y="15.0432" width="2" height="7.57417" rx="1" transform="rotate(-45 5.62891 15.0432)" fill="#04082F"></rect>
+                                       <rect x="0.5" y="0.5" width="27" height="27" rx="13.5" stroke="#D0D0D3"></rect>
+                                    </svg>
+                                    <span class="ml-5 text-sm">Personal assessment</span>
+                                 </div>
+                              </div>
+                              <div class="w-full xl:w-1/2 px-2 mb-2">
+                                 <div class="flex items-center">
+                                    <svg width="28" height="28" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <rect x="0.5" y="0.5" width="27" height="27" rx="13.5" fill="white"></rect>
+                                       <rect x="20.375" y="9" width="2" height="14.67" rx="1" transform="rotate(45 20.375 9)" fill="#04082F"></rect>
+                                       <rect x="5.62891" y="15.0432" width="2" height="7.57417" rx="1" transform="rotate(-45 5.62891 15.0432)" fill="#04082F"></rect>
+                                       <rect x="0.5" y="0.5" width="27" height="27" rx="13.5" stroke="#D0D0D3"></rect>
+                                    </svg>
+                                    <span class="ml-5 text-sm">Zoom out/in of Lessons</span>
+                                 </div>
+                              </div>
+                              <div class="w-full xl:w-1/2 px-2 mb-2">
+                                 <div class="flex items-center">
+                                    <svg width="28" height="28" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <rect x="0.5" y="0.5" width="27" height="27" rx="13.5" fill="white"></rect>
+                                       <rect x="20.375" y="9" width="2" height="14.67" rx="1" transform="rotate(45 20.375 9)" fill="#04082F"></rect>
+                                       <rect x="5.62891" y="15.0432" width="2" height="7.57417" rx="1" transform="rotate(-45 5.62891 15.0432)" fill="#04082F"></rect>
+                                       <rect x="0.5" y="0.5" width="27" height="27" rx="13.5" stroke="#D0D0D3"></rect>
+                                    </svg>
+                                    <span class="ml-5 text-sm">Learning roadmap</span>
+                                 </div>
+                              </div>
+                              <div class="w-full xl:w-1/2 px-2 mb-2">
+                                 <div class="flex items-center">
+                                    <svg width="28" height="28" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <rect x="0.5" y="0.5" width="27" height="27" rx="13.5" fill="white"></rect>
+                                       <rect x="20.375" y="9" width="2" height="14.67" rx="1" transform="rotate(45 20.375 9)" fill="#04082F"></rect>
+                                       <rect x="5.62891" y="15.0432" width="2" height="7.57417" rx="1" transform="rotate(-45 5.62891 15.0432)" fill="#04082F"></rect>
+                                       <rect x="0.5" y="0.5" width="27" height="27" rx="13.5" stroke="#D0D0D3"></rect>
+                                    </svg>
+                                    <span class="ml-5 text-sm">Skills Certificate</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="w-full lg:w-2/6 xl:w-auto px-4 self-center">
+                        <div class="flex flex-wrap lg:pl-12 xl:pl-24 items-center justify-end">
+                           <div class="w-full xl:w-auto mb-8 xl:mb-0 xl:mr-14">
+                              <div class="flex justify-center xl:justify-end items-center">
+                                 <span class="mr-1 font-heading text-4xl">₹</span>
+                                 <span class="font-heading text-8xl">799</span>
+                              </div>
+                           </div>
+                           <div class="w-full xl:w-auto">
+                              <a class="group relative inline-block h-16 w-full xl:w-40 bg-blueGray-900 rounded" href="#">
+                                 <div class="absolute top-0 left-0 transform -translate-y-1 -translate-x-1 w-full h-full group-hover:translate-y-0 group-hover:translate-x-0 transition duration-300">
+                                    <div class="flex h-full w-full items-center justify-center bg-white border-2 border-blueGray-900 rounded">
+                                       <span class="text-base font-semibold uppercase">Try it</span>
+                                    </div>
+                                 </div>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="max-w-md mx-auto lg:max-w-none relative pt-10 pb-12 pl-10 pr-14 mb-2 bg-blue-500 rounded-4xl">
+                  <div class="hidden lg:block absolute top-1/2 right-0 mr-96 xl:mr-112 transform -translate-y-1/2 h-28 w-px bg-gray-100"></div>
+                  <div class="flex flex-wrap justify-between -mx-4">
+                     <div class="w-full lg:w-2/6 xl:w-auto px-4 mb-8 lg:mb-0">
+                        <div>
+                           <h3 class="font-heading text-4xl font-semibold mb-2">Job-seeker</h3>
+                           <span class="block text-lg">Free 20 days trial</span>
+                        </div>
+                     </div>
+                     <div class="w-full lg:w-2/6 xl:w-2/5 px-4 mb-8 lg:mb-0">
+                        <div>
+                           <span class="block text-sm font-medium mb-4">FEATURES</span>
+                           <div class="flex flex-wrap -mx-2 -mb-2">
+                              <div class="w-full xl:w-1/2 px-2 mb-2">
+                                 <div class="flex items-center">
+                                    <svg width="28" height="28" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <rect x="0.5" y="0.5" width="27" height="27" rx="13.5" fill="white"></rect>
+                                       <rect x="20.375" y="9" width="2" height="14.67" rx="1" transform="rotate(45 20.375 9)" fill="#04082F"></rect>
+                                       <rect x="5.62891" y="15.0432" width="2" height="7.57417" rx="1" transform="rotate(-45 5.62891 15.0432)" fill="#04082F"></rect>
+                                       <rect x="0.5" y="0.5" width="27" height="27" rx="13.5" stroke="#D0D0D3"></rect>
+                                    </svg>
+                                    <span class="ml-5 text-sm">Unlimited assessments</span>
+                                 </div>
+                              </div>
+                              <div class="w-full xl:w-1/2 px-2 mb-2">
+                                 <div class="flex items-center">
+                                    <svg width="28" height="28" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <rect x="0.5" y="0.5" width="27" height="27" rx="13.5" fill="white"></rect>
+                                       <rect x="20.375" y="9" width="2" height="14.67" rx="1" transform="rotate(45 20.375 9)" fill="#04082F"></rect>
+                                       <rect x="5.62891" y="15.0432" width="2" height="7.57417" rx="1" transform="rotate(-45 5.62891 15.0432)" fill="#04082F"></rect>
+                                       <rect x="0.5" y="0.5" width="27" height="27" rx="13.5" stroke="#D0D0D3"></rect>
+                                    </svg>
+                                    <span class="ml-5 text-sm">Zoom out/in of Lessons</span>
+                                 </div>
+                              </div>
+                              <div class="w-full xl:w-1/2 px-2 mb-2">
+                                 <div class="flex items-center">
+                                    <svg width="28" height="28" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <rect x="0.5" y="0.5" width="27" height="27" rx="13.5" fill="white"></rect>
+                                       <rect x="20.375" y="9" width="2" height="14.67" rx="1" transform="rotate(45 20.375 9)" fill="#04082F"></rect>
+                                       <rect x="5.62891" y="15.0432" width="2" height="7.57417" rx="1" transform="rotate(-45 5.62891 15.0432)" fill="#04082F"></rect>
+                                       <rect x="0.5" y="0.5" width="27" height="27" rx="13.5" stroke="#D0D0D3"></rect>
+                                    </svg>
+                                    <span class="ml-5 text-sm">AI Career Coach</span>
+                                 </div>
+                              </div>
+                              <div class="w-full xl:w-1/2 px-2 mb-2">
+                                 <div class="flex items-center">
+                                    <svg width="28" height="28" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <rect x="0.5" y="0.5" width="27" height="27" rx="13.5" fill="white"></rect>
+                                       <rect x="20.375" y="9" width="2" height="14.67" rx="1" transform="rotate(45 20.375 9)" fill="#04082F"></rect>
+                                       <rect x="5.62891" y="15.0432" width="2" height="7.57417" rx="1" transform="rotate(-45 5.62891 15.0432)" fill="#04082F"></rect>
+                                       <rect x="0.5" y="0.5" width="27" height="27" rx="13.5" stroke="#D0D0D3"></rect>
+                                    </svg>
+                                    <span class="ml-5 text-sm">Skills Certificate</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="w-full lg:w-2/6 xl:w-auto px-4 self-center">
+                        <div class="flex flex-wrap lg:pl-12 xl:pl-24 items-center justify-end">
+                           <div class="w-full xl:w-auto mb-8 xl:mb-0 xl:mr-14">
+                              <div class="flex justify-center xl:justify-end items-center">
+                                 <span class="mr-1 font-heading text-4xl">₹</span>
+                                 <span class="font-heading text-6xl">1699</span>
+                              </div>
+                           </div>
+                           <div class="w-full xl:w-auto">
+                              <a class="group relative inline-block h-16 w-full xl:w-40 bg-blueGray-900 rounded" href="#">
+                                 <div class="absolute top-0 left-0 transform -translate-y-1 -translate-x-1 w-full h-full group-hover:translate-y-0 group-hover:translate-x-0 transition duration-300">
+                                    <div class="flex h-full w-full items-center justify-center bg-white border-2 border-blueGray-900 rounded">
+                                       <span class="text-base font-semibold uppercase">Try it</span>
+                                    </div>
+                                 </div>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="py-10 md:py-10 bg-yellowGray-50 overflow-hidden" x-data="{ slideWidth: 0, activeSlide: 0, slideCount: 3 }" style="padding-top: 40px;padding-bottom:40px">
+            <div class="container px-4 mx-auto">
+               <div class="flex flex-wrap -mx-4">
+                  <div class="w-full lg:w-1/3 px-4 mb-16 lg:mb-0">
+                     <div class="max-w-sm mx-auto">
+                        <div class="inline-flex items-center px-5 py-2 bg-white rounded-full mb-16">
+                           <span class="block w-2 h-2 mr-2 rounded-full bg-blue-500"></span>
+                           <span class="uppercase text-sm font-medium tracking-tight">CUSTOMER REVIEWS</span>
+                        </div>
+                        <h1 class="font-heading text-6xl font-semibold mb-10">What developers say?</h1>
+                        <p class="text-2xl mb-16">Take a skill gap assessment to get started.</p>
+                        <a class="group relative inline-block h-16 mb-8 w-full md:w-36 bg-blueGray-900 rounded" href="#">
+                           <div class="absolute top-0 left-0 transform -translate-y-1 -translate-x-1 w-full h-full group-hover:translate-y-0 group-hover:translate-x-0 transition duration-300">
+                              <div class="flex h-full w-full items-center justify-center bg-blue-500 border-2 border-blueGray-900 rounded">
+                                 <span class="text-base font-semibold uppercase">GET STARTED</span>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="w-full lg:w-2/3 px-4">
+                     <div class="xl:max-w-4xl xl:ml-auto mb-12 md:mb-6 relative">
+                        <button x-on:click.prevent="activeSlide &gt; 0 ? (activeSlide -= 1, slideWidth -= $refs['slide' + (activeSlide + 1)].offsetWidth) : null" class="hidden md:inline-block absolute top-1/2 left-0 p-1">
+                           <svg width="10" height="16" viewbox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M7.99906 16L9.41406 14.585L3.82906 9L2.74902 8L3.82906 7L9.41406 1.415L7.99906 8.29971e-07L-0.000937716 8L7.99906 16Z" fill="#04082F"></path>
+                           </svg>
+                        </button>
+                        <button x-on:click.prevent="activeSlide &lt; slideCount - 1 ? (activeSlide += 1, slideWidth += $refs['slide' + activeSlide].offsetWidth) : activeSlide = slideCount - 1" class="hidden md:inline-block absolute top-1/2 right-0 p-1">
+                           <svg width="10" height="16" viewbox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M2.00094 0L0.585938 1.415L6.17094 7L7.25098 8L6.17094 9L0.585938 14.585L2.00094 16L10.0009 8L2.00094 0Z" fill="#04082F"></path>
+                           </svg>
+                        </button>
+                        <div class="max-w-xl xl:max-w-2xl mx-auto bg-white rounded-3xl">
+                           <div class="py-7 px-6 sm:px-18 border-b border-yellowGray-50">
+                              <div class="overflow-hidden">
+                                 <div :style="'transform: translateX(-' + slideWidth + 'px)'" class="flex transition-transform duration-500 ease-in-out -m-5">
+                                    <div x-ref="slide1" class="flex-shrink-0 w-full p-5">
+                                       <div class="flex flex-wrap -mb-2 items-center">
+                                          <img class="w-16 h-16 mb-2 mr-6" src="./images/avatar-review-man.png" alt="">
+                                          <div class="mb-2">
+                                             <h4 class="text-2xl font-medium">Glen Harres</h4>
+                                             <span class="text-xs">Spotify, Junior Designer</span>
+                                          </div>
+                                       </div>
+                                       <div class="pt-10 pb-12">
+                                          <div class="relative pr-12 mb-16 md:mb-24">
+                                             <span class="absolute top-0 right-0">
+                                                <svg width="29" height="41" viewbox="0 0 29 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                   <path d="M22.536 9.016C23.64 9.016 24.576 9.256 25.344 9.736C26.16 10.168 26.832 10.744 27.36 11.464C27.888 12.232 28.248 13.12 28.44 14.128C28.68 15.136 28.8 16.12 28.8 17.08C28.8 19.432 28.176 21.616 26.928 23.632C25.728 25.648 23.856 27.256 21.312 28.456L20.664 27.16C22.056 26.536 23.256 25.624 24.264 24.424C25.32 23.176 25.92 21.88 26.064 20.536C26.256 19.672 26.256 18.856 26.064 18.088C25.104 19.048 23.856 19.528 22.32 19.528C20.832 19.528 19.584 19.072 18.576 18.16C17.568 17.248 17.064 15.952 17.064 14.272C17.064 12.736 17.568 11.488 18.576 10.528C19.632 9.52 20.952 9.016 22.536 9.016ZM8.568 9.016C9.672 9.016 10.608 9.256 11.376 9.736C12.192 10.168 12.864 10.744 13.392 11.464C13.92 12.232 14.28 13.12 14.472 14.128C14.712 15.136 14.832 16.12 14.832 17.08C14.832 19.432 14.208 21.616 12.96 23.632C11.76 25.648 9.888 27.256 7.344 28.456L6.696 27.16C8.088 26.536 9.288 25.624 10.296 24.424C11.352 23.176 11.952 21.88 12.096 20.536C12.288 19.672 12.288 18.856 12.096 18.088C11.136 19.048 9.888 19.528 8.352 19.528C6.864 19.528 5.616 19.072 4.608 18.16C3.6 17.248 3.096 15.952 3.096 14.272C3.096 12.736 3.6 11.488 4.608 10.528C5.664 9.52 6.984 9.016 8.568 9.016Z" fill="#9CD0FF"></path>
+                                                </svg>
+                                             </span>
+                                             <p class="text-2xl md:text-3xl leading-9">Tried a lot, find the best Tried a lot. Choose this one. A real nice tools and app. It comes with a few free plug-ins that will be more than enough for beginners.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div x-ref="slide2" class="flex-shrink-0 w-full p-5">
+                                       <div class="flex flex-wrap -mb-2 items-center">
+                                          <img class="w-16 h-16 mb-2 mr-6" src="suncealand-assets/images/avatar-review-man.png" alt="">
+                                          <div class="mb-2">
+                                             <h4 class="text-2xl font-medium">Sarah Chen</h4>
+                                             <span class="text-xs">TechGuru, Senior Analyst</span>
+                                          </div>
+                                       </div>
+                                       <div class="pt-10 pb-12">
+                                          <div class="relative pr-12 mb-16 md:mb-24">
+                                             <span class="absolute top-0 right-0">
+                                                <svg width="29" height="41" viewbox="0 0 29 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                   <path d="M22.536 9.016C23.64 9.016 24.576 9.256 25.344 9.736C26.16 10.168 26.832 10.744 27.36 11.464C27.888 12.232 28.248 13.12 28.44 14.128C28.68 15.136 28.8 16.12 28.8 17.08C28.8 19.432 28.176 21.616 26.928 23.632C25.728 25.648 23.856 27.256 21.312 28.456L20.664 27.16C22.056 26.536 23.256 25.624 24.264 24.424C25.32 23.176 25.92 21.88 26.064 20.536C26.256 19.672 26.256 18.856 26.064 18.088C25.104 19.048 23.856 19.528 22.32 19.528C20.832 19.528 19.584 19.072 18.576 18.16C17.568 17.248 17.064 15.952 17.064 14.272C17.064 12.736 17.568 11.488 18.576 10.528C19.632 9.52 20.952 9.016 22.536 9.016ZM8.568 9.016C9.672 9.016 10.608 9.256 11.376 9.736C12.192 10.168 12.864 10.744 13.392 11.464C13.92 12.232 14.28 13.12 14.472 14.128C14.712 15.136 14.832 16.12 14.832 17.08C14.832 19.432 14.208 21.616 12.96 23.632C11.76 25.648 9.888 27.256 7.344 28.456L6.696 27.16C8.088 26.536 9.288 25.624 10.296 24.424C11.352 23.176 11.952 21.88 12.096 20.536C12.288 19.672 12.288 18.856 12.096 18.088C11.136 19.048 9.888 19.528 8.352 19.528C6.864 19.528 5.616 19.072 4.608 18.16C3.6 17.248 3.096 15.952 3.096 14.272C3.096 12.736 3.6 11.488 4.608 10.528C5.664 9.52 6.984 9.016 8.568 9.016Z" fill="#9CD0FF"></path>
+                                                </svg>
+                                             </span>
+                                             <p class="text-2xl md:text-3xl leading-9">This software is the pinnacle of efficiency and performance. With its intuitive interface and seamless integration, it's perfect for users of all levels.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div x-ref="slide3" class="flex-shrink-0 w-full p-5">
+                                       <div class="flex flex-wrap -mb-2 items-center">
+                                          <img class="w-16 h-16 mb-2 mr-6" src="suncealand-assets/images/avatar-review-man.png" alt="">
+                                          <div class="mb-2">
+                                             <h4 class="text-2xl font-medium">Max Reynolds</h4>
+                                             <span class="text-xs">Digital Trends, Tech Editor</span>
+                                          </div>
+                                       </div>
+                                       <div class="pt-10 pb-12">
+                                          <div class="relative pr-12 mb-16 md:mb-24">
+                                             <span class="absolute top-0 right-0">
+                                                <svg width="29" height="41" viewbox="0 0 29 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                   <path d="M22.536 9.016C23.64 9.016 24.576 9.256 25.344 9.736C26.16 10.168 26.832 10.744 27.36 11.464C27.888 12.232 28.248 13.12 28.44 14.128C28.68 15.136 28.8 16.12 28.8 17.08C28.8 19.432 28.176 21.616 26.928 23.632C25.728 25.648 23.856 27.256 21.312 28.456L20.664 27.16C22.056 26.536 23.256 25.624 24.264 24.424C25.32 23.176 25.92 21.88 26.064 20.536C26.256 19.672 26.256 18.856 26.064 18.088C25.104 19.048 23.856 19.528 22.32 19.528C20.832 19.528 19.584 19.072 18.576 18.16C17.568 17.248 17.064 15.952 17.064 14.272C17.064 12.736 17.568 11.488 18.576 10.528C19.632 9.52 20.952 9.016 22.536 9.016ZM8.568 9.016C9.672 9.016 10.608 9.256 11.376 9.736C12.192 10.168 12.864 10.744 13.392 11.464C13.92 12.232 14.28 13.12 14.472 14.128C14.712 15.136 14.832 16.12 14.832 17.08C14.832 19.432 14.208 21.616 12.96 23.632C11.76 25.648 9.888 27.256 7.344 28.456L6.696 27.16C8.088 26.536 9.288 25.624 10.296 24.424C11.352 23.176 11.952 21.88 12.096 20.536C12.288 19.672 12.288 18.856 12.096 18.088C11.136 19.048 9.888 19.528 8.352 19.528C6.864 19.528 5.616 19.072 4.608 18.16C3.6 17.248 3.096 15.952 3.096 14.272C3.096 12.736 3.6 11.488 4.608 10.528C5.664 9.52 6.984 9.016 8.568 9.016Z" fill="#9CD0FF"></path>
+                                                </svg>
+                                             </span>
+                                             <p class="text-2xl md:text-3xl leading-9">Look no further for the ultimate toolkit. This software surpasses the competition with its comprehensive features and user-friendly design.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="md:hidden w-full px-4 mt-12 text-center">
+                           <button x-on:click.prevent="activeSlide &gt; 0 ? (activeSlide -= 1, slideWidth -= $refs['slide' + (activeSlide + 1)].offsetWidth) : null" class="inline-block p-1 mr-2">
+                              <svg width="10" height="16" viewbox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M7.99906 16L9.41406 14.585L3.82906 9L2.74902 8L3.82906 7L9.41406 1.415L7.99906 8.29971e-07L-0.000937716 8L7.99906 16Z" fill="#04082F"></path>
+                              </svg>
+                           </button>
+                           <button x-on:click.prevent="activeSlide &lt; slideCount - 1 ? (activeSlide += 1, slideWidth += $refs['slide' + activeSlide].offsetWidth) : activeSlide = slideCount - 1" class="inline-block p-1">
+                              <svg width="10" height="16" viewbox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M2.00094 0L0.585938 1.415L6.17094 7L7.25098 8L6.17094 9L0.585938 14.585L2.00094 16L10.0009 8L2.00094 0Z" fill="#04082F"></path>
+                              </svg>
+                           </button>
+                        </div>
+                     </div>
+                     <div class="max-w-xl xl:max-w-2xl mx-auto">
+                        <div class="flex flex-wrap -mx-3">
+                           <div class="w-full sm:w-1/2 px-3 mb-6 md:mb-0">
+                           </div>
+                           <div class="w-full sm:w-1/2 px-3">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="max-w-4xl mx-auto"></div>
+               </div>
+            </div>
+         </section>
+         <section class="relative py-34 overflow-hidden img-bg">
+            <div class="relative container px-4 mx-auto" style="margin-top: -28px;">
+               <div class="max-w-xs md:max-w-md lg:max-w-lg">
+                  <h2 class="text-5xl md:text-7xl lg:text-8xl font-heading font-semibold mb-10">Grow your software engineering career.</h2>
+                  <p class="text-2xl mb-14">Become a 10x engineer.</p>
+                  <a class="group relative inline-block h-16 w-full sm:w-48 bg-blueGray-900 rounded" href="#">
+                     <div class="absolute top-0 left-0 transform -translate-y-1 -translate-x-1 w-full h-full group-hover:translate-y-0 group-hover:translate-x-0 transition duration-300">
+                        <div class="flex h-full w-full items-center justify-center bg-white border-2 border-blueGray-900 rounded">
+                           <span class="text-base font-semibold uppercase">GET STARTED</span>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </section>
+         <section class="relative py-0 overflow-hidden" style="margin-top: -60px;">
+            <div class="relative px-4 md:px-14 mx-auto">
+               <div class="max-w-6xl mt-24 md:mt-52">
+                  <div class="cp-bg mt-3 pt-4 border-t border-gray-50">
+                     <p class="text-xs text-gray-900">Copyright © 2025 Codeglad. All rights reserved.</p>
+                     <br/><br/><br/>
+                  </div>
+               </div>
+               <div class="absolute top-0 right-0 mr-4">
+               </div>
+            </div>
+         </section>
+      </div>
+   </body>
 </html>
-
