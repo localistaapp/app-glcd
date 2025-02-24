@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <title>Page title</title>
+      <title>Codeglad | Assess your skills</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -11,6 +11,108 @@
       <link rel="stylesheet" href="css/main.css">
       <link rel="icon" type="image/png" sizes="32x32" href="shuffle-for-tailwind.png">
       <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js" defer></script>
+      <style>
+        input::placeholder {
+          color: rgb(205, 205, 205);
+          opacity: 0.5;
+          font-weight: normal;
+        }
+
+        .step-indicator {
+          margin-top: -20px;
+          display: flex;
+          align-items: center;
+          padding: 0 12px;
+          margin-bottom: 96px;
+        }
+
+        .step {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          position: relative;
+          z-index: 1;
+        }
+
+        .step-indicator .step-icon {
+          height: 36px;
+          width: 36px;
+          border-radius: 50%;
+          background: #9ccfff;
+          font-size: 10px;
+          text-align: center;
+          color: #ffffff;
+          position: relative;
+          line-height: 38px;
+          font-size: 17px;
+        }
+
+        .step.active .step-icon {
+          background: #047aff;
+        }
+
+        .step p {
+          text-align: center;
+          position: absolute;
+          bottom: -40px;
+          color: #979797;
+          font-size: 14px;
+          font-weight: normal;
+          width: 200px;
+        }
+
+        .step.active p {
+          color: #047aff;
+        }
+
+        .step.step2 p,
+        .step.step3 p {
+          left: 50%;
+          transform: translateX(-50%);
+          width: 200px;
+        }
+
+        .indicator-line {
+          width: 100%;
+          height: 2px;
+          background: #c2c2c2;
+          flex: 1;
+        }
+
+        .indicator-line.active {
+          background: #047aff;
+        }
+        
+        td {
+          vertical-align: top;
+        }
+
+        .ml-4 {
+          padding: 4px;
+        }
+
+        @media screen and (max-width: 500px) {
+          .step p {
+            font-size: 14px;
+            bottom: -27px;
+            font-weight: normal;
+            width: 200px;
+          }
+          h1.font-heading {
+            background: #f7f7f7;
+            width: 100vw;
+            margin-left: -16px;
+            padding-top: 4px;
+            padding-bottom: 12px;
+          }
+        }
+        @media (min-width: 1280px) {
+            .container {
+                max-width: 1280px;
+                margin: 0 auto;
+            }
+        }
+      </style>
    </head>
    <body class="antialiased bg-body text-body font-body">
       <div class="">
@@ -23,7 +125,7 @@
                         <rect y="10" width="19" height="2" fill="black"></rect>
                      </svg>
                   </button>
-                  <a class="inline-block text-2xl font-bold" href="#">        <img style="width:160px" src="images/Screenshot-2025-02-16-at-9-06-23-PM.png" alt="">      </a>          
+                  <a class="inline-block text-2xl font-bold" href="/">        <img style="width:160px" src="images/Screenshot-2025-02-16-at-9-06-23-PM.png" alt="">      </a>          
                </div>
             </nav>
             <div :class="{'block': mobileNavOpen, 'hidden': !mobileNavOpen}" class="hidden fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50">

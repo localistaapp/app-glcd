@@ -173,14 +173,32 @@ class Shortlists extends Component {
       }
     render() {
       return (
-        <section id="risk-checker" data-section-id="5" data-share="" data-category="navigations" data-component-id="886f4350_01_awz" className="py-6 bg-white" x-data="{ mobileNavOpen: false }">
+        <section id="risk-checker" data-section-id="5" data-share="" data-category="navigations" data-component-id="886f4350_01_awz" className="bg-white" x-data="{ mobileNavOpen: false }">
               
               {sessionStorage.getItem('user') == null && <GoogleOneTapLogin onError={(error) => console.log(error)} onSuccess={(response) => {console.log(response);}} googleAccountConfigs={{ client_id: '128159303865-64ustcdp4pj9f6isg39p7hekhjdj2ln5.apps.googleusercontent.com',auto_select: false,cancel_on_tap_outside: false }} />}
               {this.state.currStep == 1 && 
                <section class="relative pt-4 overflow-hidden">
                <div class="container px-4 mx-auto">
                <div class="text-center mb-14">
-                  <h1 class="font-heading font-semibold text-6xl sm:text-8xl lg:text-10xl mb-6">        <span>Assess your</span>        <span class="text-blue-500">skills</span>      </h1>
+                  <h1 class="font-heading font-semibold text-4xl sm:text-8xl lg:text-10xl mb-6">        <span>Assess your</span>        <span class="text-blue-500">skills</span>      </h1>
+               </div>
+               <div class="container">
+                  <section class="step-indicator">
+                        <div class="step step1 active">
+                           <div class="step-icon">1</div>
+                        <p>Job Role</p>
+                        </div>
+                     <div class="indicator-line active"></div>
+                     <div class="step step2">
+                        <div class="step-icon">2</div>
+                        <p>Tech Stack</p>
+                     </div>
+                     <div class="indicator-line"></div>
+                     <div class="step step3">
+                        <div class="step-icon">3</div>
+                        <p>Assess</p>
+                     </div>
+                  </section>
                </div>
                <form action="" style={{paddingLeft: '16px', paddingRight: '16px'}}>
                   <div class="max-w-md xl:max-w-1xl mx-auto">
@@ -198,9 +216,9 @@ class Shortlists extends Component {
                         </div>
                      </div>
                      <div class="text-center">
-                        <a class="group relative inline-block h-16 mb-8 w-full md:w-44 bg-blueGray-900 rounded" href="#">
+                        <a class="group relative inline-block h-16 mb-8 w-full md:w-44 bg-blueGray-900 rounded"  onClick={()=>{this.setState({currStep: 2});}}>
                            <div class="absolute top-0 left-0 transform -translate-y-1 -translate-x-1 w-full h-full group-hover:translate-y-0 group-hover:translate-x-0 transition duration-300">
-                              <div class="flex h-full w-full items-center justify-center bg-blue-500 border-2 border-blueGray-900 rounded">                <span class="text-base font-semibold uppercase" onClick={()=>{this.setState({currStep: 2});}}>Next &gt;</span>              </div>
+                              <div class="flex h-full w-full items-center justify-center bg-blue-500 border-2 border-blueGray-900 rounded">                <span class="text-base font-semibold uppercase" >Next &gt;</span>              </div>
                            </div>
                         </a>
                      </div>
@@ -217,8 +235,185 @@ class Shortlists extends Component {
                  
                  
                  }
-                 {this.state.currStep == 2 && <div id="checker-step2" class="container mx-auto px-4 py-6" style={{background: '#f3f4f6'}}>
-                       Step 2
+                 {this.state.currStep == 2 && <div id="checker-step2" class="container mx-auto">
+                     <section class="relative pt-4 overflow-hidden">
+                        <div class="container px-4 mx-auto">
+                        <div class="text-center mb-14">
+                           <h1 class="font-heading font-semibold text-4xl sm:text-8xl lg:text-10xl mb-6">        <span>Assess your</span>        <span class="text-blue-500">skills</span>      </h1>
+                        </div>
+                        <div class="container">
+                        <section class="step-indicator">
+                              <div class="step step1 active">
+                                 <div class="step-icon">1</div>
+                              <p>Job Role</p>
+                              </div>
+                           <div class="indicator-line active"></div>
+                           <div class="step step2 active">
+                              <div class="step-icon">2</div>
+                              <p>Tech Stack</p>
+                           </div>
+                           <div class="indicator-line"></div>
+                           <div class="step step3">
+                              <div class="step-icon">3</div>
+                              <p>Assess</p>
+                           </div>
+                        </section>
+                     </div>
+                        <form action="" style={{paddingLeft: '16px', paddingRight: '16px'}}>
+                           <div class="max-w-md xl:max-w-1xl mx-auto">
+                              <div class="flex flex-wrap -mx-2 mb-8">
+                                 <div>Enter your tech stack:</div>
+                                 <br/>          
+                                 <div style={{width: '100%',marginTop: '12px', paddingRight: '10px', paddingLeft: '10px'}} class="relative group px-8 pt-5 pb-4 mb-4 bg-gray-50 rounded-lg">
+                                    <div class="relative group px-2 bg-gray-50 rounded-lg">
+                                       <input class="w-full bg-transparent text-base placeholder-blueGray-900 font-semibold outline-none rounded-lg" type="text" placeholder="Eg. Frontend - React JS, Node JS, Typescript, CSS"/>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="text-center">
+                                 <a class="group relative inline-block h-16 mb-8 w-full md:w-44 bg-blueGray-900 rounded"  onClick={()=>{this.setState({currStep: 3});}}>
+                                    <div class="absolute top-0 left-0 transform -translate-y-1 -translate-x-1 w-full h-full group-hover:translate-y-0 group-hover:translate-x-0 transition duration-300">
+                                       <div class="flex h-full w-full items-center justify-center bg-blue-500 border-2 border-blueGray-900 rounded">                <span class="text-base font-semibold uppercase" >Next &gt;</span>              </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </form>
+                        </div>
+                        <div class="relative mt-16 pt-16 pb-18">
+                        <div class="container px-4 mx-auto">
+                           <img class="absolute top-0 left-0 h-full w-full object-cover lg:object-fill" src="./images/line-circles-bottom-light.svg" alt=""/>      
+                           <div class="animate-moving relative flex items-center justify-between">        <span class="relative flex-shrink-0 inline-block mr-8 md:mr-20 lg:mr-40 uppercase text-sm font-medium">          <span>Loose coupling </span>        </span>        <span class="relative flex-shrink-0 inline-block mr-8 md:mr-20 lg:mr-40 uppercase text-sm font-medium">          <span>Code Quality</span>        </span>        <span class="relative flex-shrink-0 inline-block mr-8 md:mr-20 lg:mr-40 uppercase text-sm font-medium">          <span>COLLABORATION</span>        </span>        <span class="relative flex-shrink-0 inline-block mr-8 md:mr-20 lg:mr-40 uppercase text-sm font-medium">          <span>Abstraction</span>        </span>        <span class="relative flex-shrink-0 inline-block mr-8 md:mr-20 lg:mr-40 uppercase text-sm font-medium">          <span>Memory Profiling</span>        </span>        <span class="relative flex-shrink-0 inline-block uppercase text-sm font-medium">          <span>REFACTORING</span>        </span>      </div>
+                        </div>
+                        </div>
+                     </section>
+                 </div>}
+
+
+                 {this.state.currStep == 3 && <div id="checker-step2" class="container mx-auto">
+                     <section class="relative pt-4 overflow-hidden">
+                        <div class="container px-4 mx-auto">
+                        <div class="text-center mb-14">
+                           <h1 class="font-heading font-semibold text-4xl sm:text-8xl lg:text-10xl mb-6">        <span>Assess your</span>        <span class="text-blue-500">skills</span>      </h1>
+                        </div>
+                        <div class="container">
+                        <section class="step-indicator" style={{marginBottom: '52px'}}>
+                              <div class="step step1 active">
+                                 <div class="step-icon">1</div>
+                              <p>Job Role</p>
+                              </div>
+                           <div class="indicator-line active"></div>
+                           <div class="step step2 active">
+                              <div class="step-icon">2</div>
+                              <p>Tech Stack</p>
+                           </div>
+                           <div class="indicator-line active"></div>
+                           <div class="step step3">
+                              <div class="step-icon">3</div>
+                              <p>Assess</p>
+                           </div>
+                        </section>
+                     </div>
+                        <form action="">
+                           <div class="max-w-md xl:max-w-1xl mx-auto">
+                           <div class="">
+    <div>
+      <div class="-mb-1 pt-6 pb-8 px-6 md:px-12 border border-b-0 border-gray-50 rounded-t-2xl">
+        <div>
+          <div class="flex flex-wrap -mx-3 items-center">
+            <div class="w-full xl:w-auto px-3 mb-4 xl:mb-0">
+              <span class="font-heading font-semibold">Let's say, you are designing a scalable web application using React for the frontend and Node.js for the backend. The application must handle high traffic while maintaining fast response times. Which of the following approaches would best optimize the system's performance and scalability?</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full overflow-x-auto border-l border-r border-gray-50">
+        <table class="x-width">
+          <thead>
+            <tr>
+              <th class="p-0">
+                <div class="h-16 pl-12 flex items-center bg-yellowGray-50 border-t border-b border-gray-50">
+                  <span class="text-xs text-gray-900 font-normal">Select Options:</span>
+                </div>
+              </th>
+              <th class="p-0">
+                <div class="h-16 flex items-center justify-center bg-yellowGray-50 border border-l-0 border-gray-50 rounded-tr-xl"></div>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr></tr>
+            <tr>
+              <td class="p-0">
+                <div class="flex items-center w-full pl-12 bg-white border-b border-gray-50" style={{paddingLeft: '1.5rem'}}>
+                  <input type="checkbox" value="" id=""/>
+                  <div class="flex ml-4 items-center">
+                    <div class="ml-4">
+                      <span class="text-xs text-gray-900 font-normal">Render all pages client-side in React and fetch data from the backend on every user interaction.</span>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="p-0">
+                <div class="flex items-center w-full pl-12 bg-white border-b border-gray-50" style={{paddingLeft: '1.5rem'}}>
+                  <input type="checkbox" value="" id=""/>
+                  <div class="flex ml-4 items-center">
+                    <div class="ml-4">
+                      <span class="text-xs text-gray-900 font-normal">Implement server-side rendering (SSR) with caching for frequently accessed pages, use lazy loading for heavy components, and introduce a CDN for static assets.</span>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="p-0">
+                <div class="flex items-center w-full pl-12 bg-white border-b border-gray-50" style={{paddingLeft: '1.5rem'}}>
+                  <input type="checkbox" value="" id=""/>
+                  <div class="flex ml-4 items-center">
+                    <div class="ml-4">
+                      <span class="text-xs text-gray-900 font-normal">Use React’s useEffect to fetch all data on page load and store it in a global state, ensuring no further backend requests are needed.</span>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="p-0">
+                <div class="flex items-center w-full pl-12 bg-white border-b border-gray-50" style={{paddingLeft: '1.5rem'}}>
+                  <input type="checkbox" value="" id=""/>
+                  <div class="flex ml-4 items-center">
+                    <div class="ml-4">
+                      <span class="text-xs text-gray-900 font-normal">Increase the backend server’s RAM and CPU to handle more concurrent requests, ensuring faster processing.</span>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+    </div>
+  </div>
+                              <div class="text-center" style={{marginTop: '36px'}}>
+                                 <a class="group relative inline-block h-16 mb-8 w-full md:w-44 bg-blueGray-900 rounded"  onClick={()=>{this.setState({currStep: 2});}}>
+                                    <div class="absolute top-0 left-0 transform -translate-y-1 -translate-x-1 w-full h-full group-hover:translate-y-0 group-hover:translate-x-0 transition duration-300">
+                                       <div class="flex h-full w-full items-center justify-center bg-blue-500 border-2 border-blueGray-900 rounded">                <span class="text-base font-semibold uppercase" >Next &gt;</span>              </div>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </form>
+                        </div>
+                        <div class="relative mt-16 pt-16 pb-18">
+                        <div class="container px-4 mx-auto">
+                           <img class="absolute top-0 left-0 h-full w-full object-cover lg:object-fill" src="./images/line-circles-bottom-light.svg" alt=""/>      
+                           <div class="animate-moving relative flex items-center justify-between">        <span class="relative flex-shrink-0 inline-block mr-8 md:mr-20 lg:mr-40 uppercase text-sm font-medium">          <span>Loose coupling </span>        </span>        <span class="relative flex-shrink-0 inline-block mr-8 md:mr-20 lg:mr-40 uppercase text-sm font-medium">          <span>Code Quality</span>        </span>        <span class="relative flex-shrink-0 inline-block mr-8 md:mr-20 lg:mr-40 uppercase text-sm font-medium">          <span>COLLABORATION</span>        </span>        <span class="relative flex-shrink-0 inline-block mr-8 md:mr-20 lg:mr-40 uppercase text-sm font-medium">          <span>Abstraction</span>        </span>        <span class="relative flex-shrink-0 inline-block mr-8 md:mr-20 lg:mr-40 uppercase text-sm font-medium">          <span>Memory Profiling</span>        </span>        <span class="relative flex-shrink-0 inline-block uppercase text-sm font-medium">          <span>REFACTORING</span>        </span>      </div>
+                        </div>
+                        </div>
+                     </section>
                  </div>}
            </section>
       );
