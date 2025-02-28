@@ -130,42 +130,41 @@ class Shortlists extends Component {
         //console.log('userEmail: ', this.state.userEmail);
         }
      }
-     showRiskLevel() {
-      window.scrollTo({  top: 0, behavior: 'smooth' });
-      this.setState({loading: false, messageTxt: 'Follow all the recommendations below to ensure your cyber safety.', displayRiskLevel: true});
-      let linkTemplateHTML1 = '';
-      let sectionKey = 'passwordNotExposed';
-      if(this.state.isSamePasswordExposed) {
-         sectionKey = 'isSamePasswordExposed';
-      } else if(this.state.passwordExposed) {
-         sectionKey = 'passwordExposed';
-      }
-      let section1Para1 = this.sectionImmediateRisks[this.state.riskLevel][sectionKey]['para1'];
-      let section1Para2 = this.sectionImmediateRisks[this.state.riskLevel][sectionKey]['para2'];
-      let linkTemplateMain = '<div class="p-3 w-full"><div class="bg-gray-100 block cursor-pointer p-4 rounded-3xl" x-data="{ accordion: false }" x-on:click="accordion = !accordion"><div class="-m-2 flex flex-wrap"><div class="p-2 flex-1"><div style="display:flex"><img src="../psassets/num1s.png" style="width:36px;height:36px;border-radius:8px"><h3 class="font-black font-heading text-gray-900 text-l" data-config-id="txt-b0bdec-2" style="margin-top:5px;margin-left:12px;overflow:hidden;white-space:nowrap;width:223px">Know your risks</h3></div><div class="duration-500 h-0 overflow-hidden" :style="accordion ? \'height: \' + $refs.container.scrollHeight + \'px\' : \'\'" x-ref="container"><p class="font-bold mt-4 text-black-500" data-config-id="txt-b0bdec-7" style="font-family:Quicksand;font-weight:500"><table style="margin-left:18px">{trHTML}</table></div></div><div class="p-1 w-auto"><span class="inline-block rotate-0 transform"><svg data-config-id="svg-b0bdec-1" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M17.9207 8.17999H11.6907H6.08072C5.12072 8.17999 4.64073 9.33999 5.32073 10.02L10.5007 15.2C11.3307 16.03 12.6807 16.03 13.5107 15.2L15.4807 13.23L18.6907 10.02C19.3607 9.33999 18.8807 8.17999 17.9207 8.17999Z" fill="#D1D5DB"></path></svg></span></div></div></div></div>';
-      let strLeaksStr = `<tr><td style="font-weight:700;max-width: 100px !important;vertical-align: top;"><img style="width:120px;border-radius: 8px;" src="../psassets/clickbait.png"></td><td style="max-width: 200px !important;overflow-x:scroll;padding-left: 14px;vertical-align: top;">${section1Para1}<br/><br/>${section1Para2}</td></tr>`;
-      linkTemplateHTML1 += linkTemplateMain.replaceAll('{trHTML}',strLeaksStr);
-
-      let linkTemplateHTML2 = '';
-      let linkTemplateMain2 = '<div class="p-3 w-full" onclick="document.querySelector(\'#num2\').src = \'../psassets/num2s.png\';"><div class="bg-gray-100 block cursor-pointer p-4 rounded-3xl" x-data="{ accordion: false }" x-on:click="accordion = !accordion"><div class="-m-2 flex flex-wrap"><div class="p-2 flex-1"><div style="display:flex"><img id="num2" src="../psassets/num2.png" style="width:36px;height:36px;border-radius:8px"><h3 class="font-black font-heading text-gray-900 text-l" data-config-id="txt-b0bdec-2" style="margin-top:5px;margin-left:12px;overflow:hidden;white-space:nowrap;width:223px">Immediate fixes</h3></div><div class="duration-500 h-0 overflow-hidden" :style="accordion ? \'height: \' + $refs.container.scrollHeight + \'px\' : \'\'" x-ref="container"><p class="font-bold mt-4 text-black-500" data-config-id="txt-b0bdec-7" style="font-family:Quicksand;font-weight:500"><table style="margin-left:18px">{trHTML}</table></div></div><div class="p-1 w-auto"><span class="inline-block rotate-0 transform"><svg data-config-id="svg-b0bdec-1" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M17.9207 8.17999H11.6907H6.08072C5.12072 8.17999 4.64073 9.33999 5.32073 10.02L10.5007 15.2C11.3307 16.03 12.6807 16.03 13.5107 15.2L15.4807 13.23L18.6907 10.02C19.3607 9.33999 18.8807 8.17999 17.9207 8.17999Z" fill="#D1D5DB"></path></svg></span></div></div></div></div>';
-      let strLeaksStr2 = `<tr><td style="font-weight:700;max-width: 100px !important;vertical-align: top;"><img style="width: 147px;border-radius: 8px;" src="../psassets/apps.png"></td><td style="max-width: 200px !important;overflow-x:scroll;padding-left: 14px;vertical-align: top;"><div style="margin-bottom: 8px"><b>Use Link Scanner</b></div><div>With Proveshare, you can scan unknown or suspicious links before clicking on them to prevent online scammers from targeting you. </div></td></tr>`;
-      strLeaksStr2 += `<tr><td style="font-weight:700;max-width: 100px !important;vertical-align: top;"><img style="width: 87px;border-radius: 8px;margin-top:20px" src="../psassets/spy.png"></td><td style="max-width: 200px !important;overflow-x:scroll;padding-left: 14px;vertical-align: top;"><div style="margin-bottom: 8px;margin-top: 20px;"><b>Stolen Password Alerts</b></div><div>With password alerts, Proveshare detects when your password is stolen and helps you immediately take next steps to protect yourself.</div></td></tr>`
-      linkTemplateHTML2 += linkTemplateMain2.replaceAll('{trHTML}',strLeaksStr2);
-
-      let linkTemplateHTML3 = '';
-      let linkTemplateMain3 = '<div class="p-3 w-full"  onclick="document.querySelector(\'#num3\').src = \'../psassets/num3s.png\';document.querySelector(\'#activateBtn\').style.display = \'block\';"><div class="bg-gray-100 block cursor-pointer p-4 rounded-3xl" x-data="{ accordion: false }" x-on:click="accordion = !accordion"><div class="-m-2 flex flex-wrap"><div class="p-2 flex-1"><div style="display:flex"><img id="num3" src="../psassets/num3.png" style="width:36px;height:36px;border-radius:8px"><h3 class="font-black font-heading text-gray-900 text-l" data-config-id="txt-b0bdec-2" style="margin-top:5px;margin-left:12px;overflow:hidden;white-space:nowrap;width:223px">Activate Free plan</h3></div><div class="duration-500 h-0 overflow-hidden" :style="accordion ? \'height: \' + $refs.container.scrollHeight + \'px\' : \'\'" x-ref="container"><p class="font-bold mt-4 text-black-500" data-config-id="txt-b0bdec-7" style="font-family:Quicksand;font-weight:500"><table style="margin-left:18px">{trHTML}</table></div></div><div class="p-1 w-auto"><span class="inline-block rotate-0 transform"><svg data-config-id="svg-b0bdec-1" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M17.9207 8.17999H11.6907H6.08072C5.12072 8.17999 4.64073 9.33999 5.32073 10.02L10.5007 15.2C11.3307 16.03 12.6807 16.03 13.5107 15.2L15.4807 13.23L18.6907 10.02C19.3607 9.33999 18.8807 8.17999 17.9207 8.17999Z" fill="#D1D5DB"></path></svg></span></div></div></div></div>';
-      let strLeaksStr3 = `<tr><td style="max-width: 100% !important;overflow-x:scroll;padding-left: 14px;vertical-align: top;">Ensure stress-free cyber safety with your free plan.</td></tr>`;
-      linkTemplateHTML3 += linkTemplateMain3.replaceAll('{trHTML}',strLeaksStr3);
-      this.setState({ensureSafetyHTML: `<div class="flex flex-wrap -m-3 mb-10">${linkTemplateHTML1}${linkTemplateHTML2}${linkTemplateHTML3}</div><br><br><br></br>`});
-     }
      constructor(props) {
         super(props);
+        this.questionResponseArr = [];
         this.leakTemplate = `<div class="p-3 w-full"><div class="bg-gray-100 block cursor-pointer p-4 rounded-3xl" x-data="{ accordion: false }" x-on:click="accordion = !accordion"><div class="-m-2 flex flex-wrap"><div class="p-2 flex-1"><div style="display:flex"><img src="https://img.logo.dev/{AppName}?token=pk_G0TzXJmeR22hjyoG7hROlQ" style="width:36px;height:36px;border-radius:8px"><h3 class="font-black font-heading text-gray-900 text-l" data-config-id="txt-b0bdec-2" style="margin-top:5px;margin-left:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:200px">{dbname} likely exposures - {AttributesExposed}</h3></div><div class="duration-500 h-0 overflow-hidden" :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''" x-ref="container"><p class="font-bold mt-4 text-black-500" data-config-id="txt-b0bdec-7" style="font-family:Quicksand;font-weight:500"><table style="margin-left:18px">{trHTML}</table></div></div><div class="p-2 w-auto"><span class="inline-block rotate-0 transform"><svg data-config-id="svg-b0bdec-1" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M17.9207 8.17999H11.6907H6.08072C5.12072 8.17999 4.64073 9.33999 5.32073 10.02L10.5007 15.2C11.3307 16.03 12.6807 16.03 13.5107 15.2L15.4807 13.23L18.6907 10.02C19.3607 9.33999 18.8807 8.17999 17.9207 8.17999Z" fill="#D1D5DB"></path></svg></span></div></div></div></div>`;
-        this.state = {currStep: 1, loading: false, leaksCount: '', isSamePasswordExposed: false, passwordExposed: true, displayRiskLevel: false, riskLevel: '', messageTxt: 'Enter your active email ID to continue', userEmail: '', exposures: `<div class="flex flex-wrap -m-3 mb-10">${this.leakTemplate}</div><br><br><br>`};
+        this.state = {currStep: 1, loading: false, currQuestionId: -1, currQuestion: '', currOptions: []};
+        this.fetchQuestions = this.fetchQuestions.bind(this);
+        this.fetchNextQuestion = this.fetchNextQuestion.bind(this);
      }
      componentDidMount() {
          
        }
+       componentDidUpdate() {
+         if(this.state.currStep == 3 && this.questionResponseArr.length == 0) {
+            this.fetchQuestions();
+         } 
+       }
+      async fetchQuestions() {
+         //read role, techStack from local storage
+         const role = localStorage.getItem('role');
+         const techStack = localStorage.getItem('techStack');
+         let fetchUrl =  '/questions/'+encodeURIComponent(role)+'/'+encodeURIComponent(techStack);
+         const response = await axios.get(fetchUrl);
+         console.log('--fetch questions--', response);
+         if (response && response.data) {
+            this.questionResponseArr = response.data;
+            this.setState({currQuestionId: this.state.currQuestionId + 1, currQuestion: this.questionResponseArr[0].question, currOptions: this.questionResponseArr[0].options});
+            return true;
+         }
+      }
+      fetchNextQuestion() {
+         document.querySelectorAll('input[type=checkbox]').forEach((elem)=>{elem.checked=false;});
+         let curQId = this.state.currQuestionId + 1;
+         this.setState({currQuestionId: curQId, currQuestion: this.questionResponseArr[curQId].question, currOptions: this.questionResponseArr[curQId].options});
+         return true;
+      }
       countdown(elementName, minutes, seconds) {
          element = document.getElementById(elementName);
          var element, endTime, hours, mins, msLeft, time;
@@ -225,7 +224,7 @@ class Shortlists extends Component {
                         <div>Select your current job role:</div>
                         <br/>          
                         <div style={{width: '100%',marginTop: '12px', paddingRight: '10px', paddingLeft: '10px'}} class="relative group px-8 pt-5 pb-4 mb-4 bg-gray-50 rounded-lg">
-                           <select class="w-full bg-transparent text-base placeholder-blueGray-900 font-semibold outline-none rounded-lg" name="field-name">
+                           <select id="roleElemId" class="w-full bg-transparent text-base placeholder-blueGray-900 font-semibold outline-none rounded-lg" name="field-name">
                               <option>Junior Engineer (SDE-I / 1-3 years of experience)</option>
                               <option>Mid-Level Engineer (SDE-II / 4-8 years of experience)</option>
                               <option>Senior Engineer (SDE-III / 9-15 years of experience)</option>
@@ -235,7 +234,7 @@ class Shortlists extends Component {
                         </div>
                      </div>
                      <div class="text-center">
-                        <a class="group relative inline-block h-16 mb-8 w-full md:w-44 bg-blueGray-900 rounded"  onClick={()=>{this.setState({currStep: 2});}}>
+                        <a class="group relative inline-block h-16 mb-8 w-full md:w-44 bg-blueGray-900 rounded"  onClick={()=>{this.setState({currStep: 2});localStorage.setItem('role',document.getElementById('roleElemId').options[document.getElementById('roleElemId').selectedIndex].text);}}>
                            <div class="absolute top-0 left-0 transform -translate-y-1 -translate-x-1 w-full h-full group-hover:translate-y-0 group-hover:translate-x-0 transition duration-300">
                               <div class="flex h-full w-full items-center justify-center bg-blue-500 border-2 border-blueGray-900 rounded">                <span class="text-base font-semibold uppercase" >Next &gt;</span>              </div>
                            </div>
@@ -285,12 +284,12 @@ class Shortlists extends Component {
                                  <br/>          
                                  <div style={{width: '100%',marginTop: '12px', paddingRight: '10px', paddingLeft: '10px'}} class="relative group px-8 pt-5 pb-4 mb-4 bg-gray-50 rounded-lg">
                                     <div class="relative group px-2 bg-gray-50 rounded-lg">
-                                       <input class="w-full bg-transparent text-base placeholder-blueGray-900 font-semibold outline-none rounded-lg" type="text" placeholder="Eg. Frontend - React JS, Node JS, Typescript, CSS"/>
+                                       <input id="techStackElemId" class="w-full bg-transparent text-base placeholder-blueGray-900 font-semibold outline-none rounded-lg" type="text" placeholder="Eg. Frontend - React JS, Node JS, Typescript, CSS"/>
                                     </div>
                                  </div>
                               </div>
                               <div class="text-center">
-                                 <a class="group relative inline-block h-16 mb-8 w-full md:w-44 bg-blueGray-900 rounded"  onClick={()=>{this.setState({currStep: 3});setTimeout(()=>{this.countdown("timer-countdown", 15, 0);},1500);}}>
+                                 <a class="group relative inline-block h-16 mb-8 w-full md:w-44 bg-blueGray-900 rounded"  onClick={()=>{this.setState({currStep: 3});setTimeout(()=>{this.countdown("timer-countdown", 15, 0);},1500);localStorage.setItem('techStack',document.getElementById('techStackElemId').value);}}>
                                     <div class="absolute top-0 left-0 transform -translate-y-1 -translate-x-1 w-full h-full group-hover:translate-y-0 group-hover:translate-x-0 transition duration-300">
                                        <div class="flex h-full w-full items-center justify-center bg-blue-500 border-2 border-blueGray-900 rounded">                <span class="text-base font-semibold uppercase" >Next &gt;</span>              </div>
                                     </div>
@@ -307,8 +306,6 @@ class Shortlists extends Component {
                         </div>
                      </section>
                  </div>}
-
-
                  {this.state.currStep == 3 && <div id="checker-step2" class="container mx-auto">
                      <section class="relative overflow-hidden">
                         <div class="container px-4 mx-auto">
@@ -333,9 +330,9 @@ class Shortlists extends Component {
                            </div>
                         </section>
                         <div className='hprog-c'>
-                           <div class="hprog-t">Question 1/15</div>
+                           <div class="hprog-t">Question {this.state.currQuestionId+1}/{this.questionResponseArr.length}</div>
                            <div className='hprog'>
-                              <hr className='hprog-l' width="20%"></hr>
+                              <hr className='hprog-l' width={`${(this.state.currQuestionId+1) * 100/this.questionResponseArr.length}%`}></hr>
                            </div>
                         </div>
                         <div className="otp-countdown"  ><img src="./assets/stopwatch.png" /><span id="timer-countdown">15:00</span></div>
@@ -348,7 +345,7 @@ class Shortlists extends Component {
                                     <div>
                                        <div class="flex flex-wrap -mx-3 items-center">
                                           <div class="w-full xl:w-auto px-1 mb-4 xl:mb-0">
-                                          <span class="font-heading font-semibold">Let's say, you are designing a scalable web application using React for the frontend and Node.js for the backend. The application must handle high traffic while maintaining fast response times. Which of the following approaches would best optimize the system's performance and scalability?</span>
+                                          <span class="font-heading font-semibold">{this.state.currQuestion}</span>
                                           </div>
                                        </div>
                                     </div>
@@ -369,66 +366,25 @@ class Shortlists extends Component {
                                        </thead>
                                        <tbody>
                                           <tr></tr>
-                                          <tr>
-                                          <td class="p-0">
-                                             <div class="flex items-center w-full pl-12 bg-white border-b border-gray-50" style={{paddingLeft: '1.5rem'}}>
-                                                <label class="container-checkbox">
-                                                   <input type="checkbox" />
-                                                   <span class="checkmark"></span>
-                                                </label>
-                                                <div class="flex mt-4 mb-4 mr-1 items-center">
-                                                <div class="ml-4">
-                                                   <span class="text-xs text-gray-900 font-normal">Render all pages client-side in React and fetch data from the backend on every user interaction.</span>
-                                                </div>
-                                                </div>
-                                             </div>
-                                          </td>
-                                          </tr>
-                                          <tr>
-                                          <td class="p-0">
-                                             <div class="flex items-center w-full pl-12 bg-white border-b border-gray-50" style={{paddingLeft: '1.5rem'}}>
-                                                   <label class="container-checkbox">
-                                                      <input type="checkbox" />
-                                                      <span class="checkmark"></span>
-                                                   </label>
-                                                <div class="flex mt-4 mb-4 mr-1 items-center">
-                                                <div class="ml-4">
-                                                   <span class="text-xs text-gray-900 font-normal">Implement server-side rendering (SSR) with caching for frequently accessed pages, use lazy loading for heavy components, and introduce a CDN for static assets.</span>
-                                                </div>
-                                                </div>
-                                             </div>
-                                          </td>
-                                          </tr>
-                                          <tr>
-                                          <td class="p-0">
-                                             <div class="flex items-center w-full pl-12 bg-white border-b border-gray-50" style={{paddingLeft: '1.5rem'}}>
-                                                   <label class="container-checkbox">
-                                                      <input type="checkbox" />
-                                                      <span class="checkmark"></span>
-                                                   </label>
-                                                <div class="flex mt-4 mb-4 mr-1 items-center">
-                                                <div class="ml-4">
-                                                   <span class="text-xs text-gray-900 font-normal">Use React’s useEffect to fetch all data on page load and store it in a global state, ensuring no further backend requests are needed.</span>
-                                                </div>
-                                                </div>
-                                             </div>
-                                          </td>
-                                          </tr>
-                                          <tr>
-                                          <td class="p-0">
-                                             <div class="flex items-center w-full pl-12 bg-white border-b border-gray-50" style={{paddingLeft: '1.5rem'}}>
-                                                   <label class="container-checkbox">
-                                                      <input type="checkbox" />
-                                                      <span class="checkmark"></span>
-                                                   </label>
-                                                <div class="flex mt-4 mb-4 mr-1 items-center">
-                                                <div class="ml-4">
-                                                   <span class="text-xs text-gray-900 font-normal">Increase the backend server’s RAM and CPU to handle more concurrent requests, ensuring faster processing.</span>
-                                                </div>
-                                                </div>
-                                             </div>
-                                          </td>
-                                          </tr>
+                                          {
+                                             this.state.currOptions.map((item)=> {
+                                                return <tr>
+                                                <td class="p-0">
+                                                   <div class="flex items-center w-full pl-12 bg-white border-b border-gray-50" style={{paddingLeft: '1.5rem'}}>
+                                                      <label class="container-checkbox">
+                                                         <input id={`option${item.option}`} type="checkbox" />
+                                                         <span class="checkmark"></span>
+                                                      </label>
+                                                      <div class="flex mt-4 mb-4 mr-1 items-center">
+                                                      <div class="ml-4">
+                                                         <span class="text-xs text-gray-900 font-normal">{item.text}</span>
+                                                      </div>
+                                                      </div>
+                                                   </div>
+                                                </td>
+                                                </tr>
+                                             })
+                                          }
                                        </tbody>
                                     </table>
                                     </div>
@@ -436,11 +392,21 @@ class Shortlists extends Component {
                                  </div>
                               </div>
                               <div class="text-center bottom-cta" style={{marginTop: '36px'}}>
-                                 <a class="group relative inline-block h-16 mb-8 w-full md:w-44 bg-blueGray-900 rounded"  onClick={()=>{this.setState({currStep: 2});}}>
+                              {this.questionResponseArr != null && this.state.currQuestionId == this.questionResponseArr.length -1 && 
+                                 <a class="group relative inline-block h-16 mb-8 w-full md:w-44 bg-blueGray-900 rounded"  onClick={()=>{window.location.reload()}}>
+                                    <div class="absolute top-0 left-0 transform -translate-y-1 -translate-x-1 w-full h-full group-hover:translate-y-0 group-hover:translate-x-0 transition duration-300">
+                                       <div class="flex h-full w-full items-center justify-center bg-blue-500 border-2 border-blueGray-900 rounded" style={{background: '#2189ff', color: '#ffffff'}}>                <span class="text-base font-semibold uppercase" >Finish</span>              </div>
+                                    </div>
+                                 </a>
+                              }
+                              {this.questionResponseArr != null && this.state.currQuestionId < this.questionResponseArr.length -1 && 
+                                 <a class="group relative inline-block h-16 mb-8 w-full md:w-44 bg-blueGray-900 rounded"  onClick={()=>{this.fetchNextQuestion();}}>
                                     <div class="absolute top-0 left-0 transform -translate-y-1 -translate-x-1 w-full h-full group-hover:translate-y-0 group-hover:translate-x-0 transition duration-300">
                                        <div class="flex h-full w-full items-center justify-center bg-blue-500 border-2 border-blueGray-900 rounded">                <span class="text-base font-semibold uppercase" >Next &gt;</span>              </div>
                                     </div>
                                  </a>
+                              }
+
                               </div>
                            </div>
                         </form>

@@ -13,6 +13,7 @@ var { Pool } = require('pg');
 var axios = require('axios');
 var crypto = require('crypto');
 var QRCode = require('qrcode');
+const { OpenAI } = require('openai');
 //var mergeImages = require('merge-images');
 var base64 = require('file-base64');
 //const { Canvas, Image } = require('canvas');
@@ -36,6 +37,11 @@ let dbConfig = {
          ssl: { rejectUnauthorized: false },
          keepAlive:true
      }
+// Initialize OpenAI with API key
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY
+});
+let promptCache = {};
 const orderid = require('order-id')('randomgenid');
 var redisURLVal = process.env.REDISCLOUD_URL || 'redis://rediscloud:vWISiXr6xai89eidZYXjM0OK3KeXfkPU@redis-16431.c10.us-east-1-2.ec2.cloud.redislabs.com:16431';
 redisURL = url.parse(redisURLVal);
@@ -159,6 +165,37 @@ function generateTokenUrl(merchantId, merchantSecret, callbackUrl) {
   const tokenUrl = `https://api-preprod.phonepe.com/apis/pg-sandbox/pg/v1/pay/initialize?merchantId=${merchantId}&timestamp=${timestamp}&signature=${signature}`;
   return tokenUrl;
 }
+
+app.get('/questions/:role/:stack', async (req, res) => {
+  let role = req.params.role;
+  let stack = req.params.stack;
+
+  if(promptCache[role+'-'+stack] != null) {
+    console.log('---cache hit---');
+    res.send(promptCache[role+'-'+stack]);
+  } else {
+    try {
+      const prompt = `
+      For a ${role} working on ${stack} tech stack,
+       can you share 5 multiple choice questions to check whether he has higher order design skills? But keep it medium in complexity.
+  Return in JSON array format like [{"question":"","question":[{"option":"A","text":""}]},...].
+  `;
+      const response = await openai.chat.completions.create({
+        model: 'gpt-3.5-turbo',
+        messages: [{ role: 'user', content: prompt }],
+      });
+      console.log('--response--', response.choices[0].message);
+      const messages = response.choices[0].message.content;
+      promptCache[role+'-'+stack] = messages;
+      res.send(messages);
+    } catch (error) {
+      console.error(error);
+      res.status(500).send("Error generating questions");
+    }
+  }
+
+  
+});
 
 app.get('/pp-token', function(request, response) {
   const merchantId = MERCHANT_ID;
