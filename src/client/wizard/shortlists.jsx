@@ -164,20 +164,39 @@ class Shortlists extends Component {
         this.state = {currStep: 1, loading: false, leaksCount: '', isSamePasswordExposed: false, passwordExposed: true, displayRiskLevel: false, riskLevel: '', messageTxt: 'Enter your active email ID to continue', userEmail: '', exposures: `<div class="flex flex-wrap -m-3 mb-10">${this.leakTemplate}</div><br><br><br>`};
      }
      componentDidMount() {
-        window.viewportCheck = setInterval(()=> {
-           if(this.elementInViewport(document.getElementById('risk-checker'))) {
-              this.tempTimer();
+         
+       }
+      countdown(elementName, minutes, seconds) {
+         element = document.getElementById(elementName);
+         var element, endTime, hours, mins, msLeft, time;
+         function twoDigits(n) {
+           return n <= 9 ? "0" + n : n;
+         }
+         function updateTimer() {
+           msLeft = endTime - +new Date();
+           if (msLeft < 1000) {
+             element.innerHTML = "Time is up!";
+           } else {
+             time = new Date(msLeft);
+             hours = time.getUTCHours();
+             mins = time.getUTCMinutes();
+             element.innerHTML =
+               (hours ? hours + ":" + twoDigits(mins) : mins) +
+               ":" +
+               twoDigits(time.getUTCSeconds());
+             setTimeout(updateTimer, time.getUTCMilliseconds() + 500);
            }
-        },2000);
-        this.sectionImmediateRisks = {"High":{"isSamePasswordExposed":{"para1":"You are at real high risk as you have the same passwords used across sites and they are exposed in the dark web.","para2":"You should watch out for suspicious links and social online scammers."},"passwordExposed":{"para1":"You are at high risk as you have your  passwords exposed in the dark web that makes you vulnerable for man-in-the-middle attacks.","para2":"You should watch out for suspicious websites and online scammers."},"passwordNotExposed":{"para1":"You are at high risk as you have your  personal data exposed in the dark web that makes you vulnerable for cyber attacks.","para2":"You should watch out for suspicious websites and online scammers."}},"Moderate":{"isSamePasswordExposed":{"para1":"You are at high risk as you have the same passwords used across sites and they are exposed in the dark web.","para2":"You should watch out for suspicious links and social online scammers."},"passwordExposed":{"para1":"You are at moderate risk as you have your  password exposed in the dark web that makes you vulnerable for man-in-the-middle attacks.","para2":"You should watch out for suspicious websites and online scammers."},"passwordNotExposed":{"para1":"You are at moderate risk as you have your  personal data exposed in the dark web that makes you vulnerable for cyber attacks.","para2":"You should watch out for suspicious websites and online scammers."}}};
-      }
+         }
+         endTime = +new Date() + 1000 * (60 * minutes + seconds) + 500;
+         updateTimer();
+       }
     render() {
       return (
         <section id="risk-checker" data-section-id="5" data-share="" data-category="navigations" data-component-id="886f4350_01_awz" className="bg-white" x-data="{ mobileNavOpen: false }">
               
               {sessionStorage.getItem('user') == null && <GoogleOneTapLogin onError={(error) => console.log(error)} onSuccess={(response) => {console.log(response);}} googleAccountConfigs={{ client_id: '128159303865-64ustcdp4pj9f6isg39p7hekhjdj2ln5.apps.googleusercontent.com',auto_select: false,cancel_on_tap_outside: false }} />}
               {this.state.currStep == 1 && 
-               <section class="relative pt-4 overflow-hidden">
+               <section class="relative overflow-hidden">
                <div class="container px-4 mx-auto">
                <div class="text-center mb-14">
                   <h1 class="font-heading font-semibold text-4xl sm:text-8xl lg:text-10xl mb-6">        <span>Assess your</span>        <span class="text-blue-500">skills</span>      </h1>
@@ -236,7 +255,7 @@ class Shortlists extends Component {
                  
                  }
                  {this.state.currStep == 2 && <div id="checker-step2" class="container mx-auto">
-                     <section class="relative pt-4 overflow-hidden">
+                     <section class="relative overflow-hidden">
                         <div class="container px-4 mx-auto">
                         <div class="text-center mb-14">
                            <h1 class="font-heading font-semibold text-4xl sm:text-8xl lg:text-10xl mb-6">        <span>Assess your</span>        <span class="text-blue-500">skills</span>      </h1>
@@ -271,7 +290,7 @@ class Shortlists extends Component {
                                  </div>
                               </div>
                               <div class="text-center">
-                                 <a class="group relative inline-block h-16 mb-8 w-full md:w-44 bg-blueGray-900 rounded"  onClick={()=>{this.setState({currStep: 3});}}>
+                                 <a class="group relative inline-block h-16 mb-8 w-full md:w-44 bg-blueGray-900 rounded"  onClick={()=>{this.setState({currStep: 3});setTimeout(()=>{this.countdown("timer-countdown", 15, 0);},1500);}}>
                                     <div class="absolute top-0 left-0 transform -translate-y-1 -translate-x-1 w-full h-full group-hover:translate-y-0 group-hover:translate-x-0 transition duration-300">
                                        <div class="flex h-full w-full items-center justify-center bg-blue-500 border-2 border-blueGray-900 rounded">                <span class="text-base font-semibold uppercase" >Next &gt;</span>              </div>
                                     </div>
@@ -291,7 +310,7 @@ class Shortlists extends Component {
 
 
                  {this.state.currStep == 3 && <div id="checker-step2" class="container mx-auto">
-                     <section class="relative pt-4 overflow-hidden">
+                     <section class="relative overflow-hidden">
                         <div class="container px-4 mx-auto">
                         <div class="text-center mb-14">
                            <h1 class="font-heading font-semibold text-4xl sm:text-8xl lg:text-10xl mb-6">        <span>Assess your</span>        <span class="text-blue-500">skills</span>      </h1>
@@ -313,91 +332,110 @@ class Shortlists extends Component {
                               <p>Assess</p>
                            </div>
                         </section>
+                        <div className='hprog-c'>
+                           <div class="hprog-t">Question 1/15</div>
+                           <div className='hprog'>
+                              <hr className='hprog-l' width="20%"></hr>
+                           </div>
+                        </div>
+                        <div className="otp-countdown"  ><img src="./assets/stopwatch.png" /><span id="timer-countdown">15:00</span></div>
                      </div>
                         <form action="">
                            <div class="max-w-md xl:max-w-1xl mx-auto">
                            <div class="">
-    <div>
-      <div class="-mb-1 pt-6 pb-8 px-6 md:px-12 border border-b-0 border-gray-50 rounded-t-2xl">
-        <div>
-          <div class="flex flex-wrap -mx-3 items-center">
-            <div class="w-full xl:w-auto px-3 mb-4 xl:mb-0">
-              <span class="font-heading font-semibold">Let's say, you are designing a scalable web application using React for the frontend and Node.js for the backend. The application must handle high traffic while maintaining fast response times. Which of the following approaches would best optimize the system's performance and scalability?</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="w-full overflow-x-auto border-l border-r border-gray-50">
-        <table class="x-width">
-          <thead>
-            <tr>
-              <th class="p-0">
-                <div class="h-16 pl-12 flex items-center bg-yellowGray-50 border-t border-b border-gray-50">
-                  <span class="text-xs text-gray-900 font-normal">Select Options:</span>
-                </div>
-              </th>
-              <th class="p-0">
-                <div class="h-16 flex items-center justify-center bg-yellowGray-50 border border-l-0 border-gray-50 rounded-tr-xl"></div>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr></tr>
-            <tr>
-              <td class="p-0">
-                <div class="flex items-center w-full pl-12 bg-white border-b border-gray-50" style={{paddingLeft: '1.5rem'}}>
-                  <input type="checkbox" value="" id=""/>
-                  <div class="flex ml-4 items-center">
-                    <div class="ml-4">
-                      <span class="text-xs text-gray-900 font-normal">Render all pages client-side in React and fetch data from the backend on every user interaction.</span>
-                    </div>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="p-0">
-                <div class="flex items-center w-full pl-12 bg-white border-b border-gray-50" style={{paddingLeft: '1.5rem'}}>
-                  <input type="checkbox" value="" id=""/>
-                  <div class="flex ml-4 items-center">
-                    <div class="ml-4">
-                      <span class="text-xs text-gray-900 font-normal">Implement server-side rendering (SSR) with caching for frequently accessed pages, use lazy loading for heavy components, and introduce a CDN for static assets.</span>
-                    </div>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="p-0">
-                <div class="flex items-center w-full pl-12 bg-white border-b border-gray-50" style={{paddingLeft: '1.5rem'}}>
-                  <input type="checkbox" value="" id=""/>
-                  <div class="flex ml-4 items-center">
-                    <div class="ml-4">
-                      <span class="text-xs text-gray-900 font-normal">Use React’s useEffect to fetch all data on page load and store it in a global state, ensuring no further backend requests are needed.</span>
-                    </div>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="p-0">
-                <div class="flex items-center w-full pl-12 bg-white border-b border-gray-50" style={{paddingLeft: '1.5rem'}}>
-                  <input type="checkbox" value="" id=""/>
-                  <div class="flex ml-4 items-center">
-                    <div class="ml-4">
-                      <span class="text-xs text-gray-900 font-normal">Increase the backend server’s RAM and CPU to handle more concurrent requests, ensuring faster processing.</span>
-                    </div>
-                  </div>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      
-    </div>
-  </div>
-                              <div class="text-center" style={{marginTop: '36px'}}>
+                                 <div>
+                                    <div class="-mb-1 pt-6 pb-3 px-6 md:px-12 border border-b-0 border-gray-50 rounded-t-2xl">
+                                    <div>
+                                       <div class="flex flex-wrap -mx-3 items-center">
+                                          <div class="w-full xl:w-auto px-1 mb-4 xl:mb-0">
+                                          <span class="font-heading font-semibold">Let's say, you are designing a scalable web application using React for the frontend and Node.js for the backend. The application must handle high traffic while maintaining fast response times. Which of the following approaches would best optimize the system's performance and scalability?</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    </div>
+                                    <div class="w-full overflow-x-auto border-l border-r border-gray-50">
+                                    <table class="x-width">
+                                       <thead>
+                                          <tr>
+                                          <th class="p-0">
+                                             <div class="h-16 pl-5 flex items-center bg-yellowGray-50 border-t border-b border-gray-50">
+                                                <span class="text-xs text-gray-900 font-normal">Select Options:</span>
+                                             </div>
+                                          </th>
+                                          <th class="p-0">
+                                             <div class="h-16 flex items-center justify-center bg-yellowGray-50 border border-l-0 border-gray-50 rounded-tr-xl"></div>
+                                          </th>
+                                          </tr>
+                                       </thead>
+                                       <tbody>
+                                          <tr></tr>
+                                          <tr>
+                                          <td class="p-0">
+                                             <div class="flex items-center w-full pl-12 bg-white border-b border-gray-50" style={{paddingLeft: '1.5rem'}}>
+                                                <label class="container-checkbox">
+                                                   <input type="checkbox" />
+                                                   <span class="checkmark"></span>
+                                                </label>
+                                                <div class="flex mt-4 mb-4 mr-1 items-center">
+                                                <div class="ml-4">
+                                                   <span class="text-xs text-gray-900 font-normal">Render all pages client-side in React and fetch data from the backend on every user interaction.</span>
+                                                </div>
+                                                </div>
+                                             </div>
+                                          </td>
+                                          </tr>
+                                          <tr>
+                                          <td class="p-0">
+                                             <div class="flex items-center w-full pl-12 bg-white border-b border-gray-50" style={{paddingLeft: '1.5rem'}}>
+                                                   <label class="container-checkbox">
+                                                      <input type="checkbox" />
+                                                      <span class="checkmark"></span>
+                                                   </label>
+                                                <div class="flex mt-4 mb-4 mr-1 items-center">
+                                                <div class="ml-4">
+                                                   <span class="text-xs text-gray-900 font-normal">Implement server-side rendering (SSR) with caching for frequently accessed pages, use lazy loading for heavy components, and introduce a CDN for static assets.</span>
+                                                </div>
+                                                </div>
+                                             </div>
+                                          </td>
+                                          </tr>
+                                          <tr>
+                                          <td class="p-0">
+                                             <div class="flex items-center w-full pl-12 bg-white border-b border-gray-50" style={{paddingLeft: '1.5rem'}}>
+                                                   <label class="container-checkbox">
+                                                      <input type="checkbox" />
+                                                      <span class="checkmark"></span>
+                                                   </label>
+                                                <div class="flex mt-4 mb-4 mr-1 items-center">
+                                                <div class="ml-4">
+                                                   <span class="text-xs text-gray-900 font-normal">Use React’s useEffect to fetch all data on page load and store it in a global state, ensuring no further backend requests are needed.</span>
+                                                </div>
+                                                </div>
+                                             </div>
+                                          </td>
+                                          </tr>
+                                          <tr>
+                                          <td class="p-0">
+                                             <div class="flex items-center w-full pl-12 bg-white border-b border-gray-50" style={{paddingLeft: '1.5rem'}}>
+                                                   <label class="container-checkbox">
+                                                      <input type="checkbox" />
+                                                      <span class="checkmark"></span>
+                                                   </label>
+                                                <div class="flex mt-4 mb-4 mr-1 items-center">
+                                                <div class="ml-4">
+                                                   <span class="text-xs text-gray-900 font-normal">Increase the backend server’s RAM and CPU to handle more concurrent requests, ensuring faster processing.</span>
+                                                </div>
+                                                </div>
+                                             </div>
+                                          </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    </div>
+                                    
+                                 </div>
+                              </div>
+                              <div class="text-center bottom-cta" style={{marginTop: '36px'}}>
                                  <a class="group relative inline-block h-16 mb-8 w-full md:w-44 bg-blueGray-900 rounded"  onClick={()=>{this.setState({currStep: 2});}}>
                                     <div class="absolute top-0 left-0 transform -translate-y-1 -translate-x-1 w-full h-full group-hover:translate-y-0 group-hover:translate-x-0 transition duration-300">
                                        <div class="flex h-full w-full items-center justify-center bg-blue-500 border-2 border-blueGray-900 rounded">                <span class="text-base font-semibold uppercase" >Next &gt;</span>              </div>

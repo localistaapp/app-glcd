@@ -35,15 +35,15 @@
         }
 
         .step-indicator .step-icon {
-          height: 36px;
-          width: 36px;
+          height: 30px;
+          width: 30px;
           border-radius: 50%;
           background: #9ccfff;
           font-size: 10px;
           text-align: center;
           color: #ffffff;
           position: relative;
-          line-height: 38px;
+          line-height: 30px;
           font-size: 17px;
         }
 
@@ -91,6 +91,210 @@
           padding: 4px;
         }
 
+        .font-heading span {
+          font-family: 'Poppins';
+          font-weight: normal;
+          letter-spacing: -1px;
+          font-size: 30px;
+        }
+
+        span.font-heading.font-semibold {
+          font-family: 'Poppins';
+          font-weight: normal;
+        }
+
+        .otp-countdown{
+          display: inline;
+          margin: 0 auto;
+          padding: 1px 10px;
+          background-color: #a5a5a5;
+          border-radius: 16px;
+          color: #fff;
+          position: absolute;
+          top: 177px;
+          right: 20px;
+        }
+
+        .otp-countdown img {
+          width: 18px;
+          display: inline;
+          margin-top: -4px;
+          margin-right: 4px;
+        }
+
+        .bottom-cta {
+          position: fixed;
+          bottom: -40px;
+          margin: 0 auto;
+          left: 0;
+          right: -3px;
+          padding: 20px;
+          z-index: 1;
+        }
+
+        .hprog-c {
+          margin-top: -6px;
+          margin-bottom: 24px;
+          border-radius: 20px;
+        }
+
+        .hprog {
+          border: 1px solid #e5e5e5;
+          border-radius: 20px;
+        }
+
+        .hprog-l {
+          color: #9ccfff;
+          background-color: #9ccfff;
+          height: 3px;
+          border: none;
+          margin: 0;
+          border-radius: 20px;
+        }
+
+        .hprog-t {
+          padding-bottom: 2px;
+          font-size: 13px;
+          background: #9ccfff;
+          border-radius: 8px;
+          padding-left: 12px;
+          padding-right: 12px;
+          padding-top: 3px;
+          width: fit-content;
+          margin-bottom: 4px;
+          border-top-left-radius: 0px;
+        }
+
+        .container-checkbox {
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 22px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        /* Hide the browser's default checkbox */
+        .container-checkbox input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        /* Create a custom checkbox */
+        .container-checkbox .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: #eee;
+        }
+
+        /* On mouse-over, add a grey background color */
+        .container-checkbox:hover input ~ .checkmark {
+            background-color: #ccc;
+        }
+
+        /* When the checkbox is checked, add a blue background */
+        .container-checkbox input:checked ~ .checkmark {
+            background-color: #3fa0fa;
+        }
+
+        /* Create the checkmark/indicator (hidden when not checked) */
+        .container-checkbox .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        /* Show the checkmark when checked */
+        .container-checkbox input:checked ~ .checkmark:after {
+            display: block;
+        }
+
+        /* Style the checkmark/indicator */
+        .container-checkbox .checkmark:after {
+          left: 8px;
+          top: 3px;
+          width: 9px;
+          height: 16px;
+          border: solid white;
+          border-width: 0px 3px 3px 0;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+
+
+        /* The container */
+        .container-radio {
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 22px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        /* Hide the browser's default radio button */
+        .container-radio input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        /* Create a custom radio button */
+        .container-radio .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: #eee;
+            border-radius: 50%;
+        }
+
+        /* On mouse-over, add a grey background color */
+        .container-radio:hover input ~ .checkmark {
+            background-color: #ccc;
+        }
+
+        /* When the radio button is checked, add a blue background */
+        .container-radio input:checked ~ .checkmark {
+            background-color: #2196F3;
+        }
+
+        /* Create the indicator (the dot/circle - hidden when not checked) */
+        .container-radio .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        /* Show the indicator (dot/circle) when checked */
+        .container-radio input:checked ~ .checkmark:after {
+            display: block;
+        }
+
+        /* Style the indicator (dot/circle) */
+        .container-radio .checkmark:after {
+          top: 9px;
+          left: 9px;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background: white;
+        }
+
         @media screen and (max-width: 500px) {
           .step p {
             font-size: 14px;
@@ -113,6 +317,7 @@
             }
         }
       </style>
+      <script src="./assets/jquery.min.js"></script>
    </head>
    <body class="antialiased bg-body text-body font-body">
       <div class="">
