@@ -42,6 +42,7 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY
 });
 let promptCache = {};
+let promptPreAssessCache = {};
 const orderid = require('order-id')('randomgenid');
 var redisURLVal = process.env.REDISCLOUD_URL || 'redis://rediscloud:vWISiXr6xai89eidZYXjM0OK3KeXfkPU@redis-16431.c10.us-east-1-2.ec2.cloud.redislabs.com:16431';
 redisURL = url.parse(redisURLVal);
@@ -177,7 +178,7 @@ app.get('/questions/:role/:stack', async (req, res) => {
     try {
       const prompt = `
       For a ${role} working on ${stack} tech stack,
-       can you share 5 multiple choice questions to check whether he has higher order design skills? But keep it medium in complexity.
+       can you share a tota lof 15 multiple choice questions to check whether he has higher order design skills focusing on five important skill categories such as for example system design? But keep it medium in complexity.
   Return in JSON array format like [{"question":"","question":[{"option":"A","text":""}]},...].
   `;
       const response = await openai.chat.completions.create({
@@ -196,6 +197,36 @@ app.get('/questions/:role/:stack', async (req, res) => {
 
   
 });
+
+app.post('/preassess', async (req, res) => {
+  //response.send(pages.startYourOwn);
+  var selections = req.body.selections;
+
+  if(promptPreAssessCache[JSON.stringify(selections)] != null) {
+    console.log('---preassess cache hit---');
+    res.send(promptPreAssessCache[JSON.stringify(selections)]);
+  } else {
+    try {
+        const prompt = `
+        Given the responses for the above questions in the format [{"question":"..", "selectedOptions":["A","C"]},...] are ${JSON.stringify(selections)}, come up with
+a skills evaluation for the 5 skills the questions were focusing on and share the evaluation in the format
+ [{"header":"SKILL GAP ANALYSIS","captions":["skill1","skill2","skill3","skill4","skill5"],"values":[0.5,0.5,0.5,0.5,0.5]}]. 
+Replace skill1, skill2 etc with actual skill names and values with the evaluation score with each evaluation score ranging from 0 to 1
+    `;
+        const response = await openai.chat.completions.create({
+          model: 'gpt-3.5-turbo',
+          messages: [{ role: 'user', content: prompt }],
+        });
+        console.log('--response--', response.choices[0].message);
+        const messages = response.choices[0].message.content;
+        promptPreAssessCache[JSON.stringify(selections)] = messages;
+        res.send(messages);
+      } catch (error) {
+        console.error(error);
+        res.status(500).send("Error generating questions");
+      }
+  }
+ });
 
 app.get('/pp-token', function(request, response) {
   const merchantId = MERCHANT_ID;

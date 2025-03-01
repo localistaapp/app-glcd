@@ -134,7 +134,7 @@ class Shortlists extends Component {
         super(props);
         this.questionResponseArr = [];
         this.leakTemplate = `<div class="p-3 w-full"><div class="bg-gray-100 block cursor-pointer p-4 rounded-3xl" x-data="{ accordion: false }" x-on:click="accordion = !accordion"><div class="-m-2 flex flex-wrap"><div class="p-2 flex-1"><div style="display:flex"><img src="https://img.logo.dev/{AppName}?token=pk_G0TzXJmeR22hjyoG7hROlQ" style="width:36px;height:36px;border-radius:8px"><h3 class="font-black font-heading text-gray-900 text-l" data-config-id="txt-b0bdec-2" style="margin-top:5px;margin-left:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:200px">{dbname} likely exposures - {AttributesExposed}</h3></div><div class="duration-500 h-0 overflow-hidden" :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''" x-ref="container"><p class="font-bold mt-4 text-black-500" data-config-id="txt-b0bdec-7" style="font-family:Quicksand;font-weight:500"><table style="margin-left:18px">{trHTML}</table></div></div><div class="p-2 w-auto"><span class="inline-block rotate-0 transform"><svg data-config-id="svg-b0bdec-1" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M17.9207 8.17999H11.6907H6.08072C5.12072 8.17999 4.64073 9.33999 5.32073 10.02L10.5007 15.2C11.3307 16.03 12.6807 16.03 13.5107 15.2L15.4807 13.23L18.6907 10.02C19.3607 9.33999 18.8807 8.17999 17.9207 8.17999Z" fill="#D1D5DB"></path></svg></span></div></div></div></div>`;
-        this.state = {currStep: 1, loading: false, currQuestionId: -1, currQuestion: '', currOptions: []};
+        this.state = {currStep: 1, loading: false, currQuestionId: -1, currQuestion: '', currOptions: [], showSkillGraph: false};
         this.fetchQuestions = this.fetchQuestions.bind(this);
         this.fetchNextQuestion = this.fetchNextQuestion.bind(this);
      }
@@ -156,13 +156,145 @@ class Shortlists extends Component {
          if (response && response.data) {
             this.questionResponseArr = response.data;
             this.setState({currQuestionId: this.state.currQuestionId + 1, currQuestion: this.questionResponseArr[0].question, currOptions: this.questionResponseArr[0].options});
+            localStorage.removeItem('selections');
             return true;
          }
       }
+      getSelectedOptions() {
+         debugger;
+         let selOptions = [];
+         if(document.querySelector('#optionA').checked) {
+            selOptions.push('A');
+         }
+         if(document.querySelector('#optionB').checked) {
+            selOptions.push('B');
+         }
+         if(document.querySelector('#optionC').checked) {
+            selOptions.push('C');
+         }
+         if(document.querySelector('#optionD').checked) {
+            selOptions.push('D');
+         }
+         return selOptions;
+      }
+      setSelections() {
+         const currQuestion = this.state.currQuestion;
+         const currSelectedOptions = this.getSelectedOptions();
+
+         let sel = {};
+         sel.question = currQuestion;
+         sel.selectedOptions = currSelectedOptions;
+
+         let selections = [];
+         
+         if(localStorage.getItem('selections') != null) {
+            selections = JSON.parse(localStorage.getItem('selections'));
+         };
+         selections.push(sel);
+
+         localStorage.setItem('selections', JSON.stringify(selections));
+      }
+      renderSkillGraph(skills) {
+         var pentagonIndex = 0;
+         var valueIndex = 0;
+         var width = 0;
+         var height = 0;
+         var radOffset = Math.PI/2
+         var sides = 5; // Number of sides in the polygon
+         var theta = 2 * Math.PI/sides; // radians per section
+
+         function getXY(i, radius) {
+         return {"x": Math.cos(radOffset +theta * i) * radius*width + width/2,
+            "y": Math.sin(radOffset +theta * i) * radius*height + height/2};
+         }
+
+         var hue = [];
+         var hueOffset = 25;
+
+         for (var s in skills) {
+         $(".content").append('<div class="pentagon" id="interests"><div class="header">Your Skill Gap Analysis</div><canvas class="pentCanvas"/></div>');
+         hue[s] = (hueOffset + s * 255/skills.length) % 255;
+         }
+
+         $(".pentagon").each(function(index){
+         width = $(this).width();
+         height = $(this).height();
+         var ctx = $(this).find('canvas')[0].getContext('2d');
+         ctx.canvas.width = width;
+         ctx.canvas.height = height;
+         ctx.font="12px Monospace";
+         ctx.textAlign="center";
+         
+         /*** LABEL ***/
+         var color = "hsl("+hue[pentagonIndex]+", 100%, 50%)";
+         ctx.fillStyle = color;
+        //ctx.fillText(skills[pentagonIndex].header, width/2, 15);
+
+         ctx.font="12px Monospace";   
+
+         /*** PENTAGON BACKGROUND ***/
+         for (var i = 0; i < sides; i++) {
+            // For each side, draw two segments: the side, and the radius
+            ctx.beginPath();
+            var xy = getXY(i, 0.3);
+            var colorJitter = 25 + theta*i*2;
+            color = "hsl("+hue[pentagonIndex]+",100%," + colorJitter + "%)";
+            ctx.fillStyle = color;
+            ctx.strokeStyle = color;
+            ctx.moveTo(0.5*width, 0.5*height); //center
+            ctx.lineTo(xy.x, xy.y);
+            xy = getXY(i+1, 0.3);
+            ctx.lineTo(xy.x, xy.y);
+            xy = getXY(i, 0.37);
+            console.log();
+            ctx.fillText(skills[ pentagonIndex].captions[valueIndex],xy.x-10, xy.y +5);
+            valueIndex++;
+            ctx.closePath();
+            ctx.fill();
+            ctx.stroke();
+         }
+         
+         valueIndex = 0;
+         ctx.beginPath();
+         ctx.fillStyle = "rgba(248, 148, 29, 0.2)";
+         ctx.strokeStyle = "rgba(0, 0, 0, 0.3)";
+         ctx.lineWidth = 5;
+         var value = skills[pentagonIndex].values[valueIndex];
+         xy = getXY(i, value * 0.3);
+         ctx.moveTo(xy.x,xy.y);
+         /*** SKILL GRAPH ***/
+         for (var i = 0; i < sides; i++) {
+            xy = getXY(i, value * 0.3);
+            ctx.lineTo(xy.x,xy.y);
+            valueIndex++;
+            value = skills[pentagonIndex].values[valueIndex];
+         }
+         ctx.closePath();
+         ctx.stroke();
+         ctx.fill();
+         valueIndex = 0;  
+         pentagonIndex++;
+         });
+      }
+      sendPreAssessment() {
+         this.setSelections();
+         const selected = localStorage.getItem('selections');
+         axios.post(`/preassess`, {selections: selected}).then((response) => {
+            console.log(response.status);
+            console.log('---response---', response.data);
+            console.log('---response data---', response.data);
+            this.setState({showSkillGraph: true});
+            document.querySelector('.hprog-c').style.display = 'none';
+            document.querySelector('.otp-countdown').style.display = 'none';
+            this.renderSkillGraph(response.data);
+        });
+      }
       fetchNextQuestion() {
+         this.setSelections();
          document.querySelectorAll('input[type=checkbox]').forEach((elem)=>{elem.checked=false;});
          let curQId = this.state.currQuestionId + 1;
          this.setState({currQuestionId: curQId, currQuestion: this.questionResponseArr[curQId].question, currOptions: this.questionResponseArr[curQId].options});
+         window.scrollTo(0,260);
          return true;
       }
       countdown(elementName, minutes, seconds) {
@@ -337,11 +469,24 @@ class Shortlists extends Component {
                         </div>
                         <div className="otp-countdown"  ><img src="./assets/stopwatch.png" /><span id="timer-countdown">15:00</span></div>
                      </div>
-                        <form action="">
+                        {this.state.currOptions && this.state.currOptions.length == 0 && 
+                           <div class="card">
+                           <div class="loader-shimmer-banner shimmer-animation"></div>
+                           <div class="loader-shimmer-content">
+                             <div class="loader-shimmer-header">
+                               <div class="loader-shimmer-title shimmer-animation"></div>
+                               <div class="loader-shimmer-rating shimmer-animation"></div>
+                             </div>
+                             <div class="loader-shimmer-list shimmer-animation"></div>
+                             <div class="loader-shimmer-info shimmer-animation"></div>
+                           </div>
+                         </div>}
+                        {this.state.showSkillGraph == true && <div class="content"></div>} 
+                        {this.state.currOptions && this.state.currOptions.length > 0 && this.state.showSkillGraph == false && <form action="">
                            <div class="max-w-md xl:max-w-1xl mx-auto">
                            <div class="">
                                  <div>
-                                    <div class="-mb-1 pt-6 pb-3 px-6 md:px-12 border border-b-0 border-gray-50 rounded-t-2xl">
+                                  <div class="-mb-1 pt-6 pb-3 px-6 md:px-12 border border-b-0 border-gray-50 rounded-t-2xl">
                                     <div>
                                        <div class="flex flex-wrap -mx-3 items-center">
                                           <div class="w-full xl:w-auto px-1 mb-4 xl:mb-0">
@@ -351,7 +496,7 @@ class Shortlists extends Component {
                                     </div>
                                     </div>
                                     <div class="w-full overflow-x-auto border-l border-r border-gray-50">
-                                    <table class="x-width">
+                                    <table class="x-width" style={{width: '100%'}}>
                                        <thead>
                                           <tr>
                                           <th class="p-0">
@@ -375,11 +520,11 @@ class Shortlists extends Component {
                                                          <input id={`option${item.option}`} type="checkbox" />
                                                          <span class="checkmark"></span>
                                                       </label>
-                                                      <div class="flex mt-4 mb-4 mr-1 items-center">
+                                                      <label class="flex mt-4 mb-4 mr-1 items-center" for={`option${item.option}`}>
                                                       <div class="ml-4">
                                                          <span class="text-xs text-gray-900 font-normal">{item.text}</span>
                                                       </div>
-                                                      </div>
+                                                      </label>
                                                    </div>
                                                 </td>
                                                 </tr>
@@ -393,7 +538,7 @@ class Shortlists extends Component {
                               </div>
                               <div class="text-center bottom-cta" style={{marginTop: '36px'}}>
                               {this.questionResponseArr != null && this.state.currQuestionId == this.questionResponseArr.length -1 && 
-                                 <a class="group relative inline-block h-16 mb-8 w-full md:w-44 bg-blueGray-900 rounded"  onClick={()=>{window.location.reload()}}>
+                                 <a class="group relative inline-block h-16 mb-8 w-full md:w-44 bg-blueGray-900 rounded"  onClick={()=>{this.sendPreAssessment();}}>
                                     <div class="absolute top-0 left-0 transform -translate-y-1 -translate-x-1 w-full h-full group-hover:translate-y-0 group-hover:translate-x-0 transition duration-300">
                                        <div class="flex h-full w-full items-center justify-center bg-blue-500 border-2 border-blueGray-900 rounded" style={{background: '#2189ff', color: '#ffffff'}}>                <span class="text-base font-semibold uppercase" >Finish</span>              </div>
                                     </div>
@@ -409,7 +554,7 @@ class Shortlists extends Component {
 
                               </div>
                            </div>
-                        </form>
+                        </form>}
                         </div>
                         <div class="relative mt-16 pt-16 pb-18">
                         <div class="container px-4 mx-auto">

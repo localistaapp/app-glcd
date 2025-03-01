@@ -170,7 +170,7 @@
             display: block;
             position: relative;
             padding-left: 35px;
-            margin-bottom: 12px;
+            margin-bottom: 22px;
             cursor: pointer;
             font-size: 22px;
             -webkit-user-select: none;
@@ -294,6 +294,99 @@
           height: 8px;
           border-radius: 50%;
           background: white;
+        }
+        .card {
+          width: 100%;
+          margin: 10px auto;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          padding: 20px;
+        }
+
+        @keyframes placeholderShimmer {
+          0% {
+            background-position: -468px 0;
+          }
+          100% {
+            background-position: 468px 0;
+          }
+        }
+        .shimmer-animation {
+          background-color: #f6f7f8;
+          background-image: linear-gradient(to right, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+          background-repeat: no-repeat;
+          background-size: 800px 104px;
+          animation-duration: 1s;
+          animation-fill-mode: forwards;
+          animation-iteration-count: infinite;
+          animation-name: placeholderShimmer;
+          animation-timing-function: linear;
+        }
+
+        .loader-shimmer-banner {
+          height: 16rem;
+          background-size: 800px 18rem;
+          border-radius: 5px;
+          margin-bottom: 12px;
+        }
+        .loader-shimmer-header {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 5px;
+        }
+        .loader-shimmer-title {
+          height: 25px;
+          flex: 0 0 auto;
+          width: 120px;
+        }
+        .loader-shimmer-rating {
+          height: 25px;
+          flex: 0 0 auto;
+          width: 70px;
+        }
+        .loader-shimmer-list {
+          height: 20px;
+          width: 190px;
+          margin-bottom: 5px;
+        }
+        .loader-shimmer-list:last-child {
+          margin-bottom: 0;
+        }
+        .loader-shimmer-info {
+          height: 20px;
+          width: 220px;
+          margin-bottom: 5px;
+        }
+        .loader-shimmer-info:last-child {
+          margin-bottom: 0;
+        }
+        .content {
+          margin: auto;
+          text-align: center;
+        }
+
+        #c {
+          margin: auto;
+        }
+
+        .header {
+          text-align: center;
+          width: 100%;
+          margin: auto;
+          height: 25px;
+          font-weight: bold;
+          background: #f5f5f5;
+          padding-top: 10px;
+          padding-bottom: 35px;
+          border-radius: 32px;
+          color: #333;
+        }
+
+        .pentagon {
+          width: 300px;
+          height: 300px;
+          margin: auto;
+          padding: 3px 3px 28px 3px;
+          display:inline-block;
         }
 
         @media screen and (max-width: 500px) {
