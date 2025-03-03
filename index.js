@@ -178,8 +178,8 @@ app.get('/questions/:role/:stack', async (req, res) => {
     try {
       const prompt = `
       For a ${role} working on ${stack} tech stack,
-       can you share a tota lof 15 multiple choice questions to check whether he has higher order design skills focusing on five important skill categories such as for example system design? But keep it medium in complexity.
-  Return in JSON array format like [{"question":"","question":[{"option":"A","text":""}]},...].
+       can you share a minimum of 15 multiple choice questions to check whether he has higher order design skills focusing on five important skill categories such as for example system design? But keep it medium in complexity.
+  Return in JSON array format like [{"question":"","question":[{"option":"A","text":""}]},...] without the \`\`\`json in the genearted response.
   `;
       const response = await openai.chat.completions.create({
         model: 'gpt-3.5-turbo',
@@ -209,9 +209,9 @@ app.post('/preassess', async (req, res) => {
     try {
         const prompt = `
         Given the responses for the above questions in the format [{"question":"..", "selectedOptions":["A","C"]},...] are ${JSON.stringify(selections)}, come up with
-a skills evaluation for the 5 skills the questions were focusing on and share the evaluation in the format
- [{"header":"SKILL GAP ANALYSIS","captions":["skill1","skill2","skill3","skill4","skill5"],"values":[0.5,0.5,0.5,0.5,0.5]}]. 
-Replace skill1, skill2 etc with actual skill names and values with the evaluation score with each evaluation score ranging from 0 to 1
+a skills evaluation for the 5 categories of skills the questions were focusing on and share the evaluation in the format
+ [{"header":"SKILL GAP ANALYSIS","captions":["skill1","skill2","skill3","skill4","skill5"],"values":[0.5,0.5,0.5,0.5,0.5], "analysis":["skill1 strenghts and analysis","skill2 strenghts and analysis","skill3 strenghts and analysis","skill4 strenghts and analysis","skill5 strenghts and analysis"], "incorrectResponses: ["question1: response","question2: response",..]}]. 
+Replace skill1, skill2 etc with actual skill names, 'skill1 strenghts and analysis' with actual 2 line analysis based on responses, incorrectResponses with actual incorrect responses with what was wrong per question answered incorrectly with actual correct response (text) and values 0,5,0,5 etc with the evaluation score with each evaluation score ranging from 0 to 1
     `;
         const response = await openai.chat.completions.create({
           model: 'gpt-3.5-turbo',

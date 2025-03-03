@@ -134,9 +134,10 @@ class Shortlists extends Component {
         super(props);
         this.questionResponseArr = [];
         this.leakTemplate = `<div class="p-3 w-full"><div class="bg-gray-100 block cursor-pointer p-4 rounded-3xl" x-data="{ accordion: false }" x-on:click="accordion = !accordion"><div class="-m-2 flex flex-wrap"><div class="p-2 flex-1"><div style="display:flex"><img src="https://img.logo.dev/{AppName}?token=pk_G0TzXJmeR22hjyoG7hROlQ" style="width:36px;height:36px;border-radius:8px"><h3 class="font-black font-heading text-gray-900 text-l" data-config-id="txt-b0bdec-2" style="margin-top:5px;margin-left:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:200px">{dbname} likely exposures - {AttributesExposed}</h3></div><div class="duration-500 h-0 overflow-hidden" :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''" x-ref="container"><p class="font-bold mt-4 text-black-500" data-config-id="txt-b0bdec-7" style="font-family:Quicksand;font-weight:500"><table style="margin-left:18px">{trHTML}</table></div></div><div class="p-2 w-auto"><span class="inline-block rotate-0 transform"><svg data-config-id="svg-b0bdec-1" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M17.9207 8.17999H11.6907H6.08072C5.12072 8.17999 4.64073 9.33999 5.32073 10.02L10.5007 15.2C11.3307 16.03 12.6807 16.03 13.5107 15.2L15.4807 13.23L18.6907 10.02C19.3607 9.33999 18.8807 8.17999 17.9207 8.17999Z" fill="#D1D5DB"></path></svg></span></div></div></div></div>`;
-        this.state = {currStep: 1, loading: false, currQuestionId: -1, currQuestion: '', currOptions: [], showSkillGraph: false};
+        this.state = {currStep: 1, loading: false, currQuestionId: -1, currQuestion: '', currOptions: [], showSkillGraph: false, skillScores: [], skillCaptions: [], skillsAnalysis: '', incorrectResponses: ''};
         this.fetchQuestions = this.fetchQuestions.bind(this);
         this.fetchNextQuestion = this.fetchNextQuestion.bind(this);
+        this.renderSkillGraph = this.renderSkillGraph.bind(this);
      }
      componentDidMount() {
          
@@ -161,7 +162,6 @@ class Shortlists extends Component {
          }
       }
       getSelectedOptions() {
-         debugger;
          let selOptions = [];
          if(document.querySelector('#optionA').checked) {
             selOptions.push('A');
@@ -194,7 +194,8 @@ class Shortlists extends Component {
 
          localStorage.setItem('selections', JSON.stringify(selections));
       }
-      renderSkillGraph(skills) {
+       renderSkillGraph(skills) {
+         this.setState({skillScores: skills[0].values, skillCaptions: skills[0].captions, skillsAnalysis: skills[0].analysis[0], incorrectResponses: skills[0].incorrectResponses[0]});
          var pentagonIndex = 0;
          var valueIndex = 0;
          var width = 0;
@@ -217,6 +218,21 @@ class Shortlists extends Component {
          }
 
          $(".pentagon").each(function(index){
+
+         function getFillTextStyle(num) {
+            if (num == 1) {
+               return 'rgba(158,207,255,1)';
+            } else if (num == 2) {
+               return 'rgba(255,227,156,1)';
+            } else if (num == 3) {
+               return 'rgba(204,204,207,1)';
+            } else if (num == 4) {
+               return 'rgba(156,166,255,1)';
+            } else {
+               return 'rgba(156,242,255,1)';
+            }
+         }
+
          width = $(this).width();
          height = $(this).height();
          var ctx = $(this).find('canvas')[0].getContext('2d');
@@ -230,7 +246,7 @@ class Shortlists extends Component {
          ctx.fillStyle = color;
         //ctx.fillText(skills[pentagonIndex].header, width/2, 15);
 
-         ctx.font="12px Monospace";   
+         ctx.font="bold 14px Poppins";   
 
          /*** PENTAGON BACKGROUND ***/
          for (var i = 0; i < sides; i++) {
@@ -239,7 +255,6 @@ class Shortlists extends Component {
             var xy = getXY(i, 0.3);
             var colorJitter = 25 + theta*i*2;
             color = "hsl("+hue[pentagonIndex]+",100%," + colorJitter + "%)";
-            ctx.fillStyle = color;
             ctx.strokeStyle = color;
             ctx.moveTo(0.5*width, 0.5*height); //center
             ctx.lineTo(xy.x, xy.y);
@@ -247,7 +262,8 @@ class Shortlists extends Component {
             ctx.lineTo(xy.x, xy.y);
             xy = getXY(i, 0.37);
             console.log();
-            ctx.fillText(skills[ pentagonIndex].captions[valueIndex],xy.x-10, xy.y +5);
+            ctx.fillStyle = getFillTextStyle(valueIndex+1);
+            ctx.fillText(valueIndex+1,xy.x-10, xy.y +5);
             valueIndex++;
             ctx.closePath();
             ctx.fill();
@@ -275,9 +291,11 @@ class Shortlists extends Component {
          valueIndex = 0;  
          pentagonIndex++;
          });
+
       }
       sendPreAssessment() {
          this.setSelections();
+         document.getElementById('finalStepCircle').classList.add('active');
          const selected = localStorage.getItem('selections');
          axios.post(`/preassess`, {selections: selected}).then((response) => {
             console.log(response.status);
@@ -320,6 +338,32 @@ class Shortlists extends Component {
          }
          endTime = +new Date() + 1000 * (60 * minutes + seconds) + 500;
          updateTimer();
+       }
+       getScoreBg(num) {
+         if (num == 1) {
+            return 'rgba(158,207,255,1)';
+         } else if (num == 2) {
+            return 'rgba(255,227,156,1)';
+         } else if (num == 3) {
+            return 'rgba(204,204,207,1)';
+         } else if (num == 4) {
+            return 'rgba(156,166,255,1)';
+         } else {
+            return 'rgba(156,242,255,1)';
+         }
+       }
+       getScoreLabelBg(num) {
+         if (num == 1) {
+            return 'rgba(158,207,255,1)';
+         } else if (num == 2) {
+            return 'rgba(255,227,156,1)';
+         } else if (num == 3) {
+            return 'rgba(204,204,207,1)';
+         } else if (num == 4) {
+            return 'rgba(156,166,255,1)';
+         } else {
+            return 'rgba(156,242,255,1)';
+         }
        }
     render() {
       return (
@@ -456,7 +500,7 @@ class Shortlists extends Component {
                               <p>Tech Stack</p>
                            </div>
                            <div class="indicator-line active"></div>
-                           <div class="step step3">
+                           <div id="finalStepCircle" class="step step3">
                               <div class="step-icon">3</div>
                               <p>Assess</p>
                            </div>
@@ -481,7 +525,39 @@ class Shortlists extends Component {
                              <div class="loader-shimmer-info shimmer-animation"></div>
                            </div>
                          </div>}
-                        {this.state.showSkillGraph == true && <div class="content"></div>} 
+                        {this.state.showSkillGraph == true && <div>
+                           <div class="content"></div>
+                           <div class="header">Your Scores</div>
+                           {this.state.skillScores.map((skillScore, skillIndex)=> {
+                                  return (<div className="score-container">
+                                  <div class="flex flex-wrap -mx-4 -mb-17">
+                                     <div class="w-full sm:w-1/2 px-4 mb-17">
+                                        <div class="w-64">
+                                           <div class="relative mb-2"><h4 class="relative z-10 text-7xl md:text-10xl font-heading font-medium" 
+                                              data-config-id="txt-4b5af4-2">{skillScore*100}%</h4>
+                                              <div class="absolute bottom-0 left-0 -mb-2 w-34 h-4 bg-item" style={{background: this.getScoreBg(skillIndex)}}></div>
+                                           </div>
+                                           <p class="text-xl score-label" data-config-id="txt-4b5af4-4" style={{color: '#4f99e2'}}>{this.state.skillCaptions[skillIndex]}</p>
+                                        </div>
+                                     </div>
+                                  </div>
+                               </div>)
+                           })
+                             
+                           }
+
+                           <div class="header" style={{marginTop: '34px'}}>Skills Analysis</div>
+                           <div class="max-w-2xl mx-auto">
+                           <p class="text-lg mb-16 px-8 py-8" data-config-id="txt-ed7002-4">{this.state.skillsAnalysis}</p>
+                           </div>
+
+                           <div class="header" style={{marginTop: '-52px'}}>Examples of incorrect responses</div>
+                           <div class="max-w-2xl mx-auto">
+                           <p class="text-lg mb-16 px-8 py-8" data-config-id="txt-ed7002-4">{this.state.incorrectResponses}</p>
+                           </div>
+
+                        
+                        </div>} 
                         {this.state.currOptions && this.state.currOptions.length > 0 && this.state.showSkillGraph == false && <form action="">
                            <div class="max-w-md xl:max-w-1xl mx-auto">
                            <div class="">
